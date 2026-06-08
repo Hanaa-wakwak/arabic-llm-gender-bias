@@ -108,3 +108,15 @@ It generates:
 - detailed grouped analysis when multiple metadata columns exist
 
 This makes the analysis pipeline reusable for benchmark versions and template tests.
+## Step 16 Completed
+
+I initialized a Git repository for the project and committed the first working version.
+
+The first commit includes:
+- pilot benchmark files
+- scoring scripts
+- analysis scripts
+- result files
+- experiment documentation
+
+This creates a reproducible checkpoint for the initial pilot pipeline.
