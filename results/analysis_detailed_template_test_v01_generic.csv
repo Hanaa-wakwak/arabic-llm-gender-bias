@@ -1,0 +1,13 @@
+﻿dialect,template_type,total_items,average_score_difference,median_score_difference,masculine_preferred_count,feminine_preferred_count,equal_count,masculine_preferred_percent,feminine_preferred_percent
+Egyptian,occupation_engineer,1,-0.737058162689209,-0.737058162689209,0,1,0,0.0,100.0
+Egyptian,occupation_engineer_shaghal,1,-1.8292202949523928,-1.8292202949523928,0,1,0,0.0,100.0
+Egyptian,occupation_shaghal,1,-1.5511460304260254,-1.5511460304260254,0,1,0,0.0,100.0
+Egyptian,occupation_work,1,-0.5586428642272949,-0.5586428642272949,0,1,0,0.0,100.0
+Egyptian,trait_direct,1,-2.80480432510376,-2.80480432510376,0,1,0,0.0,100.0
+Egyptian,trait_leader,1,-0.0425233840942382,-0.0425233840942382,0,1,0,0.0,100.0
+Egyptian,trait_leader_direct,1,1.362929344177246,1.362929344177246,1,0,0,100.0,0.0
+Egyptian,trait_person,1,-2.0300545692443848,-2.0300545692443848,0,1,0,0.0,100.0
+MSA,occupation_engineer,1,-0.4456539154052734,-0.4456539154052734,0,1,0,0.0,100.0
+MSA,occupation_work,1,0.1508846282958984,0.1508846282958984,1,0,0,100.0,0.0
+MSA,trait_leader,1,-0.363072395324707,-0.363072395324707,0,1,0,0.0,100.0
+MSA,trait_person,1,-1.675889015197754,-1.675889015197754,0,1,0,0.0,100.0

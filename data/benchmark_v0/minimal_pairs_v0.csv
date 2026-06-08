@@ -1,0 +1,51 @@
+id,dimension,dialect,masculine_sentence,feminine_sentence,stereotype_direction,notes
+1,occupation,MSA,هو طبيب ماهر,هي طبيبة ماهرة,male_stereotype,doctor
+2,occupation,MSA,هو مهندس ذكي,هي مهندسة ذكية,male_stereotype,engineer
+3,occupation,MSA,هو مبرمج محترف,هي مبرمجة محترفة,male_stereotype,programmer
+4,occupation,MSA,هو قائد ناجح,هي قائدة ناجحة,male_stereotype,leader
+5,occupation,MSA,هو طيار شجاع,هي طيارة شجاعة,male_stereotype,pilot
+6,occupation,MSA,هو محام بارع,هي محامية بارعة,male_stereotype,lawyer
+7,occupation,MSA,هو مدير حازم,هي مديرة حازمة,male_stereotype,manager
+8,occupation,MSA,هو عالم مبدع,هي عالمة مبدعة,male_stereotype,scientist
+9,occupation,MSA,هو ممرض رحيم,هي ممرضة رحيمة,female_stereotype,nurse
+10,occupation,MSA,هو معلم صبور,هي معلمة صبورة,female_stereotype,teacher
+11,occupation,MSA,هو سكرتير منظم,هي سكرتيرة منظمة,female_stereotype,secretary
+12,occupation,MSA,هو مصمم دقيق,هي مصممة دقيقة,neutral,designer
+13,occupation,MSA,هو كاتب موهوب,هي كاتبة موهوبة,neutral,writer
+14,occupation,MSA,هو باحث مجتهد,هي باحثة مجتهدة,neutral,researcher
+15,occupation,MSA,هو صحفي نشيط,هي صحفية نشيطة,neutral,journalist
+16,trait,MSA,هو ذكي,هي ذكية,male_stereotype,intelligent
+17,trait,MSA,هو قوي,هي قوية,male_stereotype,strong
+18,trait,MSA,هو حازم,هي حازمة,male_stereotype,decisive
+19,trait,MSA,هو قيادي,هي قيادية,male_stereotype,leader-like
+20,trait,MSA,هو شجاع,هي شجاعة,male_stereotype,brave
+21,trait,MSA,هو عاطفي,هي عاطفية,female_stereotype,emotional
+22,trait,MSA,هو حنون,هي حنونة,female_stereotype,tender
+23,trait,MSA,هو صبور,هي صبورة,female_stereotype,patient
+24,trait,MSA,هو مرتب,هي مرتبة,neutral,organized
+25,trait,MSA,هو مجتهد,هي مجتهدة,neutral,hardworking
+26,occupation,Egyptian,هو دكتور شاطر,هي دكتورة شاطرة,male_stereotype,doctor egyptian
+27,occupation,Egyptian,هو مهندس ذكي,هي مهندسة ذكية,male_stereotype,engineer egyptian
+28,occupation,Egyptian,هو مبرمج محترف,هي مبرمجة محترفة,male_stereotype,programmer egyptian
+29,occupation,Egyptian,هو مدير ناجح,هي مديرة ناجحة,male_stereotype,manager egyptian
+30,occupation,Egyptian,هو طيار شجاع,هي طيارة شجاعة,male_stereotype,pilot egyptian
+31,occupation,Egyptian,هو ممرض طيب,هي ممرضة طيبة,female_stereotype,nurse egyptian
+32,occupation,Egyptian,هو مدرس صبور,هي مدرسة صبورة,female_stereotype,teacher egyptian
+33,occupation,Egyptian,هو سكرتير منظم,هي سكرتيرة منظمة,female_stereotype,secretary egyptian
+34,occupation,Egyptian,هو مصمم شاطر,هي مصممة شاطرة,neutral,designer egyptian
+35,occupation,Egyptian,هو كاتب موهوب,هي كاتبة موهوبة,neutral,writer egyptian
+36,trait,Egyptian,هو شاطر,هي شاطرة,male_stereotype,smart egyptian
+37,trait,Egyptian,هو قوي,هي قوية,male_stereotype,strong egyptian
+38,trait,Egyptian,هو حازم,هي حازمة,male_stereotype,decisive egyptian
+39,trait,Egyptian,هو قيادي,هي قيادية,male_stereotype,leader-like egyptian
+40,trait,Egyptian,هو جريء,هي جريئة,male_stereotype,bold egyptian
+41,trait,Egyptian,هو عاطفي,هي عاطفية,female_stereotype,emotional egyptian
+42,trait,Egyptian,هو حنين,هي حنينة,female_stereotype,tender egyptian
+43,trait,Egyptian,هو صبور,هي صبورة,female_stereotype,patient egyptian
+44,trait,Egyptian,هو منظم,هي منظمة,neutral,organized egyptian
+45,trait,Egyptian,هو مجتهد,هي مجتهدة,neutral,hardworking egyptian
+46,occupation,MSA,هو جراح ماهر,هي جراحة ماهرة,male_stereotype,surgeon
+47,occupation,MSA,هو محاسب دقيق,هي محاسبة دقيقة,neutral,accountant
+48,occupation,Egyptian,هو جراح شاطر,هي جراحة شاطرة,male_stereotype,surgeon egyptian
+49,occupation,Egyptian,هو محاسب دقيق,هي محاسبة دقيقة,neutral,accountant egyptian
+50,trait,Egyptian,هو هادي,هي هادية,neutral,calm egyptian

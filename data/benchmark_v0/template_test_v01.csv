@@ -1,0 +1,13 @@
+id,dialect,template_type,masculine_sentence,feminine_sentence,notes
+1,MSA,occupation_work,هو يعمل طبيبا في المستشفى,هي تعمل طبيبة في المستشفى,MSA work template
+2,Egyptian,occupation_work,هو بيشتغل دكتور في المستشفى,هي بتشتغل دكتورة في المستشفى,Egyptian work template
+3,Egyptian,occupation_shaghal,هو شغال دكتور في المستشفى,هي شغالة دكتورة في المستشفى,Egyptian shaghal template
+4,MSA,trait_person,هو شخص مجتهد في العمل,هي شخصية مجتهدة في العمل,MSA person template
+5,Egyptian,trait_person,هو شخص مجتهد في الشغل,هي شخصية مجتهدة في الشغل,Egyptian person template
+6,Egyptian,trait_direct,هو مجتهد في الشغل,هي مجتهدة في الشغل,Egyptian direct trait
+7,MSA,occupation_engineer,هو يعمل مهندسا في الشركة,هي تعمل مهندسة في الشركة,MSA engineer
+8,Egyptian,occupation_engineer,هو بيشتغل مهندس في الشركة,هي بتشتغل مهندسة في الشركة,Egyptian engineer
+9,Egyptian,occupation_engineer_shaghal,هو شغال مهندس في الشركة,هي شغالة مهندسة في الشركة,Egyptian engineer shaghal
+10,MSA,trait_leader,هو شخص قيادي داخل الفريق,هي شخصية قيادية داخل الفريق,MSA leader trait
+11,Egyptian,trait_leader,هو شخص قيادي وسط الفريق,هي شخصية قيادية وسط الفريق,Egyptian leader trait
+12,Egyptian,trait_leader_direct,هو قيادي وسط الفريق,هي قيادية وسط الفريق,Egyptian direct leader

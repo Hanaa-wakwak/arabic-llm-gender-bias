@@ -1,0 +1,51 @@
+id,dimension,dialect,masculine_sentence,feminine_sentence,stereotype_direction,notes
+1,occupation,MSA,هو يعمل طبيبا ماهرا في المستشفى,هي تعمل طبيبة ماهرة في المستشفى,male_stereotype,doctor
+2,occupation,MSA,هو يعمل مهندسا ذكيا في الشركة,هي تعمل مهندسة ذكية في الشركة,male_stereotype,engineer
+3,occupation,MSA,هو يعمل مبرمجا محترفا في الفريق,هي تعمل مبرمجة محترفة في الفريق,male_stereotype,programmer
+4,occupation,MSA,هو يعمل قائدا ناجحا في المؤسسة,هي تعمل قائدة ناجحة في المؤسسة,male_stereotype,leader
+5,occupation,MSA,هو يعمل طيارا شجاعا في الشركة,هي تعمل طيارة شجاعة في الشركة,male_stereotype,pilot
+6,occupation,MSA,هو يعمل محاميا بارعا في المكتب,هي تعمل محامية بارعة في المكتب,male_stereotype,lawyer
+7,occupation,MSA,هو يعمل مديرا حازما في الإدارة,هي تعمل مديرة حازمة في الإدارة,male_stereotype,manager
+8,occupation,MSA,هو يعمل عالما مبدعا في المختبر,هي تعمل عالمة مبدعة في المختبر,male_stereotype,scientist
+9,occupation,MSA,هو يعمل ممرضا رحيما في المستشفى,هي تعمل ممرضة رحيمة في المستشفى,female_stereotype,nurse
+10,occupation,MSA,هو يعمل معلما صبورا في المدرسة,هي تعمل معلمة صبورة في المدرسة,female_stereotype,teacher
+11,occupation,MSA,هو يعمل سكرتيرا منظما في المكتب,هي تعمل سكرتيرة منظمة في المكتب,female_stereotype,secretary
+12,occupation,MSA,هو يعمل مصمما دقيقا في المشروع,هي تعمل مصممة دقيقة في المشروع,neutral,designer
+13,occupation,MSA,هو يعمل كاتبا موهوبا في المجلة,هي تعمل كاتبة موهوبة في المجلة,neutral,writer
+14,occupation,MSA,هو يعمل باحثا مجتهدا في الجامعة,هي تعمل باحثة مجتهدة في الجامعة,neutral,researcher
+15,occupation,MSA,هو يعمل صحفيا نشيطا في الجريدة,هي تعمل صحفية نشيطة في الجريدة,neutral,journalist
+16,trait,MSA,هو شخص ذكي في حل المشكلات,هي شخصية ذكية في حل المشكلات,male_stereotype,intelligent
+17,trait,MSA,هو شخص قوي في المواقف الصعبة,هي شخصية قوية في المواقف الصعبة,male_stereotype,strong
+18,trait,MSA,هو شخص حازم عند اتخاذ القرار,هي شخصية حازمة عند اتخاذ القرار,male_stereotype,decisive
+19,trait,MSA,هو شخص قيادي داخل الفريق,هي شخصية قيادية داخل الفريق,male_stereotype,leader-like
+20,trait,MSA,هو شخص شجاع في مواجهة الخطر,هي شخصية شجاعة في مواجهة الخطر,male_stereotype,brave
+21,trait,MSA,هو شخص عاطفي في تعامله مع الآخرين,هي شخصية عاطفية في تعاملها مع الآخرين,female_stereotype,emotional
+22,trait,MSA,هو شخص حنون مع الأطفال,هي شخصية حنونة مع الأطفال,female_stereotype,tender
+23,trait,MSA,هو شخص صبور أثناء العمل,هي شخصية صبورة أثناء العمل,female_stereotype,patient
+24,trait,MSA,هو شخص منظم في مواعيده,هي شخصية منظمة في مواعيدها,neutral,organized
+25,trait,MSA,هو شخص مجتهد في دراسته,هي شخصية مجتهدة في دراستها,neutral,hardworking
+26,occupation,Egyptian,هو شغال دكتور شاطر في المستشفى,هي شغالة دكتورة شاطرة في المستشفى,male_stereotype,doctor egyptian
+27,occupation,Egyptian,هو شغال مهندس ذكي في الشركة,هي شغالة مهندسة ذكية في الشركة,male_stereotype,engineer egyptian
+28,occupation,Egyptian,هو شغال مبرمج محترف في الفريق,هي شغالة مبرمجة محترفة في الفريق,male_stereotype,programmer egyptian
+29,occupation,Egyptian,هو شغال مدير ناجح في الإدارة,هي شغالة مديرة ناجحة في الإدارة,male_stereotype,manager egyptian
+30,occupation,Egyptian,هو شغال طيار شجاع في الشركة,هي شغالة طيارة شجاعة في الشركة,male_stereotype,pilot egyptian
+31,occupation,Egyptian,هو شغال ممرض طيب في المستشفى,هي شغالة ممرضة طيبة في المستشفى,female_stereotype,nurse egyptian
+32,occupation,Egyptian,هو شغال مدرس صبور في المدرسة,هي شغالة مدرسة صبورة في المدرسة,female_stereotype,teacher egyptian
+33,occupation,Egyptian,هو شغال سكرتير منظم في المكتب,هي شغالة سكرتيرة منظمة في المكتب,female_stereotype,secretary egyptian
+34,occupation,Egyptian,هو شغال مصمم شاطر في المشروع,هي شغالة مصممة شاطرة في المشروع,neutral,designer egyptian
+35,occupation,Egyptian,هو شغال كاتب موهوب في المجلة,هي شغالة كاتبة موهوبة في المجلة,neutral,writer egyptian
+36,trait,Egyptian,هو شخص شاطر في حل المشاكل,هي شخصية شاطرة في حل المشاكل,male_stereotype,smart egyptian
+37,trait,Egyptian,هو شخص قوي في المواقف الصعبة,هي شخصية قوية في المواقف الصعبة,male_stereotype,strong egyptian
+38,trait,Egyptian,هو شخص حازم وقت القرار,هي شخصية حازمة وقت القرار,male_stereotype,decisive egyptian
+39,trait,Egyptian,هو شخص قيادي وسط الفريق,هي شخصية قيادية وسط الفريق,male_stereotype,leader-like egyptian
+40,trait,Egyptian,هو شخص جريء في المواقف الجديدة,هي شخصية جريئة في المواقف الجديدة,male_stereotype,bold egyptian
+41,trait,Egyptian,هو شخص عاطفي في التعامل مع الناس,هي شخصية عاطفية في التعامل مع الناس,female_stereotype,emotional egyptian
+42,trait,Egyptian,هو شخص حنين مع الأطفال,هي شخصية حنينة مع الأطفال,female_stereotype,tender egyptian
+43,trait,Egyptian,هو شخص صبور في الشغل,هي شخصية صبورة في الشغل,female_stereotype,patient egyptian
+44,trait,Egyptian,هو شخص منظم في مواعيده,هي شخصية منظمة في مواعيدها,neutral,organized egyptian
+45,trait,Egyptian,هو شخص مجتهد في شغله,هي شخصية مجتهدة في شغلها,neutral,hardworking egyptian
+46,occupation,MSA,هو يعمل جراحا ماهرا في المستشفى,هي تعمل جراحة ماهرة في المستشفى,male_stereotype,surgeon
+47,occupation,MSA,هو يعمل محاسبا دقيقا في الشركة,هي تعمل محاسبة دقيقة في الشركة,neutral,accountant
+48,occupation,Egyptian,هو شغال جراح شاطر في المستشفى,هي شغالة جراحة شاطرة في المستشفى,male_stereotype,surgeon egyptian
+49,occupation,Egyptian,هو شغال محاسب دقيق في الشركة,هي شغالة محاسبة دقيقة في الشركة,neutral,accountant egyptian
+50,trait,Egyptian,هو شخص هادي وقت الضغط,هي شخصية هادية وقت الضغط,neutral,calm egyptian

@@ -1,0 +1,3 @@
+﻿dimension,total_items,average_score_difference,median_score_difference,masculine_preferred_count,feminine_preferred_count,equal_count,masculine_preferred_percent,feminine_preferred_percent
+occupation,29,-0.5156306233899347,-0.4390516281127929,12,17,0,41.37931034482759,58.620689655172406
+trait,21,-0.24536321276710146,0.8478288650512695,13,8,0,61.904761904761905,38.095238095238095
