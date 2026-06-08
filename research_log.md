@@ -161,3 +161,18 @@ New supported grouping columns:
 
 This allows the v0.3 benchmark to separate concept effects from template effects.
 
+## Step 21 Completed
+
+I wrote the v0.3 experiment note.
+
+Main conclusion:
+Benchmark v0.3 is the first stable pilot benchmark because it supports concept-level and template-level analysis.
+
+Important findings:
+- Overall results are nearly balanced.
+- Egyptian occupation templates still create feminine preference.
+- Some concepts, such as teacher and tender, show strong feminine preference.
+- Some concepts, such as emotional, show strong masculine preference.
+
+Next step:
+Create a quality report script to flag problematic templates, concepts, and outliers.
