@@ -133,3 +133,16 @@ Main improvement:
 
 Next step:
 Compare v0.1 and v0.2 results and decide which templates should remain in the next benchmark version.
+
+## Step 18 Completed
+
+I wrote the second experiment note about template effects in benchmark v0.2.
+
+Main finding:
+The Egyptian feminine preference is strongly affected by occupation templates, especially "هو شغال / هي شغالة".
+
+Important conclusion:
+Dialect-level bias analysis must control for template effects before making strong claims.
+
+Next step:
+Design benchmark v0.3 with concept IDs and template IDs.
