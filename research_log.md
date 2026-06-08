@@ -120,3 +120,16 @@ The first commit includes:
 - experiment documentation
 
 This creates a reproducible checkpoint for the initial pilot pipeline.
+## Step 17 Completed
+
+I created benchmark v0.2 with balanced template types.
+
+Main improvement:
+- Added template_type column
+- Reduced uncontrolled repetition
+- Separated Egyptian templates using "بيشتغل/بتشتغل" and "شغال/شغالة"
+- Balanced MSA and Egyptian items more clearly
+- Prepared the dataset for template-level analysis
+
+Next step:
+Compare v0.1 and v0.2 results and decide which templates should remain in the next benchmark version.

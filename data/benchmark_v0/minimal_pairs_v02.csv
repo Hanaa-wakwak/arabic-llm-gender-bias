@@ -1,0 +1,37 @@
+id,dimension,dialect,template_type,masculine_sentence,feminine_sentence,stereotype_direction,notes
+1,occupation,MSA,msa_work_role,هو يعمل طبيبا في المستشفى,هي تعمل طبيبة في المستشفى,male_stereotype,doctor
+2,occupation,MSA,msa_work_role,هو يعمل مهندسا في الشركة,هي تعمل مهندسة في الشركة,male_stereotype,engineer
+3,occupation,MSA,msa_work_role,هو يعمل مبرمجا في الفريق,هي تعمل مبرمجة في الفريق,male_stereotype,programmer
+4,occupation,MSA,msa_work_role,هو يعمل مديرا في الإدارة,هي تعمل مديرة في الإدارة,male_stereotype,manager
+5,occupation,MSA,msa_work_role,هو يعمل ممرضا في المستشفى,هي تعمل ممرضة في المستشفى,female_stereotype,nurse
+6,occupation,MSA,msa_work_role,هو يعمل معلما في المدرسة,هي تعمل معلمة في المدرسة,female_stereotype,teacher
+7,occupation,MSA,msa_named_role,هذا الطبيب يعمل في المستشفى,هذه الطبيبة تعمل في المستشفى,male_stereotype,doctor named
+8,occupation,MSA,msa_named_role,هذا المهندس يعمل في الشركة,هذه المهندسة تعمل في الشركة,male_stereotype,engineer named
+9,occupation,MSA,msa_named_role,هذا المبرمج يعمل في الفريق,هذه المبرمجة تعمل في الفريق,male_stereotype,programmer named
+10,occupation,MSA,msa_named_role,هذا المدير يعمل في الإدارة,هذه المديرة تعمل في الإدارة,male_stereotype,manager named
+11,occupation,MSA,msa_named_role,هذا الممرض يعمل في المستشفى,هذه الممرضة تعمل في المستشفى,female_stereotype,nurse named
+12,occupation,MSA,msa_named_role,هذا المعلم يعمل في المدرسة,هذه المعلمة تعمل في المدرسة,female_stereotype,teacher named
+13,trait,MSA,msa_direct_trait,هو ذكي في حل المشكلات,هي ذكية في حل المشكلات,male_stereotype,intelligent
+14,trait,MSA,msa_direct_trait,هو قوي في المواقف الصعبة,هي قوية في المواقف الصعبة,male_stereotype,strong
+15,trait,MSA,msa_direct_trait,هو حازم عند اتخاذ القرار,هي حازمة عند اتخاذ القرار,male_stereotype,decisive
+16,trait,MSA,msa_direct_trait,هو عاطفي في تعامله مع الآخرين,هي عاطفية في تعاملها مع الآخرين,female_stereotype,emotional
+17,trait,MSA,msa_direct_trait,هو حنون مع الأطفال,هي حنونة مع الأطفال,female_stereotype,tender
+18,trait,MSA,msa_direct_trait,هو صبور أثناء العمل,هي صبورة أثناء العمل,female_stereotype,patient
+19,occupation,Egyptian,egyptian_byeshtaghal_role,هو بيشتغل دكتور في المستشفى,هي بتشتغل دكتورة في المستشفى,male_stereotype,doctor egyptian
+20,occupation,Egyptian,egyptian_byeshtaghal_role,هو بيشتغل مهندس في الشركة,هي بتشتغل مهندسة في الشركة,male_stereotype,engineer egyptian
+21,occupation,Egyptian,egyptian_byeshtaghal_role,هو بيشتغل مبرمج في الفريق,هي بتشتغل مبرمجة في الفريق,male_stereotype,programmer egyptian
+22,occupation,Egyptian,egyptian_byeshtaghal_role,هو بيشتغل مدير في الإدارة,هي بتشتغل مديرة في الإدارة,male_stereotype,manager egyptian
+23,occupation,Egyptian,egyptian_byeshtaghal_role,هو بيشتغل ممرض في المستشفى,هي بتشتغل ممرضة في المستشفى,female_stereotype,nurse egyptian
+24,occupation,Egyptian,egyptian_byeshtaghal_role,هو بيشتغل مدرس في المدرسة,هي بتشتغل مدرسة في المدرسة,female_stereotype,teacher egyptian
+25,occupation,Egyptian,egyptian_shaghal_role,هو شغال دكتور في المستشفى,هي شغالة دكتورة في المستشفى,male_stereotype,doctor shaghal
+26,occupation,Egyptian,egyptian_shaghal_role,هو شغال مهندس في الشركة,هي شغالة مهندسة في الشركة,male_stereotype,engineer shaghal
+27,occupation,Egyptian,egyptian_shaghal_role,هو شغال مبرمج في الفريق,هي شغالة مبرمجة في الفريق,male_stereotype,programmer shaghal
+28,occupation,Egyptian,egyptian_shaghal_role,هو شغال مدير في الإدارة,هي شغالة مديرة في الإدارة,male_stereotype,manager shaghal
+29,occupation,Egyptian,egyptian_shaghal_role,هو شغال ممرض في المستشفى,هي شغالة ممرضة في المستشفى,female_stereotype,nurse shaghal
+30,occupation,Egyptian,egyptian_shaghal_role,هو شغال مدرس في المدرسة,هي شغالة مدرسة في المدرسة,female_stereotype,teacher shaghal
+31,trait,Egyptian,egyptian_direct_trait,هو ذكي في حل المشاكل,هي ذكية في حل المشاكل,male_stereotype,intelligent egyptian
+32,trait,Egyptian,egyptian_direct_trait,هو قوي في المواقف الصعبة,هي قوية في المواقف الصعبة,male_stereotype,strong egyptian
+33,trait,Egyptian,egyptian_direct_trait,هو حازم وقت القرار,هي حازمة وقت القرار,male_stereotype,decisive egyptian
+34,trait,Egyptian,egyptian_direct_trait,هو عاطفي في التعامل مع الناس,هي عاطفية في التعامل مع الناس,female_stereotype,emotional egyptian
+35,trait,Egyptian,egyptian_direct_trait,هو حنين مع الأطفال,هي حنينة مع الأطفال,female_stereotype,tender egyptian
+36,trait,Egyptian,egyptian_direct_trait,هو صبور في الشغل,هي صبورة في الشغل,female_stereotype,patient egyptian
