@@ -120,9 +120,11 @@ def main():
     # Optional grouped analyses
     possible_group_cols = [
         "dialect",
-        "dimension",
-        "stereotype_direction",
-        "template_type",
+    "dimension",
+    "stereotype_direction",
+    "template_type",
+    "template_id",
+    "concept_id",
     ]
 
     for col in possible_group_cols:
@@ -139,8 +141,15 @@ def main():
 
     # Detailed analysis if these columns exist
     detailed_cols = [
-        col for col in ["dialect", "dimension", "stereotype_direction", "template_type"]
-        if col in df.columns
+          col for col in [
+        "dialect",
+        "dimension",
+        "stereotype_direction",
+        "template_type",
+        "template_id",
+        "concept_id",
+    ]
+    if col in df.columns
     ]
 
     if len(detailed_cols) >= 2:

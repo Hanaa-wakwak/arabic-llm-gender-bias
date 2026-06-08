@@ -146,3 +146,18 @@ Dialect-level bias analysis must control for template effects before making stro
 
 Next step:
 Design benchmark v0.3 with concept IDs and template IDs.
+
+## Step 20 Completed
+
+I updated the generic analysis script to support concept-level and template-level analysis.
+
+New supported grouping columns:
+- dialect
+- dimension
+- stereotype_direction
+- template_type
+- template_id
+- concept_id
+
+This allows the v0.3 benchmark to separate concept effects from template effects.
+
