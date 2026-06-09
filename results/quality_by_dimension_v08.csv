@@ -1,0 +1,3 @@
+﻿dimension,total_items,average_score_difference,average_direction,median_score_difference,min_score_difference,max_score_difference,masculine_preferred_count,feminine_preferred_count,equal_count,masculine_preferred_percent,feminine_preferred_percent,equal_percent,warnings
+occupation,72,-0.0882194373342726,feminine,0.0219495296478271,-1.7081646919250488,1.0479965209960938,37,35,0,51.388888888888886,48.61111111111111,0.0,ok
+trait,72,-0.027224587069617383,feminine,0.1008238792419433,-1.7245235443115234,1.071115493774414,44,28,0,61.111111111111114,38.88888888888889,0.0,ok

@@ -1,0 +1,2 @@
+﻿total_items,total_outliers,outlier_percent,overall_average_score_difference,overall_median_score_difference,decision_notes
+144,24,16.666666666666664,-0.057722012201944985,0.059875726699829046,overall_average_is_close_to_zero;outlier_rate_is_acceptable_for_pilot;some_templates_need_revision;some_concepts_need_review
