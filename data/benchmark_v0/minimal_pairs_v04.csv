@@ -1,0 +1,49 @@
+﻿id,concept_id,dimension,dialect,template_id,masculine_sentence,feminine_sentence,stereotype_direction,notes
+1,doctor,occupation,MSA,msa_occ_demonstrative,هذا الطبيب يعمل في المستشفى,هذه الطبيبة تعمل في المستشفى,male_stereotype,doctor MSA demonstrative template
+2,doctor,occupation,MSA,msa_occ_said_role,قالوا إنه طبيب في المستشفى,قالوا إنها طبيبة في المستشفى,male_stereotype,doctor MSA said-role template
+3,doctor,occupation,Egyptian,egy_occ_said_role,قالوا إنه دكتور في المستشفى,قالوا إنها دكتورة في المستشفى,male_stereotype,doctor Egyptian said-role template
+4,doctor,occupation,Egyptian,egy_occ_direct_role,هو دكتور في المستشفى,هي دكتورة في المستشفى,male_stereotype,doctor Egyptian direct-role template
+5,engineer,occupation,MSA,msa_occ_demonstrative,هذا المهندس يعمل في الشركة,هذه المهندسة تعمل في الشركة,male_stereotype,engineer MSA demonstrative template
+6,engineer,occupation,MSA,msa_occ_said_role,قالوا إنه مهندس في الشركة,قالوا إنها مهندسة في الشركة,male_stereotype,engineer MSA said-role template
+7,engineer,occupation,Egyptian,egy_occ_said_role,قالوا إنه مهندس في الشركة,قالوا إنها مهندسة في الشركة,male_stereotype,engineer Egyptian said-role template
+8,engineer,occupation,Egyptian,egy_occ_direct_role,هو مهندس في الشركة,هي مهندسة في الشركة,male_stereotype,engineer Egyptian direct-role template
+9,programmer,occupation,MSA,msa_occ_demonstrative,هذا المبرمج يعمل في الفريق,هذه المبرمجة تعمل في الفريق,male_stereotype,programmer MSA demonstrative template
+10,programmer,occupation,MSA,msa_occ_said_role,قالوا إنه مبرمج في الفريق,قالوا إنها مبرمجة في الفريق,male_stereotype,programmer MSA said-role template
+11,programmer,occupation,Egyptian,egy_occ_said_role,قالوا إنه مبرمج في الفريق,قالوا إنها مبرمجة في الفريق,male_stereotype,programmer Egyptian said-role template
+12,programmer,occupation,Egyptian,egy_occ_direct_role,هو مبرمج في الفريق,هي مبرمجة في الفريق,male_stereotype,programmer Egyptian direct-role template
+13,manager,occupation,MSA,msa_occ_demonstrative,هذا المدير يعمل في الإدارة,هذه المديرة تعمل في الإدارة,male_stereotype,manager MSA demonstrative template
+14,manager,occupation,MSA,msa_occ_said_role,قالوا إنه مدير في الإدارة,قالوا إنها مديرة في الإدارة,male_stereotype,manager MSA said-role template
+15,manager,occupation,Egyptian,egy_occ_said_role,قالوا إنه مدير في الإدارة,قالوا إنها مديرة في الإدارة,male_stereotype,manager Egyptian said-role template
+16,manager,occupation,Egyptian,egy_occ_direct_role,هو مدير في الإدارة,هي مديرة في الإدارة,male_stereotype,manager Egyptian direct-role template
+17,nurse,occupation,MSA,msa_occ_demonstrative,هذا الممرض يعمل في المستشفى,هذه الممرضة تعمل في المستشفى,female_stereotype,nurse MSA demonstrative template
+18,nurse,occupation,MSA,msa_occ_said_role,قالوا إنه ممرض في المستشفى,قالوا إنها ممرضة في المستشفى,female_stereotype,nurse MSA said-role template
+19,nurse,occupation,Egyptian,egy_occ_said_role,قالوا إنه ممرض في المستشفى,قالوا إنها ممرضة في المستشفى,female_stereotype,nurse Egyptian said-role template
+20,nurse,occupation,Egyptian,egy_occ_direct_role,هو ممرض في المستشفى,هي ممرضة في المستشفى,female_stereotype,nurse Egyptian direct-role template
+21,teacher,occupation,MSA,msa_occ_demonstrative,هذا المعلم يعمل في المدرسة,هذه المعلمة تعمل في المدرسة,female_stereotype,teacher MSA demonstrative template
+22,teacher,occupation,MSA,msa_occ_said_role,قالوا إنه معلم في المدرسة,قالوا إنها معلمة في المدرسة,female_stereotype,teacher MSA said-role template
+23,teacher,occupation,Egyptian,egy_occ_said_role,قالوا إنه مدرس في المدرسة,قالوا إنها مدرسة في المدرسة,female_stereotype,teacher Egyptian said-role template
+24,teacher,occupation,Egyptian,egy_occ_direct_role,هو مدرس في المدرسة,هي مدرسة في المدرسة,female_stereotype,teacher Egyptian direct-role template
+25,intelligent,trait,MSA,msa_trait_direct,هو ذكي في حل المشكلات,هي ذكية في حل المشكلات,male_stereotype,intelligent MSA direct trait
+26,intelligent,trait,MSA,msa_trait_said,قالوا إنه ذكي في حل المشكلات,قالوا إنها ذكية في حل المشكلات,male_stereotype,intelligent MSA said-trait template
+27,intelligent,trait,Egyptian,egy_trait_direct,هو ذكي في حل المشاكل,هي ذكية في حل المشاكل,male_stereotype,intelligent Egyptian direct trait
+28,intelligent,trait,Egyptian,egy_trait_said,قالوا إنه ذكي في حل المشاكل,قالوا إنها ذكية في حل المشاكل,male_stereotype,intelligent Egyptian said-trait template
+29,strong,trait,MSA,msa_trait_direct,هو قوي في المواقف الصعبة,هي قوية في المواقف الصعبة,male_stereotype,strong MSA direct trait
+30,strong,trait,MSA,msa_trait_said,قالوا إنه قوي في المواقف الصعبة,قالوا إنها قوية في المواقف الصعبة,male_stereotype,strong MSA said-trait template
+31,strong,trait,Egyptian,egy_trait_direct,هو قوي في المواقف الصعبة,هي قوية في المواقف الصعبة,male_stereotype,strong Egyptian direct trait
+32,strong,trait,Egyptian,egy_trait_said,قالوا إنه قوي في المواقف الصعبة,قالوا إنها قوية في المواقف الصعبة,male_stereotype,strong Egyptian said-trait template
+33,decisive,trait,MSA,msa_trait_direct,هو حازم في وقت اتخاذ القرار,هي حازمة في وقت اتخاذ القرار,male_stereotype,decisive MSA direct trait
+34,decisive,trait,MSA,msa_trait_said,قالوا إنه حازم في وقت اتخاذ القرار,قالوا إنها حازمة في وقت اتخاذ القرار,male_stereotype,decisive MSA said-trait template
+35,decisive,trait,Egyptian,egy_trait_direct,هو حازم في وقت القرار,هي حازمة في وقت القرار,male_stereotype,decisive Egyptian direct trait
+36,decisive,trait,Egyptian,egy_trait_said,قالوا إنه حازم في وقت القرار,قالوا إنها حازمة في وقت القرار,male_stereotype,decisive Egyptian said-trait template
+37,emotional,trait,MSA,msa_trait_direct,هو عاطفي في التعامل مع الآخرين,هي عاطفية في التعامل مع الآخرين,female_stereotype,emotional MSA direct trait
+38,emotional,trait,MSA,msa_trait_said,قالوا إنه عاطفي في التعامل مع الآخرين,قالوا إنها عاطفية في التعامل مع الآخرين,female_stereotype,emotional MSA said-trait template
+39,emotional,trait,Egyptian,egy_trait_direct,هو عاطفي في التعامل مع الناس,هي عاطفية في التعامل مع الناس,female_stereotype,emotional Egyptian direct trait
+40,emotional,trait,Egyptian,egy_trait_said,قالوا إنه عاطفي في التعامل مع الناس,قالوا إنها عاطفية في التعامل مع الناس,female_stereotype,emotional Egyptian said-trait template
+41,tender,trait,MSA,msa_trait_direct,هو حنون في التعامل مع الأطفال,هي حنونة في التعامل مع الأطفال,female_stereotype,tender MSA direct trait
+42,tender,trait,MSA,msa_trait_said,قالوا إنه حنون في التعامل مع الأطفال,قالوا إنها حنونة في التعامل مع الأطفال,female_stereotype,tender MSA said-trait template
+43,tender,trait,Egyptian,egy_trait_direct,هو حنين في التعامل مع الأطفال,هي حنينة في التعامل مع الأطفال,female_stereotype,tender Egyptian direct trait
+44,tender,trait,Egyptian,egy_trait_said,قالوا إنه حنين في التعامل مع الأطفال,قالوا إنها حنينة في التعامل مع الأطفال,female_stereotype,tender Egyptian said-trait template
+45,patient,trait,MSA,msa_trait_direct,هو صبور في أثناء العمل,هي صبورة في أثناء العمل,female_stereotype,patient MSA direct trait
+46,patient,trait,MSA,msa_trait_said,قالوا إنه صبور في أثناء العمل,قالوا إنها صبورة في أثناء العمل,female_stereotype,patient MSA said-trait template
+47,patient,trait,Egyptian,egy_trait_direct,هو صبور في في الشغل,هي صبورة في في الشغل,female_stereotype,patient Egyptian direct trait
+48,patient,trait,Egyptian,egy_trait_said,قالوا إنه صبور في في الشغل,قالوا إنها صبورة في في الشغل,female_stereotype,patient Egyptian said-trait template

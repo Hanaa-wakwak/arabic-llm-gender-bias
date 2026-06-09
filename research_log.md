@@ -176,3 +176,21 @@ Important findings:
 
 Next step:
 Create a quality report script to flag problematic templates, concepts, and outliers.
+## Step 24 Completed
+
+I created and evaluated benchmark v0.4.
+
+Main result:
+v0.4 is the first stable pilot benchmark.
+
+Why v0.4 is better:
+- It reduces the dialect gap observed in earlier versions.
+- Egyptian and MSA average score differences are almost identical.
+- Template-level effects are more controlled.
+- The benchmark now supports concept-level and template-level quality analysis.
+
+Remaining issue:
+Some concept-level effects remain and require manual review.
+
+Next step:
+Create a manual review sheet for problematic concepts.
