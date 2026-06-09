@@ -1,0 +1,4 @@
+﻿version,total_items,masculine_preferred_count,feminine_preferred_count,masculine_preferred_percent,feminine_preferred_percent,overall_average_score_difference,overall_median_score_difference,egyptian_average_score_difference,msa_average_score_difference,absolute_dialect_gap,template_warning_count,concept_warning_count,recommended_role
+v03,48.0,23.0,25.0,47.91666666666667,52.083333333333336,-0.0349492331345876,-0.027104616165161,-0.2396195729573567,0.1697211066881815,0.4093406796455382,2,7,earlier pilot with template effects
+v04,48.0,26.0,22.0,54.16666666666666,45.83333333333333,0.0599554280440012,0.0614705085754394,0.0602127909660339,0.0596980651219685,0.0005147258440654015,0,9,stable pilot baseline
+v05,48.0,27.0,21.0,56.25,43.75,0.0625013907750447,0.0870144367218017,0.1096718112627665,0.015330970287323,0.0943408409754435,1,6,"cleaning ablation, not selected as baseline"
