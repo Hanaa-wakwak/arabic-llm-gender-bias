@@ -194,3 +194,17 @@ Some concept-level effects remain and require manual review.
 
 Next step:
 Create a manual review sheet for problematic concepts.
+## Step 25 Completed
+
+I created a manual review sheet for benchmark v0.4.
+
+The review sheet selects items that belong to:
+- problematic concepts
+- problematic templates
+- high-score-difference outliers
+
+The output file is:
+data/review/manual_review_sheet_v04.csv
+
+Next step:
+Manually review the selected items and decide whether each item should be kept, rewritten, or removed.
