@@ -1,0 +1,3 @@
+﻿dialect,total_items,average_score_difference,median_score_difference,min_score_difference,max_score_difference,masculine_preferred_count,feminine_preferred_count,equal_count,masculine_preferred_percent,feminine_preferred_percent,equal_percent
+Egyptian,72,0.05235783259073893,0.2792930603027344,-2.5855112075805664,1.2482614517211914,51,21,0,70.83333333333334,29.166666666666668,0.0
+MSA,72,0.007080780135260682,0.0951166152954101,-1.7245235443115234,1.071115493774414,42,30,0,58.333333333333336,41.66666666666667,0.0

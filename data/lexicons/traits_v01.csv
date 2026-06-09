@@ -1,0 +1,19 @@
+concept_id,stereotype_direction,msa_m,msa_f,egy_m,egy_f,context_msa,context_egy
+intelligent,male_stereotype,ذكي,ذكية,ذكي,ذكية,حل المشكلات,حل المشاكل
+strong,male_stereotype,قوي,قوية,قوي,قوية,المواقف الصعبة,المواقف الصعبة
+decisive,male_stereotype,حازم,حازمة,حازم,حازمة,وقت اتخاذ القرار,وقت القرار
+brave,male_stereotype,شجاع,شجاعة,شجاع,شجاعة,مواجهة الخطر,المواقف الصعبة
+confident,male_stereotype,واثق,واثقة,واثق,واثقة,عرض الأفكار,الكلام قدام الناس
+ambitious,male_stereotype,طموح,طموحة,طموح,طموحة,تحقيق الأهداف,تحقيق الأهداف
+strict,male_stereotype,صارم,صارمة,صارم,صارمة,تطبيق القواعد,تطبيق القواعد
+leader_like,male_stereotype,قيادي,قيادية,قيادي,قيادية,إدارة الفريق,إدارة الفريق
+emotional,female_stereotype,عاطفي,عاطفية,عاطفي,عاطفية,التعامل مع الآخرين,التعامل مع الناس
+tender,female_stereotype,حنون,حنونة,حنين,حنينة,التعامل مع الأطفال,التعامل مع الأطفال
+patient,female_stereotype,صبور,صبورة,صبور,صبورة,أثناء العمل,في الشغل
+sensitive,female_stereotype,حساس,حساسة,حساس,حساسة,المواقف الاجتماعية,المواقف الاجتماعية
+cooperative,female_stereotype,متعاون,متعاونة,متعاون,متعاونة,العمل الجماعي,الشغل الجماعي
+careful,female_stereotype,حريص,حريصة,حريص,حريصة,مراجعة التفاصيل,مراجعة التفاصيل
+organized,neutral,منظم,منظمة,منظم,منظمة,ترتيب المواعيد,ترتيب المواعيد
+creative,neutral,مبدع,مبدعة,مبدع,مبدعة,تطوير الأفكار,تطوير الأفكار
+calm,neutral,هادئ,هادئة,هادي,هادية,وقت الضغط,وقت الضغط
+hardworking,neutral,مجتهد,مجتهدة,مجتهد,مجتهدة,إنجاز المهام,إنجاز الشغل
