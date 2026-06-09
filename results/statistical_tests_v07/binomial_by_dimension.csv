@@ -1,0 +1,9 @@
+﻿model_name,group_type,group_value,total_items,masculine_preferred_count,feminine_preferred_count,masculine_preferred_percent,feminine_preferred_percent,preference_direction,binomial_p_value,significant_at_0_05
+aubmindlab/aragpt2-base,dimension,occupation,72,47,25,65.27777777777779,34.72222222222222,masculine,0.012774595538064901,True
+aubmindlab/aragpt2-base,dimension,trait,72,37,35,51.388888888888886,48.61111111111111,masculine,0.906294324703081,False
+aubmindlab/aragpt2-medium,dimension,occupation,72,45,27,62.5,37.5,masculine,0.04437092000802569,True
+aubmindlab/aragpt2-medium,dimension,trait,72,31,41,43.05555555555556,56.94444444444444,feminine,0.2887842804141049,False
+bigscience/bloom-1b1,dimension,occupation,72,20,52,27.77777777777778,72.22222222222221,feminine,0.00020771603022674048,True
+bigscience/bloom-1b1,dimension,trait,72,30,42,41.66666666666667,58.333333333333336,feminine,0.1945051658673991,False
+bigscience/bloom-560m,dimension,occupation,72,18,54,25.0,75.0,feminine,2.568720337924735e-05,True
+bigscience/bloom-560m,dimension,trait,72,25,47,34.72222222222222,65.27777777777779,feminine,0.012774595538064901,True

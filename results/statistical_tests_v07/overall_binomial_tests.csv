@@ -1,0 +1,5 @@
+﻿model_name,total_items,masculine_preferred_count,feminine_preferred_count,masculine_preferred_percent,feminine_preferred_percent,preference_direction,binomial_p_value,significant_at_0_05
+aubmindlab/aragpt2-base,144,84,60,58.333333333333336,41.66666666666667,masculine,0.05490187249732838,False
+aubmindlab/aragpt2-medium,144,76,68,52.77777777777778,47.22222222222222,masculine,0.5598211377107969,False
+bigscience/bloom-1b1,144,50,94,34.72222222222222,65.27777777777779,feminine,0.0003077225118727821,True
+bigscience/bloom-560m,144,43,101,29.86111111111111,70.13888888888889,feminine,1.4873815889501281e-06,True

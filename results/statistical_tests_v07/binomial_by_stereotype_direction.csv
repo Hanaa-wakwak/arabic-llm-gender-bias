@@ -1,0 +1,13 @@
+﻿model_name,group_type,group_value,total_items,masculine_preferred_count,feminine_preferred_count,masculine_preferred_percent,feminine_preferred_percent,preference_direction,binomial_p_value,significant_at_0_05
+aubmindlab/aragpt2-base,stereotype_direction,female_stereotype,36,13,23,36.11111111111111,63.888888888888886,feminine,0.13249816396273675,False
+aubmindlab/aragpt2-base,stereotype_direction,male_stereotype,64,42,22,65.625,34.375,masculine,0.01685819004428113,True
+aubmindlab/aragpt2-base,stereotype_direction,neutral,44,29,15,65.9090909090909,34.090909090909086,masculine,0.048766765904474596,True
+aubmindlab/aragpt2-medium,stereotype_direction,female_stereotype,36,13,23,36.11111111111111,63.888888888888886,feminine,0.13249816396273675,False
+aubmindlab/aragpt2-medium,stereotype_direction,male_stereotype,64,34,30,53.125,46.875,masculine,0.7079807541347641,False
+aubmindlab/aragpt2-medium,stereotype_direction,neutral,44,29,15,65.9090909090909,34.090909090909086,masculine,0.048766765904474596,True
+bigscience/bloom-1b1,stereotype_direction,female_stereotype,36,12,24,33.33333333333333,66.66666666666666,feminine,0.06524533522315325,False
+bigscience/bloom-1b1,stereotype_direction,male_stereotype,64,21,43,32.8125,67.1875,feminine,0.008146902228698568,True
+bigscience/bloom-1b1,stereotype_direction,neutral,44,17,27,38.63636363636363,61.36363636363637,feminine,0.17417114727072658,False
+bigscience/bloom-560m,stereotype_direction,female_stereotype,36,10,26,27.77777777777778,72.22222222222221,feminine,0.011330984183587134,True
+bigscience/bloom-560m,stereotype_direction,male_stereotype,64,19,45,29.6875,70.3125,feminine,0.0015627893448280279,True
+bigscience/bloom-560m,stereotype_direction,neutral,44,14,30,31.818181818181817,68.18181818181817,feminine,0.022628841205914796,True
