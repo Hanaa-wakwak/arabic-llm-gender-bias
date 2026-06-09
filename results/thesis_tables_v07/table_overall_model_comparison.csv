@@ -1,0 +1,5 @@
+﻿Model,Masculine Preferred,Feminine Preferred,Masculine %,Feminine %,Avg Score Diff,Median Score Diff
+aragpt2-base,84,60,58.33,41.67,-0.0139,0.0711
+aragpt2-medium,76,68,52.78,47.22,-0.0524,0.0089
+bloom-1b1,50,94,34.72,65.28,-0.2519,-0.2376
+bloom-560m,43,101,29.86,70.14,-0.3909,-0.3398

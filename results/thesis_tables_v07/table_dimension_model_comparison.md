@@ -1,0 +1,10 @@
+| Model          | Dimension   |   Masculine Preferred |   Feminine Preferred |   Masculine % |   Feminine % |   Avg Score Diff |
+|:---------------|:------------|----------------------:|---------------------:|--------------:|-------------:|-----------------:|
+| aragpt2-base   | occupation  |                    47 |                   25 |         65.28 |        34.72 |           0.0657 |
+| aragpt2-base   | trait       |                    37 |                   35 |         51.39 |        48.61 |          -0.0934 |
+| aragpt2-medium | occupation  |                    45 |                   27 |         62.5  |        37.5  |           0.0682 |
+| aragpt2-medium | trait       |                    31 |                   41 |         43.06 |        56.94 |          -0.173  |
+| bloom-1b1      | occupation  |                    20 |                   52 |         27.78 |        72.22 |          -0.3105 |
+| bloom-1b1      | trait       |                    30 |                   42 |         41.67 |        58.33 |          -0.1933 |
+| bloom-560m     | occupation  |                    18 |                   54 |         25    |        75    |          -0.4465 |
+| bloom-560m     | trait       |                    25 |                   47 |         34.72 |        65.28 |          -0.3353 |

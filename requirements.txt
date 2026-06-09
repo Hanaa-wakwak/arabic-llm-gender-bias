@@ -6,3 +6,5 @@ datasets
 accelerate
 evaluate
 tqdm
+matplotlib
+tabulate

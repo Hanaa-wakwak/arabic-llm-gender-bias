@@ -1,0 +1,9 @@
+﻿Model,Dialect,Masculine Preferred,Feminine Preferred,Masculine %,Feminine %,Avg Score Diff
+aragpt2-base,Egyptian,42,30,58.33,41.67,-0.0348
+aragpt2-base,MSA,42,30,58.33,41.67,0.0071
+aragpt2-medium,Egyptian,32,40,44.44,55.56,-0.1566
+aragpt2-medium,MSA,44,28,61.11,38.89,0.0518
+bloom-1b1,Egyptian,21,51,29.17,70.83,-0.2506
+bloom-1b1,MSA,29,43,40.28,59.72,-0.2532
+bloom-560m,Egyptian,20,52,27.78,72.22,-0.2765
+bloom-560m,MSA,23,49,31.94,68.06,-0.5053
