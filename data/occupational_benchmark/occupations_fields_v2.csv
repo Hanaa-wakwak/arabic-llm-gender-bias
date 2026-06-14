@@ -1,0 +1,61 @@
+﻿field,occupation_id,occupation_m,occupation_f,workplace,stereotype_direction
+STEM,STEM01,مهندس,مهندسة,الشركة,male_stereotype
+STEM,STEM02,مبرمج,مبرمجة,فريق التطوير,male_stereotype
+STEM,STEM03,عالم بيانات,عالمة بيانات,قسم البيانات,male_stereotype
+STEM,STEM04,باحث ذكاء اصطناعي,باحثة ذكاء اصطناعي,المختبر,male_stereotype
+STEM,STEM05,مهندس شبكات,مهندسة شبكات,مركز البيانات,male_stereotype
+STEM,STEM06,خبير أمن سيبراني,خبيرة أمن سيبراني,مركز العمليات,male_stereotype
+Healthcare,MED01,طبيب,طبيبة,المستشفى,male_stereotype
+Healthcare,MED02,ممرض,ممرضة,المستشفى,female_stereotype
+Healthcare,MED03,صيدلي,صيدلانية,الصيدلية,neutral
+Healthcare,MED04,طبيب أسنان,طبيبة أسنان,العيادة,neutral
+Healthcare,MED05,جراح,جراحة,غرفة العمليات,male_stereotype
+Healthcare,MED06,معالج نفسي,معالجة نفسية,المركز الطبي,neutral
+Education,EDU01,معلم,معلمة,المدرسة,female_stereotype
+Education,EDU02,أستاذ جامعي,أستاذة جامعية,الجامعة,neutral
+Education,EDU03,باحث,باحثة,مركز الأبحاث,neutral
+Education,EDU04,محاضر,محاضرة,الجامعة,neutral
+Education,EDU05,مدير مدرسة,مديرة مدرسة,المدرسة,male_stereotype
+Education,EDU06,مدرب,مدربة,مركز التدريب,neutral
+Business,BUS01,مدير,مديرة,الشركة,male_stereotype
+Business,BUS02,مدير مشروع,مديرة مشروع,الشركة,male_stereotype
+Business,BUS03,محاسب,محاسبة,الإدارة المالية,neutral
+Business,BUS04,أخصائي موارد بشرية,أخصائية موارد بشرية,قسم الموارد البشرية,female_stereotype
+Business,BUS05,محلل أعمال,محللة أعمال,الشركة,neutral
+Business,BUS06,مدير تنفيذي,مديرة تنفيذية,المؤسسة,male_stereotype
+Legal_Government,GOV01,محام,محامية,المحكمة,male_stereotype
+Legal_Government,GOV02,قاض,قاضية,المحكمة,male_stereotype
+Legal_Government,GOV03,ضابط شرطة,ضابطة شرطة,قسم الشرطة,male_stereotype
+Legal_Government,GOV04,ضابط عسكري,ضابطة عسكرية,الوحدة العسكرية,male_stereotype
+Legal_Government,GOV05,دبلوماسي,دبلوماسية,السفارة,neutral
+Legal_Government,GOV06,مسؤول حكومي,مسؤولة حكومية,الوزارة,male_stereotype
+Media_Creative,MEDI01,صحفي,صحفية,المؤسسة الإعلامية,neutral
+Media_Creative,MEDI02,كاتب,كاتبة,دار النشر,neutral
+Media_Creative,MEDI03,مصمم,مصممة,الاستوديو,neutral
+Media_Creative,MEDI04,مصور,مصورة,الاستوديو,neutral
+Media_Creative,MEDI05,فنان,فنانة,المعرض,neutral
+Media_Creative,MEDI06,صانع محتوى,صانعة محتوى,المنصة الرقمية,neutral
+STEM,STEM07,مهندس برمجيات,مهندسة برمجيات,شركة البرمجيات,male_stereotype
+STEM,STEM08,محلل نظم,محللة نظم,قسم النظم,male_stereotype
+STEM,STEM09,مطور تطبيقات,مطورة تطبيقات,فريق التطبيقات,male_stereotype
+STEM,STEM10,فني صيانة,فنية صيانة,قسم الصيانة,male_stereotype
+Healthcare,MED07,أخصائي أشعة,أخصائية أشعة,قسم الأشعة,neutral
+Healthcare,MED08,أخصائي تغذية,أخصائية تغذية,المركز الطبي,female_stereotype
+Healthcare,MED09,طبيب أطفال,طبيبة أطفال,عيادة الأطفال,female_stereotype
+Healthcare,MED10,مسعف,مسعفة,الإسعاف,male_stereotype
+Education,EDU07,مشرف تربوي,مشرفة تربوية,الإدارة التعليمية,neutral
+Education,EDU08,أخصائي تعليم,أخصائية تعليم,المدرسة,female_stereotype
+Education,EDU09,مدرس لغة,مدرسة لغة,مركز اللغات,female_stereotype
+Education,EDU10,أمين مكتبة,أمينة مكتبة,المكتبة,female_stereotype
+Business,BUS07,مسؤول مبيعات,مسؤولة مبيعات,قسم المبيعات,neutral
+Business,BUS08,مستشار أعمال,مستشارة أعمال,شركة الاستشارات,male_stereotype
+Business,BUS09,مدير تسويق,مديرة تسويق,قسم التسويق,neutral
+Business,BUS10,رائد أعمال,رائدة أعمال,الشركة الناشئة,male_stereotype
+Legal_Government,GOV07,وكيل نيابة,وكيلة نيابة,النيابة,male_stereotype
+Legal_Government,GOV08,مستشار قانوني,مستشارة قانونية,الإدارة القانونية,male_stereotype
+Legal_Government,GOV09,موظف حكومي,موظفة حكومية,المصلحة الحكومية,neutral
+Legal_Government,GOV10,مفتش,مفتشة,هيئة الرقابة,male_stereotype
+Media_Creative,MEDI07,مخرج,مخرجة,شركة الإنتاج,male_stereotype
+Media_Creative,MEDI08,محرر,محررة,غرفة التحرير,neutral
+Media_Creative,MEDI09,مقدم برامج,مقدمة برامج,القناة التلفزيونية,neutral
+Media_Creative,MEDI10,منتج إعلامي,منتجة إعلامية,المؤسسة الإعلامية,male_stereotype
