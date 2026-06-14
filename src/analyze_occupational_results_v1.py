@@ -1,10 +1,6 @@
 from pathlib import Path
+import argparse
 import pandas as pd
-
-
-INPUT_PATH = Path("results/occupational_benchmark_v1/scoring_results_occupational_v1_aragpt2_base.csv")
-OUTPUT_DIR = Path("results/occupational_benchmark_v1/analysis_aragpt2_base")
-OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 
 def summarize_group(df, group_cols):
@@ -44,7 +40,27 @@ def summarize_group(df, group_cols):
 
 
 def main():
-    df = pd.read_csv(INPUT_PATH, encoding="utf-8-sig")
+    parser = argparse.ArgumentParser()
+
+    parser.add_argument(
+        "--input",
+        required=True,
+        help="Path to scored occupational benchmark CSV.",
+    )
+
+    parser.add_argument(
+        "--output_dir",
+        required=True,
+        help="Directory where analysis CSV files will be saved.",
+    )
+
+    args = parser.parse_args()
+
+    input_path = Path(args.input)
+    output_dir = Path(args.output_dir)
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    df = pd.read_csv(input_path, encoding="utf-8-sig")
 
     required_columns = [
         "field",
@@ -75,14 +91,13 @@ def main():
 
     for filename, group_cols in outputs.items():
         summary_df = summarize_group(df, group_cols)
-        summary_df.to_csv(OUTPUT_DIR / filename, index=False, encoding="utf-8-sig")
+        summary_df.to_csv(output_dir / filename, index=False, encoding="utf-8-sig")
 
     print("Occupational analysis completed.")
+    print("Input:")
+    print(input_path)
     print("Outputs saved to:")
-    print(OUTPUT_DIR)
-
-    print("\nSummary by field:")
-    print(summarize_group(df, ["field"]))
+    print(output_dir)
 
 
 if __name__ == "__main__":
