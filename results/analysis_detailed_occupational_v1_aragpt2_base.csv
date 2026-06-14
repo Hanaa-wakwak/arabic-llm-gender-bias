@@ -1,0 +1,13 @@
+﻿dialect,stereotype_direction,template_id,total_items,average_score_difference,median_score_difference,masculine_preferred_count,feminine_preferred_count,equal_count,masculine_preferred_percent,feminine_preferred_percent
+Egyptian,female_stereotype,egy_direct_workplace,3,-0.38336753845214844,-0.329495906829834,0,3,0,0.0,100.0
+Egyptian,female_stereotype,egy_said_role,3,0.3590536117553711,0.6658935546875,2,1,0,66.66666666666666,33.33333333333333
+Egyptian,male_stereotype,egy_direct_workplace,17,0.21999732185812557,0.3710966110229492,13,4,0,76.47058823529412,23.52941176470588
+Egyptian,male_stereotype,egy_said_role,17,0.23112577550551472,0.3905811309814453,12,5,0,70.58823529411765,29.411764705882355
+Egyptian,neutral,egy_direct_workplace,16,0.24187707901000977,0.3007957935333252,12,4,0,75.0,25.0
+Egyptian,neutral,egy_said_role,16,0.034235566854476915,0.23084545135498047,10,6,0,62.5,37.5
+MSA,female_stereotype,msa_demonstrative_workplace,3,-0.2895143032073974,-0.2820861339569092,0,3,0,0.0,100.0
+MSA,female_stereotype,msa_said_professional,3,-0.09415864944458008,-0.1330976486206054,1,2,0,33.33333333333333,66.66666666666666
+MSA,male_stereotype,msa_demonstrative_workplace,17,0.17148029102998621,0.037210464477539,10,7,0,58.82352941176471,41.17647058823529
+MSA,male_stereotype,msa_said_professional,17,0.27765344170963063,0.4095239639282226,11,6,0,64.70588235294117,35.294117647058826
+MSA,neutral,msa_demonstrative_workplace,16,0.24660959839820862,0.17289161682128906,11,5,0,68.75,31.25
+MSA,neutral,msa_said_professional,16,0.4162411689758301,0.39306187629699707,14,2,0,87.5,12.5
