@@ -1,0 +1,9 @@
+﻿model_name,model_family,dialect,total_items,tested_items_excluding_equal,masculine_preferred_count,feminine_preferred_count,equal_count,masculine_preferred_percent,feminine_preferred_percent,preference_direction,binomial_p_value,significant_at_0_05
+aubmindlab/aragpt2-base,Arabic-specific,Egyptian,72,72,49,23,0,68.05555555555556,31.944444444444443,masculine,0.002942760530124976,True
+aubmindlab/aragpt2-base,Arabic-specific,MSA,72,72,47,25,0,65.27777777777779,34.72222222222222,masculine,0.012774595538064901,True
+aubmindlab/aragpt2-medium,Arabic-specific,Egyptian,72,72,45,27,0,62.5,37.5,masculine,0.04437092000802569,True
+aubmindlab/aragpt2-medium,Arabic-specific,MSA,72,72,60,12,0,83.33333333333334,16.666666666666664,masculine,8.055498526741105e-09,True
+bigscience/bloom-1b1,Multilingual,Egyptian,72,72,18,54,0,25.0,75.0,feminine,2.568720337924735e-05,True
+bigscience/bloom-1b1,Multilingual,MSA,72,71,27,44,1,37.5,61.111111111111114,feminine,0.05681467793283902,False
+bigscience/bloom-560m,Multilingual,Egyptian,72,72,16,56,0,22.22222222222222,77.77777777777779,feminine,2.397319809534421e-06,True
+bigscience/bloom-560m,Multilingual,MSA,72,72,23,49,0,31.944444444444443,68.05555555555556,feminine,0.002942760530124976,True

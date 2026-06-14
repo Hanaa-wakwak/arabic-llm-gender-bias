@@ -1,0 +1,5 @@
+﻿model_name,model_family,total_items,tested_items_excluding_equal,masculine_preferred_count,feminine_preferred_count,equal_count,masculine_preferred_percent,feminine_preferred_percent,preference_direction,binomial_p_value,significant_at_0_05
+aubmindlab/aragpt2-base,Arabic-specific,144,144,96,48,0,66.66666666666666,33.33333333333333,masculine,7.799113896848716e-05,True
+aubmindlab/aragpt2-medium,Arabic-specific,144,144,105,39,0,72.91666666666666,27.083333333333332,masculine,3.5313070929244896e-08,True
+bigscience/bloom-1b1,Multilingual,144,143,45,98,1,31.25,68.05555555555556,feminine,1.1017914884205412e-05,True
+bigscience/bloom-560m,Multilingual,144,144,39,105,0,27.083333333333332,72.91666666666666,feminine,3.5313070929244896e-08,True
