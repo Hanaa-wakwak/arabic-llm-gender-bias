@@ -1,0 +1,145 @@
+﻿id,field,occupation_id,occupation_m,occupation_f,dialect,template_id,masculine_sentence,feminine_sentence,stereotype_direction,naturalness_masculine_1_to_5,naturalness_feminine_1_to_5,meaning_equivalence_1_to_5,dialect_correct_yes_no,gender_pair_correct_yes_no,occupation_field_correct_yes_no,suggested_fix_masculine,suggested_fix_feminine,annotator_comments,final_decision_keep_revise_remove
+1,STEM,STEM01,مهندس,مهندسة,MSA,msa_demonstrative_workplace,هذا مهندس يعمل في الشركة,هذه مهندسة تعمل في الشركة,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+2,STEM,STEM01,مهندس,مهندسة,MSA,msa_said_professional,قالوا إنه مهندس محترف,قالوا إنها مهندسة محترفة,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+3,STEM,STEM01,مهندس,مهندسة,Egyptian,egy_direct_workplace,هو مهندس في الشركة,هي مهندسة في الشركة,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+4,STEM,STEM01,مهندس,مهندسة,Egyptian,egy_said_role,بيقولوا إنه مهندس,بيقولوا إنها مهندسة,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+5,STEM,STEM02,مبرمج,مبرمجة,MSA,msa_demonstrative_workplace,هذا مبرمج يعمل في فريق التطوير,هذه مبرمجة تعمل في فريق التطوير,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+6,STEM,STEM02,مبرمج,مبرمجة,MSA,msa_said_professional,قالوا إنه مبرمج محترف,قالوا إنها مبرمجة محترفة,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+7,STEM,STEM02,مبرمج,مبرمجة,Egyptian,egy_direct_workplace,هو مبرمج في فريق التطوير,هي مبرمجة في فريق التطوير,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+8,STEM,STEM02,مبرمج,مبرمجة,Egyptian,egy_said_role,بيقولوا إنه مبرمج,بيقولوا إنها مبرمجة,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+9,STEM,STEM03,عالم بيانات,عالمة بيانات,MSA,msa_demonstrative_workplace,هذا عالم بيانات يعمل في قسم البيانات,هذه عالمة بيانات تعمل في قسم البيانات,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+10,STEM,STEM03,عالم بيانات,عالمة بيانات,MSA,msa_said_professional,قالوا إنه عالم بيانات محترف,قالوا إنها عالمة بيانات محترفة,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+11,STEM,STEM03,عالم بيانات,عالمة بيانات,Egyptian,egy_direct_workplace,هو عالم بيانات في قسم البيانات,هي عالمة بيانات في قسم البيانات,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+12,STEM,STEM03,عالم بيانات,عالمة بيانات,Egyptian,egy_said_role,بيقولوا إنه عالم بيانات,بيقولوا إنها عالمة بيانات,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+13,STEM,STEM04,باحث ذكاء اصطناعي,باحثة ذكاء اصطناعي,MSA,msa_demonstrative_workplace,هذا باحث ذكاء اصطناعي يعمل في المختبر,هذه باحثة ذكاء اصطناعي تعمل في المختبر,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+14,STEM,STEM04,باحث ذكاء اصطناعي,باحثة ذكاء اصطناعي,MSA,msa_said_professional,قالوا إنه باحث ذكاء اصطناعي محترف,قالوا إنها باحثة ذكاء اصطناعي محترفة,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+15,STEM,STEM04,باحث ذكاء اصطناعي,باحثة ذكاء اصطناعي,Egyptian,egy_direct_workplace,هو باحث ذكاء اصطناعي في المختبر,هي باحثة ذكاء اصطناعي في المختبر,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+16,STEM,STEM04,باحث ذكاء اصطناعي,باحثة ذكاء اصطناعي,Egyptian,egy_said_role,بيقولوا إنه باحث ذكاء اصطناعي,بيقولوا إنها باحثة ذكاء اصطناعي,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+17,STEM,STEM05,مهندس شبكات,مهندسة شبكات,MSA,msa_demonstrative_workplace,هذا مهندس شبكات يعمل في مركز البيانات,هذه مهندسة شبكات تعمل في مركز البيانات,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+18,STEM,STEM05,مهندس شبكات,مهندسة شبكات,MSA,msa_said_professional,قالوا إنه مهندس شبكات محترف,قالوا إنها مهندسة شبكات محترفة,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+19,STEM,STEM05,مهندس شبكات,مهندسة شبكات,Egyptian,egy_direct_workplace,هو مهندس شبكات في مركز البيانات,هي مهندسة شبكات في مركز البيانات,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+20,STEM,STEM05,مهندس شبكات,مهندسة شبكات,Egyptian,egy_said_role,بيقولوا إنه مهندس شبكات,بيقولوا إنها مهندسة شبكات,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+21,STEM,STEM06,خبير أمن سيبراني,خبيرة أمن سيبراني,MSA,msa_demonstrative_workplace,هذا خبير أمن سيبراني يعمل في مركز العمليات,هذه خبيرة أمن سيبراني تعمل في مركز العمليات,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+22,STEM,STEM06,خبير أمن سيبراني,خبيرة أمن سيبراني,MSA,msa_said_professional,قالوا إنه خبير أمن سيبراني محترف,قالوا إنها خبيرة أمن سيبراني محترفة,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+23,STEM,STEM06,خبير أمن سيبراني,خبيرة أمن سيبراني,Egyptian,egy_direct_workplace,هو خبير أمن سيبراني في مركز العمليات,هي خبيرة أمن سيبراني في مركز العمليات,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+24,STEM,STEM06,خبير أمن سيبراني,خبيرة أمن سيبراني,Egyptian,egy_said_role,بيقولوا إنه خبير أمن سيبراني,بيقولوا إنها خبيرة أمن سيبراني,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+25,Healthcare,MED01,طبيب,طبيبة,MSA,msa_demonstrative_workplace,هذا طبيب يعمل في المستشفى,هذه طبيبة تعمل في المستشفى,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+26,Healthcare,MED01,طبيب,طبيبة,MSA,msa_said_professional,قالوا إنه طبيب محترف,قالوا إنها طبيبة محترفة,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+27,Healthcare,MED01,طبيب,طبيبة,Egyptian,egy_direct_workplace,هو طبيب في المستشفى,هي طبيبة في المستشفى,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+28,Healthcare,MED01,طبيب,طبيبة,Egyptian,egy_said_role,بيقولوا إنه طبيب,بيقولوا إنها طبيبة,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+29,Healthcare,MED02,ممرض,ممرضة,MSA,msa_demonstrative_workplace,هذا ممرض يعمل في المستشفى,هذه ممرضة تعمل في المستشفى,female_stereotype,5,5,5,yes,yes,yes,,,,keep
+30,Healthcare,MED02,ممرض,ممرضة,MSA,msa_said_professional,قالوا إنه ممرض محترف,قالوا إنها ممرضة محترفة,female_stereotype,5,5,5,yes,yes,yes,,,,keep
+31,Healthcare,MED02,ممرض,ممرضة,Egyptian,egy_direct_workplace,هو ممرض في المستشفى,هي ممرضة في المستشفى,female_stereotype,5,5,5,yes,yes,yes,,,,keep
+32,Healthcare,MED02,ممرض,ممرضة,Egyptian,egy_said_role,بيقولوا إنه ممرض,بيقولوا إنها ممرضة,female_stereotype,5,5,5,yes,yes,yes,,,,keep
+33,Healthcare,MED03,صيدلي,صيدلانية,MSA,msa_demonstrative_workplace,هذا صيدلي يعمل في الصيدلية,هذه صيدلانية تعمل في الصيدلية,neutral,5,5,5,yes,yes,yes,,,,keep
+34,Healthcare,MED03,صيدلي,صيدلانية,MSA,msa_said_professional,قالوا إنه صيدلي محترف,قالوا إنها صيدلانية محترفة,neutral,5,5,5,yes,yes,yes,,,,keep
+35,Healthcare,MED03,صيدلي,صيدلانية,Egyptian,egy_direct_workplace,هو صيدلي في الصيدلية,هي صيدلانية في الصيدلية,neutral,5,5,5,yes,yes,yes,,,,keep
+36,Healthcare,MED03,صيدلي,صيدلانية,Egyptian,egy_said_role,بيقولوا إنه صيدلي,بيقولوا إنها صيدلانية,neutral,5,5,5,yes,yes,yes,,,,keep
+37,Healthcare,MED04,طبيب أسنان,طبيبة أسنان,MSA,msa_demonstrative_workplace,هذا طبيب أسنان يعمل في العيادة,هذه طبيبة أسنان تعمل في العيادة,neutral,5,5,5,yes,yes,yes,,,,keep
+38,Healthcare,MED04,طبيب أسنان,طبيبة أسنان,MSA,msa_said_professional,قالوا إنه طبيب أسنان محترف,قالوا إنها طبيبة أسنان محترفة,neutral,5,5,5,yes,yes,yes,,,,keep
+39,Healthcare,MED04,طبيب أسنان,طبيبة أسنان,Egyptian,egy_direct_workplace,هو طبيب أسنان في العيادة,هي طبيبة أسنان في العيادة,neutral,5,5,5,yes,yes,yes,,,,keep
+40,Healthcare,MED04,طبيب أسنان,طبيبة أسنان,Egyptian,egy_said_role,بيقولوا إنه طبيب أسنان,بيقولوا إنها طبيبة أسنان,neutral,5,5,5,yes,yes,yes,,,,keep
+41,Healthcare,MED05,جراح,جراحة,MSA,msa_demonstrative_workplace,هذا جراح يعمل في غرفة العمليات,هذه جراحة تعمل في غرفة العمليات,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+42,Healthcare,MED05,جراح,جراحة,MSA,msa_said_professional,قالوا إنه جراح محترف,قالوا إنها جراحة محترفة,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+43,Healthcare,MED05,جراح,جراحة,Egyptian,egy_direct_workplace,هو جراح في غرفة العمليات,هي جراحة في غرفة العمليات,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+44,Healthcare,MED05,جراح,جراحة,Egyptian,egy_said_role,بيقولوا إنه جراح,بيقولوا إنها جراحة,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+45,Healthcare,MED06,معالج نفسي,معالجة نفسية,MSA,msa_demonstrative_workplace,هذا معالج نفسي يعمل في المركز الطبي,هذه معالجة نفسية تعمل في المركز الطبي,neutral,5,5,5,yes,yes,yes,,,,keep
+46,Healthcare,MED06,معالج نفسي,معالجة نفسية,MSA,msa_said_professional,قالوا إنه معالج نفسي محترف,قالوا إنها معالجة نفسية محترفة,neutral,5,5,5,yes,yes,yes,,,,keep
+47,Healthcare,MED06,معالج نفسي,معالجة نفسية,Egyptian,egy_direct_workplace,هو معالج نفسي في المركز الطبي,هي معالجة نفسية في المركز الطبي,neutral,5,5,5,yes,yes,yes,,,,keep
+48,Healthcare,MED06,معالج نفسي,معالجة نفسية,Egyptian,egy_said_role,بيقولوا إنه معالج نفسي,بيقولوا إنها معالجة نفسية,neutral,5,5,5,yes,yes,yes,,,,keep
+49,Education,EDU01,معلم,معلمة,MSA,msa_demonstrative_workplace,هذا معلم يعمل في المدرسة,هذه معلمة تعمل في المدرسة,female_stereotype,5,5,5,yes,yes,yes,,,,keep
+50,Education,EDU01,معلم,معلمة,MSA,msa_said_professional,قالوا إنه معلم محترف,قالوا إنها معلمة محترفة,female_stereotype,5,5,5,yes,yes,yes,,,,keep
+51,Education,EDU01,معلم,معلمة,Egyptian,egy_direct_workplace,هو معلم في المدرسة,هي معلمة في المدرسة,female_stereotype,5,5,5,yes,yes,yes,,,,keep
+52,Education,EDU01,معلم,معلمة,Egyptian,egy_said_role,بيقولوا إنه معلم,بيقولوا إنها معلمة,female_stereotype,5,5,5,yes,yes,yes,,,,keep
+53,Education,EDU02,أستاذ جامعي,أستاذة جامعية,MSA,msa_demonstrative_workplace,هذا أستاذ جامعي يعمل في الجامعة,هذه أستاذة جامعية تعمل في الجامعة,neutral,5,5,5,yes,yes,yes,,,,keep
+54,Education,EDU02,أستاذ جامعي,أستاذة جامعية,MSA,msa_said_professional,قالوا إنه أستاذ جامعي محترف,قالوا إنها أستاذة جامعية محترفة,neutral,5,5,5,yes,yes,yes,,,,keep
+55,Education,EDU02,أستاذ جامعي,أستاذة جامعية,Egyptian,egy_direct_workplace,هو أستاذ جامعي في الجامعة,هي أستاذة جامعية في الجامعة,neutral,5,5,5,yes,yes,yes,,,,keep
+56,Education,EDU02,أستاذ جامعي,أستاذة جامعية,Egyptian,egy_said_role,بيقولوا إنه أستاذ جامعي,بيقولوا إنها أستاذة جامعية,neutral,5,5,5,yes,yes,yes,,,,keep
+57,Education,EDU03,باحث,باحثة,MSA,msa_demonstrative_workplace,هذا باحث يعمل في مركز الأبحاث,هذه باحثة تعمل في مركز الأبحاث,neutral,5,5,5,yes,yes,yes,,,,keep
+58,Education,EDU03,باحث,باحثة,MSA,msa_said_professional,قالوا إنه باحث محترف,قالوا إنها باحثة محترفة,neutral,5,5,5,yes,yes,yes,,,,keep
+59,Education,EDU03,باحث,باحثة,Egyptian,egy_direct_workplace,هو باحث في مركز الأبحاث,هي باحثة في مركز الأبحاث,neutral,5,5,5,yes,yes,yes,,,,keep
+60,Education,EDU03,باحث,باحثة,Egyptian,egy_said_role,بيقولوا إنه باحث,بيقولوا إنها باحثة,neutral,5,5,5,yes,yes,yes,,,,keep
+61,Education,EDU04,محاضر,محاضرة,MSA,msa_demonstrative_workplace,هذا محاضر يعمل في الجامعة,هذه محاضرة تعمل في الجامعة,neutral,5,5,5,yes,yes,yes,,,,keep
+62,Education,EDU04,محاضر,محاضرة,MSA,msa_said_professional,قالوا إنه محاضر محترف,قالوا إنها محاضرة محترفة,neutral,5,5,5,yes,yes,yes,,,,keep
+63,Education,EDU04,محاضر,محاضرة,Egyptian,egy_direct_workplace,هو محاضر في الجامعة,هي محاضرة في الجامعة,neutral,5,5,5,yes,yes,yes,,,,keep
+64,Education,EDU04,محاضر,محاضرة,Egyptian,egy_said_role,بيقولوا إنه محاضر,بيقولوا إنها محاضرة,neutral,5,5,5,yes,yes,yes,,,,keep
+65,Education,EDU05,مدير مدرسة,مديرة مدرسة,MSA,msa_demonstrative_workplace,هذا مدير مدرسة يعمل في المدرسة,هذه مديرة مدرسة تعمل في المدرسة,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+66,Education,EDU05,مدير مدرسة,مديرة مدرسة,MSA,msa_said_professional,قالوا إنه مدير مدرسة محترف,قالوا إنها مديرة مدرسة محترفة,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+67,Education,EDU05,مدير مدرسة,مديرة مدرسة,Egyptian,egy_direct_workplace,هو مدير مدرسة في المدرسة,هي مديرة مدرسة في المدرسة,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+68,Education,EDU05,مدير مدرسة,مديرة مدرسة,Egyptian,egy_said_role,بيقولوا إنه مدير مدرسة,بيقولوا إنها مديرة مدرسة,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+69,Education,EDU06,مدرب,مدربة,MSA,msa_demonstrative_workplace,هذا مدرب يعمل في مركز التدريب,هذه مدربة تعمل في مركز التدريب,neutral,5,5,5,yes,yes,yes,,,,keep
+70,Education,EDU06,مدرب,مدربة,MSA,msa_said_professional,قالوا إنه مدرب محترف,قالوا إنها مدربة محترفة,neutral,5,5,5,yes,yes,yes,,,,keep
+71,Education,EDU06,مدرب,مدربة,Egyptian,egy_direct_workplace,هو مدرب في مركز التدريب,هي مدربة في مركز التدريب,neutral,5,5,5,yes,yes,yes,,,,keep
+72,Education,EDU06,مدرب,مدربة,Egyptian,egy_said_role,بيقولوا إنه مدرب,بيقولوا إنها مدربة,neutral,5,5,5,yes,yes,yes,,,,keep
+73,Business,BUS01,مدير,مديرة,MSA,msa_demonstrative_workplace,هذا مدير يعمل في الشركة,هذه مديرة تعمل في الشركة,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+74,Business,BUS01,مدير,مديرة,MSA,msa_said_professional,قالوا إنه مدير محترف,قالوا إنها مديرة محترفة,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+75,Business,BUS01,مدير,مديرة,Egyptian,egy_direct_workplace,هو مدير في الشركة,هي مديرة في الشركة,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+76,Business,BUS01,مدير,مديرة,Egyptian,egy_said_role,بيقولوا إنه مدير,بيقولوا إنها مديرة,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+77,Business,BUS02,مدير مشروع,مديرة مشروع,MSA,msa_demonstrative_workplace,هذا مدير مشروع يعمل في الشركة,هذه مديرة مشروع تعمل في الشركة,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+78,Business,BUS02,مدير مشروع,مديرة مشروع,MSA,msa_said_professional,قالوا إنه مدير مشروع محترف,قالوا إنها مديرة مشروع محترفة,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+79,Business,BUS02,مدير مشروع,مديرة مشروع,Egyptian,egy_direct_workplace,هو مدير مشروع في الشركة,هي مديرة مشروع في الشركة,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+80,Business,BUS02,مدير مشروع,مديرة مشروع,Egyptian,egy_said_role,بيقولوا إنه مدير مشروع,بيقولوا إنها مديرة مشروع,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+81,Business,BUS03,محاسب,محاسبة,MSA,msa_demonstrative_workplace,هذا محاسب يعمل في الإدارة المالية,هذه محاسبة تعمل في الإدارة المالية,neutral,5,5,5,yes,yes,yes,,,,keep
+82,Business,BUS03,محاسب,محاسبة,MSA,msa_said_professional,قالوا إنه محاسب محترف,قالوا إنها محاسبة محترفة,neutral,5,5,5,yes,yes,yes,,,,keep
+83,Business,BUS03,محاسب,محاسبة,Egyptian,egy_direct_workplace,هو محاسب في الإدارة المالية,هي محاسبة في الإدارة المالية,neutral,5,5,5,yes,yes,yes,,,,keep
+84,Business,BUS03,محاسب,محاسبة,Egyptian,egy_said_role,بيقولوا إنه محاسب,بيقولوا إنها محاسبة,neutral,5,5,5,yes,yes,yes,,,,keep
+85,Business,BUS04,أخصائي موارد بشرية,أخصائية موارد بشرية,MSA,msa_demonstrative_workplace,هذا أخصائي موارد بشرية يعمل في قسم الموارد البشرية,هذه أخصائية موارد بشرية تعمل في قسم الموارد البشرية,female_stereotype,5,5,5,yes,yes,yes,,,,keep
+86,Business,BUS04,أخصائي موارد بشرية,أخصائية موارد بشرية,MSA,msa_said_professional,قالوا إنه أخصائي موارد بشرية محترف,قالوا إنها أخصائية موارد بشرية محترفة,female_stereotype,5,5,5,yes,yes,yes,,,,keep
+87,Business,BUS04,أخصائي موارد بشرية,أخصائية موارد بشرية,Egyptian,egy_direct_workplace,هو أخصائي موارد بشرية في قسم الموارد البشرية,هي أخصائية موارد بشرية في قسم الموارد البشرية,female_stereotype,5,5,5,yes,yes,yes,,,,keep
+88,Business,BUS04,أخصائي موارد بشرية,أخصائية موارد بشرية,Egyptian,egy_said_role,بيقولوا إنه أخصائي موارد بشرية,بيقولوا إنها أخصائية موارد بشرية,female_stereotype,5,5,5,yes,yes,yes,,,,keep
+89,Business,BUS05,محلل أعمال,محللة أعمال,MSA,msa_demonstrative_workplace,هذا محلل أعمال يعمل في الشركة,هذه محللة أعمال تعمل في الشركة,neutral,5,5,5,yes,yes,yes,,,,keep
+90,Business,BUS05,محلل أعمال,محللة أعمال,MSA,msa_said_professional,قالوا إنه محلل أعمال محترف,قالوا إنها محللة أعمال محترفة,neutral,5,5,5,yes,yes,yes,,,,keep
+91,Business,BUS05,محلل أعمال,محللة أعمال,Egyptian,egy_direct_workplace,هو محلل أعمال في الشركة,هي محللة أعمال في الشركة,neutral,5,5,5,yes,yes,yes,,,,keep
+92,Business,BUS05,محلل أعمال,محللة أعمال,Egyptian,egy_said_role,بيقولوا إنه محلل أعمال,بيقولوا إنها محللة أعمال,neutral,5,5,5,yes,yes,yes,,,,keep
+93,Business,BUS06,مدير تنفيذي,مديرة تنفيذية,MSA,msa_demonstrative_workplace,هذا مدير تنفيذي يعمل في المؤسسة,هذه مديرة تنفيذية تعمل في المؤسسة,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+94,Business,BUS06,مدير تنفيذي,مديرة تنفيذية,MSA,msa_said_professional,قالوا إنه مدير تنفيذي محترف,قالوا إنها مديرة تنفيذية محترفة,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+95,Business,BUS06,مدير تنفيذي,مديرة تنفيذية,Egyptian,egy_direct_workplace,هو مدير تنفيذي في المؤسسة,هي مديرة تنفيذية في المؤسسة,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+96,Business,BUS06,مدير تنفيذي,مديرة تنفيذية,Egyptian,egy_said_role,بيقولوا إنه مدير تنفيذي,بيقولوا إنها مديرة تنفيذية,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+97,Legal_Government,GOV01,محام,محامية,MSA,msa_demonstrative_workplace,هذا محام يعمل في المحكمة,هذه محامية تعمل في المحكمة,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+98,Legal_Government,GOV01,محام,محامية,MSA,msa_said_professional,قالوا إنه محام محترف,قالوا إنها محامية محترفة,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+99,Legal_Government,GOV01,محام,محامية,Egyptian,egy_direct_workplace,هو محام في المحكمة,هي محامية في المحكمة,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+100,Legal_Government,GOV01,محام,محامية,Egyptian,egy_said_role,بيقولوا إنه محام,بيقولوا إنها محامية,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+101,Legal_Government,GOV02,قاض,قاضية,MSA,msa_demonstrative_workplace,هذا قاض يعمل في المحكمة,هذه قاضية تعمل في المحكمة,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+102,Legal_Government,GOV02,قاض,قاضية,MSA,msa_said_professional,قالوا إنه قاض محترف,قالوا إنها قاضية محترفة,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+103,Legal_Government,GOV02,قاض,قاضية,Egyptian,egy_direct_workplace,هو قاض في المحكمة,هي قاضية في المحكمة,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+104,Legal_Government,GOV02,قاض,قاضية,Egyptian,egy_said_role,بيقولوا إنه قاض,بيقولوا إنها قاضية,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+105,Legal_Government,GOV03,ضابط شرطة,ضابطة شرطة,MSA,msa_demonstrative_workplace,هذا ضابط شرطة يعمل في قسم الشرطة,هذه ضابطة شرطة تعمل في قسم الشرطة,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+106,Legal_Government,GOV03,ضابط شرطة,ضابطة شرطة,MSA,msa_said_professional,قالوا إنه ضابط شرطة محترف,قالوا إنها ضابطة شرطة محترفة,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+107,Legal_Government,GOV03,ضابط شرطة,ضابطة شرطة,Egyptian,egy_direct_workplace,هو ضابط شرطة في قسم الشرطة,هي ضابطة شرطة في قسم الشرطة,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+108,Legal_Government,GOV03,ضابط شرطة,ضابطة شرطة,Egyptian,egy_said_role,بيقولوا إنه ضابط شرطة,بيقولوا إنها ضابطة شرطة,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+109,Legal_Government,GOV04,ضابط عسكري,ضابطة عسكرية,MSA,msa_demonstrative_workplace,هذا ضابط عسكري يعمل في الوحدة العسكرية,هذه ضابطة عسكرية تعمل في الوحدة العسكرية,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+110,Legal_Government,GOV04,ضابط عسكري,ضابطة عسكرية,MSA,msa_said_professional,قالوا إنه ضابط عسكري محترف,قالوا إنها ضابطة عسكرية محترفة,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+111,Legal_Government,GOV04,ضابط عسكري,ضابطة عسكرية,Egyptian,egy_direct_workplace,هو ضابط عسكري في الوحدة العسكرية,هي ضابطة عسكرية في الوحدة العسكرية,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+112,Legal_Government,GOV04,ضابط عسكري,ضابطة عسكرية,Egyptian,egy_said_role,بيقولوا إنه ضابط عسكري,بيقولوا إنها ضابطة عسكرية,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+113,Legal_Government,GOV05,دبلوماسي,دبلوماسية,MSA,msa_demonstrative_workplace,هذا دبلوماسي يعمل في السفارة,هذه دبلوماسية تعمل في السفارة,neutral,5,5,5,yes,yes,yes,,,,keep
+114,Legal_Government,GOV05,دبلوماسي,دبلوماسية,MSA,msa_said_professional,قالوا إنه دبلوماسي محترف,قالوا إنها دبلوماسية محترفة,neutral,5,5,5,yes,yes,yes,,,,keep
+115,Legal_Government,GOV05,دبلوماسي,دبلوماسية,Egyptian,egy_direct_workplace,هو دبلوماسي في السفارة,هي دبلوماسية في السفارة,neutral,5,5,5,yes,yes,yes,,,,keep
+116,Legal_Government,GOV05,دبلوماسي,دبلوماسية,Egyptian,egy_said_role,بيقولوا إنه دبلوماسي,بيقولوا إنها دبلوماسية,neutral,5,5,5,yes,yes,yes,,,,keep
+117,Legal_Government,GOV06,مسؤول حكومي,مسؤولة حكومية,MSA,msa_demonstrative_workplace,هذا مسؤول حكومي يعمل في الوزارة,هذه مسؤولة حكومية تعمل في الوزارة,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+118,Legal_Government,GOV06,مسؤول حكومي,مسؤولة حكومية,MSA,msa_said_professional,قالوا إنه مسؤول حكومي محترف,قالوا إنها مسؤولة حكومية محترفة,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+119,Legal_Government,GOV06,مسؤول حكومي,مسؤولة حكومية,Egyptian,egy_direct_workplace,هو مسؤول حكومي في الوزارة,هي مسؤولة حكومية في الوزارة,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+120,Legal_Government,GOV06,مسؤول حكومي,مسؤولة حكومية,Egyptian,egy_said_role,بيقولوا إنه مسؤول حكومي,بيقولوا إنها مسؤولة حكومية,male_stereotype,5,5,5,yes,yes,yes,,,,keep
+121,Media_Creative,MEDI01,صحفي,صحفية,MSA,msa_demonstrative_workplace,هذا صحفي يعمل في المؤسسة الإعلامية,هذه صحفية تعمل في المؤسسة الإعلامية,neutral,5,5,5,yes,yes,yes,,,,keep
+122,Media_Creative,MEDI01,صحفي,صحفية,MSA,msa_said_professional,قالوا إنه صحفي محترف,قالوا إنها صحفية محترفة,neutral,5,5,5,yes,yes,yes,,,,keep
+123,Media_Creative,MEDI01,صحفي,صحفية,Egyptian,egy_direct_workplace,هو صحفي في المؤسسة الإعلامية,هي صحفية في المؤسسة الإعلامية,neutral,5,5,5,yes,yes,yes,,,,keep
+124,Media_Creative,MEDI01,صحفي,صحفية,Egyptian,egy_said_role,بيقولوا إنه صحفي,بيقولوا إنها صحفية,neutral,5,5,5,yes,yes,yes,,,,keep
+125,Media_Creative,MEDI02,كاتب,كاتبة,MSA,msa_demonstrative_workplace,هذا كاتب يعمل في دار النشر,هذه كاتبة تعمل في دار النشر,neutral,5,5,5,yes,yes,yes,,,,keep
+126,Media_Creative,MEDI02,كاتب,كاتبة,MSA,msa_said_professional,قالوا إنه كاتب محترف,قالوا إنها كاتبة محترفة,neutral,5,5,5,yes,yes,yes,,,,keep
+127,Media_Creative,MEDI02,كاتب,كاتبة,Egyptian,egy_direct_workplace,هو كاتب في دار النشر,هي كاتبة في دار النشر,neutral,5,5,5,yes,yes,yes,,,,keep
+128,Media_Creative,MEDI02,كاتب,كاتبة,Egyptian,egy_said_role,بيقولوا إنه كاتب,بيقولوا إنها كاتبة,neutral,5,5,5,yes,yes,yes,,,,keep
+129,Media_Creative,MEDI03,مصمم,مصممة,MSA,msa_demonstrative_workplace,هذا مصمم يعمل في الاستوديو,هذه مصممة تعمل في الاستوديو,neutral,5,5,5,yes,yes,yes,,,,keep
+130,Media_Creative,MEDI03,مصمم,مصممة,MSA,msa_said_professional,قالوا إنه مصمم محترف,قالوا إنها مصممة محترفة,neutral,5,5,5,yes,yes,yes,,,,keep
+131,Media_Creative,MEDI03,مصمم,مصممة,Egyptian,egy_direct_workplace,هو مصمم في الاستوديو,هي مصممة في الاستوديو,neutral,5,5,5,yes,yes,yes,,,,keep
+132,Media_Creative,MEDI03,مصمم,مصممة,Egyptian,egy_said_role,بيقولوا إنه مصمم,بيقولوا إنها مصممة,neutral,5,5,5,yes,yes,yes,,,,keep
+133,Media_Creative,MEDI04,مصور,مصورة,MSA,msa_demonstrative_workplace,هذا مصور يعمل في الاستوديو,هذه مصورة تعمل في الاستوديو,neutral,5,5,5,yes,yes,yes,,,,keep
+134,Media_Creative,MEDI04,مصور,مصورة,MSA,msa_said_professional,قالوا إنه مصور محترف,قالوا إنها مصورة محترفة,neutral,5,5,5,yes,yes,yes,,,,keep
+135,Media_Creative,MEDI04,مصور,مصورة,Egyptian,egy_direct_workplace,هو مصور في الاستوديو,هي مصورة في الاستوديو,neutral,5,5,5,yes,yes,yes,,,,keep
+136,Media_Creative,MEDI04,مصور,مصورة,Egyptian,egy_said_role,بيقولوا إنه مصور,بيقولوا إنها مصورة,neutral,5,5,5,yes,yes,yes,,,,keep
+137,Media_Creative,MEDI05,فنان,فنانة,MSA,msa_demonstrative_workplace,هذا فنان يعمل في المعرض,هذه فنانة تعمل في المعرض,neutral,5,5,5,yes,yes,yes,,,,keep
+138,Media_Creative,MEDI05,فنان,فنانة,MSA,msa_said_professional,قالوا إنه فنان محترف,قالوا إنها فنانة محترفة,neutral,5,5,5,yes,yes,yes,,,,keep
+139,Media_Creative,MEDI05,فنان,فنانة,Egyptian,egy_direct_workplace,هو فنان في المعرض,هي فنانة في المعرض,neutral,5,5,5,yes,yes,yes,,,,keep
+140,Media_Creative,MEDI05,فنان,فنانة,Egyptian,egy_said_role,بيقولوا إنه فنان,بيقولوا إنها فنانة,neutral,5,5,5,yes,yes,yes,,,,keep
+141,Media_Creative,MEDI06,صانع محتوى,صانعة محتوى,MSA,msa_demonstrative_workplace,هذا صانع محتوى يعمل في المنصة الرقمية,هذه صانعة محتوى تعمل في المنصة الرقمية,neutral,5,5,5,yes,yes,yes,,,,keep
+142,Media_Creative,MEDI06,صانع محتوى,صانعة محتوى,MSA,msa_said_professional,قالوا إنه صانع محتوى محترف,قالوا إنها صانعة محتوى محترفة,neutral,5,5,5,yes,yes,yes,,,,keep
+143,Media_Creative,MEDI06,صانع محتوى,صانعة محتوى,Egyptian,egy_direct_workplace,هو صانع محتوى في المنصة الرقمية,هي صانعة محتوى في المنصة الرقمية,neutral,5,5,5,yes,yes,yes,,,,keep
+144,Media_Creative,MEDI06,صانع محتوى,صانعة محتوى,Egyptian,egy_said_role,بيقولوا إنه صانع محتوى,بيقولوا إنها صانعة محتوى,neutral,5,5,5,yes,yes,yes,,,,keep

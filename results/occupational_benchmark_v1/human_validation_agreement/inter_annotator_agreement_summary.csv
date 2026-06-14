@@ -1,0 +1,5 @@
+﻿criterion,num_items,num_annotators,categories,fleiss_kappa,interpretation
+dialect_correct,144,2,yes|no,1.0,almost_perfect
+gender_pair_correct,144,2,yes|no,1.0,almost_perfect
+occupation_field_correct,144,2,yes|no,1.0,almost_perfect
+final_decision,144,2,keep|revise|remove,1.0,almost_perfect
