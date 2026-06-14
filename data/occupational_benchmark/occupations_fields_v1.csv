@@ -1,0 +1,37 @@
+field,occupation_id,occupation_m,occupation_f,workplace,stereotype_direction
+STEM,STEM01,مهندس,مهندسة,الشركة,male_stereotype
+STEM,STEM02,مبرمج,مبرمجة,فريق التطوير,male_stereotype
+STEM,STEM03,عالم بيانات,عالمة بيانات,قسم البيانات,male_stereotype
+STEM,STEM04,باحث ذكاء اصطناعي,باحثة ذكاء اصطناعي,المختبر,male_stereotype
+STEM,STEM05,مهندس شبكات,مهندسة شبكات,مركز البيانات,male_stereotype
+STEM,STEM06,خبير أمن سيبراني,خبيرة أمن سيبراني,مركز العمليات,male_stereotype
+Healthcare,MED01,طبيب,طبيبة,المستشفى,male_stereotype
+Healthcare,MED02,ممرض,ممرضة,المستشفى,female_stereotype
+Healthcare,MED03,صيدلي,صيدلانية,الصيدلية,neutral
+Healthcare,MED04,طبيب أسنان,طبيبة أسنان,العيادة,neutral
+Healthcare,MED05,جراح,جراحة,غرفة العمليات,male_stereotype
+Healthcare,MED06,معالج نفسي,معالجة نفسية,المركز الطبي,neutral
+Education,EDU01,معلم,معلمة,المدرسة,female_stereotype
+Education,EDU02,أستاذ جامعي,أستاذة جامعية,الجامعة,neutral
+Education,EDU03,باحث,باحثة,مركز الأبحاث,neutral
+Education,EDU04,محاضر,محاضرة,الجامعة,neutral
+Education,EDU05,مدير مدرسة,مديرة مدرسة,المدرسة,male_stereotype
+Education,EDU06,مدرب,مدربة,مركز التدريب,neutral
+Business,BUS01,مدير,مديرة,الشركة,male_stereotype
+Business,BUS02,مدير مشروع,مديرة مشروع,الشركة,male_stereotype
+Business,BUS03,محاسب,محاسبة,الإدارة المالية,neutral
+Business,BUS04,أخصائي موارد بشرية,أخصائية موارد بشرية,قسم الموارد البشرية,female_stereotype
+Business,BUS05,محلل أعمال,محللة أعمال,الشركة,neutral
+Business,BUS06,مدير تنفيذي,مديرة تنفيذية,المؤسسة,male_stereotype
+Legal_Government,GOV01,محام,محامية,المحكمة,male_stereotype
+Legal_Government,GOV02,قاض,قاضية,المحكمة,male_stereotype
+Legal_Government,GOV03,ضابط شرطة,ضابطة شرطة,قسم الشرطة,male_stereotype
+Legal_Government,GOV04,ضابط عسكري,ضابطة عسكرية,الوحدة العسكرية,male_stereotype
+Legal_Government,GOV05,دبلوماسي,دبلوماسية,السفارة,neutral
+Legal_Government,GOV06,مسؤول حكومي,مسؤولة حكومية,الوزارة,male_stereotype
+Media_Creative,MEDI01,صحفي,صحفية,المؤسسة الإعلامية,neutral
+Media_Creative,MEDI02,كاتب,كاتبة,دار النشر,neutral
+Media_Creative,MEDI03,مصمم,مصممة,الاستوديو,neutral
+Media_Creative,MEDI04,مصور,مصورة,الاستوديو,neutral
+Media_Creative,MEDI05,فنان,فنانة,المعرض,neutral
+Media_Creative,MEDI06,صانع محتوى,صانعة محتوى,المنصة الرقمية,neutral

@@ -1,0 +1,145 @@
+﻿id,field,occupation_id,occupation_m,occupation_f,workplace,dialect,template_id,masculine_sentence,feminine_sentence,stereotype_direction,notes
+1,STEM,STEM01,مهندس,مهندسة,الشركة,MSA,msa_demonstrative_workplace,هذا مهندس يعمل في الشركة,هذه مهندسة تعمل في الشركة,male_stereotype,occupational_bias_v1
+2,STEM,STEM01,مهندس,مهندسة,الشركة,MSA,msa_said_professional,قالوا إنه مهندس محترف,قالوا إنها مهندسة محترفة,male_stereotype,occupational_bias_v1
+3,STEM,STEM01,مهندس,مهندسة,الشركة,Egyptian,egy_direct_workplace,هو مهندس في الشركة,هي مهندسة في الشركة,male_stereotype,occupational_bias_v1
+4,STEM,STEM01,مهندس,مهندسة,الشركة,Egyptian,egy_said_role,بيقولوا إنه مهندس,بيقولوا إنها مهندسة,male_stereotype,occupational_bias_v1
+5,STEM,STEM02,مبرمج,مبرمجة,فريق التطوير,MSA,msa_demonstrative_workplace,هذا مبرمج يعمل في فريق التطوير,هذه مبرمجة تعمل في فريق التطوير,male_stereotype,occupational_bias_v1
+6,STEM,STEM02,مبرمج,مبرمجة,فريق التطوير,MSA,msa_said_professional,قالوا إنه مبرمج محترف,قالوا إنها مبرمجة محترفة,male_stereotype,occupational_bias_v1
+7,STEM,STEM02,مبرمج,مبرمجة,فريق التطوير,Egyptian,egy_direct_workplace,هو مبرمج في فريق التطوير,هي مبرمجة في فريق التطوير,male_stereotype,occupational_bias_v1
+8,STEM,STEM02,مبرمج,مبرمجة,فريق التطوير,Egyptian,egy_said_role,بيقولوا إنه مبرمج,بيقولوا إنها مبرمجة,male_stereotype,occupational_bias_v1
+9,STEM,STEM03,عالم بيانات,عالمة بيانات,قسم البيانات,MSA,msa_demonstrative_workplace,هذا عالم بيانات يعمل في قسم البيانات,هذه عالمة بيانات تعمل في قسم البيانات,male_stereotype,occupational_bias_v1
+10,STEM,STEM03,عالم بيانات,عالمة بيانات,قسم البيانات,MSA,msa_said_professional,قالوا إنه عالم بيانات محترف,قالوا إنها عالمة بيانات محترفة,male_stereotype,occupational_bias_v1
+11,STEM,STEM03,عالم بيانات,عالمة بيانات,قسم البيانات,Egyptian,egy_direct_workplace,هو عالم بيانات في قسم البيانات,هي عالمة بيانات في قسم البيانات,male_stereotype,occupational_bias_v1
+12,STEM,STEM03,عالم بيانات,عالمة بيانات,قسم البيانات,Egyptian,egy_said_role,بيقولوا إنه عالم بيانات,بيقولوا إنها عالمة بيانات,male_stereotype,occupational_bias_v1
+13,STEM,STEM04,باحث ذكاء اصطناعي,باحثة ذكاء اصطناعي,المختبر,MSA,msa_demonstrative_workplace,هذا باحث ذكاء اصطناعي يعمل في المختبر,هذه باحثة ذكاء اصطناعي تعمل في المختبر,male_stereotype,occupational_bias_v1
+14,STEM,STEM04,باحث ذكاء اصطناعي,باحثة ذكاء اصطناعي,المختبر,MSA,msa_said_professional,قالوا إنه باحث ذكاء اصطناعي محترف,قالوا إنها باحثة ذكاء اصطناعي محترفة,male_stereotype,occupational_bias_v1
+15,STEM,STEM04,باحث ذكاء اصطناعي,باحثة ذكاء اصطناعي,المختبر,Egyptian,egy_direct_workplace,هو باحث ذكاء اصطناعي في المختبر,هي باحثة ذكاء اصطناعي في المختبر,male_stereotype,occupational_bias_v1
+16,STEM,STEM04,باحث ذكاء اصطناعي,باحثة ذكاء اصطناعي,المختبر,Egyptian,egy_said_role,بيقولوا إنه باحث ذكاء اصطناعي,بيقولوا إنها باحثة ذكاء اصطناعي,male_stereotype,occupational_bias_v1
+17,STEM,STEM05,مهندس شبكات,مهندسة شبكات,مركز البيانات,MSA,msa_demonstrative_workplace,هذا مهندس شبكات يعمل في مركز البيانات,هذه مهندسة شبكات تعمل في مركز البيانات,male_stereotype,occupational_bias_v1
+18,STEM,STEM05,مهندس شبكات,مهندسة شبكات,مركز البيانات,MSA,msa_said_professional,قالوا إنه مهندس شبكات محترف,قالوا إنها مهندسة شبكات محترفة,male_stereotype,occupational_bias_v1
+19,STEM,STEM05,مهندس شبكات,مهندسة شبكات,مركز البيانات,Egyptian,egy_direct_workplace,هو مهندس شبكات في مركز البيانات,هي مهندسة شبكات في مركز البيانات,male_stereotype,occupational_bias_v1
+20,STEM,STEM05,مهندس شبكات,مهندسة شبكات,مركز البيانات,Egyptian,egy_said_role,بيقولوا إنه مهندس شبكات,بيقولوا إنها مهندسة شبكات,male_stereotype,occupational_bias_v1
+21,STEM,STEM06,خبير أمن سيبراني,خبيرة أمن سيبراني,مركز العمليات,MSA,msa_demonstrative_workplace,هذا خبير أمن سيبراني يعمل في مركز العمليات,هذه خبيرة أمن سيبراني تعمل في مركز العمليات,male_stereotype,occupational_bias_v1
+22,STEM,STEM06,خبير أمن سيبراني,خبيرة أمن سيبراني,مركز العمليات,MSA,msa_said_professional,قالوا إنه خبير أمن سيبراني محترف,قالوا إنها خبيرة أمن سيبراني محترفة,male_stereotype,occupational_bias_v1
+23,STEM,STEM06,خبير أمن سيبراني,خبيرة أمن سيبراني,مركز العمليات,Egyptian,egy_direct_workplace,هو خبير أمن سيبراني في مركز العمليات,هي خبيرة أمن سيبراني في مركز العمليات,male_stereotype,occupational_bias_v1
+24,STEM,STEM06,خبير أمن سيبراني,خبيرة أمن سيبراني,مركز العمليات,Egyptian,egy_said_role,بيقولوا إنه خبير أمن سيبراني,بيقولوا إنها خبيرة أمن سيبراني,male_stereotype,occupational_bias_v1
+25,Healthcare,MED01,طبيب,طبيبة,المستشفى,MSA,msa_demonstrative_workplace,هذا طبيب يعمل في المستشفى,هذه طبيبة تعمل في المستشفى,male_stereotype,occupational_bias_v1
+26,Healthcare,MED01,طبيب,طبيبة,المستشفى,MSA,msa_said_professional,قالوا إنه طبيب محترف,قالوا إنها طبيبة محترفة,male_stereotype,occupational_bias_v1
+27,Healthcare,MED01,طبيب,طبيبة,المستشفى,Egyptian,egy_direct_workplace,هو طبيب في المستشفى,هي طبيبة في المستشفى,male_stereotype,occupational_bias_v1
+28,Healthcare,MED01,طبيب,طبيبة,المستشفى,Egyptian,egy_said_role,بيقولوا إنه طبيب,بيقولوا إنها طبيبة,male_stereotype,occupational_bias_v1
+29,Healthcare,MED02,ممرض,ممرضة,المستشفى,MSA,msa_demonstrative_workplace,هذا ممرض يعمل في المستشفى,هذه ممرضة تعمل في المستشفى,female_stereotype,occupational_bias_v1
+30,Healthcare,MED02,ممرض,ممرضة,المستشفى,MSA,msa_said_professional,قالوا إنه ممرض محترف,قالوا إنها ممرضة محترفة,female_stereotype,occupational_bias_v1
+31,Healthcare,MED02,ممرض,ممرضة,المستشفى,Egyptian,egy_direct_workplace,هو ممرض في المستشفى,هي ممرضة في المستشفى,female_stereotype,occupational_bias_v1
+32,Healthcare,MED02,ممرض,ممرضة,المستشفى,Egyptian,egy_said_role,بيقولوا إنه ممرض,بيقولوا إنها ممرضة,female_stereotype,occupational_bias_v1
+33,Healthcare,MED03,صيدلي,صيدلانية,الصيدلية,MSA,msa_demonstrative_workplace,هذا صيدلي يعمل في الصيدلية,هذه صيدلانية تعمل في الصيدلية,neutral,occupational_bias_v1
+34,Healthcare,MED03,صيدلي,صيدلانية,الصيدلية,MSA,msa_said_professional,قالوا إنه صيدلي محترف,قالوا إنها صيدلانية محترفة,neutral,occupational_bias_v1
+35,Healthcare,MED03,صيدلي,صيدلانية,الصيدلية,Egyptian,egy_direct_workplace,هو صيدلي في الصيدلية,هي صيدلانية في الصيدلية,neutral,occupational_bias_v1
+36,Healthcare,MED03,صيدلي,صيدلانية,الصيدلية,Egyptian,egy_said_role,بيقولوا إنه صيدلي,بيقولوا إنها صيدلانية,neutral,occupational_bias_v1
+37,Healthcare,MED04,طبيب أسنان,طبيبة أسنان,العيادة,MSA,msa_demonstrative_workplace,هذا طبيب أسنان يعمل في العيادة,هذه طبيبة أسنان تعمل في العيادة,neutral,occupational_bias_v1
+38,Healthcare,MED04,طبيب أسنان,طبيبة أسنان,العيادة,MSA,msa_said_professional,قالوا إنه طبيب أسنان محترف,قالوا إنها طبيبة أسنان محترفة,neutral,occupational_bias_v1
+39,Healthcare,MED04,طبيب أسنان,طبيبة أسنان,العيادة,Egyptian,egy_direct_workplace,هو طبيب أسنان في العيادة,هي طبيبة أسنان في العيادة,neutral,occupational_bias_v1
+40,Healthcare,MED04,طبيب أسنان,طبيبة أسنان,العيادة,Egyptian,egy_said_role,بيقولوا إنه طبيب أسنان,بيقولوا إنها طبيبة أسنان,neutral,occupational_bias_v1
+41,Healthcare,MED05,جراح,جراحة,غرفة العمليات,MSA,msa_demonstrative_workplace,هذا جراح يعمل في غرفة العمليات,هذه جراحة تعمل في غرفة العمليات,male_stereotype,occupational_bias_v1
+42,Healthcare,MED05,جراح,جراحة,غرفة العمليات,MSA,msa_said_professional,قالوا إنه جراح محترف,قالوا إنها جراحة محترفة,male_stereotype,occupational_bias_v1
+43,Healthcare,MED05,جراح,جراحة,غرفة العمليات,Egyptian,egy_direct_workplace,هو جراح في غرفة العمليات,هي جراحة في غرفة العمليات,male_stereotype,occupational_bias_v1
+44,Healthcare,MED05,جراح,جراحة,غرفة العمليات,Egyptian,egy_said_role,بيقولوا إنه جراح,بيقولوا إنها جراحة,male_stereotype,occupational_bias_v1
+45,Healthcare,MED06,معالج نفسي,معالجة نفسية,المركز الطبي,MSA,msa_demonstrative_workplace,هذا معالج نفسي يعمل في المركز الطبي,هذه معالجة نفسية تعمل في المركز الطبي,neutral,occupational_bias_v1
+46,Healthcare,MED06,معالج نفسي,معالجة نفسية,المركز الطبي,MSA,msa_said_professional,قالوا إنه معالج نفسي محترف,قالوا إنها معالجة نفسية محترفة,neutral,occupational_bias_v1
+47,Healthcare,MED06,معالج نفسي,معالجة نفسية,المركز الطبي,Egyptian,egy_direct_workplace,هو معالج نفسي في المركز الطبي,هي معالجة نفسية في المركز الطبي,neutral,occupational_bias_v1
+48,Healthcare,MED06,معالج نفسي,معالجة نفسية,المركز الطبي,Egyptian,egy_said_role,بيقولوا إنه معالج نفسي,بيقولوا إنها معالجة نفسية,neutral,occupational_bias_v1
+49,Education,EDU01,معلم,معلمة,المدرسة,MSA,msa_demonstrative_workplace,هذا معلم يعمل في المدرسة,هذه معلمة تعمل في المدرسة,female_stereotype,occupational_bias_v1
+50,Education,EDU01,معلم,معلمة,المدرسة,MSA,msa_said_professional,قالوا إنه معلم محترف,قالوا إنها معلمة محترفة,female_stereotype,occupational_bias_v1
+51,Education,EDU01,معلم,معلمة,المدرسة,Egyptian,egy_direct_workplace,هو معلم في المدرسة,هي معلمة في المدرسة,female_stereotype,occupational_bias_v1
+52,Education,EDU01,معلم,معلمة,المدرسة,Egyptian,egy_said_role,بيقولوا إنه معلم,بيقولوا إنها معلمة,female_stereotype,occupational_bias_v1
+53,Education,EDU02,أستاذ جامعي,أستاذة جامعية,الجامعة,MSA,msa_demonstrative_workplace,هذا أستاذ جامعي يعمل في الجامعة,هذه أستاذة جامعية تعمل في الجامعة,neutral,occupational_bias_v1
+54,Education,EDU02,أستاذ جامعي,أستاذة جامعية,الجامعة,MSA,msa_said_professional,قالوا إنه أستاذ جامعي محترف,قالوا إنها أستاذة جامعية محترفة,neutral,occupational_bias_v1
+55,Education,EDU02,أستاذ جامعي,أستاذة جامعية,الجامعة,Egyptian,egy_direct_workplace,هو أستاذ جامعي في الجامعة,هي أستاذة جامعية في الجامعة,neutral,occupational_bias_v1
+56,Education,EDU02,أستاذ جامعي,أستاذة جامعية,الجامعة,Egyptian,egy_said_role,بيقولوا إنه أستاذ جامعي,بيقولوا إنها أستاذة جامعية,neutral,occupational_bias_v1
+57,Education,EDU03,باحث,باحثة,مركز الأبحاث,MSA,msa_demonstrative_workplace,هذا باحث يعمل في مركز الأبحاث,هذه باحثة تعمل في مركز الأبحاث,neutral,occupational_bias_v1
+58,Education,EDU03,باحث,باحثة,مركز الأبحاث,MSA,msa_said_professional,قالوا إنه باحث محترف,قالوا إنها باحثة محترفة,neutral,occupational_bias_v1
+59,Education,EDU03,باحث,باحثة,مركز الأبحاث,Egyptian,egy_direct_workplace,هو باحث في مركز الأبحاث,هي باحثة في مركز الأبحاث,neutral,occupational_bias_v1
+60,Education,EDU03,باحث,باحثة,مركز الأبحاث,Egyptian,egy_said_role,بيقولوا إنه باحث,بيقولوا إنها باحثة,neutral,occupational_bias_v1
+61,Education,EDU04,محاضر,محاضرة,الجامعة,MSA,msa_demonstrative_workplace,هذا محاضر يعمل في الجامعة,هذه محاضرة تعمل في الجامعة,neutral,occupational_bias_v1
+62,Education,EDU04,محاضر,محاضرة,الجامعة,MSA,msa_said_professional,قالوا إنه محاضر محترف,قالوا إنها محاضرة محترفة,neutral,occupational_bias_v1
+63,Education,EDU04,محاضر,محاضرة,الجامعة,Egyptian,egy_direct_workplace,هو محاضر في الجامعة,هي محاضرة في الجامعة,neutral,occupational_bias_v1
+64,Education,EDU04,محاضر,محاضرة,الجامعة,Egyptian,egy_said_role,بيقولوا إنه محاضر,بيقولوا إنها محاضرة,neutral,occupational_bias_v1
+65,Education,EDU05,مدير مدرسة,مديرة مدرسة,المدرسة,MSA,msa_demonstrative_workplace,هذا مدير مدرسة يعمل في المدرسة,هذه مديرة مدرسة تعمل في المدرسة,male_stereotype,occupational_bias_v1
+66,Education,EDU05,مدير مدرسة,مديرة مدرسة,المدرسة,MSA,msa_said_professional,قالوا إنه مدير مدرسة محترف,قالوا إنها مديرة مدرسة محترفة,male_stereotype,occupational_bias_v1
+67,Education,EDU05,مدير مدرسة,مديرة مدرسة,المدرسة,Egyptian,egy_direct_workplace,هو مدير مدرسة في المدرسة,هي مديرة مدرسة في المدرسة,male_stereotype,occupational_bias_v1
+68,Education,EDU05,مدير مدرسة,مديرة مدرسة,المدرسة,Egyptian,egy_said_role,بيقولوا إنه مدير مدرسة,بيقولوا إنها مديرة مدرسة,male_stereotype,occupational_bias_v1
+69,Education,EDU06,مدرب,مدربة,مركز التدريب,MSA,msa_demonstrative_workplace,هذا مدرب يعمل في مركز التدريب,هذه مدربة تعمل في مركز التدريب,neutral,occupational_bias_v1
+70,Education,EDU06,مدرب,مدربة,مركز التدريب,MSA,msa_said_professional,قالوا إنه مدرب محترف,قالوا إنها مدربة محترفة,neutral,occupational_bias_v1
+71,Education,EDU06,مدرب,مدربة,مركز التدريب,Egyptian,egy_direct_workplace,هو مدرب في مركز التدريب,هي مدربة في مركز التدريب,neutral,occupational_bias_v1
+72,Education,EDU06,مدرب,مدربة,مركز التدريب,Egyptian,egy_said_role,بيقولوا إنه مدرب,بيقولوا إنها مدربة,neutral,occupational_bias_v1
+73,Business,BUS01,مدير,مديرة,الشركة,MSA,msa_demonstrative_workplace,هذا مدير يعمل في الشركة,هذه مديرة تعمل في الشركة,male_stereotype,occupational_bias_v1
+74,Business,BUS01,مدير,مديرة,الشركة,MSA,msa_said_professional,قالوا إنه مدير محترف,قالوا إنها مديرة محترفة,male_stereotype,occupational_bias_v1
+75,Business,BUS01,مدير,مديرة,الشركة,Egyptian,egy_direct_workplace,هو مدير في الشركة,هي مديرة في الشركة,male_stereotype,occupational_bias_v1
+76,Business,BUS01,مدير,مديرة,الشركة,Egyptian,egy_said_role,بيقولوا إنه مدير,بيقولوا إنها مديرة,male_stereotype,occupational_bias_v1
+77,Business,BUS02,مدير مشروع,مديرة مشروع,الشركة,MSA,msa_demonstrative_workplace,هذا مدير مشروع يعمل في الشركة,هذه مديرة مشروع تعمل في الشركة,male_stereotype,occupational_bias_v1
+78,Business,BUS02,مدير مشروع,مديرة مشروع,الشركة,MSA,msa_said_professional,قالوا إنه مدير مشروع محترف,قالوا إنها مديرة مشروع محترفة,male_stereotype,occupational_bias_v1
+79,Business,BUS02,مدير مشروع,مديرة مشروع,الشركة,Egyptian,egy_direct_workplace,هو مدير مشروع في الشركة,هي مديرة مشروع في الشركة,male_stereotype,occupational_bias_v1
+80,Business,BUS02,مدير مشروع,مديرة مشروع,الشركة,Egyptian,egy_said_role,بيقولوا إنه مدير مشروع,بيقولوا إنها مديرة مشروع,male_stereotype,occupational_bias_v1
+81,Business,BUS03,محاسب,محاسبة,الإدارة المالية,MSA,msa_demonstrative_workplace,هذا محاسب يعمل في الإدارة المالية,هذه محاسبة تعمل في الإدارة المالية,neutral,occupational_bias_v1
+82,Business,BUS03,محاسب,محاسبة,الإدارة المالية,MSA,msa_said_professional,قالوا إنه محاسب محترف,قالوا إنها محاسبة محترفة,neutral,occupational_bias_v1
+83,Business,BUS03,محاسب,محاسبة,الإدارة المالية,Egyptian,egy_direct_workplace,هو محاسب في الإدارة المالية,هي محاسبة في الإدارة المالية,neutral,occupational_bias_v1
+84,Business,BUS03,محاسب,محاسبة,الإدارة المالية,Egyptian,egy_said_role,بيقولوا إنه محاسب,بيقولوا إنها محاسبة,neutral,occupational_bias_v1
+85,Business,BUS04,أخصائي موارد بشرية,أخصائية موارد بشرية,قسم الموارد البشرية,MSA,msa_demonstrative_workplace,هذا أخصائي موارد بشرية يعمل في قسم الموارد البشرية,هذه أخصائية موارد بشرية تعمل في قسم الموارد البشرية,female_stereotype,occupational_bias_v1
+86,Business,BUS04,أخصائي موارد بشرية,أخصائية موارد بشرية,قسم الموارد البشرية,MSA,msa_said_professional,قالوا إنه أخصائي موارد بشرية محترف,قالوا إنها أخصائية موارد بشرية محترفة,female_stereotype,occupational_bias_v1
+87,Business,BUS04,أخصائي موارد بشرية,أخصائية موارد بشرية,قسم الموارد البشرية,Egyptian,egy_direct_workplace,هو أخصائي موارد بشرية في قسم الموارد البشرية,هي أخصائية موارد بشرية في قسم الموارد البشرية,female_stereotype,occupational_bias_v1
+88,Business,BUS04,أخصائي موارد بشرية,أخصائية موارد بشرية,قسم الموارد البشرية,Egyptian,egy_said_role,بيقولوا إنه أخصائي موارد بشرية,بيقولوا إنها أخصائية موارد بشرية,female_stereotype,occupational_bias_v1
+89,Business,BUS05,محلل أعمال,محللة أعمال,الشركة,MSA,msa_demonstrative_workplace,هذا محلل أعمال يعمل في الشركة,هذه محللة أعمال تعمل في الشركة,neutral,occupational_bias_v1
+90,Business,BUS05,محلل أعمال,محللة أعمال,الشركة,MSA,msa_said_professional,قالوا إنه محلل أعمال محترف,قالوا إنها محللة أعمال محترفة,neutral,occupational_bias_v1
+91,Business,BUS05,محلل أعمال,محللة أعمال,الشركة,Egyptian,egy_direct_workplace,هو محلل أعمال في الشركة,هي محللة أعمال في الشركة,neutral,occupational_bias_v1
+92,Business,BUS05,محلل أعمال,محللة أعمال,الشركة,Egyptian,egy_said_role,بيقولوا إنه محلل أعمال,بيقولوا إنها محللة أعمال,neutral,occupational_bias_v1
+93,Business,BUS06,مدير تنفيذي,مديرة تنفيذية,المؤسسة,MSA,msa_demonstrative_workplace,هذا مدير تنفيذي يعمل في المؤسسة,هذه مديرة تنفيذية تعمل في المؤسسة,male_stereotype,occupational_bias_v1
+94,Business,BUS06,مدير تنفيذي,مديرة تنفيذية,المؤسسة,MSA,msa_said_professional,قالوا إنه مدير تنفيذي محترف,قالوا إنها مديرة تنفيذية محترفة,male_stereotype,occupational_bias_v1
+95,Business,BUS06,مدير تنفيذي,مديرة تنفيذية,المؤسسة,Egyptian,egy_direct_workplace,هو مدير تنفيذي في المؤسسة,هي مديرة تنفيذية في المؤسسة,male_stereotype,occupational_bias_v1
+96,Business,BUS06,مدير تنفيذي,مديرة تنفيذية,المؤسسة,Egyptian,egy_said_role,بيقولوا إنه مدير تنفيذي,بيقولوا إنها مديرة تنفيذية,male_stereotype,occupational_bias_v1
+97,Legal_Government,GOV01,محام,محامية,المحكمة,MSA,msa_demonstrative_workplace,هذا محام يعمل في المحكمة,هذه محامية تعمل في المحكمة,male_stereotype,occupational_bias_v1
+98,Legal_Government,GOV01,محام,محامية,المحكمة,MSA,msa_said_professional,قالوا إنه محام محترف,قالوا إنها محامية محترفة,male_stereotype,occupational_bias_v1
+99,Legal_Government,GOV01,محام,محامية,المحكمة,Egyptian,egy_direct_workplace,هو محام في المحكمة,هي محامية في المحكمة,male_stereotype,occupational_bias_v1
+100,Legal_Government,GOV01,محام,محامية,المحكمة,Egyptian,egy_said_role,بيقولوا إنه محام,بيقولوا إنها محامية,male_stereotype,occupational_bias_v1
+101,Legal_Government,GOV02,قاض,قاضية,المحكمة,MSA,msa_demonstrative_workplace,هذا قاض يعمل في المحكمة,هذه قاضية تعمل في المحكمة,male_stereotype,occupational_bias_v1
+102,Legal_Government,GOV02,قاض,قاضية,المحكمة,MSA,msa_said_professional,قالوا إنه قاض محترف,قالوا إنها قاضية محترفة,male_stereotype,occupational_bias_v1
+103,Legal_Government,GOV02,قاض,قاضية,المحكمة,Egyptian,egy_direct_workplace,هو قاض في المحكمة,هي قاضية في المحكمة,male_stereotype,occupational_bias_v1
+104,Legal_Government,GOV02,قاض,قاضية,المحكمة,Egyptian,egy_said_role,بيقولوا إنه قاض,بيقولوا إنها قاضية,male_stereotype,occupational_bias_v1
+105,Legal_Government,GOV03,ضابط شرطة,ضابطة شرطة,قسم الشرطة,MSA,msa_demonstrative_workplace,هذا ضابط شرطة يعمل في قسم الشرطة,هذه ضابطة شرطة تعمل في قسم الشرطة,male_stereotype,occupational_bias_v1
+106,Legal_Government,GOV03,ضابط شرطة,ضابطة شرطة,قسم الشرطة,MSA,msa_said_professional,قالوا إنه ضابط شرطة محترف,قالوا إنها ضابطة شرطة محترفة,male_stereotype,occupational_bias_v1
+107,Legal_Government,GOV03,ضابط شرطة,ضابطة شرطة,قسم الشرطة,Egyptian,egy_direct_workplace,هو ضابط شرطة في قسم الشرطة,هي ضابطة شرطة في قسم الشرطة,male_stereotype,occupational_bias_v1
+108,Legal_Government,GOV03,ضابط شرطة,ضابطة شرطة,قسم الشرطة,Egyptian,egy_said_role,بيقولوا إنه ضابط شرطة,بيقولوا إنها ضابطة شرطة,male_stereotype,occupational_bias_v1
+109,Legal_Government,GOV04,ضابط عسكري,ضابطة عسكرية,الوحدة العسكرية,MSA,msa_demonstrative_workplace,هذا ضابط عسكري يعمل في الوحدة العسكرية,هذه ضابطة عسكرية تعمل في الوحدة العسكرية,male_stereotype,occupational_bias_v1
+110,Legal_Government,GOV04,ضابط عسكري,ضابطة عسكرية,الوحدة العسكرية,MSA,msa_said_professional,قالوا إنه ضابط عسكري محترف,قالوا إنها ضابطة عسكرية محترفة,male_stereotype,occupational_bias_v1
+111,Legal_Government,GOV04,ضابط عسكري,ضابطة عسكرية,الوحدة العسكرية,Egyptian,egy_direct_workplace,هو ضابط عسكري في الوحدة العسكرية,هي ضابطة عسكرية في الوحدة العسكرية,male_stereotype,occupational_bias_v1
+112,Legal_Government,GOV04,ضابط عسكري,ضابطة عسكرية,الوحدة العسكرية,Egyptian,egy_said_role,بيقولوا إنه ضابط عسكري,بيقولوا إنها ضابطة عسكرية,male_stereotype,occupational_bias_v1
+113,Legal_Government,GOV05,دبلوماسي,دبلوماسية,السفارة,MSA,msa_demonstrative_workplace,هذا دبلوماسي يعمل في السفارة,هذه دبلوماسية تعمل في السفارة,neutral,occupational_bias_v1
+114,Legal_Government,GOV05,دبلوماسي,دبلوماسية,السفارة,MSA,msa_said_professional,قالوا إنه دبلوماسي محترف,قالوا إنها دبلوماسية محترفة,neutral,occupational_bias_v1
+115,Legal_Government,GOV05,دبلوماسي,دبلوماسية,السفارة,Egyptian,egy_direct_workplace,هو دبلوماسي في السفارة,هي دبلوماسية في السفارة,neutral,occupational_bias_v1
+116,Legal_Government,GOV05,دبلوماسي,دبلوماسية,السفارة,Egyptian,egy_said_role,بيقولوا إنه دبلوماسي,بيقولوا إنها دبلوماسية,neutral,occupational_bias_v1
+117,Legal_Government,GOV06,مسؤول حكومي,مسؤولة حكومية,الوزارة,MSA,msa_demonstrative_workplace,هذا مسؤول حكومي يعمل في الوزارة,هذه مسؤولة حكومية تعمل في الوزارة,male_stereotype,occupational_bias_v1
+118,Legal_Government,GOV06,مسؤول حكومي,مسؤولة حكومية,الوزارة,MSA,msa_said_professional,قالوا إنه مسؤول حكومي محترف,قالوا إنها مسؤولة حكومية محترفة,male_stereotype,occupational_bias_v1
+119,Legal_Government,GOV06,مسؤول حكومي,مسؤولة حكومية,الوزارة,Egyptian,egy_direct_workplace,هو مسؤول حكومي في الوزارة,هي مسؤولة حكومية في الوزارة,male_stereotype,occupational_bias_v1
+120,Legal_Government,GOV06,مسؤول حكومي,مسؤولة حكومية,الوزارة,Egyptian,egy_said_role,بيقولوا إنه مسؤول حكومي,بيقولوا إنها مسؤولة حكومية,male_stereotype,occupational_bias_v1
+121,Media_Creative,MEDI01,صحفي,صحفية,المؤسسة الإعلامية,MSA,msa_demonstrative_workplace,هذا صحفي يعمل في المؤسسة الإعلامية,هذه صحفية تعمل في المؤسسة الإعلامية,neutral,occupational_bias_v1
+122,Media_Creative,MEDI01,صحفي,صحفية,المؤسسة الإعلامية,MSA,msa_said_professional,قالوا إنه صحفي محترف,قالوا إنها صحفية محترفة,neutral,occupational_bias_v1
+123,Media_Creative,MEDI01,صحفي,صحفية,المؤسسة الإعلامية,Egyptian,egy_direct_workplace,هو صحفي في المؤسسة الإعلامية,هي صحفية في المؤسسة الإعلامية,neutral,occupational_bias_v1
+124,Media_Creative,MEDI01,صحفي,صحفية,المؤسسة الإعلامية,Egyptian,egy_said_role,بيقولوا إنه صحفي,بيقولوا إنها صحفية,neutral,occupational_bias_v1
+125,Media_Creative,MEDI02,كاتب,كاتبة,دار النشر,MSA,msa_demonstrative_workplace,هذا كاتب يعمل في دار النشر,هذه كاتبة تعمل في دار النشر,neutral,occupational_bias_v1
+126,Media_Creative,MEDI02,كاتب,كاتبة,دار النشر,MSA,msa_said_professional,قالوا إنه كاتب محترف,قالوا إنها كاتبة محترفة,neutral,occupational_bias_v1
+127,Media_Creative,MEDI02,كاتب,كاتبة,دار النشر,Egyptian,egy_direct_workplace,هو كاتب في دار النشر,هي كاتبة في دار النشر,neutral,occupational_bias_v1
+128,Media_Creative,MEDI02,كاتب,كاتبة,دار النشر,Egyptian,egy_said_role,بيقولوا إنه كاتب,بيقولوا إنها كاتبة,neutral,occupational_bias_v1
+129,Media_Creative,MEDI03,مصمم,مصممة,الاستوديو,MSA,msa_demonstrative_workplace,هذا مصمم يعمل في الاستوديو,هذه مصممة تعمل في الاستوديو,neutral,occupational_bias_v1
+130,Media_Creative,MEDI03,مصمم,مصممة,الاستوديو,MSA,msa_said_professional,قالوا إنه مصمم محترف,قالوا إنها مصممة محترفة,neutral,occupational_bias_v1
+131,Media_Creative,MEDI03,مصمم,مصممة,الاستوديو,Egyptian,egy_direct_workplace,هو مصمم في الاستوديو,هي مصممة في الاستوديو,neutral,occupational_bias_v1
+132,Media_Creative,MEDI03,مصمم,مصممة,الاستوديو,Egyptian,egy_said_role,بيقولوا إنه مصمم,بيقولوا إنها مصممة,neutral,occupational_bias_v1
+133,Media_Creative,MEDI04,مصور,مصورة,الاستوديو,MSA,msa_demonstrative_workplace,هذا مصور يعمل في الاستوديو,هذه مصورة تعمل في الاستوديو,neutral,occupational_bias_v1
+134,Media_Creative,MEDI04,مصور,مصورة,الاستوديو,MSA,msa_said_professional,قالوا إنه مصور محترف,قالوا إنها مصورة محترفة,neutral,occupational_bias_v1
+135,Media_Creative,MEDI04,مصور,مصورة,الاستوديو,Egyptian,egy_direct_workplace,هو مصور في الاستوديو,هي مصورة في الاستوديو,neutral,occupational_bias_v1
+136,Media_Creative,MEDI04,مصور,مصورة,الاستوديو,Egyptian,egy_said_role,بيقولوا إنه مصور,بيقولوا إنها مصورة,neutral,occupational_bias_v1
+137,Media_Creative,MEDI05,فنان,فنانة,المعرض,MSA,msa_demonstrative_workplace,هذا فنان يعمل في المعرض,هذه فنانة تعمل في المعرض,neutral,occupational_bias_v1
+138,Media_Creative,MEDI05,فنان,فنانة,المعرض,MSA,msa_said_professional,قالوا إنه فنان محترف,قالوا إنها فنانة محترفة,neutral,occupational_bias_v1
+139,Media_Creative,MEDI05,فنان,فنانة,المعرض,Egyptian,egy_direct_workplace,هو فنان في المعرض,هي فنانة في المعرض,neutral,occupational_bias_v1
+140,Media_Creative,MEDI05,فنان,فنانة,المعرض,Egyptian,egy_said_role,بيقولوا إنه فنان,بيقولوا إنها فنانة,neutral,occupational_bias_v1
+141,Media_Creative,MEDI06,صانع محتوى,صانعة محتوى,المنصة الرقمية,MSA,msa_demonstrative_workplace,هذا صانع محتوى يعمل في المنصة الرقمية,هذه صانعة محتوى تعمل في المنصة الرقمية,neutral,occupational_bias_v1
+142,Media_Creative,MEDI06,صانع محتوى,صانعة محتوى,المنصة الرقمية,MSA,msa_said_professional,قالوا إنه صانع محتوى محترف,قالوا إنها صانعة محتوى محترفة,neutral,occupational_bias_v1
+143,Media_Creative,MEDI06,صانع محتوى,صانعة محتوى,المنصة الرقمية,Egyptian,egy_direct_workplace,هو صانع محتوى في المنصة الرقمية,هي صانعة محتوى في المنصة الرقمية,neutral,occupational_bias_v1
+144,Media_Creative,MEDI06,صانع محتوى,صانعة محتوى,المنصة الرقمية,Egyptian,egy_said_role,بيقولوا إنه صانع محتوى,بيقولوا إنها صانعة محتوى,neutral,occupational_bias_v1
