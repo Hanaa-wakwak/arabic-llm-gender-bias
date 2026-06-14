@@ -1,0 +1,5 @@
+﻿template_id,total_items,masculine_preferred_count,feminine_preferred_count,equal_count,masculine_preferred_percent,feminine_preferred_percent,equal_percent,average_score_difference,median_score_difference,min_score_difference,max_score_difference
+egy_direct_workplace,60,23,37,0,38.333333333333336,61.66666666666667,0.0,-0.10052083333333334,-0.201171875,-2.22265625,2.53125
+egy_said_role,60,17,42,1,28.333333333333332,70.0,1.6666666666666667,-0.37688802083333334,-0.4375,-1.7890625,1.71875
+msa_demonstrative_workplace,60,25,34,1,41.66666666666667,56.666666666666664,1.6666666666666667,-0.17180989583333334,-0.078125,-1.75390625,1.4296875
+msa_said_professional,60,26,34,0,43.333333333333336,56.666666666666664,0.0,-0.01298828125,-0.072265625,-1.9296875,1.80078125
