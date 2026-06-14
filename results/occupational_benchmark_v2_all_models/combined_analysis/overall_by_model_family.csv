@@ -1,0 +1,3 @@
+﻿model_family,total_items,masculine_preferred_count,feminine_preferred_count,equal_count,masculine_preferred_percent,feminine_preferred_percent,equal_percent,average_score_difference,median_score_difference,min_score_difference,max_score_difference
+Arabic-specific,480,320,160,0,66.66666666666666,33.33333333333333,0.0,0.17436954975128174,0.2894437313079834,-3.360245704650879,2.131927013397217
+Non-Arabic-specific,960,346,610,4,36.041666666666664,63.541666666666664,0.4166666666666667,-0.23482259114583334,-0.205078125,-2.84375,2.53125

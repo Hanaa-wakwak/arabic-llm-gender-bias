@@ -1,0 +1,3 @@
+﻿model_family,total_items,tested_items_excluding_equal,masculine_preferred_count,feminine_preferred_count,equal_count,masculine_preferred_percent,feminine_preferred_percent,preference_direction,binomial_p_value,significant_at_0_05
+Arabic-specific,480,480,320,160,0,66.66666666666666,33.33333333333333,masculine,2.386263449576626e-13,True
+Non-Arabic-specific,960,956,346,610,4,36.041666666666664,63.541666666666664,feminine,1.1244495243199637e-17,True
