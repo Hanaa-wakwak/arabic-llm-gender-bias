@@ -340,7 +340,7 @@ The automatic generation-quality analysis produced the following result:
 The ArGAN pilot shows that prompt-based Arabic bias evaluation is feasible, but it requires instruction-tuned models and manual annotation. Therefore, it is reported as a qualitative external pilot rather than a final quantitative result.
 ---
 
-## 4.17 Summary of Results
+## 4.18 Summary of Results
 
 The results show that occupational gender preference in Arabic causal language models is systematic, statistically significant, and associated with model family.
 
