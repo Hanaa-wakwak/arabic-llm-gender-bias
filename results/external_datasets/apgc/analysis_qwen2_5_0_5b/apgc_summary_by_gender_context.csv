@@ -1,0 +1,5 @@
+﻿model_name,gender_context,total_items,masculine_preferred_count,feminine_preferred_count,equal_count,masculine_preferred_percent,feminine_preferred_percent,equal_percent,average_score_difference,median_score_difference,min_score_difference,max_score_difference
+Qwen/Qwen2.5-0.5B,demonstrative_noun_adjective,1,1,0,0,100.0,0.0,0.0,1.171875,1.171875,1.171875,1.171875
+Qwen/Qwen2.5-0.5B,first_person_adjective,3,0,3,0,0.0,100.0,0.0,-0.2916666666666667,-0.3125,-0.546875,-0.015625
+Qwen/Qwen2.5-0.5B,second_person_adjective,3,1,2,0,33.33333333333333,66.66666666666666,0.0,-0.4270833333333333,-0.125,-1.625,0.46875
+Qwen/Qwen2.5-0.5B,third_person_pronoun_adjective,3,2,1,0,66.66666666666666,33.33333333333333,0.0,0.140625,0.21875,-0.015625,0.21875

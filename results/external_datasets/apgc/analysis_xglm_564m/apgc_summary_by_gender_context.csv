@@ -1,0 +1,5 @@
+﻿model_name,gender_context,total_items,masculine_preferred_count,feminine_preferred_count,equal_count,masculine_preferred_percent,feminine_preferred_percent,equal_percent,average_score_difference,median_score_difference,min_score_difference,max_score_difference
+facebook/xglm-564M,demonstrative_noun_adjective,1,1,0,0,100.0,0.0,0.0,0.21484375,0.21484375,0.21484375,0.21484375
+facebook/xglm-564M,first_person_adjective,3,1,2,0,33.33333333333333,66.66666666666666,0.0,-0.24479166666666666,-0.11328125,-0.80859375,0.1875
+facebook/xglm-564M,second_person_adjective,3,0,3,0,0.0,100.0,0.0,-0.26953125,-0.171875,-0.52734375,-0.109375
+facebook/xglm-564M,third_person_pronoun_adjective,3,0,3,0,0.0,100.0,0.0,-0.4427083333333333,-0.40625,-0.79296875,-0.12890625

@@ -1,0 +1,5 @@
+﻿model_name,gender_context,total_items,masculine_preferred_count,feminine_preferred_count,equal_count,masculine_preferred_percent,feminine_preferred_percent,equal_percent,average_score_difference,median_score_difference,min_score_difference,max_score_difference
+aubmindlab/aragpt2-medium,demonstrative_noun_adjective,1,0,1,0,0.0,100.0,0.0,-1.6561822891235352,-1.6561822891235352,-1.6561822891235352,-1.6561822891235352
+aubmindlab/aragpt2-medium,first_person_adjective,3,2,1,0,66.66666666666666,33.33333333333333,0.0,0.3806411425272624,0.4029054641723633,-0.285923957824707,1.0249419212341309
+aubmindlab/aragpt2-medium,second_person_adjective,3,2,1,0,66.66666666666666,33.33333333333333,0.0,0.4153148333231608,0.3035731315612793,-0.0238800048828125,0.9662513732910156
+aubmindlab/aragpt2-medium,third_person_pronoun_adjective,3,2,1,0,66.66666666666666,33.33333333333333,0.0,-0.3071079254150391,0.2443747520446777,-1.9878430366516116,0.8221445083618164

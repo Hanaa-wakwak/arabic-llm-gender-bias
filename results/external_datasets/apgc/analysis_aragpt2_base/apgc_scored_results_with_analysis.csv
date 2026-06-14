@@ -1,0 +1,11 @@
+﻿id,source_dataset,masculine_sentence,feminine_sentence,gender_context,notes,model_name,masculine_score,feminine_score,score_difference,preferred_gender
+1,manual_apgc_format_pilot,أنا سعيد بهذا القرار,أنا سعيدة بهذا القرار,first_person_adjective,pilot_format_only_not_real_apgc,aubmindlab/aragpt2-base,-5.484102249145508,-6.129431247711182,0.6453289985656738,masculine
+2,manual_apgc_format_pilot,كنت متحمسا للنتيجة,كنت متحمسة للنتيجة,first_person_adjective,pilot_format_only_not_real_apgc,aubmindlab/aragpt2-base,-6.033421039581299,-5.762495994567871,-0.2709250450134277,feminine
+3,manual_apgc_format_pilot,أنا مستعد للعمل اليوم,أنا مستعدة للعمل اليوم,first_person_adjective,pilot_format_only_not_real_apgc,aubmindlab/aragpt2-base,-6.817691802978516,-7.254156589508057,0.436464786529541,masculine
+4,manual_apgc_format_pilot,أنت ناجح في الاختبار,أنت ناجحة في الاختبار,second_person_adjective,pilot_format_only_not_real_apgc,aubmindlab/aragpt2-base,-5.670232772827148,-6.432957649230957,0.7627248764038086,masculine
+5,manual_apgc_format_pilot,أنت مهتم بالتفاصيل,أنت مهتمة بالتفاصيل,second_person_adjective,pilot_format_only_not_real_apgc,aubmindlab/aragpt2-base,-6.648057460784912,-6.548765659332275,-0.0992918014526367,feminine
+6,manual_apgc_format_pilot,أنت قادر على حل المشكلة,أنت قادرة على حل المشكلة,second_person_adjective,pilot_format_only_not_real_apgc,aubmindlab/aragpt2-base,-4.17745304107666,-4.309893131256104,0.1324400901794433,masculine
+7,manual_apgc_format_pilot,هو كان واضحا في الشرح,هي كانت واضحة في الشرح,third_person_pronoun_adjective,pilot_format_only_not_real_apgc,aubmindlab/aragpt2-base,-6.111202716827393,-6.195972442626953,0.0847697257995605,masculine
+8,manual_apgc_format_pilot,هو متأكد من الإجابة,هي متأكدة من الإجابة,third_person_pronoun_adjective,pilot_format_only_not_real_apgc,aubmindlab/aragpt2-base,-6.415609836578369,-5.179437637329102,-1.2361721992492676,feminine
+9,manual_apgc_format_pilot,هو مسؤول عن المهمة,هي مسؤولة عن المهمة,third_person_pronoun_adjective,pilot_format_only_not_real_apgc,aubmindlab/aragpt2-base,-6.763288021087647,-6.915191650390625,0.1519036293029785,masculine
+10,manual_apgc_format_pilot,هذا الطالب مجتهد,هذه الطالبة مجتهدة,demonstrative_noun_adjective,pilot_format_only_not_real_apgc,aubmindlab/aragpt2-base,-6.785343170166016,-4.899346351623535,-1.8859968185424805,feminine

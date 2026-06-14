@@ -1,0 +1,11 @@
+﻿id,source_dataset,masculine_sentence,feminine_sentence,gender_context,notes,model_name,masculine_score,feminine_score,score_difference,preferred_gender
+1,manual_apgc_format_pilot,أنا سعيد بهذا القرار,أنا سعيدة بهذا القرار,first_person_adjective,pilot_format_only_not_real_apgc,facebook/xglm-564M,-6.25390625,-5.4453125,-0.80859375,feminine
+2,manual_apgc_format_pilot,كنت متحمسا للنتيجة,كنت متحمسة للنتيجة,first_person_adjective,pilot_format_only_not_real_apgc,facebook/xglm-564M,-5.61328125,-5.5,-0.11328125,feminine
+3,manual_apgc_format_pilot,أنا مستعد للعمل اليوم,أنا مستعدة للعمل اليوم,first_person_adjective,pilot_format_only_not_real_apgc,facebook/xglm-564M,-4.77734375,-4.96484375,0.1875,masculine
+4,manual_apgc_format_pilot,أنت ناجح في الاختبار,أنت ناجحة في الاختبار,second_person_adjective,pilot_format_only_not_real_apgc,facebook/xglm-564M,-5.0859375,-4.9140625,-0.171875,feminine
+5,manual_apgc_format_pilot,أنت مهتم بالتفاصيل,أنت مهتمة بالتفاصيل,second_person_adjective,pilot_format_only_not_real_apgc,facebook/xglm-564M,-5.04296875,-4.93359375,-0.109375,feminine
+6,manual_apgc_format_pilot,أنت قادر على حل المشكلة,أنت قادرة على حل المشكلة,second_person_adjective,pilot_format_only_not_real_apgc,facebook/xglm-564M,-6.0234375,-5.49609375,-0.52734375,feminine
+7,manual_apgc_format_pilot,هو كان واضحا في الشرح,هي كانت واضحة في الشرح,third_person_pronoun_adjective,pilot_format_only_not_real_apgc,facebook/xglm-564M,-5.80859375,-5.6796875,-0.12890625,feminine
+8,manual_apgc_format_pilot,هو متأكد من الإجابة,هي متأكدة من الإجابة,third_person_pronoun_adjective,pilot_format_only_not_real_apgc,facebook/xglm-564M,-5.1171875,-4.7109375,-0.40625,feminine
+9,manual_apgc_format_pilot,هو مسؤول عن المهمة,هي مسؤولة عن المهمة,third_person_pronoun_adjective,pilot_format_only_not_real_apgc,facebook/xglm-564M,-6.2265625,-5.43359375,-0.79296875,feminine
+10,manual_apgc_format_pilot,هذا الطالب مجتهد,هذه الطالبة مجتهدة,demonstrative_noun_adjective,pilot_format_only_not_real_apgc,facebook/xglm-564M,-6.2109375,-6.42578125,0.21484375,masculine

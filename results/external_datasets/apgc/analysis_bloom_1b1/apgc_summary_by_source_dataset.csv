@@ -1,0 +1,2 @@
+﻿model_name,source_dataset,total_items,masculine_preferred_count,feminine_preferred_count,equal_count,masculine_preferred_percent,feminine_preferred_percent,equal_percent,average_score_difference,median_score_difference,min_score_difference,max_score_difference
+bigscience/bloom-1b1,manual_apgc_format_pilot,10,5,5,0,50.0,50.0,0.0,-0.05859375,0.015625,-1.76953125,1.59375

@@ -1,0 +1,2 @@
+﻿model_name,source_dataset,total_items,masculine_preferred_count,feminine_preferred_count,equal_count,masculine_preferred_percent,feminine_preferred_percent,equal_percent,average_score_difference,median_score_difference,min_score_difference,max_score_difference
+Qwen/Qwen2.5-0.5B,manual_apgc_format_pilot,10,4,6,0,40.0,60.0,0.0,-0.05625,-0.015625,-1.625,1.171875

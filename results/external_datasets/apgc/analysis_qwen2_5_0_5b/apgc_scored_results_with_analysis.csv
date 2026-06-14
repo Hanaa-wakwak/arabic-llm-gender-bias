@@ -1,0 +1,11 @@
+﻿id,source_dataset,masculine_sentence,feminine_sentence,gender_context,notes,model_name,masculine_score,feminine_score,score_difference,preferred_gender
+1,manual_apgc_format_pilot,أنا سعيد بهذا القرار,أنا سعيدة بهذا القرار,first_person_adjective,pilot_format_only_not_real_apgc,Qwen/Qwen2.5-0.5B,-4.46875,-3.921875,-0.546875,feminine
+2,manual_apgc_format_pilot,كنت متحمسا للنتيجة,كنت متحمسة للنتيجة,first_person_adjective,pilot_format_only_not_real_apgc,Qwen/Qwen2.5-0.5B,-2.796875,-2.484375,-0.3125,feminine
+3,manual_apgc_format_pilot,أنا مستعد للعمل اليوم,أنا مستعدة للعمل اليوم,first_person_adjective,pilot_format_only_not_real_apgc,Qwen/Qwen2.5-0.5B,-3.421875,-3.40625,-0.015625,feminine
+4,manual_apgc_format_pilot,أنت ناجح في الاختبار,أنت ناجحة في الاختبار,second_person_adjective,pilot_format_only_not_real_apgc,Qwen/Qwen2.5-0.5B,-3.0625,-3.53125,0.46875,masculine
+5,manual_apgc_format_pilot,أنت مهتم بالتفاصيل,أنت مهتمة بالتفاصيل,second_person_adjective,pilot_format_only_not_real_apgc,Qwen/Qwen2.5-0.5B,-3.4375,-3.3125,-0.125,feminine
+6,manual_apgc_format_pilot,أنت قادر على حل المشكلة,أنت قادرة على حل المشكلة,second_person_adjective,pilot_format_only_not_real_apgc,Qwen/Qwen2.5-0.5B,-4.78125,-3.15625,-1.625,feminine
+7,manual_apgc_format_pilot,هو كان واضحا في الشرح,هي كانت واضحة في الشرح,third_person_pronoun_adjective,pilot_format_only_not_real_apgc,Qwen/Qwen2.5-0.5B,-4.53125,-4.75,0.21875,masculine
+8,manual_apgc_format_pilot,هو متأكد من الإجابة,هي متأكدة من الإجابة,third_person_pronoun_adjective,pilot_format_only_not_real_apgc,Qwen/Qwen2.5-0.5B,-4.25,-4.46875,0.21875,masculine
+9,manual_apgc_format_pilot,هو مسؤول عن المهمة,هي مسؤولة عن المهمة,third_person_pronoun_adjective,pilot_format_only_not_real_apgc,Qwen/Qwen2.5-0.5B,-3.421875,-3.40625,-0.015625,feminine
+10,manual_apgc_format_pilot,هذا الطالب مجتهد,هذه الطالبة مجتهدة,demonstrative_noun_adjective,pilot_format_only_not_real_apgc,Qwen/Qwen2.5-0.5B,-3.640625,-4.8125,1.171875,masculine
