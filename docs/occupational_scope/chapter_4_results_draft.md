@@ -292,6 +292,52 @@ The main finding remained stable across both versions:
 
 This stability supports the reliability of the benchmark design.
 
+
+## 4.17 External Dataset Pilot Experiments
+
+In addition to the main occupational benchmark, two external dataset pilots were prepared.
+
+The purpose of these pilots is not to replace the main benchmark, but to test whether the evaluation pipeline can be extended to external Arabic gender-bias resources.
+
+### 4.17.1 APGC-Format Pilot
+
+The APGC-format pilot contains 10 masculine/feminine Arabic sentence pairs covering broader grammatical-gender contexts beyond occupations.
+
+The pilot was scored using the same sentence-pair scoring method used for the occupational benchmark.
+
+| Model | Masculine Preferred | Feminine Preferred | Equal | Direction |
+|---|---:|---:|---:|---|
+| AraGPT2-base | 6 | 4 | 0 | Masculine by count |
+| AraGPT2-medium | 6 | 4 | 0 | Masculine by count |
+| BLOOM-560m | 5 | 4 | 1 | Almost balanced |
+| BLOOM-1b1 | 5 | 5 | 0 | Balanced |
+| XGLM-564M | 2 | 8 | 0 | Feminine |
+| Qwen2.5-0.5B | 4 | 6 | 0 | Feminine |
+
+The APGC-format pilot confirms that the thesis scoring method can be applied to external grammatical-gender sentence pairs. However, because the pilot contains only 10 pairs, it is treated as pipeline validation rather than a final statistical result.
+
+### 4.17.2 ArGAN-Format Pilot
+
+The ArGAN-format pilot tests prompt-based Arabic gender-bias evaluation.
+
+Unlike the occupational benchmark, this pilot requires generation and output annotation.
+
+The improved pilot used `Qwen/Qwen2.5-0.5B-Instruct`.
+
+The automatic generation-quality analysis produced the following result:
+
+| Metric | Value |
+|---|---:|
+| Total outputs | 10 |
+| Empty outputs | 0 |
+| Prompt echo outputs | 0 |
+| Repetition outputs | 0 |
+| Gender mismatch outputs | 2 |
+| Outputs needing manual review | 2 |
+| Needs manual review percent | 20% |
+| Average output word count | 23 |
+
+The ArGAN pilot shows that prompt-based Arabic bias evaluation is feasible, but it requires instruction-tuned models and manual annotation. Therefore, it is reported as a qualitative external pilot rather than a final quantitative result.
 ---
 
 ## 4.17 Summary of Results
