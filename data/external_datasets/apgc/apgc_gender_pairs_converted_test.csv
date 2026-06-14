@@ -1,0 +1,11 @@
+﻿id,source_dataset,masculine_sentence,feminine_sentence,gender_context,notes
+1,APGC,أنا سعيد بهذا القرار,أنا سعيدة بهذا القرار,first_person_adjective,converted_from_real_apgc
+2,APGC,كنت متحمسا للنتيجة,كنت متحمسة للنتيجة,first_person_adjective,converted_from_real_apgc
+3,APGC,أنا مستعد للعمل اليوم,أنا مستعدة للعمل اليوم,first_person_adjective,converted_from_real_apgc
+4,APGC,أنت ناجح في الاختبار,أنت ناجحة في الاختبار,second_person_adjective,converted_from_real_apgc
+5,APGC,أنت مهتم بالتفاصيل,أنت مهتمة بالتفاصيل,second_person_adjective,converted_from_real_apgc
+6,APGC,أنت قادر على حل المشكلة,أنت قادرة على حل المشكلة,second_person_adjective,converted_from_real_apgc
+7,APGC,هو كان واضحا في الشرح,هي كانت واضحة في الشرح,third_person_pronoun_adjective,converted_from_real_apgc
+8,APGC,هو متأكد من الإجابة,هي متأكدة من الإجابة,third_person_pronoun_adjective,converted_from_real_apgc
+9,APGC,هو مسؤول عن المهمة,هي مسؤولة عن المهمة,third_person_pronoun_adjective,converted_from_real_apgc
+10,APGC,هذا الطالب مجتهد,هذه الطالبة مجتهدة,demonstrative_noun_adjective,converted_from_real_apgc
