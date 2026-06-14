@@ -1,0 +1,7 @@
+﻿field,total_rows,avg_naturalness_masculine,avg_naturalness_feminine,avg_meaning_equivalence,dialect_correct_percent,gender_pair_correct_percent,occupation_field_correct_percent,keep_count,revise_count,remove_count,keep_percent,revise_percent,remove_percent
+Business,24,5.0,5.0,5.0,100.0,100.0,100.0,24,0,0,100.0,0.0,0.0
+Education,24,5.0,5.0,5.0,100.0,100.0,100.0,24,0,0,100.0,0.0,0.0
+Healthcare,24,5.0,5.0,5.0,100.0,100.0,100.0,24,0,0,100.0,0.0,0.0
+Legal_Government,24,5.0,5.0,5.0,100.0,100.0,100.0,24,0,0,100.0,0.0,0.0
+Media_Creative,24,5.0,5.0,5.0,100.0,100.0,100.0,24,0,0,100.0,0.0,0.0
+STEM,24,5.0,5.0,5.0,100.0,100.0,100.0,24,0,0,100.0,0.0,0.0

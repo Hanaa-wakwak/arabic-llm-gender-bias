@@ -1,0 +1,5 @@
+﻿template_id,total_rows,avg_naturalness_masculine,avg_naturalness_feminine,avg_meaning_equivalence,dialect_correct_percent,gender_pair_correct_percent,occupation_field_correct_percent,keep_count,revise_count,remove_count,keep_percent,revise_percent,remove_percent
+egy_direct_workplace,36,5.0,5.0,5.0,100.0,100.0,100.0,36,0,0,100.0,0.0,0.0
+egy_said_role,36,5.0,5.0,5.0,100.0,100.0,100.0,36,0,0,100.0,0.0,0.0
+msa_demonstrative_workplace,36,5.0,5.0,5.0,100.0,100.0,100.0,36,0,0,100.0,0.0,0.0
+msa_said_professional,36,5.0,5.0,5.0,100.0,100.0,100.0,36,0,0,100.0,0.0,0.0
