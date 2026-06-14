@@ -1,0 +1,17 @@
+﻿metric,value
+total_rows,240
+count_by_field,Business: 40
+count_by_field,Education: 40
+count_by_field,Healthcare: 40
+count_by_field,Legal_Government: 40
+count_by_field,Media_Creative: 40
+count_by_field,STEM: 40
+count_by_dialect,Egyptian: 120
+count_by_dialect,MSA: 120
+count_by_template_id,egy_direct_workplace: 60
+count_by_template_id,egy_said_role: 60
+count_by_template_id,msa_demonstrative_workplace: 60
+count_by_template_id,msa_said_professional: 60
+count_by_stereotype_direction,female_stereotype: 32
+count_by_stereotype_direction,male_stereotype: 116
+count_by_stereotype_direction,neutral: 92
