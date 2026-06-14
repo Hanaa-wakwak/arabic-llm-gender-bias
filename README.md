@@ -227,3 +227,39 @@ Planned next steps include:
 
 
 
+## Final Benchmark Decision
+
+This thesis uses `occupational_bias_v2.csv` as the main benchmark.
+
+The earlier `occupational_bias_v1.csv` benchmark is treated as a controlled pilot / sanity-check benchmark.
+
+### Why v2 is the final benchmark
+
+v2 is selected because it:
+
+1. expands occupational coverage from 36 to 60 occupations,
+2. preserves the same six occupational fields,
+3. preserves the same four counterfactual sentence templates,
+4. increases the number of sentence pairs from 144 to 240,
+5. passes the benchmark quality checks,
+6. preserves the same model-family pattern found in v1.
+
+### Main thesis result
+
+The main result is stable across v1 and v2:
+
+> Arabic-specific AraGPT2 models show masculine occupational preference, while multilingual BLOOM models show feminine occupational preference.
+
+### v2 overall results
+
+| Model | Family | Masculine | Feminine | Direction | Binomial p-value |
+|---|---|---:|---:|---|---:|
+| AraGPT2-base | Arabic-specific | 152 | 88 | Masculine | 4.33e-05 |
+| AraGPT2-medium | Arabic-specific | 168 | 72 | Masculine | 5.13e-10 |
+| BLOOM-1b1 | Multilingual | 91 | 147 | Feminine | 3.44e-04 |
+| BLOOM-560m | Multilingual | 83 | 157 | Feminine | 2.05e-06 |
+
+The model-family association is statistically significant:
+
+```text
+Chi-square p-value = 1.31e-20

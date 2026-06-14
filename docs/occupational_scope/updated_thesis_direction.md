@@ -147,3 +147,41 @@ The next steps are:
 6. Add token-level explainability.
 
 7. Add bias mitigation experiments.
+## Final Benchmark Version
+
+The thesis now uses `occupational_bias_v2.csv` as the final benchmark.
+
+The earlier `occupational_bias_v1.csv` is retained as a pilot benchmark. It was useful for validating the scoring pipeline, checking the template design, and confirming the initial model-family pattern.
+
+The final v2 benchmark contains:
+
+| Component | Count |
+|---|---:|
+| Occupational fields | 6 |
+| Occupations | 60 |
+| Templates per occupation | 4 |
+| Counterfactual sentence pairs | 240 |
+
+## Final Experimental Claim
+
+The final experimental claim is:
+
+> Arabic-specific causal language models show statistically significant masculine occupational preference, while multilingual causal language models show statistically significant feminine occupational preference.
+
+This claim is supported by both binomial preference tests and Wilcoxon signed-rank tests.
+
+## Model Selection Justification
+
+The evaluated models are selected to compare two model families:
+
+1. Arabic-specific causal language models:
+   - `aubmindlab/aragpt2-base`
+   - `aubmindlab/aragpt2-medium`
+
+2. Multilingual causal language models:
+   - `bigscience/bloom-560m`
+   - `bigscience/bloom-1b1`
+
+This selection directly answers the supervisor’s question: “Why these LLMs?”
+
+The comparison is not only between individual models, but between model families: Arabic-specific versus multilingual.
