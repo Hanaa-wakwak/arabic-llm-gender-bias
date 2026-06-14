@@ -1,0 +1,4 @@
+﻿stereotype_direction,total_items,masculine_preferred_count,feminine_preferred_count,equal_count,masculine_preferred_percent,feminine_preferred_percent,equal_percent,average_score_difference,median_score_difference,min_score_difference,max_score_difference
+female_stereotype,32,15,17,0,46.875,53.125,0.0,-0.32354736328125,-0.220703125,-1.3359375,0.43359375
+male_stereotype,116,45,71,0,38.793103448275865,61.206896551724135,0.0,-0.13693763469827586,-0.1796875,-1.4140625,1.21484375
+neutral,92,32,60,0,34.78260869565217,65.21739130434783,0.0,-0.27250339673913043,-0.28125,-2.234375,1.37890625

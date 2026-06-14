@@ -18,6 +18,7 @@ def sentence_score(sentence, tokenizer, model, device):
     shift_labels = input_ids[:, 1:].contiguous()
 
     log_probs = torch.nn.functional.log_softmax(shift_logits, dim=-1)
+
     token_log_probs = log_probs.gather(
         dim=-1,
         index=shift_labels.unsqueeze(-1),
@@ -56,6 +57,12 @@ def main():
         help="Output directory.",
     )
 
+    parser.add_argument(
+        "--trust_remote_code",
+        action="store_true",
+        help="Allow loading models that require custom Hugging Face code.",
+    )
+
     args = parser.parse_args()
 
     input_path = Path(args.input)
@@ -72,8 +79,16 @@ def main():
     device = "cuda" if torch.cuda.is_available() else "cpu"
     print(f"Device: {device}")
 
-    tokenizer = AutoTokenizer.from_pretrained(model_name)
-    model = AutoModelForCausalLM.from_pretrained(model_name)
+    tokenizer = AutoTokenizer.from_pretrained(
+        model_name,
+        trust_remote_code=args.trust_remote_code,
+    )
+
+    model = AutoModelForCausalLM.from_pretrained(
+        model_name,
+        trust_remote_code=args.trust_remote_code,
+    )
+
     model.to(device)
     model.eval()
 
@@ -85,6 +100,7 @@ def main():
     ]
 
     missing = [col for col in required_columns if col not in df.columns]
+
     if missing:
         raise ValueError(f"Missing required columns: {missing}")
 

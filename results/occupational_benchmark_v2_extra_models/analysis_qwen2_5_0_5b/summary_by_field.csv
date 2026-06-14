@@ -1,0 +1,7 @@
+﻿field,total_items,masculine_preferred_count,feminine_preferred_count,equal_count,masculine_preferred_percent,feminine_preferred_percent,equal_percent,average_score_difference,median_score_difference,min_score_difference,max_score_difference
+Business,40,9,31,0,22.5,77.5,0.0,-0.725390625,-0.5625,-2.84375,1.21875
+Education,40,9,31,0,22.5,77.5,0.0,-0.48984375,-0.578125,-1.34375,0.296875
+Healthcare,40,18,21,1,45.0,52.5,2.5,-0.231640625,-0.0390625,-1.40625,0.703125
+Legal_Government,40,16,24,0,40.0,60.0,0.0,-0.180078125,-0.078125,-1.5,0.734375
+Media_Creative,40,11,29,0,27.500000000000004,72.5,0.0,-0.39296875,-0.359375,-1.890625,0.859375
+STEM,40,17,22,1,42.5,55.00000000000001,2.5,-0.03515625,-0.0390625,-2.09375,1.078125

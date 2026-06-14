@@ -1,0 +1,13 @@
+﻿field,dialect,total_items,masculine_preferred_count,feminine_preferred_count,equal_count,masculine_preferred_percent,feminine_preferred_percent,equal_percent,average_score_difference,median_score_difference,min_score_difference,max_score_difference
+Business,Egyptian,20,3,17,0,15.0,85.0,0.0,-0.96796875,-0.6953125,-2.84375,0.1875
+Business,MSA,20,6,14,0,30.0,70.0,0.0,-0.4828125,-0.40625,-1.828125,1.21875
+Education,Egyptian,20,5,15,0,25.0,75.0,0.0,-0.59921875,-0.8359375,-1.34375,0.234375
+Education,MSA,20,4,16,0,20.0,80.0,0.0,-0.38046875,-0.4375,-0.96875,0.296875
+Healthcare,Egyptian,20,9,10,1,45.0,50.0,5.0,-0.30703125,-0.0859375,-1.40625,0.265625
+Healthcare,MSA,20,9,11,0,45.0,55.00000000000001,0.0,-0.15625,-0.0390625,-1.265625,0.703125
+Legal_Government,Egyptian,20,6,14,0,30.0,70.0,0.0,-0.24921875,-0.078125,-1.5,0.734375
+Legal_Government,MSA,20,10,10,0,50.0,50.0,0.0,-0.1109375,0.0,-1.34375,0.640625
+Media_Creative,Egyptian,20,6,14,0,30.0,70.0,0.0,-0.47578125,-0.46875,-1.890625,0.859375
+Media_Creative,MSA,20,5,15,0,25.0,75.0,0.0,-0.31015625,-0.3359375,-1.0625,0.671875
+STEM,Egyptian,20,10,10,0,50.0,50.0,0.0,-0.140625,-0.0546875,-2.09375,0.6875
+STEM,MSA,20,7,12,1,35.0,60.0,5.0,0.0703125,-0.0390625,-0.75,1.078125
