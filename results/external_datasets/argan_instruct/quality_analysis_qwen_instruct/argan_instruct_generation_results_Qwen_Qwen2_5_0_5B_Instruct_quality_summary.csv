@@ -1,0 +1,2 @@
+﻿model_name,total_outputs,empty_outputs,prompt_echo_outputs,repetition_outputs,gender_mismatch_outputs,too_short_outputs,needs_manual_review_outputs,needs_manual_review_percent,average_output_word_count
+Qwen/Qwen2.5-0.5B-Instruct,10,0,0,0,2,0,2,20.0,23.0
