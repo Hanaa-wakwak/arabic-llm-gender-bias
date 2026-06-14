@@ -466,3 +466,88 @@ No. A feminine preference is still a directional bias. Fairness would mean no sy
 ## Q10: What is your contribution?
 
 The contribution is a dialect-aware Arabic occupational bias benchmark, a controlled scoring method, a comparison of Arabic-specific and multilingual models, and statistically supported findings about model-family differences.
+# Slide 12 — Overall Results: Original Four Models
+
+## What to say
+
+The original main experiment evaluated four causal language models.
+
+The two Arabic-specific models, AraGPT2-base and AraGPT2-medium, preferred masculine occupational sentences.
+
+AraGPT2-base preferred masculine sentences in 152 out of 240 cases.
+
+AraGPT2-medium preferred masculine sentences in 168 out of 240 cases.
+
+The two BLOOM multilingual models showed the opposite direction.
+
+BLOOM-1b1 preferred feminine sentences in 147 cases.
+
+BLOOM-560m preferred feminine sentences in 157 cases.
+
+## Main interpretation
+
+The original result showed a clear model-family pattern:
+
+Arabic-specific AraGPT2 models leaned masculine, while multilingual BLOOM models leaned feminine.
+# Slide 13 — Enriched Six-Model Robustness Result
+
+## What to say
+
+To check whether this pattern was limited to BLOOM models only, I added two more non-Arabic-specific causal language models:
+
+* XGLM-564M
+* Qwen2.5-0.5B
+
+Both models were evaluated on the same final benchmark.
+
+XGLM-564M preferred feminine occupational sentences in 148 out of 240 cases.
+
+Qwen2.5-0.5B preferred feminine occupational sentences in 158 out of 240 cases.
+
+So after adding these two models, the same pattern remained stable.
+
+## Main interpretation
+
+Across all six models:
+
+Arabic-specific models preferred masculine occupational sentences.
+
+Non-Arabic-specific multilingual/general models preferred feminine occupational sentences.
+
+# Slide 16 — Model-Family Result
+
+## What to say
+
+The model-family comparison became even stronger after adding the extra models.
+
+Across all six models:
+
+Arabic-specific models had 320 masculine preferences and 160 feminine preferences.
+
+Non-Arabic-specific models had 346 masculine preferences and 610 feminine preferences.
+
+This means Arabic-specific models showed 66.67% masculine preference, while non-Arabic-specific models showed 63.54% feminine preference.
+
+The chi-square test showed a highly significant association between model family and preference direction.
+
+The p-value was 1.64e-27.
+
+## Main sentence
+
+Model family is strongly associated with occupational gender-preference direction.
+# Slide 17 — Why the Extra Models Matter
+
+## What to say
+
+The extra models are important because they test the robustness of the thesis result.
+
+If only BLOOM showed feminine preference, we might think the result is specific to BLOOM.
+
+But after evaluating XGLM-564M and Qwen2.5-0.5B, both also showed feminine preference.
+
+This means the pattern is more general across non-Arabic-specific causal language models.
+
+## Key point
+
+The enriched experiment strengthens the thesis because the result is not limited to one multilingual model family.
+
