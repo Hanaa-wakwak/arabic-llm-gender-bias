@@ -245,3 +245,23 @@ This makes the work useful for Arabic NLP fairness evaluation, especially becaus
 * dialect-aware templates,
 * causal language model scoring,
 * statistical significance testing.
+## Enriched Six-Model Robustness Experiment
+
+In addition to the original four-model experiment, two extra non-Arabic-specific causal language models were evaluated:
+
+- `facebook/xglm-564M`
+- `Qwen/Qwen2.5-0.5B`
+
+Both models were evaluated on the same final benchmark, `occupational_bias_v2.csv`.
+
+The enriched six-model analysis shows:
+
+| Model Family | Masculine Preferred | Feminine Preferred | Equal | Direction |
+|---|---:|---:|---:|---|
+| Arabic-specific | 320 | 160 | 0 | Masculine |
+| Non-Arabic-specific | 346 | 610 | 4 | Feminine |
+
+The model-family association remains highly significant:
+
+```text
+chi-square p-value = 1.64e-27
