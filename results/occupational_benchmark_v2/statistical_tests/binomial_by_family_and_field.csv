@@ -1,0 +1,13 @@
+﻿model_family,field,total_items,tested_items_excluding_equal,masculine_preferred_count,feminine_preferred_count,equal_count,masculine_preferred_percent,feminine_preferred_percent,preference_direction,binomial_p_value,significant_at_0_05
+Arabic-specific,Business,80,80,69,11,0,86.25,13.750000000000002,masculine,2.0495153187175896e-11,True
+Arabic-specific,Education,80,80,53,27,0,66.25,33.75,masculine,0.004868154149559423,True
+Arabic-specific,Healthcare,80,80,39,41,0,48.75,51.24999999999999,feminine,0.9110721212260929,False
+Arabic-specific,Legal_Government,80,80,55,25,0,68.75,31.25,masculine,0.0010527348573533446,True
+Arabic-specific,Media_Creative,80,80,54,26,0,67.5,32.5,masculine,0.002324541288088704,True
+Arabic-specific,STEM,80,80,50,30,0,62.5,37.5,masculine,0.03299261842647619,True
+Multilingual,Business,80,80,34,46,0,42.5,57.49999999999999,feminine,0.21851803947870374,False
+Multilingual,Education,80,79,17,62,1,21.25,77.5,feminine,3.5883588815862885e-07,True
+Multilingual,Healthcare,80,80,22,58,0,27.500000000000004,72.5,feminine,7.010573979919962e-05,True
+Multilingual,Legal_Government,80,79,40,39,1,50.0,48.75,masculine,1.0,False
+Multilingual,Media_Creative,80,80,25,55,0,31.25,68.75,feminine,0.0010527348573533446,True
+Multilingual,STEM,80,80,36,44,0,45.0,55.00000000000001,feminine,0.43404225534547874,False

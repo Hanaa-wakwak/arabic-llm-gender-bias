@@ -1,0 +1,5 @@
+﻿model_name,model_family,total_items,average_score_difference,median_score_difference,wilcoxon_statistic,wilcoxon_p_value,significant_at_0_05
+aubmindlab/aragpt2-base,Arabic-specific,240,0.12570664982000987,0.25367712974548334,10547.0,0.0002786638897376445,True
+aubmindlab/aragpt2-medium,Arabic-specific,240,0.22303244968255362,0.32486939430236816,8511.0,3.2875516796017775e-08,True
+bigscience/bloom-1b1,Multilingual,240,-0.1655517578125,-0.193359375,10042.5,8.514593849304958e-05,True
+bigscience/bloom-560m,Multilingual,240,-0.21743977864583333,-0.216796875,9077.5,5.755230325362578e-07,True
