@@ -356,3 +356,56 @@ The main findings are:
 
 The enriched six-model analysis strengthens the thesis by showing that the result is not limited to one multilingual model family.
 
+## v3 Experimental Sensitivity Analysis
+
+To enhance the benchmark, an experimental v3 benchmark was created.
+
+The v3 benchmark expanded the occupation list from 60 to 90 occupations and increased the number of templates from 4 to 6.
+
+| Benchmark | Occupations | Templates | Sentence Pairs |
+|---|---:|---:|---:|
+| v2 | 60 | 4 | 240 |
+| v3 | 90 | 6 | 540 |
+
+The v3 benchmark passed automatic quality checks.
+
+| Metric | Value |
+|---|---:|
+| Total rows | 540 |
+| Unique occupations | 90 |
+| Unique fields | 6 |
+| Unique templates | 6 |
+| Quality issues | 0 |
+
+A quick two-model test was performed using AraGPT2-base and BLOOM-560m.
+
+| Model | Total Items | Masculine Preferred | Feminine Preferred | Direction |
+|---|---:|---:|---:|---|
+| AraGPT2-base | 540 | 188 | 352 | Feminine |
+| BLOOM-560m | 540 | 240 | 300 | Feminine |
+
+This result differs from the main v2 result because AraGPT2-base showed masculine preference in v2 but feminine preference in v3.
+
+To investigate this change, a controlled v3 version was created using the 90 occupations but only the original four v2-style templates. AraGPT2-base still showed feminine preference.
+
+| Benchmark | Total Items | Masculine Preferred | Feminine Preferred | Direction |
+|---|---:|---:|---:|---|
+| v3 controlled | 360 | 97 | 263 | Feminine |
+
+Template diagnostics showed that the newly added v3 templates were almost balanced, while the old v2-style templates produced the stronger feminine direction.
+
+| Template Group | Total Items | Masculine Preferred | Feminine Preferred | Direction |
+|---|---:|---:|---:|---|
+| old v2 templates | 360 | 97 | 263 | Feminine |
+| new v3 templates | 180 | 91 | 89 | Almost balanced |
+
+An additional original-vs-added occupation diagnostic showed that both original and newly added occupation groups leaned feminine in v3 controlled.
+
+| Occupation Origin | Total Items | Masculine Preferred | Feminine Preferred | Direction |
+|---|---:|---:|---:|---|
+| original v2 occupation matches | 160 | 35 | 125 | Feminine |
+| added v3 occupations | 200 | 62 | 138 | Feminine |
+
+This suggests that model preference is sensitive to occupation coverage and lexical/contextual formulation.
+
+Therefore, v2 remains the main validated benchmark, while v3 is reported as an experimental sensitivity analysis rather than a replacement for v2.
