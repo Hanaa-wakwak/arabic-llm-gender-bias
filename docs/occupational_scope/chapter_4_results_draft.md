@@ -433,3 +433,70 @@ A quick two-model sanity test showed that both AraGPT2-base and BLOOM-560m prefe
 This result shows that balancing stereotype labels did not restore the original v2 model-family pattern.
 
 Therefore, v3 balanced is treated as a sensitivity benchmark, while v2 remains the main validated benchmark.
+## v4 Template Perturbation Results
+
+A v4 template perturbation benchmark was created to evaluate whether measured gender bias remains stable across different templates, semantic frames, and dialects.
+
+The benchmark contains 90 balanced occupations and 720 sentence pairs.
+
+| Item | Value |
+|---|---:|
+| Occupations | 90 |
+| Templates | 8 |
+| Sentence pairs | 720 |
+| Semantic frames | 6 |
+| Dialects | 2 |
+| Stereotype labels | 3 |
+
+All six models showed an overall feminine direction on v4.
+
+| Model | Masculine Preferred | Feminine Preferred | Equal | Average Score Difference | Direction |
+|---|---:|---:|---:|---:|---|
+| Qwen/Qwen2.5-0.5B | 312 | 390 | 18 | -0.0890 | Feminine |
+| AraGPT2-base | 220 | 500 | 0 | -0.3484 | Feminine |
+| AraGPT2-medium | 290 | 430 | 0 | -0.3031 | Feminine |
+| BLOOM-1b1 | 248 | 467 | 5 | -0.1700 | Feminine |
+| BLOOM-560m | 256 | 460 | 4 | -0.1703 | Feminine |
+| XGLM-564M | 104 | 614 | 2 | -0.4411 | Feminine |
+
+However, all six models showed template-induced direction flips.
+
+| Model | Masculine Templates | Feminine Templates | Direction Flip | Volatility Range |
+|---|---:|---:|---|---:|
+| Qwen/Qwen2.5-0.5B | 4 | 4 | True | 1.1049 |
+| AraGPT2-base | 2 | 6 | True | 1.3195 |
+| AraGPT2-medium | 2 | 6 | True | 1.2230 |
+| BLOOM-1b1 | 1 | 7 | True | 1.3633 |
+| BLOOM-560m | 2 | 6 | True | 1.4123 |
+| XGLM-564M | 1 | 7 | True | 0.7285 |
+
+Chi-square tests showed that template ID, semantic frame, dialect, model name, model family, and field significantly affect preferred gender. Stereotype label was not significant after balancing.
+
+| Factor | p-value | Significant |
+|---|---:|---|
+| model_name | 8.36e-36 | Yes |
+| model_family | 0.0423 | Yes |
+| template_id | 3.65e-141 | Yes |
+| semantic_frame | 3.10e-77 | Yes |
+| dialect | 2.55e-30 | Yes |
+| stereotype_label | 0.5548 | No |
+| field | 0.000434 | Yes |
+
+These results show that Arabic occupational gender-bias measurement is highly sensitive to template, semantic frame, and dialect.
+### v4 Effect-Size Analysis
+
+To complement the chi-square tests, Cramér's V was calculated for each factor.
+
+| Variable | Cramér's V | Effect Size |
+|---|---:|---|
+| template_id | 0.3962 | Medium |
+| semantic_frame | 0.2926 | Small |
+| model_name | 0.2016 | Small |
+| dialect | 0.1747 | Small |
+| field | 0.0723 | Very small |
+| model_family | 0.0310 | Very small |
+| stereotype_label | 0.0166 | Very small |
+
+The strongest effect was found for template ID, showing that sentence formulation had the strongest association with preferred gender in the v4 benchmark.
+
+This indicates that benchmark-template design can influence measured gender preference more strongly than model family or stereotype label.
