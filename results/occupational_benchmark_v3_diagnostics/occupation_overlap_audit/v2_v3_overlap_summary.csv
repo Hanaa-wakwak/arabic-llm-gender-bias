@@ -1,0 +1,6 @@
+﻿metric,value
+v2_total_occupations,60
+v3_total_occupations,90
+exact_v2_pairs_found_in_v3,40
+v2_pairs_missing_from_v3,20
+v3_pairs_not_exactly_in_v2,50

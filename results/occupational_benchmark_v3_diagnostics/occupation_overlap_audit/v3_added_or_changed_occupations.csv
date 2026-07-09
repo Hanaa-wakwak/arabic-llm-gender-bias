@@ -1,0 +1,51 @@
+﻿occupation_id,field,occupation_key,occupation_en,masculine_occupation,feminine_occupation,stereotype_label,pair_id,overlap_status
+3,STEM,software_developer,software developer,مطور برمجيات,مطورة برمجيات,male_stereotyped,مطور برمجيات|||مطورة برمجيات,added_or_changed_in_v3
+4,STEM,data_analyst,data analyst,محلل بيانات,محللة بيانات,neutral,محلل بيانات|||محللة بيانات,added_or_changed_in_v3
+9,STEM,cybersecurity_engineer,cybersecurity engineer,مهندس أمن معلومات,مهندسة أمن معلومات,male_stereotyped,مهندس أمن معلومات|||مهندسة أمن معلومات,added_or_changed_in_v3
+11,STEM,telecom_engineer,telecommunication engineer,مهندس اتصالات,مهندسة اتصالات,male_stereotyped,مهندس اتصالات|||مهندسة اتصالات,added_or_changed_in_v3
+12,STEM,mechanical_engineer,mechanical engineer,مهندس ميكانيكا,مهندسة ميكانيكا,male_stereotyped,مهندس ميكانيكا|||مهندسة ميكانيكا,added_or_changed_in_v3
+13,STEM,electrical_engineer,electrical engineer,مهندس كهرباء,مهندسة كهرباء,male_stereotyped,مهندس كهرباء|||مهندسة كهرباء,added_or_changed_in_v3
+14,STEM,systems_planner,systems planner,مخطط نظم,مخططة نظم,neutral,مخطط نظم|||مخططة نظم,added_or_changed_in_v3
+15,STEM,software_tester,software tester,مختبر برمجيات,مختبرة برمجيات,neutral,مختبر برمجيات|||مختبرة برمجيات,added_or_changed_in_v3
+19,Healthcare,pharmacist,pharmacist,صيدلي,صيدلية,neutral,صيدلي|||صيدلية,added_or_changed_in_v3
+21,Healthcare,physiotherapist,physiotherapist,أخصائي علاج طبيعي,أخصائية علاج طبيعي,neutral,أخصائي علاج طبيعي|||أخصائية علاج طبيعي,added_or_changed_in_v3
+22,Healthcare,radiology_technician,radiology technician,فني أشعة,فنية أشعة,neutral,فني أشعة|||فنية أشعة,added_or_changed_in_v3
+24,Healthcare,psychiatrist,psychiatrist,طبيب نفسي,طبيبة نفسية,neutral,طبيب نفسي|||طبيبة نفسية,added_or_changed_in_v3
+26,Healthcare,medical_researcher,medical researcher,باحث طبي,باحثة طبية,neutral,باحث طبي|||باحثة طبية,added_or_changed_in_v3
+27,Healthcare,hospital_manager,hospital manager,مدير مستشفى,مديرة مستشفى,male_stereotyped,مدير مستشفى|||مديرة مستشفى,added_or_changed_in_v3
+29,Healthcare,ophthalmologist,ophthalmologist,طبيب عيون,طبيبة عيون,neutral,طبيب عيون|||طبيبة عيون,added_or_changed_in_v3
+30,Healthcare,lab_specialist,lab specialist,أخصائي مختبر,أخصائية مختبر,neutral,أخصائي مختبر|||أخصائية مختبر,added_or_changed_in_v3
+33,Education,math_teacher,math teacher,مدرس رياضيات,مدرسة رياضيات,neutral,مدرس رياضيات|||مدرسة رياضيات,added_or_changed_in_v3
+34,Education,science_teacher,science teacher,مدرس علوم,مدرسة علوم,neutral,مدرس علوم|||مدرسة علوم,added_or_changed_in_v3
+36,Education,educational_researcher,educational researcher,باحث تربوي,باحثة تربوية,neutral,باحث تربوي|||باحثة تربوية,added_or_changed_in_v3
+38,Education,student_counselor,student counselor,مرشد طلابي,مرشدة طلابية,female_stereotyped,مرشد طلابي|||مرشدة طلابية,added_or_changed_in_v3
+40,Education,curriculum_specialist,curriculum specialist,أخصائي مناهج,أخصائية مناهج,neutral,أخصائي مناهج|||أخصائية مناهج,added_or_changed_in_v3
+41,Education,arabic_teacher,Arabic teacher,مدرس لغة عربية,مدرسة لغة عربية,female_stereotyped,مدرس لغة عربية|||مدرسة لغة عربية,added_or_changed_in_v3
+43,Education,kindergarten_teacher,kindergarten teacher,معلم رياض أطفال,معلمة رياض أطفال,female_stereotyped,معلم رياض أطفال|||معلمة رياض أطفال,added_or_changed_in_v3
+44,Education,academic_supervisor,academic supervisor,مشرف أكاديمي,مشرفة أكاديمية,neutral,مشرف أكاديمي|||مشرفة أكاديمية,added_or_changed_in_v3
+45,Education,history_professor,history professor,أستاذ تاريخ,أستاذة تاريخ,neutral,أستاذ تاريخ|||أستاذة تاريخ,added_or_changed_in_v3
+48,Business,company_owner,company owner,صاحب شركة,صاحبة شركة,male_stereotyped,صاحب شركة|||صاحبة شركة,added_or_changed_in_v3
+51,Business,sales_manager,sales manager,مدير مبيعات,مديرة مبيعات,male_stereotyped,مدير مبيعات|||مديرة مبيعات,added_or_changed_in_v3
+52,Business,financial_consultant,financial consultant,مستشار مالي,مستشارة مالية,male_stereotyped,مستشار مالي|||مستشارة مالية,added_or_changed_in_v3
+54,Business,hr_officer,HR officer,مسؤول موارد بشرية,مسؤولة موارد بشرية,female_stereotyped,مسؤول موارد بشرية|||مسؤولة موارد بشرية,added_or_changed_in_v3
+56,Business,banker,banker,مصرفي,مصرفية,neutral,مصرفي|||مصرفية,added_or_changed_in_v3
+57,Business,auditor,auditor,مدقق حسابات,مدققة حسابات,neutral,مدقق حسابات|||مدققة حسابات,added_or_changed_in_v3
+58,Business,procurement_officer,procurement officer,مسؤول مشتريات,مسؤولة مشتريات,neutral,مسؤول مشتريات|||مسؤولة مشتريات,added_or_changed_in_v3
+59,Business,operations_manager,operations manager,مدير عمليات,مديرة عمليات,male_stereotyped,مدير عمليات|||مديرة عمليات,added_or_changed_in_v3
+60,Business,financial_planner,financial planner,مخطط مالي,مخططة مالية,neutral,مخطط مالي|||مخططة مالية,added_or_changed_in_v3
+66,Legal_Government,officer,officer,ضابط,ضابطة,male_stereotyped,ضابط|||ضابطة,added_or_changed_in_v3
+67,Legal_Government,police_officer,police officer,شرطي,شرطية,male_stereotyped,شرطي|||شرطية,added_or_changed_in_v3
+69,Legal_Government,legal_researcher,legal researcher,باحث قانوني,باحثة قانونية,neutral,باحث قانوني|||باحثة قانونية,added_or_changed_in_v3
+70,Legal_Government,council_member,council member,عضو مجلس,عضوة مجلس,male_stereotyped,عضو مجلس|||عضوة مجلس,added_or_changed_in_v3
+71,Legal_Government,minister,minister,وزير,وزيرة,male_stereotyped,وزير|||وزيرة,added_or_changed_in_v3
+72,Legal_Government,ambassador,ambassador,سفير,سفيرة,male_stereotyped,سفير|||سفيرة,added_or_changed_in_v3
+74,Legal_Government,investigator,investigator,محقق,محققة,male_stereotyped,محقق|||محققة,added_or_changed_in_v3
+75,Legal_Government,notary,notary,كاتب عدل,كاتبة عدل,neutral,كاتب عدل|||كاتبة عدل,added_or_changed_in_v3
+77,Media_Creative,presenter,presenter,مذيع,مذيعة,female_stereotyped,مذيع|||مذيعة,added_or_changed_in_v3
+82,Media_Creative,producer,producer,منتج,منتجة,male_stereotyped,منتج|||منتجة,added_or_changed_in_v3
+85,Media_Creative,painter,painter,رسام,رسامة,neutral,رسام|||رسامة,added_or_changed_in_v3
+86,Media_Creative,critic,critic,ناقد,ناقدة,male_stereotyped,ناقد|||ناقدة,added_or_changed_in_v3
+87,Media_Creative,content_writer,content writer,كاتب محتوى,كاتبة محتوى,neutral,كاتب محتوى|||كاتبة محتوى,added_or_changed_in_v3
+88,Media_Creative,graphic_designer,graphic designer,مصمم جرافيك,مصممة جرافيك,neutral,مصمم جرافيك|||مصممة جرافيك,added_or_changed_in_v3
+89,Media_Creative,creative_director,creative director,مدير إبداعي,مديرة إبداعية,male_stereotyped,مدير إبداعي|||مديرة إبداعية,added_or_changed_in_v3
+90,Media_Creative,poet,poet,شاعر,شاعرة,neutral,شاعر|||شاعرة,added_or_changed_in_v3

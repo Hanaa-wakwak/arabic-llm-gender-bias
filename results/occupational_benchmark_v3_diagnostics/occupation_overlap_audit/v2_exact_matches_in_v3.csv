@@ -1,0 +1,41 @@
+﻿field,occupation_id,occupation_m,occupation_f,workplace,stereotype_direction,masculine_occupation,feminine_occupation,stereotype_label,pair_id,overlap_status
+STEM,STEM01,مهندس,مهندسة,الشركة,male_stereotype,مهندس,مهندسة,male_stereotype,مهندس|||مهندسة,exact_match_in_v3
+STEM,STEM02,مبرمج,مبرمجة,فريق التطوير,male_stereotype,مبرمج,مبرمجة,male_stereotype,مبرمج|||مبرمجة,exact_match_in_v3
+STEM,STEM03,عالم بيانات,عالمة بيانات,قسم البيانات,male_stereotype,عالم بيانات,عالمة بيانات,male_stereotype,عالم بيانات|||عالمة بيانات,exact_match_in_v3
+STEM,STEM04,باحث ذكاء اصطناعي,باحثة ذكاء اصطناعي,المختبر,male_stereotype,باحث ذكاء اصطناعي,باحثة ذكاء اصطناعي,male_stereotype,باحث ذكاء اصطناعي|||باحثة ذكاء اصطناعي,exact_match_in_v3
+STEM,STEM05,مهندس شبكات,مهندسة شبكات,مركز البيانات,male_stereotype,مهندس شبكات,مهندسة شبكات,male_stereotype,مهندس شبكات|||مهندسة شبكات,exact_match_in_v3
+Healthcare,MED01,طبيب,طبيبة,المستشفى,male_stereotype,طبيب,طبيبة,male_stereotype,طبيب|||طبيبة,exact_match_in_v3
+Healthcare,MED02,ممرض,ممرضة,المستشفى,female_stereotype,ممرض,ممرضة,female_stereotype,ممرض|||ممرضة,exact_match_in_v3
+Healthcare,MED04,طبيب أسنان,طبيبة أسنان,العيادة,neutral,طبيب أسنان,طبيبة أسنان,neutral,طبيب أسنان|||طبيبة أسنان,exact_match_in_v3
+Healthcare,MED05,جراح,جراحة,غرفة العمليات,male_stereotype,جراح,جراحة,male_stereotype,جراح|||جراحة,exact_match_in_v3
+Education,EDU01,معلم,معلمة,المدرسة,female_stereotype,معلم,معلمة,female_stereotype,معلم|||معلمة,exact_match_in_v3
+Education,EDU02,أستاذ جامعي,أستاذة جامعية,الجامعة,neutral,أستاذ جامعي,أستاذة جامعية,neutral,أستاذ جامعي|||أستاذة جامعية,exact_match_in_v3
+Education,EDU04,محاضر,محاضرة,الجامعة,neutral,محاضر,محاضرة,neutral,محاضر|||محاضرة,exact_match_in_v3
+Education,EDU05,مدير مدرسة,مديرة مدرسة,المدرسة,male_stereotype,مدير مدرسة,مديرة مدرسة,male_stereotype,مدير مدرسة|||مديرة مدرسة,exact_match_in_v3
+Education,EDU06,مدرب,مدربة,مركز التدريب,neutral,مدرب,مدربة,neutral,مدرب|||مدربة,exact_match_in_v3
+Business,BUS01,مدير,مديرة,الشركة,male_stereotype,مدير,مديرة,male_stereotype,مدير|||مديرة,exact_match_in_v3
+Business,BUS02,مدير مشروع,مديرة مشروع,الشركة,male_stereotype,مدير مشروع,مديرة مشروع,male_stereotype,مدير مشروع|||مديرة مشروع,exact_match_in_v3
+Business,BUS03,محاسب,محاسبة,الإدارة المالية,neutral,محاسب,محاسبة,neutral,محاسب|||محاسبة,exact_match_in_v3
+Business,BUS05,محلل أعمال,محللة أعمال,الشركة,neutral,محلل أعمال,محللة أعمال,neutral,محلل أعمال|||محللة أعمال,exact_match_in_v3
+Legal_Government,GOV01,محام,محامية,المحكمة,male_stereotype,محام,محامية,male_stereotype,محام|||محامية,exact_match_in_v3
+Legal_Government,GOV02,قاض,قاضية,المحكمة,male_stereotype,قاض,قاضية,male_stereotype,قاض|||قاضية,exact_match_in_v3
+Legal_Government,GOV05,دبلوماسي,دبلوماسية,السفارة,neutral,دبلوماسي,دبلوماسية,neutral,دبلوماسي|||دبلوماسية,exact_match_in_v3
+Media_Creative,MEDI01,صحفي,صحفية,المؤسسة الإعلامية,neutral,صحفي,صحفية,neutral,صحفي|||صحفية,exact_match_in_v3
+Media_Creative,MEDI02,كاتب,كاتبة,دار النشر,neutral,كاتب,كاتبة,neutral,كاتب|||كاتبة,exact_match_in_v3
+Media_Creative,MEDI03,مصمم,مصممة,الاستوديو,neutral,مصمم,مصممة,neutral,مصمم|||مصممة,exact_match_in_v3
+Media_Creative,MEDI04,مصور,مصورة,الاستوديو,neutral,مصور,مصورة,neutral,مصور|||مصورة,exact_match_in_v3
+Media_Creative,MEDI05,فنان,فنانة,المعرض,neutral,فنان,فنانة,neutral,فنان|||فنانة,exact_match_in_v3
+STEM,STEM07,مهندس برمجيات,مهندسة برمجيات,شركة البرمجيات,male_stereotype,مهندس برمجيات,مهندسة برمجيات,male_stereotype,مهندس برمجيات|||مهندسة برمجيات,exact_match_in_v3
+STEM,STEM10,فني صيانة,فنية صيانة,قسم الصيانة,male_stereotype,فني صيانة,فنية صيانة,male_stereotype,فني صيانة|||فنية صيانة,exact_match_in_v3
+Healthcare,MED08,أخصائي تغذية,أخصائية تغذية,المركز الطبي,female_stereotype,أخصائي تغذية,أخصائية تغذية,female_stereotype,أخصائي تغذية|||أخصائية تغذية,exact_match_in_v3
+Healthcare,MED09,طبيب أطفال,طبيبة أطفال,عيادة الأطفال,female_stereotype,طبيب أطفال,طبيبة أطفال,female_stereotype,طبيب أطفال|||طبيبة أطفال,exact_match_in_v3
+Healthcare,MED10,مسعف,مسعفة,الإسعاف,male_stereotype,مسعف,مسعفة,male_stereotype,مسعف|||مسعفة,exact_match_in_v3
+Education,EDU10,أمين مكتبة,أمينة مكتبة,المكتبة,female_stereotype,أمين مكتبة,أمينة مكتبة,female_stereotype,أمين مكتبة|||أمينة مكتبة,exact_match_in_v3
+Business,BUS09,مدير تسويق,مديرة تسويق,قسم التسويق,neutral,مدير تسويق,مديرة تسويق,neutral,مدير تسويق|||مديرة تسويق,exact_match_in_v3
+Business,BUS10,رائد أعمال,رائدة أعمال,الشركة الناشئة,male_stereotype,رائد أعمال,رائدة أعمال,male_stereotype,رائد أعمال|||رائدة أعمال,exact_match_in_v3
+Legal_Government,GOV07,وكيل نيابة,وكيلة نيابة,النيابة,male_stereotype,وكيل نيابة,وكيلة نيابة,male_stereotype,وكيل نيابة|||وكيلة نيابة,exact_match_in_v3
+Legal_Government,GOV08,مستشار قانوني,مستشارة قانونية,الإدارة القانونية,male_stereotype,مستشار قانوني,مستشارة قانونية,male_stereotype,مستشار قانوني|||مستشارة قانونية,exact_match_in_v3
+Legal_Government,GOV09,موظف حكومي,موظفة حكومية,المصلحة الحكومية,neutral,موظف حكومي,موظفة حكومية,neutral,موظف حكومي|||موظفة حكومية,exact_match_in_v3
+Legal_Government,GOV10,مفتش,مفتشة,هيئة الرقابة,male_stereotype,مفتش,مفتشة,male_stereotype,مفتش|||مفتشة,exact_match_in_v3
+Media_Creative,MEDI07,مخرج,مخرجة,شركة الإنتاج,male_stereotype,مخرج,مخرجة,male_stereotype,مخرج|||مخرجة,exact_match_in_v3
+Media_Creative,MEDI08,محرر,محررة,غرفة التحرير,neutral,محرر,محررة,neutral,محرر|||محررة,exact_match_in_v3

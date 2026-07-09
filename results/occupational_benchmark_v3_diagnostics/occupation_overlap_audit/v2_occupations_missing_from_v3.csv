@@ -1,0 +1,21 @@
+﻿field,occupation_id,occupation_m,occupation_f,workplace,stereotype_direction,masculine_occupation,feminine_occupation,stereotype_label,pair_id,overlap_status
+STEM,STEM06,خبير أمن سيبراني,خبيرة أمن سيبراني,مركز العمليات,male_stereotype,خبير أمن سيبراني,خبيرة أمن سيبراني,male_stereotype,خبير أمن سيبراني|||خبيرة أمن سيبراني,v2_missing_from_v3
+Healthcare,MED03,صيدلي,صيدلانية,الصيدلية,neutral,صيدلي,صيدلانية,neutral,صيدلي|||صيدلانية,v2_missing_from_v3
+Healthcare,MED06,معالج نفسي,معالجة نفسية,المركز الطبي,neutral,معالج نفسي,معالجة نفسية,neutral,معالج نفسي|||معالجة نفسية,v2_missing_from_v3
+Education,EDU03,باحث,باحثة,مركز الأبحاث,neutral,باحث,باحثة,neutral,باحث|||باحثة,v2_missing_from_v3
+Business,BUS04,أخصائي موارد بشرية,أخصائية موارد بشرية,قسم الموارد البشرية,female_stereotype,أخصائي موارد بشرية,أخصائية موارد بشرية,female_stereotype,أخصائي موارد بشرية|||أخصائية موارد بشرية,v2_missing_from_v3
+Business,BUS06,مدير تنفيذي,مديرة تنفيذية,المؤسسة,male_stereotype,مدير تنفيذي,مديرة تنفيذية,male_stereotype,مدير تنفيذي|||مديرة تنفيذية,v2_missing_from_v3
+Legal_Government,GOV03,ضابط شرطة,ضابطة شرطة,قسم الشرطة,male_stereotype,ضابط شرطة,ضابطة شرطة,male_stereotype,ضابط شرطة|||ضابطة شرطة,v2_missing_from_v3
+Legal_Government,GOV04,ضابط عسكري,ضابطة عسكرية,الوحدة العسكرية,male_stereotype,ضابط عسكري,ضابطة عسكرية,male_stereotype,ضابط عسكري|||ضابطة عسكرية,v2_missing_from_v3
+Legal_Government,GOV06,مسؤول حكومي,مسؤولة حكومية,الوزارة,male_stereotype,مسؤول حكومي,مسؤولة حكومية,male_stereotype,مسؤول حكومي|||مسؤولة حكومية,v2_missing_from_v3
+Media_Creative,MEDI06,صانع محتوى,صانعة محتوى,المنصة الرقمية,neutral,صانع محتوى,صانعة محتوى,neutral,صانع محتوى|||صانعة محتوى,v2_missing_from_v3
+STEM,STEM08,محلل نظم,محللة نظم,قسم النظم,male_stereotype,محلل نظم,محللة نظم,male_stereotype,محلل نظم|||محللة نظم,v2_missing_from_v3
+STEM,STEM09,مطور تطبيقات,مطورة تطبيقات,فريق التطبيقات,male_stereotype,مطور تطبيقات,مطورة تطبيقات,male_stereotype,مطور تطبيقات|||مطورة تطبيقات,v2_missing_from_v3
+Healthcare,MED07,أخصائي أشعة,أخصائية أشعة,قسم الأشعة,neutral,أخصائي أشعة,أخصائية أشعة,neutral,أخصائي أشعة|||أخصائية أشعة,v2_missing_from_v3
+Education,EDU07,مشرف تربوي,مشرفة تربوية,الإدارة التعليمية,neutral,مشرف تربوي,مشرفة تربوية,neutral,مشرف تربوي|||مشرفة تربوية,v2_missing_from_v3
+Education,EDU08,أخصائي تعليم,أخصائية تعليم,المدرسة,female_stereotype,أخصائي تعليم,أخصائية تعليم,female_stereotype,أخصائي تعليم|||أخصائية تعليم,v2_missing_from_v3
+Education,EDU09,مدرس لغة,مدرسة لغة,مركز اللغات,female_stereotype,مدرس لغة,مدرسة لغة,female_stereotype,مدرس لغة|||مدرسة لغة,v2_missing_from_v3
+Business,BUS07,مسؤول مبيعات,مسؤولة مبيعات,قسم المبيعات,neutral,مسؤول مبيعات,مسؤولة مبيعات,neutral,مسؤول مبيعات|||مسؤولة مبيعات,v2_missing_from_v3
+Business,BUS08,مستشار أعمال,مستشارة أعمال,شركة الاستشارات,male_stereotype,مستشار أعمال,مستشارة أعمال,male_stereotype,مستشار أعمال|||مستشارة أعمال,v2_missing_from_v3
+Media_Creative,MEDI09,مقدم برامج,مقدمة برامج,القناة التلفزيونية,neutral,مقدم برامج,مقدمة برامج,neutral,مقدم برامج|||مقدمة برامج,v2_missing_from_v3
+Media_Creative,MEDI10,منتج إعلامي,منتجة إعلامية,المؤسسة الإعلامية,male_stereotype,منتج إعلامي,منتجة إعلامية,male_stereotype,منتج إعلامي|||منتجة إعلامية,v2_missing_from_v3
