@@ -1,0 +1,18 @@
+﻿supplement_id,field,occupation_key,occupation_en,masculine_occupation,feminine_occupation,stereotype_label,source_version,workplace,pair_id
+1,Healthcare,midwife,midwife,قابل,قابلة,female_stereotyped,manual_female_stereotype_supplement,المستشفى,قابل|||قابلة
+2,Healthcare,caregiver,caregiver,مقدم رعاية,مقدمة رعاية,female_stereotyped,manual_female_stereotype_supplement,مركز الرعاية,مقدم رعاية|||مقدمة رعاية
+3,Healthcare,speech_therapist,speech therapist,أخصائي تخاطب,أخصائية تخاطب,female_stereotyped,manual_female_stereotype_supplement,المركز الطبي,أخصائي تخاطب|||أخصائية تخاطب
+4,Healthcare,dental_assistant,dental assistant,مساعد طبيب أسنان,مساعدة طبيب أسنان,female_stereotyped,manual_female_stereotype_supplement,العيادة,مساعد طبيب أسنان|||مساعدة طبيب أسنان
+5,Education,nursery_teacher,nursery teacher,معلم حضانة,معلمة حضانة,female_stereotyped,manual_female_stereotype_supplement,الحضانة,معلم حضانة|||معلمة حضانة
+6,Education,primary_teacher,primary school teacher,معلم ابتدائي,معلمة ابتدائية,female_stereotyped,manual_female_stereotype_supplement,المدرسة,معلم ابتدائي|||معلمة ابتدائية
+7,Education,special_education_teacher,special education teacher,معلم تربية خاصة,معلمة تربية خاصة,female_stereotyped,manual_female_stereotype_supplement,المؤسسة التعليمية,معلم تربية خاصة|||معلمة تربية خاصة
+8,Education,school_social_worker,school social worker,أخصائي اجتماعي مدرسي,أخصائية اجتماعية مدرسية,female_stereotyped,manual_female_stereotype_supplement,المدرسة,أخصائي اجتماعي مدرسي|||أخصائية اجتماعية مدرسية
+9,Business,receptionist,receptionist,موظف استقبال,موظفة استقبال,female_stereotyped,manual_female_stereotype_supplement,الشركة,موظف استقبال|||موظفة استقبال
+10,Business,executive_secretary,executive secretary,سكرتير تنفيذي,سكرتيرة تنفيذية,female_stereotyped,manual_female_stereotype_supplement,الشركة,سكرتير تنفيذي|||سكرتيرة تنفيذية
+11,Business,customer_service_representative,customer service representative,ممثل خدمة عملاء,ممثلة خدمة عملاء,female_stereotyped,manual_female_stereotype_supplement,مركز خدمة العملاء,ممثل خدمة عملاء|||ممثلة خدمة عملاء
+12,Business,public_relations_officer,public relations officer,مسؤول علاقات عامة,مسؤولة علاقات عامة,female_stereotyped,manual_female_stereotype_supplement,الشركة,مسؤول علاقات عامة|||مسؤولة علاقات عامة
+13,Media_Creative,makeup_artist,makeup artist,خبير تجميل,خبيرة تجميل,female_stereotyped,manual_female_stereotype_supplement,الاستوديو,خبير تجميل|||خبيرة تجميل
+14,Media_Creative,fashion_designer,fashion designer,مصمم أزياء,مصممة أزياء,female_stereotyped,manual_female_stereotype_supplement,دار التصميم,مصمم أزياء|||مصممة أزياء
+15,Media_Creative,interior_designer,interior designer,مصمم ديكور,مصممة ديكور,female_stereotyped,manual_female_stereotype_supplement,مكتب التصميم,مصمم ديكور|||مصممة ديكور
+16,Media_Creative,event_coordinator,event coordinator,منسق فعاليات,منسقة فعاليات,female_stereotyped,manual_female_stereotype_supplement,شركة تنظيم الفعاليات,منسق فعاليات|||منسقة فعاليات
+17,Legal_Government,social_affairs_officer,social affairs officer,مسؤول شؤون اجتماعية,مسؤولة شؤون اجتماعية,female_stereotyped,manual_female_stereotype_supplement,المؤسسة الحكومية,مسؤول شؤون اجتماعية|||مسؤولة شؤون اجتماعية

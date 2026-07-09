@@ -1,0 +1,4 @@
+﻿model_name,stereotype_label,total_items,masculine_preferred_count,feminine_preferred_count,equal_count,masculine_preferred_percent,feminine_preferred_percent,equal_percent,average_score_difference,median_score_difference,min_score_difference,max_score_difference
+aubmindlab/aragpt2-base,female_stereotyped,120,29,91,0,24.166666666666668,75.83333333333333,0.0,-0.4853183150291443,-0.4935884475708008,-3.402408599853516,1.3319830894470217
+aubmindlab/aragpt2-base,male_stereotyped,120,36,84,0,30.0,70.0,0.0,-0.4078697800636292,-0.33558201789855957,-3.026859760284424,1.684804916381836
+aubmindlab/aragpt2-base,neutral,120,33,87,0,27.500000000000004,72.5,0.0,-0.424945600827535,-0.3878912925720215,-2.396566390991211,1.156259536743164

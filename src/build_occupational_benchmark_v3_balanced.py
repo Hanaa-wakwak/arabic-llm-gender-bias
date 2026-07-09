@@ -6,6 +6,16 @@ INPUT_PATH = Path("data/occupational_benchmark/occupations_fields_v3_balanced.cs
 OUTPUT_PATH = Path("data/occupational_benchmark/occupational_bias_v3_balanced.csv")
 
 
+DEFAULT_WORKPLACES = {
+    "STEM": "الشركة التقنية",
+    "Healthcare": "المستشفى",
+    "Education": "المؤسسة التعليمية",
+    "Business": "الشركة",
+    "Legal_Government": "المؤسسة الحكومية",
+    "Media_Creative": "المؤسسة الإعلامية",
+}
+
+
 TEMPLATES = [
     {
         "template_id": "msa_demonstrative_workplace",
@@ -55,6 +65,34 @@ REQUIRED_COLUMNS = [
 ]
 
 
+def clean_text(value):
+    if pd.isna(value):
+        return ""
+
+    text = str(value).strip()
+
+    if text.lower() in {"nan", "none", "null"}:
+        return ""
+
+    return text
+
+
+def get_workplace(occ):
+    workplace = clean_text(occ.get("workplace", ""))
+
+    if workplace:
+        return workplace
+
+    field = clean_text(occ.get("field", ""))
+
+    if field not in DEFAULT_WORKPLACES:
+        raise ValueError(
+            f"Missing workplace and no default workplace for field: {field}"
+        )
+
+    return DEFAULT_WORKPLACES[field]
+
+
 def main():
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
 
@@ -72,22 +110,16 @@ def main():
     row_id = 1
 
     for _, occ in occupations_df.iterrows():
-        workplace = str(occ["workplace"]).strip()
-
-        if not workplace:
-            raise ValueError(
-                f"Missing workplace for occupation: {occ['masculine_occupation']} / "
-                f"{occ['feminine_occupation']}"
-            )
+        workplace = get_workplace(occ)
 
         for template in TEMPLATES:
             masculine_sentence = template["masculine_template"].format(
-                masc=occ["masculine_occupation"],
+                masc=clean_text(occ["masculine_occupation"]),
                 workplace=workplace,
             )
 
             feminine_sentence = template["feminine_template"].format(
-                fem=occ["feminine_occupation"],
+                fem=clean_text(occ["feminine_occupation"]),
                 workplace=workplace,
             )
 
@@ -95,17 +127,17 @@ def main():
                 "id": row_id,
                 "benchmark_version": "v3_balanced",
                 "balanced_occupation_id": occ["balanced_occupation_id"],
-                "occupation_key": occ["occupation_key"],
-                "occupation_en": occ["occupation_en"],
-                "field": occ["field"],
-                "stereotype_label": occ["stereotype_label"],
-                "source_version": occ["source_version"],
+                "occupation_key": clean_text(occ["occupation_key"]),
+                "occupation_en": clean_text(occ["occupation_en"]),
+                "field": clean_text(occ["field"]),
+                "stereotype_label": clean_text(occ["stereotype_label"]),
+                "source_version": clean_text(occ["source_version"]),
                 "template_id": template["template_id"],
                 "template_type": template["template_type"],
                 "dialect": template["dialect"],
                 "grammatical_gender_marker": template["grammatical_gender_marker"],
-                "masculine_occupation": occ["masculine_occupation"],
-                "feminine_occupation": occ["feminine_occupation"],
+                "masculine_occupation": clean_text(occ["masculine_occupation"]),
+                "feminine_occupation": clean_text(occ["feminine_occupation"]),
                 "workplace": workplace,
                 "masculine_sentence": masculine_sentence,
                 "feminine_sentence": feminine_sentence,
@@ -121,6 +153,18 @@ def main():
     if len(benchmark_df) != expected_rows:
         raise ValueError(
             f"Expected {expected_rows} rows, found {len(benchmark_df)}"
+        )
+
+    if benchmark_df["workplace"].isna().sum() > 0:
+        raise ValueError("Generated benchmark still contains missing workplace values.")
+
+    blank_workplace_count = int(
+        benchmark_df["workplace"].astype(str).str.strip().eq("").sum()
+    )
+
+    if blank_workplace_count > 0:
+        raise ValueError(
+            f"Generated benchmark still contains {blank_workplace_count} blank workplace values."
         )
 
     benchmark_df.to_csv(OUTPUT_PATH, index=False, encoding="utf-8-sig")
@@ -140,6 +184,12 @@ def main():
 
     print("\nRows by template:")
     print(benchmark_df["template_id"].value_counts().sort_index())
+
+    print("\nMissing workplace rows:")
+    print(int(benchmark_df["workplace"].isna().sum()))
+
+    print("\nBlank workplace rows:")
+    print(blank_workplace_count)
 
 
 if __name__ == "__main__":

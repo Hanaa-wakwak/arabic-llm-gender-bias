@@ -1,0 +1,3 @@
+﻿model_name,template_type,total_items,masculine_preferred_count,feminine_preferred_count,equal_count,masculine_preferred_percent,feminine_preferred_percent,equal_percent,average_score_difference,median_score_difference,min_score_difference,max_score_difference
+aubmindlab/aragpt2-base,said_role,180,35,145,0,19.444444444444446,80.55555555555556,0.0,-0.490615102979872,-0.48975682258605957,-2.47952651977539,1.684804916381836
+aubmindlab/aragpt2-base,workplace,180,63,117,0,35.0,65.0,0.0,-0.38814069430033366,-0.2742764949798584,-3.402408599853516,1.5929574966430664

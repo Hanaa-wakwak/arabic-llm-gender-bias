@@ -1,0 +1,2 @@
+﻿model_name,total_items,masculine_preferred_count,feminine_preferred_count,equal_count,masculine_preferred_percent,feminine_preferred_percent,equal_percent,average_score_difference,median_score_difference,min_score_difference,max_score_difference
+aubmindlab/aragpt2-base,360,98,262,0,27.22222222222222,72.77777777777777,0.0,-0.4393778986401028,-0.38125085830688477,-3.402408599853516,1.684804916381836

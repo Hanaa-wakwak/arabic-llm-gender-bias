@@ -1,0 +1,3 @@
+﻿model_name,template_type,total_items,masculine_preferred_count,feminine_preferred_count,equal_count,masculine_preferred_percent,feminine_preferred_percent,equal_percent,average_score_difference,median_score_difference,min_score_difference,max_score_difference
+bigscience/bloom-560m,said_role,180,72,108,0,40.0,60.0,0.0,-0.12670355902777777,-0.1875,-1.46875,1.57421875
+bigscience/bloom-560m,workplace,180,68,109,3,37.77777777777778,60.55555555555555,1.6666666666666667,-0.16565755208333333,-0.15625,-1.98046875,1.3125
