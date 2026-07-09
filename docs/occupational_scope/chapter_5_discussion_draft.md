@@ -323,3 +323,48 @@ The field-level results show that bias is domain-dependent.
 The external dataset pilots show that the pipeline can be extended beyond the main occupational benchmark, but APGC and ArGAN should currently be treated as pilot validation steps rather than final quantitative evidence.
 
 Overall, the thesis provides a focused and statistically supported approach for measuring occupational gender bias in Arabic causal language models.
+## v3 Sensitivity Analysis Discussion
+
+An experimental v3 benchmark was created to test whether the main benchmark pattern remains stable after expanding occupation coverage and template diversity.
+
+The v3 benchmark passed automatic quality checks, but the quick two-model test showed that AraGPT2-base changed direction compared with v2.
+
+In v2, AraGPT2-base showed masculine occupational preference. In v3, AraGPT2-base showed feminine occupational preference.
+
+Further diagnostics showed that this reversal was not mainly caused by the newly added templates. The newly added templates were almost balanced. Instead, the stronger feminine direction appeared in the old v2-style templates when applied to the expanded v3 occupation list.
+
+This suggests that Arabic occupational gender-bias measurement is sensitive to benchmark design, especially occupation coverage and lexical/contextual formulation.
+
+This finding is important because it shows that benchmark expansion should not be assumed to preserve earlier patterns automatically.
+
+For this reason, v2 remains the main validated benchmark, while v3 is treated as an experimental sensitivity benchmark that motivates future balanced benchmark construction and human validation.
+## Interpretation of v3 Balanced Results
+
+The v3 balanced benchmark was designed to address the imbalance observed in the earlier v3 expansion.
+
+It used 30 male-stereotyped, 30 female-stereotyped, and 30 neutral occupations, with four controlled templates.
+
+However, AraGPT2-base still showed feminine preference on v3 balanced.
+
+This suggests that stereotype-label balance alone is not sufficient to reproduce the v2 model-family pattern.
+
+The result supports a broader methodological conclusion: Arabic occupational gender-bias evaluation is sensitive not only to stereotype-label distribution, but also to the exact occupation terms and sentence formulations used in the benchmark.
+
+For this reason, v2 remains the main benchmark, and v3 balanced is reported as a sensitivity analysis.
+## Template-Induced Bias Direction Volatility
+
+The v4 template perturbation benchmark revealed a major methodological finding: measured gender-bias direction is not stable across templates.
+
+All six tested models showed template-induced direction flips. This means that the same model can prefer masculine occupational sentences under one template and feminine occupational sentences under another.
+
+This finding is important because it shows that Arabic bias evaluation should not rely on a single sentence template.
+
+The strongest statistical effects came from template ID, semantic frame, and dialect. In contrast, stereotype label was not statistically significant after balancing.
+
+This suggests that, once the occupation set is balanced, sentence formulation and dialect can become stronger drivers of measured bias than the stereotype category itself.
+
+Therefore, the thesis contribution is not only the detection of gender bias in Arabic models. It also demonstrates the instability of bias measurement under controlled benchmark-design changes.
+
+This supports the final methodological claim:
+
+Arabic occupational gender-bias evaluation should report both model-level bias and benchmark-design sensitivity.
