@@ -52,6 +52,21 @@ def add_issue(issues, issue_type, details, count):
     })
 
 
+def save_value_counts(df, column_name, output_path):
+    counts_df = (
+        df[column_name]
+        .value_counts()
+        .rename_axis(column_name)
+        .reset_index(name="count")
+    )
+
+    counts_df.to_csv(
+        output_path,
+        index=False,
+        encoding="utf-8-sig",
+    )
+
+
 def main():
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -89,10 +104,16 @@ def main():
         if col in df.columns:
             null_count = int(df[col].isna().sum())
             if null_count > 0:
-                add_issue(issues, "missing_values", col, null_count)
+                add_issue(
+                    issues,
+                    "missing_values",
+                    col,
+                    null_count,
+                )
 
     if "stereotype_label" in df.columns:
         invalid_labels = sorted(set(df["stereotype_label"]) - ALLOWED_STEREOTYPE_LABELS)
+
         if invalid_labels:
             add_issue(
                 issues,
@@ -103,6 +124,7 @@ def main():
 
     if "source_version" in df.columns:
         invalid_sources = sorted(set(df["source_version"]) - ALLOWED_SOURCE_VERSIONS)
+
         if invalid_sources:
             add_issue(
                 issues,
@@ -113,6 +135,7 @@ def main():
 
     if "dialect" in df.columns:
         invalid_dialects = sorted(set(df["dialect"]) - ALLOWED_DIALECTS)
+
         if invalid_dialects:
             add_issue(
                 issues,
@@ -123,12 +146,47 @@ def main():
 
     if {"masculine_sentence", "feminine_sentence"}.issubset(df.columns):
         equal_sentences = df[df["masculine_sentence"] == df["feminine_sentence"]]
+
         if len(equal_sentences) > 0:
             add_issue(
                 issues,
                 "identical_sentence_pairs",
                 "masculine_sentence equals feminine_sentence",
                 len(equal_sentences),
+            )
+
+    if {"masculine_occupation", "masculine_sentence"}.issubset(df.columns):
+        missing_masc_occ = df[
+            ~df.apply(
+                lambda row: str(row["masculine_occupation"]).strip()
+                in str(row["masculine_sentence"]),
+                axis=1,
+            )
+        ]
+
+        if len(missing_masc_occ) > 0:
+            add_issue(
+                issues,
+                "masculine_occupation_missing_from_sentence",
+                "masculine occupation not found in masculine sentence",
+                len(missing_masc_occ),
+            )
+
+    if {"feminine_occupation", "feminine_sentence"}.issubset(df.columns):
+        missing_fem_occ = df[
+            ~df.apply(
+                lambda row: str(row["feminine_occupation"]).strip()
+                in str(row["feminine_sentence"]),
+                axis=1,
+            )
+        ]
+
+        if len(missing_fem_occ) > 0:
+            add_issue(
+                issues,
+                "feminine_occupation_missing_from_sentence",
+                "feminine occupation not found in feminine sentence",
+                len(missing_fem_occ),
             )
 
     if not issues:
@@ -142,12 +200,40 @@ def main():
     issues_df = pd.DataFrame(issues)
 
     summary_df = pd.DataFrame([
-        {"metric": "total_rows", "value": len(df)},
-        {"metric": "unique_occupations", "value": df["candidate_occupation_id"].nunique()},
-        {"metric": "unique_fields", "value": df["field"].nunique()},
-        {"metric": "unique_templates", "value": df["template_id"].nunique()},
-        {"metric": "unique_stereotype_labels", "value": df["stereotype_label"].nunique()},
-        {"metric": "unique_source_versions", "value": df["source_version"].nunique()},
+        {
+            "metric": "total_rows",
+            "value": len(df),
+        },
+        {
+            "metric": "unique_occupations",
+            "value": df["candidate_occupation_id"].nunique()
+            if "candidate_occupation_id" in df.columns
+            else None,
+        },
+        {
+            "metric": "unique_fields",
+            "value": df["field"].nunique()
+            if "field" in df.columns
+            else None,
+        },
+        {
+            "metric": "unique_templates",
+            "value": df["template_id"].nunique()
+            if "template_id" in df.columns
+            else None,
+        },
+        {
+            "metric": "unique_stereotype_labels",
+            "value": df["stereotype_label"].nunique()
+            if "stereotype_label" in df.columns
+            else None,
+        },
+        {
+            "metric": "unique_source_versions",
+            "value": df["source_version"].nunique()
+            if "source_version" in df.columns
+            else None,
+        },
     ])
 
     issues_df.to_csv(
@@ -162,29 +248,40 @@ def main():
         encoding="utf-8-sig",
     )
 
-    df["field"].value_counts().reset_index().rename(
-        columns={"index": "field", "field": "count"}
-    ).to_csv(
-        OUTPUT_DIR / "v3_balanced_candidate_field_counts.csv",
-        index=False,
-        encoding="utf-8-sig",
-    )
+    if "field" in df.columns:
+        save_value_counts(
+            df,
+            "field",
+            OUTPUT_DIR / "v3_balanced_candidate_field_counts.csv",
+        )
 
-    df["stereotype_label"].value_counts().reset_index().rename(
-        columns={"index": "stereotype_label", "stereotype_label": "count"}
-    ).to_csv(
-        OUTPUT_DIR / "v3_balanced_candidate_stereotype_counts.csv",
-        index=False,
-        encoding="utf-8-sig",
-    )
+    if "stereotype_label" in df.columns:
+        save_value_counts(
+            df,
+            "stereotype_label",
+            OUTPUT_DIR / "v3_balanced_candidate_stereotype_counts.csv",
+        )
 
-    df["source_version"].value_counts().reset_index().rename(
-        columns={"index": "source_version", "source_version": "count"}
-    ).to_csv(
-        OUTPUT_DIR / "v3_balanced_candidate_source_counts.csv",
-        index=False,
-        encoding="utf-8-sig",
-    )
+    if "source_version" in df.columns:
+        save_value_counts(
+            df,
+            "source_version",
+            OUTPUT_DIR / "v3_balanced_candidate_source_counts.csv",
+        )
+
+    if "template_id" in df.columns:
+        save_value_counts(
+            df,
+            "template_id",
+            OUTPUT_DIR / "v3_balanced_candidate_template_counts.csv",
+        )
+
+    if "dialect" in df.columns:
+        save_value_counts(
+            df,
+            "dialect",
+            OUTPUT_DIR / "v3_balanced_candidate_dialect_counts.csv",
+        )
 
     print("v3 balanced candidate quality check completed.")
 
@@ -193,6 +290,26 @@ def main():
 
     print("\nSummary:")
     print(summary_df.to_string(index=False))
+
+    if "stereotype_label" in df.columns:
+        print("\nStereotype counts:")
+        print(
+            df["stereotype_label"]
+            .value_counts()
+            .rename_axis("stereotype_label")
+            .reset_index(name="count")
+            .to_string(index=False)
+        )
+
+    if "source_version" in df.columns:
+        print("\nSource counts:")
+        print(
+            df["source_version"]
+            .value_counts()
+            .rename_axis("source_version")
+            .reset_index(name="count")
+            .to_string(index=False)
+        )
 
 
 if __name__ == "__main__":
