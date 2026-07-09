@@ -368,3 +368,16 @@ Therefore, the thesis contribution is not only the detection of gender bias in A
 This supports the final methodological claim:
 
 Arabic occupational gender-bias evaluation should report both model-level bias and benchmark-design sensitivity.
+## Effect-Size Interpretation of v4 Results
+
+The v4 effect-size analysis showed that template ID had the strongest association with preferred gender.
+
+This is important because it means that the structure and wording of the sentence can affect measured gender preference more strongly than the broad model-family category.
+
+Semantic frame, model name, and dialect were also significant, but their effect sizes were smaller.
+
+Stereotype label was not significant after balancing, and its effect size was very small.
+
+This suggests that, once the occupation set is balanced, measured bias may be driven more by linguistic and contextual formulation than by the stereotype category alone.
+
+Therefore, the thesis argues that Arabic gender-bias evaluation should report benchmark-design sensitivity, especially template-level and dialect-level sensitivity.
