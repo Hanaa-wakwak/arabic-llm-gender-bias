@@ -80,3 +80,27 @@ Therefore, Arabic bias evaluation should report:
 4. template sensitivity,
 5. semantic-frame sensitivity,
 6. benchmark robustness.
+## Final Strengthened Contribution
+
+The strongest methodological contribution is the finding that template formulation is the strongest practical driver of measured gender preference in the v4 benchmark.
+
+Cramér's V effect-size analysis showed:
+
+| Factor | Effect Size |
+|---|---|
+| template_id | Medium |
+| semantic_frame | Small |
+| model_name | Small |
+| dialect | Small |
+| model_family | Very small |
+| stereotype_label | Very small |
+
+This means that Arabic occupational gender-bias evaluation should not report only one overall score.
+
+It should report:
+
+1. overall model-level bias,
+2. template-level sensitivity,
+3. semantic-frame sensitivity,
+4. dialect sensitivity,
+5. robustness across benchmark versions.
