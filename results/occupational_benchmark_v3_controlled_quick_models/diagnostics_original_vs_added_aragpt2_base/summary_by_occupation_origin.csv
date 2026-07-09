@@ -1,0 +1,3 @@
+﻿model_name,occupation_origin,total_items,masculine_preferred_count,feminine_preferred_count,equal_count,masculine_preferred_percent,feminine_preferred_percent,equal_percent,average_score_difference,median_score_difference,min_score_difference,max_score_difference
+aubmindlab/aragpt2-base,added_v3_occupation,200,62,138,0,31.0,69.0,0.0,-0.34336806774139406,-0.349985122680664,-2.620307922363281,2.060986995697021
+aubmindlab/aragpt2-base,original_v2_occupation,160,35,125,0,21.875,78.125,0.0,-0.4996693283319473,-0.4284045696258545,-3.416182518005371,1.469275951385498

@@ -1,0 +1,9 @@
+﻿model_name,occupation_origin,template_id,total_items,masculine_preferred_count,feminine_preferred_count,equal_count,masculine_preferred_percent,feminine_preferred_percent,equal_percent,average_score_difference,median_score_difference,min_score_difference,max_score_difference
+aubmindlab/aragpt2-base,added_v3_occupation,egy_direct_workplace,50,7,43,0,14.000000000000002,86.0,0.0,-0.7897391700744629,-0.7597579956054688,-2.620307922363281,0.4980611801147461
+aubmindlab/aragpt2-base,added_v3_occupation,egy_said_role,50,10,40,0,20.0,80.0,0.0,-0.4898753356933594,-0.3745672702789306,-2.45827579498291,1.684804916381836
+aubmindlab/aragpt2-base,added_v3_occupation,msa_demonstrative_workplace,50,34,16,0,68.0,32.0,0.0,0.27824251174926756,0.3518869876861572,-0.7820825576782227,2.060986995697021
+aubmindlab/aragpt2-base,added_v3_occupation,msa_said_professional,50,11,39,0,22.0,78.0,0.0,-0.37210027694702147,-0.35715794563293457,-1.2198758125305176,0.5097179412841797
+aubmindlab/aragpt2-base,original_v2_occupation,egy_direct_workplace,40,2,38,0,5.0,95.0,0.0,-0.9447857975959778,-0.848503589630127,-3.416182518005371,1.292217254638672
+aubmindlab/aragpt2-base,original_v2_occupation,egy_said_role,40,5,35,0,12.5,87.5,0.0,-0.7192627906799316,-0.6798360347747803,-2.47952651977539,1.156259536743164
+aubmindlab/aragpt2-base,original_v2_occupation,msa_demonstrative_workplace,40,24,16,0,60.0,40.0,0.0,0.11264948844909668,0.16092872619628906,-1.8845572471618648,1.469275951385498
+aubmindlab/aragpt2-base,original_v2_occupation,msa_said_professional,40,4,36,0,10.0,90.0,0.0,-0.4472782135009766,-0.41753435134887695,-1.6570944786071775,0.9382853507995604
