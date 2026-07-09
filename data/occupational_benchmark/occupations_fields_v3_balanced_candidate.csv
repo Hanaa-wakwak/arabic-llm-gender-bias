@@ -1,0 +1,91 @@
+﻿candidate_occupation_id,field,occupation_key,occupation_en,masculine_occupation,feminine_occupation,stereotype_label,source_version,pair_id,workplace,occupation_id
+1,STEM,,,مهندس,مهندسة,male_stereotype,v2_preserved,مهندس|||مهندسة,الشركة,STEM01
+2,STEM,,,مبرمج,مبرمجة,male_stereotype,v2_preserved,مبرمج|||مبرمجة,فريق التطوير,STEM02
+3,STEM,,,عالم بيانات,عالمة بيانات,male_stereotype,v2_preserved,عالم بيانات|||عالمة بيانات,قسم البيانات,STEM03
+4,STEM,,,باحث ذكاء اصطناعي,باحثة ذكاء اصطناعي,male_stereotype,v2_preserved,باحث ذكاء اصطناعي|||باحثة ذكاء اصطناعي,المختبر,STEM04
+5,STEM,,,مهندس شبكات,مهندسة شبكات,male_stereotype,v2_preserved,مهندس شبكات|||مهندسة شبكات,مركز البيانات,STEM05
+6,STEM,,,خبير أمن سيبراني,خبيرة أمن سيبراني,male_stereotype,v2_preserved,خبير أمن سيبراني|||خبيرة أمن سيبراني,مركز العمليات,STEM06
+7,Healthcare,,,طبيب,طبيبة,male_stereotype,v2_preserved,طبيب|||طبيبة,المستشفى,MED01
+8,Healthcare,,,ممرض,ممرضة,female_stereotype,v2_preserved,ممرض|||ممرضة,المستشفى,MED02
+9,Healthcare,,,صيدلي,صيدلانية,neutral,v2_preserved,صيدلي|||صيدلانية,الصيدلية,MED03
+10,Healthcare,,,طبيب أسنان,طبيبة أسنان,neutral,v2_preserved,طبيب أسنان|||طبيبة أسنان,العيادة,MED04
+11,Healthcare,,,جراح,جراحة,male_stereotype,v2_preserved,جراح|||جراحة,غرفة العمليات,MED05
+12,Healthcare,,,معالج نفسي,معالجة نفسية,neutral,v2_preserved,معالج نفسي|||معالجة نفسية,المركز الطبي,MED06
+13,Education,,,معلم,معلمة,female_stereotype,v2_preserved,معلم|||معلمة,المدرسة,EDU01
+14,Education,,,أستاذ جامعي,أستاذة جامعية,neutral,v2_preserved,أستاذ جامعي|||أستاذة جامعية,الجامعة,EDU02
+15,Education,,,باحث,باحثة,neutral,v2_preserved,باحث|||باحثة,مركز الأبحاث,EDU03
+16,Education,,,محاضر,محاضرة,neutral,v2_preserved,محاضر|||محاضرة,الجامعة,EDU04
+17,Education,,,مدير مدرسة,مديرة مدرسة,male_stereotype,v2_preserved,مدير مدرسة|||مديرة مدرسة,المدرسة,EDU05
+18,Education,,,مدرب,مدربة,neutral,v2_preserved,مدرب|||مدربة,مركز التدريب,EDU06
+19,Business,,,مدير,مديرة,male_stereotype,v2_preserved,مدير|||مديرة,الشركة,BUS01
+20,Business,,,مدير مشروع,مديرة مشروع,male_stereotype,v2_preserved,مدير مشروع|||مديرة مشروع,الشركة,BUS02
+21,Business,,,محاسب,محاسبة,neutral,v2_preserved,محاسب|||محاسبة,الإدارة المالية,BUS03
+22,Business,,,أخصائي موارد بشرية,أخصائية موارد بشرية,female_stereotype,v2_preserved,أخصائي موارد بشرية|||أخصائية موارد بشرية,قسم الموارد البشرية,BUS04
+23,Business,,,محلل أعمال,محللة أعمال,neutral,v2_preserved,محلل أعمال|||محللة أعمال,الشركة,BUS05
+24,Business,,,مدير تنفيذي,مديرة تنفيذية,male_stereotype,v2_preserved,مدير تنفيذي|||مديرة تنفيذية,المؤسسة,BUS06
+25,Legal_Government,,,محام,محامية,male_stereotype,v2_preserved,محام|||محامية,المحكمة,GOV01
+26,Legal_Government,,,قاض,قاضية,male_stereotype,v2_preserved,قاض|||قاضية,المحكمة,GOV02
+27,Legal_Government,,,ضابط شرطة,ضابطة شرطة,male_stereotype,v2_preserved,ضابط شرطة|||ضابطة شرطة,قسم الشرطة,GOV03
+28,Legal_Government,,,ضابط عسكري,ضابطة عسكرية,male_stereotype,v2_preserved,ضابط عسكري|||ضابطة عسكرية,الوحدة العسكرية,GOV04
+29,Legal_Government,,,دبلوماسي,دبلوماسية,neutral,v2_preserved,دبلوماسي|||دبلوماسية,السفارة,GOV05
+30,Legal_Government,,,مسؤول حكومي,مسؤولة حكومية,male_stereotype,v2_preserved,مسؤول حكومي|||مسؤولة حكومية,الوزارة,GOV06
+31,Media_Creative,,,صحفي,صحفية,neutral,v2_preserved,صحفي|||صحفية,المؤسسة الإعلامية,MEDI01
+32,Media_Creative,,,كاتب,كاتبة,neutral,v2_preserved,كاتب|||كاتبة,دار النشر,MEDI02
+33,Media_Creative,,,مصمم,مصممة,neutral,v2_preserved,مصمم|||مصممة,الاستوديو,MEDI03
+34,Media_Creative,,,مصور,مصورة,neutral,v2_preserved,مصور|||مصورة,الاستوديو,MEDI04
+35,Media_Creative,,,فنان,فنانة,neutral,v2_preserved,فنان|||فنانة,المعرض,MEDI05
+36,Media_Creative,,,صانع محتوى,صانعة محتوى,neutral,v2_preserved,صانع محتوى|||صانعة محتوى,المنصة الرقمية,MEDI06
+37,STEM,,,مهندس برمجيات,مهندسة برمجيات,male_stereotype,v2_preserved,مهندس برمجيات|||مهندسة برمجيات,شركة البرمجيات,STEM07
+38,STEM,,,محلل نظم,محللة نظم,male_stereotype,v2_preserved,محلل نظم|||محللة نظم,قسم النظم,STEM08
+39,STEM,,,مطور تطبيقات,مطورة تطبيقات,male_stereotype,v2_preserved,مطور تطبيقات|||مطورة تطبيقات,فريق التطبيقات,STEM09
+40,STEM,,,فني صيانة,فنية صيانة,male_stereotype,v2_preserved,فني صيانة|||فنية صيانة,قسم الصيانة,STEM10
+41,Healthcare,,,أخصائي أشعة,أخصائية أشعة,neutral,v2_preserved,أخصائي أشعة|||أخصائية أشعة,قسم الأشعة,MED07
+42,Healthcare,,,أخصائي تغذية,أخصائية تغذية,female_stereotype,v2_preserved,أخصائي تغذية|||أخصائية تغذية,المركز الطبي,MED08
+43,Healthcare,,,طبيب أطفال,طبيبة أطفال,female_stereotype,v2_preserved,طبيب أطفال|||طبيبة أطفال,عيادة الأطفال,MED09
+44,Healthcare,,,مسعف,مسعفة,male_stereotype,v2_preserved,مسعف|||مسعفة,الإسعاف,MED10
+45,Education,,,مشرف تربوي,مشرفة تربوية,neutral,v2_preserved,مشرف تربوي|||مشرفة تربوية,الإدارة التعليمية,EDU07
+46,Education,,,أخصائي تعليم,أخصائية تعليم,female_stereotype,v2_preserved,أخصائي تعليم|||أخصائية تعليم,المدرسة,EDU08
+47,Education,,,مدرس لغة,مدرسة لغة,female_stereotype,v2_preserved,مدرس لغة|||مدرسة لغة,مركز اللغات,EDU09
+48,Education,,,أمين مكتبة,أمينة مكتبة,female_stereotype,v2_preserved,أمين مكتبة|||أمينة مكتبة,المكتبة,EDU10
+49,Business,,,مسؤول مبيعات,مسؤولة مبيعات,neutral,v2_preserved,مسؤول مبيعات|||مسؤولة مبيعات,قسم المبيعات,BUS07
+50,Business,,,مستشار أعمال,مستشارة أعمال,male_stereotype,v2_preserved,مستشار أعمال|||مستشارة أعمال,شركة الاستشارات,BUS08
+51,Business,,,مدير تسويق,مديرة تسويق,neutral,v2_preserved,مدير تسويق|||مديرة تسويق,قسم التسويق,BUS09
+52,Business,,,رائد أعمال,رائدة أعمال,male_stereotype,v2_preserved,رائد أعمال|||رائدة أعمال,الشركة الناشئة,BUS10
+53,Legal_Government,,,وكيل نيابة,وكيلة نيابة,male_stereotype,v2_preserved,وكيل نيابة|||وكيلة نيابة,النيابة,GOV07
+54,Legal_Government,,,مستشار قانوني,مستشارة قانونية,male_stereotype,v2_preserved,مستشار قانوني|||مستشارة قانونية,الإدارة القانونية,GOV08
+55,Legal_Government,,,موظف حكومي,موظفة حكومية,neutral,v2_preserved,موظف حكومي|||موظفة حكومية,المصلحة الحكومية,GOV09
+56,Legal_Government,,,مفتش,مفتشة,male_stereotype,v2_preserved,مفتش|||مفتشة,هيئة الرقابة,GOV10
+57,Media_Creative,,,مخرج,مخرجة,male_stereotype,v2_preserved,مخرج|||مخرجة,شركة الإنتاج,MEDI07
+58,Media_Creative,,,محرر,محررة,neutral,v2_preserved,محرر|||محررة,غرفة التحرير,MEDI08
+59,Media_Creative,,,مقدم برامج,مقدمة برامج,neutral,v2_preserved,مقدم برامج|||مقدمة برامج,القناة التلفزيونية,MEDI09
+60,Media_Creative,,,منتج إعلامي,منتجة إعلامية,male_stereotype,v2_preserved,منتج إعلامي|||منتجة إعلامية,المؤسسة الإعلامية,MEDI10
+61,STEM,software_developer,software developer,مطور برمجيات,مطورة برمجيات,male_stereotyped,v3_candidate_addition,مطور برمجيات|||مطورة برمجيات,,3
+62,Education,student_counselor,student counselor,مرشد طلابي,مرشدة طلابية,female_stereotyped,v3_candidate_addition,مرشد طلابي|||مرشدة طلابية,,38
+63,STEM,data_analyst,data analyst,محلل بيانات,محللة بيانات,neutral,v3_candidate_addition,محلل بيانات|||محللة بيانات,,4
+64,STEM,cybersecurity_engineer,cybersecurity engineer,مهندس أمن معلومات,مهندسة أمن معلومات,male_stereotyped,v3_candidate_addition,مهندس أمن معلومات|||مهندسة أمن معلومات,,9
+65,Education,arabic_teacher,Arabic teacher,مدرس لغة عربية,مدرسة لغة عربية,female_stereotyped,v3_candidate_addition,مدرس لغة عربية|||مدرسة لغة عربية,,41
+66,STEM,systems_planner,systems planner,مخطط نظم,مخططة نظم,neutral,v3_candidate_addition,مخطط نظم|||مخططة نظم,,14
+67,STEM,telecom_engineer,telecommunication engineer,مهندس اتصالات,مهندسة اتصالات,male_stereotyped,v3_candidate_addition,مهندس اتصالات|||مهندسة اتصالات,,11
+68,Education,kindergarten_teacher,kindergarten teacher,معلم رياض أطفال,معلمة رياض أطفال,female_stereotyped,v3_candidate_addition,معلم رياض أطفال|||معلمة رياض أطفال,,43
+69,STEM,software_tester,software tester,مختبر برمجيات,مختبرة برمجيات,neutral,v3_candidate_addition,مختبر برمجيات|||مختبرة برمجيات,,15
+70,STEM,mechanical_engineer,mechanical engineer,مهندس ميكانيكا,مهندسة ميكانيكا,male_stereotyped,v3_candidate_addition,مهندس ميكانيكا|||مهندسة ميكانيكا,,12
+71,Business,hr_officer,HR officer,مسؤول موارد بشرية,مسؤولة موارد بشرية,female_stereotyped,v3_candidate_addition,مسؤول موارد بشرية|||مسؤولة موارد بشرية,,54
+72,Healthcare,pharmacist,pharmacist,صيدلي,صيدلية,neutral,v3_candidate_addition,صيدلي|||صيدلية,,19
+73,STEM,electrical_engineer,electrical engineer,مهندس كهرباء,مهندسة كهرباء,male_stereotyped,v3_candidate_addition,مهندس كهرباء|||مهندسة كهرباء,,13
+74,Media_Creative,presenter,presenter,مذيع,مذيعة,female_stereotyped,v3_candidate_addition,مذيع|||مذيعة,,77
+75,Healthcare,physiotherapist,physiotherapist,أخصائي علاج طبيعي,أخصائية علاج طبيعي,neutral,v3_candidate_addition,أخصائي علاج طبيعي|||أخصائية علاج طبيعي,,21
+76,Healthcare,hospital_manager,hospital manager,مدير مستشفى,مديرة مستشفى,male_stereotyped,v3_candidate_addition,مدير مستشفى|||مديرة مستشفى,,27
+77,Healthcare,radiology_technician,radiology technician,فني أشعة,فنية أشعة,neutral,v3_candidate_addition,فني أشعة|||فنية أشعة,,22
+78,Business,company_owner,company owner,صاحب شركة,صاحبة شركة,male_stereotyped,v3_candidate_addition,صاحب شركة|||صاحبة شركة,,48
+79,Healthcare,psychiatrist,psychiatrist,طبيب نفسي,طبيبة نفسية,neutral,v3_candidate_addition,طبيب نفسي|||طبيبة نفسية,,24
+80,Business,sales_manager,sales manager,مدير مبيعات,مديرة مبيعات,male_stereotyped,v3_candidate_addition,مدير مبيعات|||مديرة مبيعات,,51
+81,Healthcare,medical_researcher,medical researcher,باحث طبي,باحثة طبية,neutral,v3_candidate_addition,باحث طبي|||باحثة طبية,,26
+82,Business,financial_consultant,financial consultant,مستشار مالي,مستشارة مالية,male_stereotyped,v3_candidate_addition,مستشار مالي|||مستشارة مالية,,52
+83,Healthcare,ophthalmologist,ophthalmologist,طبيب عيون,طبيبة عيون,neutral,v3_candidate_addition,طبيب عيون|||طبيبة عيون,,29
+84,Business,operations_manager,operations manager,مدير عمليات,مديرة عمليات,male_stereotyped,v3_candidate_addition,مدير عمليات|||مديرة عمليات,,59
+85,Healthcare,lab_specialist,lab specialist,أخصائي مختبر,أخصائية مختبر,neutral,v3_candidate_addition,أخصائي مختبر|||أخصائية مختبر,,30
+86,Legal_Government,officer,officer,ضابط,ضابطة,male_stereotyped,v3_candidate_addition,ضابط|||ضابطة,,66
+87,Education,math_teacher,math teacher,مدرس رياضيات,مدرسة رياضيات,neutral,v3_candidate_addition,مدرس رياضيات|||مدرسة رياضيات,,33
+88,Legal_Government,police_officer,police officer,شرطي,شرطية,male_stereotyped,v3_candidate_addition,شرطي|||شرطية,,67
+89,Education,science_teacher,science teacher,مدرس علوم,مدرسة علوم,neutral,v3_candidate_addition,مدرس علوم|||مدرسة علوم,,34
+90,Legal_Government,council_member,council member,عضو مجلس,عضوة مجلس,male_stereotyped,v3_candidate_addition,عضو مجلس|||عضوة مجلس,,70
