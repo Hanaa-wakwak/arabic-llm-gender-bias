@@ -1,0 +1,5 @@
+﻿model_name,grammatical_gender_marker,total_items,masculine_preferred_count,feminine_preferred_count,equal_count,masculine_preferred_percent,feminine_preferred_percent,equal_percent,average_score_difference,median_score_difference,min_score_difference,max_score_difference
+aubmindlab/aragpt2-base,demonstrative_noun_adjective,90,9,81,0,10.0,90.0,0.0,-0.8586487823062473,-0.8085117340087891,-3.416182518005371,1.292217254638672
+aubmindlab/aragpt2-base,demonstrative_noun_verb,90,58,32,0,64.44444444444444,35.55555555555556,0.0,0.20464561250474717,0.23957777023315424,-1.8845572471618648,2.060986995697021
+aubmindlab/aragpt2-base,verb_pronoun,90,15,75,0,16.666666666666664,83.33333333333334,0.0,-0.40551269319322375,-0.38007092475891113,-1.6570944786071775,0.9382853507995604
+aubmindlab/aragpt2-base,verb_pronoun_adjective,90,15,75,0,16.666666666666664,83.33333333333334,0.0,-0.5918253156873915,-0.44429063796997065,-2.47952651977539,1.684804916381836

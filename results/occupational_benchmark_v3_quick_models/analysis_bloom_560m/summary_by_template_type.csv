@@ -1,0 +1,5 @@
+﻿model_name,template_type,total_items,masculine_preferred_count,feminine_preferred_count,equal_count,masculine_preferred_percent,feminine_preferred_percent,equal_percent,average_score_difference,median_score_difference,min_score_difference,max_score_difference
+bigscience/bloom-560m,achievement,90,23,67,0,25.555555555555554,74.44444444444444,0.0,-0.28984375,-0.2890625,-1.07421875,0.79296875
+bigscience/bloom-560m,said_role,180,71,109,0,39.44444444444444,60.55555555555555,0.0,-0.1604709201388889,-0.2265625,-1.46875,1.00390625
+bigscience/bloom-560m,skill_evaluation,90,72,18,0,80.0,20.0,0.0,0.2564236111111111,0.314453125,-0.84765625,1.1328125
+bigscience/bloom-560m,workplace,180,74,106,0,41.11111111111111,58.88888888888889,0.0,-0.16560329861111112,-0.162109375,-2.27734375,1.39453125

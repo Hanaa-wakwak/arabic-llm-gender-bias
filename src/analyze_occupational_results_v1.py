@@ -3,10 +3,34 @@ import argparse
 import pandas as pd
 
 
+def normalize_columns(df):
+    """
+    Make analyzer compatible with old and new benchmark column names.
+
+    Old names:
+    occupation_m, occupation_f, stereotype_direction
+
+    New names:
+    masculine_occupation, feminine_occupation, stereotype_label
+    """
+
+    rename_map = {
+        "occupation_m": "masculine_occupation",
+        "occupation_f": "feminine_occupation",
+        "stereotype_direction": "stereotype_label",
+    }
+
+    for old_col, new_col in rename_map.items():
+        if old_col in df.columns and new_col not in df.columns:
+            df[new_col] = df[old_col]
+
+    return df
+
+
 def summarize_group(df, group_cols):
     rows = []
 
-    for group_values, group_df in df.groupby(group_cols):
+    for group_values, group_df in df.groupby(group_cols, dropna=False):
         if not isinstance(group_values, tuple):
             group_values = (group_values,)
 
@@ -39,19 +63,43 @@ def summarize_group(df, group_cols):
     return pd.DataFrame(rows)
 
 
+def validate_required_columns(df):
+    required_columns = [
+        "id",
+        "model_name",
+        "field",
+        "dialect",
+        "template_id",
+        "masculine_sentence",
+        "feminine_sentence",
+        "masculine_score",
+        "feminine_score",
+        "score_difference",
+        "preferred_gender",
+    ]
+
+    missing = [col for col in required_columns if col not in df.columns]
+
+    if missing:
+        raise ValueError(
+            f"Missing required columns: {missing}\n"
+            f"Available columns: {list(df.columns)}"
+        )
+
+
 def main():
     parser = argparse.ArgumentParser()
 
     parser.add_argument(
         "--input",
         required=True,
-        help="Path to scored occupational benchmark CSV.",
+        help="Scored occupational result CSV file.",
     )
 
     parser.add_argument(
         "--output_dir",
         required=True,
-        help="Directory where analysis CSV files will be saved.",
+        help="Directory to save analysis outputs.",
     )
 
     args = parser.parse_args()
@@ -61,43 +109,97 @@ def main():
     output_dir.mkdir(parents=True, exist_ok=True)
 
     df = pd.read_csv(input_path, encoding="utf-8-sig")
+    df = normalize_columns(df)
 
-    required_columns = [
-        "field",
-        "occupation_id",
-        "occupation_m",
-        "occupation_f",
-        "dialect",
-        "template_id",
-        "stereotype_direction",
-        "preferred_gender",
-        "score_difference",
-    ]
+    validate_required_columns(df)
 
-    missing = [col for col in required_columns if col not in df.columns]
+    # Main summaries
+    summary_overall = summarize_group(df, ["model_name"])
+    summary_by_field = summarize_group(df, ["model_name", "field"])
+    summary_by_dialect = summarize_group(df, ["model_name", "dialect"])
+    summary_by_template = summarize_group(df, ["model_name", "template_id"])
 
-    if missing:
-        raise ValueError(f"Missing required columns: {missing}")
+    summary_overall.to_csv(
+        output_dir / "summary_overall.csv",
+        index=False,
+        encoding="utf-8-sig",
+    )
 
-    outputs = {
-        "summary_by_field.csv": ["field"],
-        "summary_by_field_and_dialect.csv": ["field", "dialect"],
-        "summary_by_field_and_template.csv": ["field", "template_id"],
-        "summary_by_occupation.csv": ["field", "occupation_id", "occupation_m", "occupation_f"],
-        "summary_by_dialect.csv": ["dialect"],
-        "summary_by_template.csv": ["template_id"],
-        "summary_by_stereotype_direction.csv": ["stereotype_direction"],
-    }
+    summary_by_field.to_csv(
+        output_dir / "summary_by_field.csv",
+        index=False,
+        encoding="utf-8-sig",
+    )
 
-    for filename, group_cols in outputs.items():
-        summary_df = summarize_group(df, group_cols)
-        summary_df.to_csv(output_dir / filename, index=False, encoding="utf-8-sig")
+    summary_by_dialect.to_csv(
+        output_dir / "summary_by_dialect.csv",
+        index=False,
+        encoding="utf-8-sig",
+    )
 
-    print("Occupational analysis completed.")
-    print("Input:")
-    print(input_path)
-    print("Outputs saved to:")
-    print(output_dir)
+    summary_by_template.to_csv(
+        output_dir / "summary_by_template.csv",
+        index=False,
+        encoding="utf-8-sig",
+    )
+
+    # v3-specific summaries if columns exist
+    if "stereotype_label" in df.columns:
+        summary_by_stereotype = summarize_group(
+            df,
+            ["model_name", "stereotype_label"],
+        )
+
+        summary_by_stereotype.to_csv(
+            output_dir / "summary_by_stereotype_label.csv",
+            index=False,
+            encoding="utf-8-sig",
+        )
+
+    if "template_type" in df.columns:
+        summary_by_template_type = summarize_group(
+            df,
+            ["model_name", "template_type"],
+        )
+
+        summary_by_template_type.to_csv(
+            output_dir / "summary_by_template_type.csv",
+            index=False,
+            encoding="utf-8-sig",
+        )
+
+    if "grammatical_gender_marker" in df.columns:
+        summary_by_gender_marker = summarize_group(
+            df,
+            ["model_name", "grammatical_gender_marker"],
+        )
+
+        summary_by_gender_marker.to_csv(
+            output_dir / "summary_by_grammatical_gender_marker.csv",
+            index=False,
+            encoding="utf-8-sig",
+        )
+
+    # Save full scored file copy
+    df.to_csv(
+        output_dir / "scored_results_with_analysis.csv",
+        index=False,
+        encoding="utf-8-sig",
+    )
+
+    print("Occupational result analysis completed.")
+    print("Input:", input_path)
+    print("Outputs saved to:", output_dir)
+
+    print("\nOverall summary:")
+    print(summary_overall.to_string(index=False))
+
+    print("\nSummary by field:")
+    print(summary_by_field.to_string(index=False))
+
+    if "stereotype_label" in df.columns:
+        print("\nSummary by stereotype label:")
+        print(summary_by_stereotype.to_string(index=False))
 
 
 if __name__ == "__main__":
