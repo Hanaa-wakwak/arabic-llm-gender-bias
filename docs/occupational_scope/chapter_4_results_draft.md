@@ -409,3 +409,27 @@ An additional original-vs-added occupation diagnostic showed that both original 
 This suggests that model preference is sensitive to occupation coverage and lexical/contextual formulation.
 
 Therefore, v2 remains the main validated benchmark, while v3 is reported as an experimental sensitivity analysis rather than a replacement for v2.
+## v3 Balanced Benchmark Result
+
+A final v3 balanced benchmark was created to test whether the v3 sensitivity issue could be reduced by balancing stereotype labels.
+
+The benchmark contained 90 occupations, 4 templates, and 360 sentence pairs.
+
+| Stereotype Label | Sentence Pairs | Occupations |
+|---|---:|---:|
+| male_stereotyped | 120 | 30 |
+| female_stereotyped | 120 | 30 |
+| neutral | 120 | 30 |
+
+The benchmark passed automatic quality checks.
+
+A quick two-model sanity test showed that both AraGPT2-base and BLOOM-560m preferred feminine occupational sentences.
+
+| Model | Total Items | Masculine Preferred | Feminine Preferred | Equal | Average Score Difference | Direction |
+|---|---:|---:|---:|---:|---:|---|
+| AraGPT2-base | 360 | 98 | 262 | 0 | -0.4394 | Feminine |
+| BLOOM-560m | 360 | 140 | 217 | 3 | -0.1462 | Feminine |
+
+This result shows that balancing stereotype labels did not restore the original v2 model-family pattern.
+
+Therefore, v3 balanced is treated as a sensitivity benchmark, while v2 remains the main validated benchmark.
