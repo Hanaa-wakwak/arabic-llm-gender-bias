@@ -1,0 +1,5 @@
+﻿model_name,semantic_frame,msa_average_score_difference,egyptian_average_score_difference,egyptian_minus_msa,same_direction
+aubmindlab/aragpt2-base,occupation_presence,0.16028125551011826,-0.9365626441107856,-1.0968438996209038,False
+aubmindlab/aragpt2-base,professional_experience,-0.3680326090918647,0.3829761505126953,0.75100875960456,False
+bigscience/bloom-560m,occupation_presence,-0.27682291666666664,-0.0544921875,0.22233072916666663,True
+bigscience/bloom-560m,professional_experience,-0.5944444444444444,0.014409722222222223,0.6088541666666667,False
