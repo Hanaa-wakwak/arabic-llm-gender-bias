@@ -1,0 +1,4 @@
+﻿model_name,stereotype_label,total_items,masculine_preferred_count,feminine_preferred_count,equal_count,masculine_preferred_percent,feminine_preferred_percent,equal_percent,average_score_difference,median_score_difference,min_score_difference,max_score_difference
+bigscience/bloom-560m,female_stereotyped,240,87,152,1,36.25,63.33333333333333,0.4166666666666667,-0.18684895833333334,-0.265625,-1.646484375,1.52734375
+bigscience/bloom-560m,male_stereotyped,240,79,160,1,32.916666666666664,66.66666666666666,0.4166666666666667,-0.19852701822916666,-0.26953125,-1.98046875,1.859375
+bigscience/bloom-560m,neutral,240,90,148,2,37.5,61.66666666666667,0.8333333333333334,-0.12548014322916667,-0.216796875,-1.5625,1.40234375
