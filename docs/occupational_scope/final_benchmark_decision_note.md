@@ -30,3 +30,17 @@ Further diagnostics showed that this change was not mainly caused by the new tem
 ## Recommended Thesis Wording
 
 The v2 benchmark remains the main benchmark because it is validated, stable, and statistically tested across six models. The v3 benchmark is included as an experimental sensitivity analysis showing that Arabic occupational gender-bias measurement is sensitive to benchmark expansion and lexical formulation. This supports the need for careful benchmark validation and future balanced benchmark design.
+
+## Final Contribution After v4
+
+The final contribution is not only a single benchmark result.
+
+The thesis contributes an Arabic occupational gender-bias evaluation suite composed of:
+
+1. a main validated benchmark,
+2. benchmark-expansion sensitivity analysis,
+3. stereotype-balanced sensitivity analysis,
+4. template-perturbation sensitivity analysis,
+5. external dataset pilots.
+
+This allows the thesis to study not only whether models show gender preference, but also whether the measured preference is stable under controlled benchmark design changes.
