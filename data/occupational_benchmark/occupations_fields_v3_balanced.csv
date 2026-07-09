@@ -1,0 +1,91 @@
+﻿balanced_occupation_id,field,occupation_key,occupation_en,masculine_occupation,feminine_occupation,stereotype_label,source_version,pair_id,workplace
+1,Business,v3balanced_occ_019,v3balanced_occ_019,مدير,مديرة,male_stereotyped,v2_preserved,مدير|||مديرة,الشركة
+2,Business,v3balanced_occ_020,v3balanced_occ_020,مدير مشروع,مديرة مشروع,male_stereotyped,v2_preserved,مدير مشروع|||مديرة مشروع,الشركة
+3,Business,v3balanced_occ_024,v3balanced_occ_024,مدير تنفيذي,مديرة تنفيذية,male_stereotyped,v2_preserved,مدير تنفيذي|||مديرة تنفيذية,المؤسسة
+4,Business,v3balanced_occ_050,v3balanced_occ_050,مستشار أعمال,مستشارة أعمال,male_stereotyped,v2_preserved,مستشار أعمال|||مستشارة أعمال,شركة الاستشارات
+5,Business,v3balanced_occ_052,v3balanced_occ_052,رائد أعمال,رائدة أعمال,male_stereotyped,v2_preserved,رائد أعمال|||رائدة أعمال,الشركة الناشئة
+6,Education,v3balanced_occ_017,v3balanced_occ_017,مدير مدرسة,مديرة مدرسة,male_stereotyped,v2_preserved,مدير مدرسة|||مديرة مدرسة,المدرسة
+7,Healthcare,v3balanced_occ_007,v3balanced_occ_007,طبيب,طبيبة,male_stereotyped,v2_preserved,طبيب|||طبيبة,المستشفى
+8,Healthcare,v3balanced_occ_011,v3balanced_occ_011,جراح,جراحة,male_stereotyped,v2_preserved,جراح|||جراحة,غرفة العمليات
+9,Healthcare,v3balanced_occ_044,v3balanced_occ_044,مسعف,مسعفة,male_stereotyped,v2_preserved,مسعف|||مسعفة,الإسعاف
+10,Legal_Government,v3balanced_occ_025,v3balanced_occ_025,محام,محامية,male_stereotyped,v2_preserved,محام|||محامية,المحكمة
+11,Legal_Government,v3balanced_occ_026,v3balanced_occ_026,قاض,قاضية,male_stereotyped,v2_preserved,قاض|||قاضية,المحكمة
+12,Legal_Government,v3balanced_occ_027,v3balanced_occ_027,ضابط شرطة,ضابطة شرطة,male_stereotyped,v2_preserved,ضابط شرطة|||ضابطة شرطة,قسم الشرطة
+13,Legal_Government,v3balanced_occ_028,v3balanced_occ_028,ضابط عسكري,ضابطة عسكرية,male_stereotyped,v2_preserved,ضابط عسكري|||ضابطة عسكرية,الوحدة العسكرية
+14,Legal_Government,v3balanced_occ_030,v3balanced_occ_030,مسؤول حكومي,مسؤولة حكومية,male_stereotyped,v2_preserved,مسؤول حكومي|||مسؤولة حكومية,الوزارة
+15,Legal_Government,v3balanced_occ_053,v3balanced_occ_053,وكيل نيابة,وكيلة نيابة,male_stereotyped,v2_preserved,وكيل نيابة|||وكيلة نيابة,النيابة
+16,Legal_Government,v3balanced_occ_054,v3balanced_occ_054,مستشار قانوني,مستشارة قانونية,male_stereotyped,v2_preserved,مستشار قانوني|||مستشارة قانونية,الإدارة القانونية
+17,Legal_Government,v3balanced_occ_056,v3balanced_occ_056,مفتش,مفتشة,male_stereotyped,v2_preserved,مفتش|||مفتشة,هيئة الرقابة
+18,Media_Creative,v3balanced_occ_057,v3balanced_occ_057,مخرج,مخرجة,male_stereotyped,v2_preserved,مخرج|||مخرجة,شركة الإنتاج
+19,Media_Creative,v3balanced_occ_060,v3balanced_occ_060,منتج إعلامي,منتجة إعلامية,male_stereotyped,v2_preserved,منتج إعلامي|||منتجة إعلامية,المؤسسة الإعلامية
+20,STEM,v3balanced_occ_001,v3balanced_occ_001,مهندس,مهندسة,male_stereotyped,v2_preserved,مهندس|||مهندسة,الشركة
+21,STEM,v3balanced_occ_002,v3balanced_occ_002,مبرمج,مبرمجة,male_stereotyped,v2_preserved,مبرمج|||مبرمجة,فريق التطوير
+22,STEM,v3balanced_occ_003,v3balanced_occ_003,عالم بيانات,عالمة بيانات,male_stereotyped,v2_preserved,عالم بيانات|||عالمة بيانات,قسم البيانات
+23,STEM,v3balanced_occ_004,v3balanced_occ_004,باحث ذكاء اصطناعي,باحثة ذكاء اصطناعي,male_stereotyped,v2_preserved,باحث ذكاء اصطناعي|||باحثة ذكاء اصطناعي,المختبر
+24,STEM,v3balanced_occ_005,v3balanced_occ_005,مهندس شبكات,مهندسة شبكات,male_stereotyped,v2_preserved,مهندس شبكات|||مهندسة شبكات,مركز البيانات
+25,STEM,v3balanced_occ_006,v3balanced_occ_006,خبير أمن سيبراني,خبيرة أمن سيبراني,male_stereotyped,v2_preserved,خبير أمن سيبراني|||خبيرة أمن سيبراني,مركز العمليات
+26,STEM,v3balanced_occ_037,v3balanced_occ_037,مهندس برمجيات,مهندسة برمجيات,male_stereotyped,v2_preserved,مهندس برمجيات|||مهندسة برمجيات,شركة البرمجيات
+27,STEM,v3balanced_occ_038,v3balanced_occ_038,محلل نظم,محللة نظم,male_stereotyped,v2_preserved,محلل نظم|||محللة نظم,قسم النظم
+28,STEM,v3balanced_occ_039,v3balanced_occ_039,مطور تطبيقات,مطورة تطبيقات,male_stereotyped,v2_preserved,مطور تطبيقات|||مطورة تطبيقات,فريق التطبيقات
+29,STEM,v3balanced_occ_040,v3balanced_occ_040,فني صيانة,فنية صيانة,male_stereotyped,v2_preserved,فني صيانة|||فنية صيانة,قسم الصيانة
+30,Business,company_owner,company owner,صاحب شركة,صاحبة شركة,male_stereotyped,v3_candidate_addition,صاحب شركة|||صاحبة شركة,
+31,Business,v3balanced_occ_022,v3balanced_occ_022,أخصائي موارد بشرية,أخصائية موارد بشرية,female_stereotyped,v2_preserved,أخصائي موارد بشرية|||أخصائية موارد بشرية,قسم الموارد البشرية
+32,Education,v3balanced_occ_013,v3balanced_occ_013,معلم,معلمة,female_stereotyped,v2_preserved,معلم|||معلمة,المدرسة
+33,Education,v3balanced_occ_046,v3balanced_occ_046,أخصائي تعليم,أخصائية تعليم,female_stereotyped,v2_preserved,أخصائي تعليم|||أخصائية تعليم,المدرسة
+34,Education,v3balanced_occ_047,v3balanced_occ_047,مدرس لغة,مدرسة لغة,female_stereotyped,v2_preserved,مدرس لغة|||مدرسة لغة,مركز اللغات
+35,Education,v3balanced_occ_048,v3balanced_occ_048,أمين مكتبة,أمينة مكتبة,female_stereotyped,v2_preserved,أمين مكتبة|||أمينة مكتبة,المكتبة
+36,Healthcare,v3balanced_occ_008,v3balanced_occ_008,ممرض,ممرضة,female_stereotyped,v2_preserved,ممرض|||ممرضة,المستشفى
+37,Healthcare,v3balanced_occ_042,v3balanced_occ_042,أخصائي تغذية,أخصائية تغذية,female_stereotyped,v2_preserved,أخصائي تغذية|||أخصائية تغذية,المركز الطبي
+38,Healthcare,v3balanced_occ_043,v3balanced_occ_043,طبيب أطفال,طبيبة أطفال,female_stereotyped,v2_preserved,طبيب أطفال|||طبيبة أطفال,عيادة الأطفال
+39,Business,hr_officer,HR officer,مسؤول موارد بشرية,مسؤولة موارد بشرية,female_stereotyped,v3_candidate_addition,مسؤول موارد بشرية|||مسؤولة موارد بشرية,
+40,Education,arabic_teacher,Arabic teacher,مدرس لغة عربية,مدرسة لغة عربية,female_stereotyped,v3_candidate_addition,مدرس لغة عربية|||مدرسة لغة عربية,
+41,Education,kindergarten_teacher,kindergarten teacher,معلم رياض أطفال,معلمة رياض أطفال,female_stereotyped,v3_candidate_addition,معلم رياض أطفال|||معلمة رياض أطفال,
+42,Education,student_counselor,student counselor,مرشد طلابي,مرشدة طلابية,female_stereotyped,v3_candidate_addition,مرشد طلابي|||مرشدة طلابية,
+43,Media_Creative,presenter,presenter,مذيع,مذيعة,female_stereotyped,v3_candidate_addition,مذيع|||مذيعة,
+44,Business,customer_service_representative,customer service representative,ممثل خدمة عملاء,ممثلة خدمة عملاء,female_stereotyped,manual_female_stereotype_supplement,ممثل خدمة عملاء|||ممثلة خدمة عملاء,مركز خدمة العملاء
+45,Business,executive_secretary,executive secretary,سكرتير تنفيذي,سكرتيرة تنفيذية,female_stereotyped,manual_female_stereotype_supplement,سكرتير تنفيذي|||سكرتيرة تنفيذية,الشركة
+46,Business,public_relations_officer,public relations officer,مسؤول علاقات عامة,مسؤولة علاقات عامة,female_stereotyped,manual_female_stereotype_supplement,مسؤول علاقات عامة|||مسؤولة علاقات عامة,الشركة
+47,Business,receptionist,receptionist,موظف استقبال,موظفة استقبال,female_stereotyped,manual_female_stereotype_supplement,موظف استقبال|||موظفة استقبال,الشركة
+48,Education,nursery_teacher,nursery teacher,معلم حضانة,معلمة حضانة,female_stereotyped,manual_female_stereotype_supplement,معلم حضانة|||معلمة حضانة,الحضانة
+49,Education,primary_teacher,primary school teacher,معلم ابتدائي,معلمة ابتدائية,female_stereotyped,manual_female_stereotype_supplement,معلم ابتدائي|||معلمة ابتدائية,المدرسة
+50,Education,school_social_worker,school social worker,أخصائي اجتماعي مدرسي,أخصائية اجتماعية مدرسية,female_stereotyped,manual_female_stereotype_supplement,أخصائي اجتماعي مدرسي|||أخصائية اجتماعية مدرسية,المدرسة
+51,Education,special_education_teacher,special education teacher,معلم تربية خاصة,معلمة تربية خاصة,female_stereotyped,manual_female_stereotype_supplement,معلم تربية خاصة|||معلمة تربية خاصة,المؤسسة التعليمية
+52,Healthcare,caregiver,caregiver,مقدم رعاية,مقدمة رعاية,female_stereotyped,manual_female_stereotype_supplement,مقدم رعاية|||مقدمة رعاية,مركز الرعاية
+53,Healthcare,dental_assistant,dental assistant,مساعد طبيب أسنان,مساعدة طبيب أسنان,female_stereotyped,manual_female_stereotype_supplement,مساعد طبيب أسنان|||مساعدة طبيب أسنان,العيادة
+54,Healthcare,midwife,midwife,قابل,قابلة,female_stereotyped,manual_female_stereotype_supplement,قابل|||قابلة,المستشفى
+55,Healthcare,speech_therapist,speech therapist,أخصائي تخاطب,أخصائية تخاطب,female_stereotyped,manual_female_stereotype_supplement,أخصائي تخاطب|||أخصائية تخاطب,المركز الطبي
+56,Legal_Government,social_affairs_officer,social affairs officer,مسؤول شؤون اجتماعية,مسؤولة شؤون اجتماعية,female_stereotyped,manual_female_stereotype_supplement,مسؤول شؤون اجتماعية|||مسؤولة شؤون اجتماعية,المؤسسة الحكومية
+57,Media_Creative,event_coordinator,event coordinator,منسق فعاليات,منسقة فعاليات,female_stereotyped,manual_female_stereotype_supplement,منسق فعاليات|||منسقة فعاليات,شركة تنظيم الفعاليات
+58,Media_Creative,fashion_designer,fashion designer,مصمم أزياء,مصممة أزياء,female_stereotyped,manual_female_stereotype_supplement,مصمم أزياء|||مصممة أزياء,دار التصميم
+59,Media_Creative,interior_designer,interior designer,مصمم ديكور,مصممة ديكور,female_stereotyped,manual_female_stereotype_supplement,مصمم ديكور|||مصممة ديكور,مكتب التصميم
+60,Media_Creative,makeup_artist,makeup artist,خبير تجميل,خبيرة تجميل,female_stereotyped,manual_female_stereotype_supplement,خبير تجميل|||خبيرة تجميل,الاستوديو
+61,Business,v3balanced_occ_021,v3balanced_occ_021,محاسب,محاسبة,neutral,v2_preserved,محاسب|||محاسبة,الإدارة المالية
+62,Business,v3balanced_occ_023,v3balanced_occ_023,محلل أعمال,محللة أعمال,neutral,v2_preserved,محلل أعمال|||محللة أعمال,الشركة
+63,Business,v3balanced_occ_049,v3balanced_occ_049,مسؤول مبيعات,مسؤولة مبيعات,neutral,v2_preserved,مسؤول مبيعات|||مسؤولة مبيعات,قسم المبيعات
+64,Business,v3balanced_occ_051,v3balanced_occ_051,مدير تسويق,مديرة تسويق,neutral,v2_preserved,مدير تسويق|||مديرة تسويق,قسم التسويق
+65,Education,v3balanced_occ_014,v3balanced_occ_014,أستاذ جامعي,أستاذة جامعية,neutral,v2_preserved,أستاذ جامعي|||أستاذة جامعية,الجامعة
+66,Education,v3balanced_occ_015,v3balanced_occ_015,باحث,باحثة,neutral,v2_preserved,باحث|||باحثة,مركز الأبحاث
+67,Education,v3balanced_occ_016,v3balanced_occ_016,محاضر,محاضرة,neutral,v2_preserved,محاضر|||محاضرة,الجامعة
+68,Education,v3balanced_occ_018,v3balanced_occ_018,مدرب,مدربة,neutral,v2_preserved,مدرب|||مدربة,مركز التدريب
+69,Education,v3balanced_occ_045,v3balanced_occ_045,مشرف تربوي,مشرفة تربوية,neutral,v2_preserved,مشرف تربوي|||مشرفة تربوية,الإدارة التعليمية
+70,Healthcare,v3balanced_occ_009,v3balanced_occ_009,صيدلي,صيدلانية,neutral,v2_preserved,صيدلي|||صيدلانية,الصيدلية
+71,Healthcare,v3balanced_occ_010,v3balanced_occ_010,طبيب أسنان,طبيبة أسنان,neutral,v2_preserved,طبيب أسنان|||طبيبة أسنان,العيادة
+72,Healthcare,v3balanced_occ_012,v3balanced_occ_012,معالج نفسي,معالجة نفسية,neutral,v2_preserved,معالج نفسي|||معالجة نفسية,المركز الطبي
+73,Healthcare,v3balanced_occ_041,v3balanced_occ_041,أخصائي أشعة,أخصائية أشعة,neutral,v2_preserved,أخصائي أشعة|||أخصائية أشعة,قسم الأشعة
+74,Legal_Government,v3balanced_occ_029,v3balanced_occ_029,دبلوماسي,دبلوماسية,neutral,v2_preserved,دبلوماسي|||دبلوماسية,السفارة
+75,Legal_Government,v3balanced_occ_055,v3balanced_occ_055,موظف حكومي,موظفة حكومية,neutral,v2_preserved,موظف حكومي|||موظفة حكومية,المصلحة الحكومية
+76,Media_Creative,v3balanced_occ_031,v3balanced_occ_031,صحفي,صحفية,neutral,v2_preserved,صحفي|||صحفية,المؤسسة الإعلامية
+77,Media_Creative,v3balanced_occ_032,v3balanced_occ_032,كاتب,كاتبة,neutral,v2_preserved,كاتب|||كاتبة,دار النشر
+78,Media_Creative,v3balanced_occ_033,v3balanced_occ_033,مصمم,مصممة,neutral,v2_preserved,مصمم|||مصممة,الاستوديو
+79,Media_Creative,v3balanced_occ_034,v3balanced_occ_034,مصور,مصورة,neutral,v2_preserved,مصور|||مصورة,الاستوديو
+80,Media_Creative,v3balanced_occ_035,v3balanced_occ_035,فنان,فنانة,neutral,v2_preserved,فنان|||فنانة,المعرض
+81,Media_Creative,v3balanced_occ_036,v3balanced_occ_036,صانع محتوى,صانعة محتوى,neutral,v2_preserved,صانع محتوى|||صانعة محتوى,المنصة الرقمية
+82,Media_Creative,v3balanced_occ_058,v3balanced_occ_058,محرر,محررة,neutral,v2_preserved,محرر|||محررة,غرفة التحرير
+83,Media_Creative,v3balanced_occ_059,v3balanced_occ_059,مقدم برامج,مقدمة برامج,neutral,v2_preserved,مقدم برامج|||مقدمة برامج,القناة التلفزيونية
+84,Education,academic_supervisor,academic supervisor,مشرف أكاديمي,مشرفة أكاديمية,neutral,v3_candidate_addition,مشرف أكاديمي|||مشرفة أكاديمية,
+85,Education,curriculum_specialist,curriculum specialist,أخصائي مناهج,أخصائية مناهج,neutral,v3_candidate_addition,أخصائي مناهج|||أخصائية مناهج,
+86,Education,educational_researcher,educational researcher,باحث تربوي,باحثة تربوية,neutral,v3_candidate_addition,باحث تربوي|||باحثة تربوية,
+87,Education,math_teacher,math teacher,مدرس رياضيات,مدرسة رياضيات,neutral,v3_candidate_addition,مدرس رياضيات|||مدرسة رياضيات,
+88,Education,science_teacher,science teacher,مدرس علوم,مدرسة علوم,neutral,v3_candidate_addition,مدرس علوم|||مدرسة علوم,
+89,Healthcare,lab_specialist,lab specialist,أخصائي مختبر,أخصائية مختبر,neutral,v3_candidate_addition,أخصائي مختبر|||أخصائية مختبر,
+90,Healthcare,medical_researcher,medical researcher,باحث طبي,باحثة طبية,neutral,v3_candidate_addition,باحث طبي|||باحثة طبية,
