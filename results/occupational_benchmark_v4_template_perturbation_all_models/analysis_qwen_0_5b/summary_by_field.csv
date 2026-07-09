@@ -1,0 +1,7 @@
+﻿model_name,field,total_items,masculine_preferred_count,feminine_preferred_count,equal_count,masculine_preferred_percent,feminine_preferred_percent,equal_percent,average_score_difference,median_score_difference,min_score_difference,max_score_difference
+Qwen/Qwen2.5-0.5B,Business,128,50,77,1,39.0625,60.15625,0.78125,-0.220458984375,-0.1875,-2.375,1.125
+Qwen/Qwen2.5-0.5B,Education,176,63,106,7,35.79545454545455,60.22727272727273,3.977272727272727,-0.15482954545454544,-0.1328125,-1.53125,0.90625
+Qwen/Qwen2.5-0.5B,Healthcare,128,67,59,2,52.34375,46.09375,1.5625,0.0030517578125,0.0625,-1.21875,1.125
+Qwen/Qwen2.5-0.5B,Legal_Government,88,41,45,2,46.590909090909086,51.13636363636363,2.272727272727273,-0.04012784090909091,-0.0390625,-1.46875,1.3125
+Qwen/Qwen2.5-0.5B,Media_Creative,120,48,69,3,40.0,57.49999999999999,2.5,-0.0875,-0.1171875,-1.109375,1.15625
+Qwen/Qwen2.5-0.5B,STEM,80,43,34,3,53.75,42.5,3.75,0.062890625,0.046875,-1.625,1.21875

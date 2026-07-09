@@ -1,0 +1,13 @@
+﻿model_name,semantic_frame,msa_average_score_difference,egyptian_average_score_difference,egyptian_minus_msa,same_direction
+Qwen/Qwen2.5-0.5B,occupation_presence,0.17274305555555555,0.059375,-0.11336805555555556,True
+Qwen/Qwen2.5-0.5B,professional_experience,-0.30833333333333335,-0.058333333333333334,0.25,True
+aubmindlab/aragpt2-base,occupation_presence,0.16028125551011826,-0.9365626441107856,-1.0968438996209038,False
+aubmindlab/aragpt2-base,professional_experience,-0.3680326090918647,0.3829761505126953,0.75100875960456,False
+aubmindlab/aragpt2-medium,occupation_presence,0.500057225757175,-0.7229189342922635,-1.2229761600494387,False
+aubmindlab/aragpt2-medium,professional_experience,-0.22884656058417427,0.16152954631381564,0.3903761068979899,False
+bigscience/bloom-1b1,occupation_presence,-0.1357421875,-0.30421006944444445,-0.16846788194444445,True
+bigscience/bloom-1b1,professional_experience,-0.3277994791666667,-0.06284722222222222,0.26495225694444446,True
+bigscience/bloom-560m,occupation_presence,-0.27682291666666664,-0.0544921875,0.22233072916666663,True
+bigscience/bloom-560m,professional_experience,-0.5944444444444444,0.014409722222222223,0.6088541666666667,False
+facebook/xglm-564M,occupation_presence,0.046961805555555555,-0.5557725694444444,-0.6027343749999999,False
+facebook/xglm-564M,professional_experience,-0.41358506944444445,-0.20104166666666667,0.21254340277777778,True

@@ -1,0 +1,4 @@
+﻿model_name,stereotype_label,total_items,masculine_preferred_count,feminine_preferred_count,equal_count,masculine_preferred_percent,feminine_preferred_percent,equal_percent,average_score_difference,median_score_difference,min_score_difference,max_score_difference
+facebook/xglm-564M,female_stereotyped,240,24,216,0,10.0,90.0,0.0,-0.4893798828125,-0.498046875,-1.98828125,0.8046875
+facebook/xglm-564M,male_stereotyped,240,50,189,1,20.833333333333336,78.75,0.4166666666666667,-0.3507486979166667,-0.33203125,-1.66796875,1.20703125
+facebook/xglm-564M,neutral,240,30,209,1,12.5,87.08333333333333,0.4166666666666667,-0.4832275390625,-0.4443359375,-1.90625,1.05078125

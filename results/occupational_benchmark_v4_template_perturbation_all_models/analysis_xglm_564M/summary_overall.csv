@@ -1,0 +1,2 @@
+﻿model_name,total_items,masculine_preferred_count,feminine_preferred_count,equal_count,masculine_preferred_percent,feminine_preferred_percent,equal_percent,average_score_difference,median_score_difference,min_score_difference,max_score_difference
+facebook/xglm-564M,720,104,614,2,14.444444444444443,85.27777777777777,0.2777777777777778,-0.44111870659722224,-0.4423828125,-1.98828125,1.20703125

@@ -1,0 +1,9 @@
+﻿test_label,row_variable,column_variable,chi2,p_value,degrees_of_freedom,significant_p_lt_0_05,note,template_id
+template_id=egy_experience_statement,model_family,preferred_gender,41.49858583017583,1.1795622487606483e-10,1,True,ok,egy_experience_statement
+template_id=egy_promotion_frame,model_family,preferred_gender,125.43251146678602,4.092750545412311e-29,1,True,ok,egy_promotion_frame
+template_id=egy_responsibility_frame,model_family,preferred_gender,23.373640941192114,1.3339394545695179e-06,1,True,ok,egy_responsibility_frame
+template_id=egy_workplace_original,model_family,preferred_gender,30.561312223493992,3.234802398627564e-08,1,True,ok,egy_workplace_original
+template_id=msa_competence_frame,model_family,preferred_gender,0.9077461000537925,0.34071315278280384,1,False,ok,msa_competence_frame
+template_id=msa_experience_statement,model_family,preferred_gender,9.407205965884753,0.002161343262813625,1,True,ok,msa_experience_statement
+template_id=msa_leadership_frame,model_family,preferred_gender,3.0296624099565004,0.08175502522404228,1,False,ok,msa_leadership_frame
+template_id=msa_workplace_original,model_family,preferred_gender,42.25625984863201,8.006333047990831e-11,1,True,ok,msa_workplace_original

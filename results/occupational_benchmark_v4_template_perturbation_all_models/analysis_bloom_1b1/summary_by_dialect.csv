@@ -1,0 +1,3 @@
+﻿model_name,dialect,total_items,masculine_preferred_count,feminine_preferred_count,equal_count,masculine_preferred_percent,feminine_preferred_percent,equal_percent,average_score_difference,median_score_difference,min_score_difference,max_score_difference
+bigscience/bloom-1b1,Egyptian,360,150,206,4,41.66666666666667,57.22222222222222,1.1111111111111112,-0.06676432291666666,-0.10546875,-1.80078125,2.3203125
+bigscience/bloom-1b1,MSA,360,98,261,1,27.22222222222222,72.5,0.2777777777777778,-0.2732964409722222,-0.240234375,-1.63671875,1.25390625

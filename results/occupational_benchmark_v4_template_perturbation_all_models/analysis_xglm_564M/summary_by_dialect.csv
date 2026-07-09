@@ -1,0 +1,3 @@
+﻿model_name,dialect,total_items,masculine_preferred_count,feminine_preferred_count,equal_count,masculine_preferred_percent,feminine_preferred_percent,equal_percent,average_score_difference,median_score_difference,min_score_difference,max_score_difference
+facebook/xglm-564M,Egyptian,360,43,316,1,11.944444444444445,87.77777777777777,0.2777777777777778,-0.4845052083333333,-0.4609375,-1.63671875,0.73828125
+facebook/xglm-564M,MSA,360,61,298,1,16.944444444444446,82.77777777777777,0.2777777777777778,-0.3977322048611111,-0.4248046875,-1.98828125,1.20703125

@@ -1,0 +1,7 @@
+﻿model_name,num_templates,masculine_direction_templates,feminine_direction_templates,equal_direction_templates,direction_flip_present,template_volatility_range,template_volatility_std,most_masculine_template,most_masculine_template_avg_score,most_feminine_template,most_feminine_template_avg_score
+Qwen/Qwen2.5-0.5B,8,4,4,0,True,1.104861111111111,0.3854504259299213,egy_promotion_frame,0.46041666666666664,msa_leadership_frame,-0.6444444444444445
+aubmindlab/aragpt2-base,8,2,6,0,True,1.319538794623481,0.4530683205138554,egy_experience_statement,0.3829761505126953,egy_workplace_original,-0.9365626441107856
+aubmindlab/aragpt2-medium,8,2,6,0,True,1.2229761600494387,0.4348218987429924,msa_workplace_original,0.500057225757175,egy_workplace_original,-0.7229189342922635
+bigscience/bloom-1b1,8,1,7,0,True,1.36328125,0.4009012039191982,egy_promotion_frame,0.731640625,egy_responsibility_frame,-0.631640625
+bigscience/bloom-560m,8,2,6,0,True,1.4122829861111112,0.45813943813917624,egy_promotion_frame,0.8178385416666667,msa_experience_statement,-0.5944444444444444
+facebook/xglm-564M,8,1,7,0,True,0.7284722222222222,0.24748701450950236,msa_workplace_original,0.046961805555555555,msa_leadership_frame,-0.6815104166666667

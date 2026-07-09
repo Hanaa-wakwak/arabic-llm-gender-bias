@@ -1,0 +1,7 @@
+﻿model_name,msa_average_score_difference,egyptian_average_score_difference,egyptian_minus_msa,msa_direction,egyptian_direction
+Qwen/Qwen2.5-0.5B,-0.3355034722222222,0.15750868055555556,0.49301215277777777,feminine,masculine
+aubmindlab/aragpt2-base,-0.2898515383402506,-0.4069458974732293,-0.11709435913297866,feminine,feminine
+aubmindlab/aragpt2-medium,-0.1907055550151401,-0.415568749109904,-0.22486319409476388,feminine,feminine
+bigscience/bloom-1b1,-0.2732964409722222,-0.06676432291666666,0.20653211805555555,feminine,feminine
+bigscience/bloom-560m,-0.3936577690972222,0.05308702256944445,0.4467447916666667,feminine,masculine
+facebook/xglm-564M,-0.3977322048611111,-0.4845052083333333,-0.08677300347222222,feminine,feminine

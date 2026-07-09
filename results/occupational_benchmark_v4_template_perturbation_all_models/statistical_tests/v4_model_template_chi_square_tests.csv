@@ -1,0 +1,7 @@
+﻿test_label,row_variable,column_variable,chi2,p_value,degrees_of_freedom,significant_p_lt_0_05,note,model_name
+model_name=Qwen/Qwen2.5-0.5B,template_id,preferred_gender,331.32410069957723,1.2216045421953279e-67,7,True,ok,Qwen/Qwen2.5-0.5B
+model_name=aubmindlab/aragpt2-base,template_id,preferred_gender,228.096,1.2596970063127088e-45,7,True,ok,aubmindlab/aragpt2-base
+model_name=aubmindlab/aragpt2-medium,template_id,preferred_gender,203.58620689655174,1.996309715114326e-40,7,True,ok,aubmindlab/aragpt2-medium
+model_name=bigscience/bloom-1b1,template_id,preferred_gender,174.9469951063515,2.271453701571009e-34,7,True,ok,bigscience/bloom-1b1
+model_name=bigscience/bloom-560m,template_id,preferred_gender,284.50901339821024,1.2257079696862465e-57,7,True,ok,bigscience/bloom-560m
+model_name=facebook/xglm-564M,template_id,preferred_gender,151.507388065094,1.9583914516151338e-29,7,True,ok,facebook/xglm-564M

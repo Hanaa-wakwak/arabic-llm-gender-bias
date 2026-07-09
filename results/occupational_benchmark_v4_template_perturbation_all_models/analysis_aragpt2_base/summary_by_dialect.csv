@@ -1,0 +1,3 @@
+﻿model_name,dialect,total_items,masculine_preferred_count,feminine_preferred_count,equal_count,masculine_preferred_percent,feminine_preferred_percent,equal_percent,average_score_difference,median_score_difference,min_score_difference,max_score_difference
+aubmindlab/aragpt2-base,Egyptian,360,120,240,0,33.33333333333333,66.66666666666666,0.0,-0.4069458974732293,-0.3024613857269287,-5.690834999084473,4.647524833679199
+aubmindlab/aragpt2-base,MSA,360,100,260,0,27.77777777777778,72.22222222222221,0.0,-0.2898515383402506,-0.2653102874755859,-2.9383749961853027,1.5929574966430664

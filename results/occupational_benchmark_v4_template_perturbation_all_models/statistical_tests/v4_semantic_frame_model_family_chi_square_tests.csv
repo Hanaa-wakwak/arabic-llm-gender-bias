@@ -1,0 +1,7 @@
+﻿test_label,row_variable,column_variable,chi2,p_value,degrees_of_freedom,significant_p_lt_0_05,note,semantic_frame
+semantic_frame=achievement_reward,model_family,preferred_gender,125.43251146678602,4.092750545412311e-29,1,True,ok,achievement_reward
+semantic_frame=agency_leadership,model_family,preferred_gender,3.0296624099565004,0.08175502522404228,1,False,ok,agency_leadership
+semantic_frame=competence_skill,model_family,preferred_gender,0.9077461000537925,0.34071315278280384,1,False,ok,competence_skill
+semantic_frame=occupation_presence,model_family,preferred_gender,0.8507273855513102,0.35634664535589755,1,False,ok,occupation_presence
+semantic_frame=professional_experience,model_family,preferred_gender,41.75092454450691,1.0367321561533622e-10,1,True,ok,professional_experience
+semantic_frame=responsibility_trust,model_family,preferred_gender,23.373640941192114,1.3339394545695179e-06,1,True,ok,responsibility_trust

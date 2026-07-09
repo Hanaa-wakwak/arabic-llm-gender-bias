@@ -1,0 +1,8 @@
+﻿test_label,row_variable,column_variable,chi2,p_value,degrees_of_freedom,significant_p_lt_0_05,note
+model_name_vs_preferred_gender,model_name,preferred_gender,174.4098918493546,8.35597731660343e-36,5,True,ok
+model_family_vs_preferred_gender,model_family,preferred_gender,4.1247095627148145,0.04226127431564387,1,True,ok
+template_id_vs_preferred_gender,template_id,preferred_gender,673.447568584464,3.6521920925440783e-141,7,True,ok
+semantic_frame_vs_preferred_gender,semantic_frame,preferred_gender,367.4253035117964,3.0954416107828394e-77,5,True,ok
+dialect_vs_preferred_gender,dialect,preferred_gender,130.9403988171694,2.551533218386526e-30,1,True,ok
+stereotype_label_vs_preferred_gender,stereotype_label,preferred_gender,1.178310417780382,0.5547957733562245,2,False,ok
+field_vs_preferred_gender,field,preferred_gender,22.427639908604306,0.0004341152435105943,5,True,ok

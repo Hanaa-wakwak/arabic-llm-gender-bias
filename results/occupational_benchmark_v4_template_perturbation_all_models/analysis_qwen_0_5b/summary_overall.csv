@@ -1,0 +1,2 @@
+﻿model_name,total_items,masculine_preferred_count,feminine_preferred_count,equal_count,masculine_preferred_percent,feminine_preferred_percent,equal_percent,average_score_difference,median_score_difference,min_score_difference,max_score_difference
+Qwen/Qwen2.5-0.5B,720,312,390,18,43.333333333333336,54.166666666666664,2.5,-0.08899739583333334,-0.078125,-2.375,1.3125
