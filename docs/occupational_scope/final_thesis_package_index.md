@@ -151,3 +151,15 @@ The pipeline includes:
 The main quantitative contribution is the occupational benchmark v2 and the six-model statistical analysis.
 
 The APGC and ArGAN pilots are auxiliary validation experiments showing that the evaluation framework can be extended to broader Arabic gender-bias datasets.
+## v3 Sensitivity Analysis Files
+
+| Item | Path |
+|---|---|
+| v3 occupation lexicon | `data/occupational_benchmark/occupations_fields_v3.csv` |
+| v3 benchmark | `data/occupational_benchmark/occupational_bias_v3.csv` |
+| v3 controlled benchmark | `data/occupational_benchmark/occupational_bias_v3_controlled.csv` |
+| v3 quality summary | `results/occupational_benchmark_v3_quality/occupational_bias_v3_quality_summary.csv` |
+| v3 quick model results | `results/occupational_benchmark_v3_quick_models/` |
+| v3 controlled diagnostics | `results/occupational_benchmark_v3_controlled_quick_models/` |
+| v3 sensitivity summary | `docs/occupational_scope/v3_sensitivity_analysis_summary.md` |
+| v3 balanced plan | `docs/occupational_scope/v3_balanced_benchmark_plan.md` |
