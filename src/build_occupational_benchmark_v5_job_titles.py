@@ -100,6 +100,7 @@ def normalize_lexicon_columns(df):
     return df
 
 
+
 def main():
     if not INPUT_LEXICON.exists():
         raise FileNotFoundError(f"Input lexicon not found: {INPUT_LEXICON}")

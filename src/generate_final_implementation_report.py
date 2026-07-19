@@ -22,6 +22,9 @@ PATHS = {
     "v4_dialect": Path("results/occupational_benchmark_v4_template_perturbation_all_models/combined_sensitivity_analysis/dialect_shift_by_model.csv"),
     "v4_chi": Path("results/occupational_benchmark_v4_template_perturbation_all_models/statistical_tests/v4_overall_chi_square_tests.csv"),
     "v4_effect": Path("results/occupational_benchmark_v4_template_perturbation_all_models/effect_sizes/v4_cramers_v_effect_sizes.csv"),
+        "v5_aragpt2": Path("results/occupational_benchmark_v5_job_titles_quick_models/analysis_aragpt2_base/summary_overall.csv"),
+    "v5_bloom": Path("results/occupational_benchmark_v5_job_titles_quick_models/analysis_bloom_560m/summary_overall.csv"),
+    "v4_v5_comparison": Path("results/v4_v5_job_title_comparison/v4_v5_quick_model_comparison.csv"),
 }
 
 
@@ -227,6 +230,31 @@ def main():
     md.append("")
     md.append(
         "The strongest practical factor in v4 was template ID, based on Cramér's V effect-size analysis."
+    )
+    md.append("")
+    md.append("## v5 Job-Title Benchmark")
+    md.append("")
+    md.append(
+        "The v5 benchmark isolates occupations as explicit job titles in CV, job advertisement, "
+        "HR record, and professional profile contexts."
+    )
+    md.append("")
+    md.append("### AraGPT2-base v5 Result")
+    md.append("")
+    md.append(markdown_table(data["v5_aragpt2"]))
+    md.append("")
+    md.append("### BLOOM-560m v5 Result")
+    md.append("")
+    md.append(markdown_table(data["v5_bloom"]))
+    md.append("")
+    md.append("### v4-v5 Context Comparison")
+    md.append("")
+    md.append(markdown_table(data["v4_v5_comparison"]))
+    md.append("")
+    md.append(
+        "The v5 results show that explicit job-title contexts can behave differently from "
+        "broader occupational sentence templates. This further supports the claim that "
+        "Arabic occupational gender-bias measurement is benchmark-design-dependent."
     )
     md.append("")
 
