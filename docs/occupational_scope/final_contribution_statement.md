@@ -104,3 +104,13 @@ It should report:
 3. semantic-frame sensitivity,
 4. dialect sensitivity,
 5. robustness across benchmark versions.
+
+## Additional Extension: v5 Job-Title Benchmark
+
+An additional v5 benchmark was created to isolate occupational gender preference at the level of explicit job titles.
+
+This benchmark tests CV, job advertisement, HR record, and professional profile contexts.
+
+The v5 results showed that explicit job-title contexts can behave differently from broader occupational sentence templates. AraGPT2-base was near-balanced, while BLOOM-560m showed weak masculine preference.
+
+This further supports the thesis claim that Arabic occupational gender-bias measurement is benchmark-design-dependent.
