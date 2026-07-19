@@ -152,6 +152,14 @@ CONTRIBUTIONS = [
         "result_file": "docs/occupational_scope/bootstrap_confidence_intervals_summary.md",
         "thesis_value": "Distinguishes reliable directional effects from weak or near-neutral score differences.",
     },
+        {
+        "id": "C23",
+        "technical_contribution": "Final contribution map",
+        "description": "A layered contribution map organizing the thesis outputs into benchmark construction, model evaluation, robustness analysis, statistical analysis, and documentation/traceability layers.",
+        "evidence_file": "docs/occupational_scope/final_contribution_map.md",
+        "result_file": "docs/occupational_scope/final_contribution_map.md",
+        "thesis_value": "Presents the full thesis contribution as a coherent evaluation framework.",
+    },
 ]
 
 
