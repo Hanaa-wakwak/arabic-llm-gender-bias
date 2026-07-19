@@ -136,6 +136,14 @@ CONTRIBUTIONS = [
         "result_file": "docs/occupational_scope/extreme_bias_case_analysis.md",
         "thesis_value": "Connects aggregate bias metrics to concrete Arabic sentence-pair examples.",
     },
+        {
+        "id": "C21",
+        "technical_contribution": "Claim-to-evidence traceability matrix",
+        "description": "A matrix mapping each major thesis claim to the benchmark file, result file, statistical output, or documentation that supports it.",
+        "evidence_file": "results/final_package/claim_evidence_traceability_matrix.csv",
+        "result_file": "docs/occupational_scope/claim_evidence_traceability_matrix.md",
+        "thesis_value": "Improves defense readiness and makes the thesis claims auditable.",
+    },
 ]
 
 

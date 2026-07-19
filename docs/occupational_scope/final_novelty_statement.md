@@ -116,3 +116,11 @@ This analysis extracts the strongest masculine-preferred, strongest feminine-pre
 It enriches the thesis by connecting aggregate numerical results to concrete Arabic sentence-pair examples.
 
 This makes the analysis more interpretable and easier to defend in discussion.
+
+## Additional Contribution: Claim-to-Evidence Traceability Matrix
+
+An additional contribution is the claim-to-evidence traceability matrix.
+
+This matrix maps each major thesis claim to the benchmark file, result file, statistical output, or documentation that supports it.
+
+This strengthens the defense package because every important claim becomes auditable and traceable to evidence.

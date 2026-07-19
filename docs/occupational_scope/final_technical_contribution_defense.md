@@ -103,3 +103,11 @@ I also added an extreme bias case analysis.
 This analysis extracts concrete examples of the strongest masculine preferences, strongest feminine preferences, and near-neutral sentence pairs.
 
 This improves interpretability because the thesis does not only report aggregate numbers; it also shows which sentence pairs produced the strongest model preferences.
+
+## Additional Defense Layer: Claim-to-Evidence Traceability Matrix
+
+I also added a claim-to-evidence traceability matrix.
+
+This matrix maps each major thesis claim to the exact data file, result file, statistical output, or documentation that supports it.
+
+This improves defense readiness because if an examiner asks where a claim comes from, the evidence is already traceable.

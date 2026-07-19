@@ -4,9 +4,9 @@ This matrix summarizes the main technical contributions of the thesis implementa
 
 ## Contribution Summary
 
-- Total technical contributions: 16
-- Contributions with evidence files present: 16
-- Contributions with result files present: 15
+- Total technical contributions: 17
+- Contributions with evidence files present: 17
+- Contributions with result files present: 16
 
 ## Matrix
 
@@ -28,6 +28,7 @@ This matrix summarizes the main technical contributions of the thesis implementa
 | C18 | Benchmark datasheet | A structured benchmark datasheet documenting the purpose, construction, intended use, limitations, scoring method, quality controls, and ethical considerations of the Arabic occupational gender-bias evaluation suite. | docs/occupational_scope/benchmark_datasheet.md | docs/occupational_scope/benchmark_datasheet.md | Improves transparency, reproducibility, and responsible benchmark documentation. | True | True |
 | C19 | Threats to validity and mitigation map | A structured validity analysis identifying construct, internal, external, statistical, reliability, and reproducibility threats, with the mitigation layer used for each. | docs/occupational_scope/threats_to_validity_and_mitigation_map.md | docs/occupational_scope/threats_to_validity_and_mitigation_map.md | Strengthens methodological rigor by explicitly linking limitations to mitigation strategies. | True | True |
 | C20 | Extreme bias case analysis | A qualitative interpretability analysis extracting the strongest masculine-preferred, strongest feminine-preferred, and near-neutral sentence pairs from scored benchmark results. | results/final_package/extreme_bias_cases_detailed.csv | docs/occupational_scope/extreme_bias_case_analysis.md | Connects aggregate bias metrics to concrete Arabic sentence-pair examples. | True | True |
+| C21 | Claim-to-evidence traceability matrix | A matrix mapping each major thesis claim to the benchmark file, result file, statistical output, or documentation that supports it. | results/final_package/claim_evidence_traceability_matrix.csv | docs/occupational_scope/claim_evidence_traceability_matrix.md | Improves defense readiness and makes the thesis claims auditable. | True | True |
 
 ## Final Technical Claim
 
