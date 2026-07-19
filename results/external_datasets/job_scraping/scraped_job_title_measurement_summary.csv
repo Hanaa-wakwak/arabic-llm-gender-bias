@@ -1,8 +1,8 @@
 ﻿metric,value
-enabled_sources,1
-scraped_mentions,0
-counterfactual_pairs,0
-unique_occupations,0
-unique_fields,0
+enabled_sources,5
+scraped_mentions,10
+counterfactual_pairs,10
+unique_occupations,5
+unique_fields,4
 manual_review_required,True
-status,no_occupation_mentions_found
+status,completed

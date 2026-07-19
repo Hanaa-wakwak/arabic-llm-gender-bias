@@ -1,0 +1,2 @@
+﻿model_name,template_id,total_items,masculine_preferred_count,feminine_preferred_count,equal_count,masculine_preferred_percent,feminine_preferred_percent,equal_percent,average_score_difference,median_score_difference,min_score_difference,max_score_difference
+aubmindlab/aragpt2-base,scraped_job_title_context,5,1,4,0,20.0,80.0,0.0,-0.29839344024658204,-0.4893770217895508,-0.7734079360961914,0.5189661979675293

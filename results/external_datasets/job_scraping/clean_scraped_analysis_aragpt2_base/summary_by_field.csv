@@ -1,0 +1,4 @@
+﻿model_name,field,total_items,masculine_preferred_count,feminine_preferred_count,equal_count,masculine_preferred_percent,feminine_preferred_percent,equal_percent,average_score_difference,median_score_difference,min_score_difference,max_score_difference
+aubmindlab/aragpt2-base,Business,3,0,3,0,0.0,100.0,0.0,-0.6502111752827963,-0.6878485679626465,-0.7734079360961914,-0.4893770217895508
+aubmindlab/aragpt2-base,STEM,1,0,1,0,0.0,100.0,0.0,-0.0602998733520507,-0.0602998733520507,-0.0602998733520507,-0.0602998733520507
+aubmindlab/aragpt2-base,هندسة,1,1,0,0,100.0,0.0,0.0,0.5189661979675293,0.5189661979675293,0.5189661979675293,0.5189661979675293

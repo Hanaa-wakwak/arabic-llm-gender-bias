@@ -1,2 +1,6 @@
 ﻿source_id,source_name,source_type,url,enabled,notes
-jobs_arab_cairo,Jobs Arab Cairo,public_web_page,https://www.jobs-arab.com/eg/job-location/%d8%a7%d9%84%d9%82%d8%a7%d9%87%d8%b1%d9%87/,True,Public Arabic Cairo jobs page for scraped job-title pilot
+dubizzle_girls_cairo,Dubizzle Girls Jobs Cairo,public_web_page,https://www.dubizzle.com.eg/jobs/cairo/q-%D9%88%D8%B8%D8%A7%D8%A6%D9%81.%D8%A8%D9%86%D8%A7%D8%AA/,True,Dubizzle Cairo girls job-title source
+dubizzle_girls_egypt,Dubizzle Girls Jobs Egypt,public_web_page,https://www.dubizzle.com.eg/ads/q-%D9%88%D8%B8%D8%A7%D8%A6%D9%81.%D8%A8%D9%86%D8%A7%D8%AA/,True,Dubizzle Egypt girls job-title source
+dubizzle_girls_sales,Dubizzle Girls Sales Jobs,public_web_page,https://www.dubizzle.com.eg/jobs/sales/q-%D9%88%D8%B8%D8%A7%D8%A6%D9%81.%D8%A8%D9%86%D8%A7%D8%AA/,True,Dubizzle sales girls job-title source
+forasna_packaging_girls,Forasna Related Girls Jobs,public_web_page,https://forasna.com/a/%D9%88%D8%B8%D8%A7%D8%A6%D9%81-%D9%81%D9%8A-%D8%A7%D9%84%D8%AA%D8%B9%D8%A8%D9%8A%D8%A9-%D9%81%D9%8A-%D9%85%D8%B5%D8%B1?start=0,True,Forasna related page containing girls-only job mentions
+jobs_arab_cairo,Jobs Arab Cairo,public_web_page,https://www.jobs-arab.com/eg/job-location/%d8%a7%d9%84%d9%82%d8%a7%d9%87%d8%b1%d9%87/,True,Will be skipped if robots.txt disallows scraping

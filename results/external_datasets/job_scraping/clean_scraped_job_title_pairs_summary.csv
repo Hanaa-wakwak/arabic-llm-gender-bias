@@ -1,0 +1,8 @@
+﻿metric,value
+raw_pairs,10
+clean_pairs,5
+removed_pairs,5
+unique_clean_occupations,3
+unique_clean_fields,3
+manual_review_required,True
+status,cleaning_completed
