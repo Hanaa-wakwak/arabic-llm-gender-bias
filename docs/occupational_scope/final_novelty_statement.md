@@ -43,3 +43,12 @@ Therefore, Arabic bias evaluation should not report only a single model-level sc
 The thesis introduces a benchmark-design-sensitive methodology for Arabic occupational gender-bias evaluation.
 
 It shows that Arabic occupational bias measurement is not only model-dependent, but also context-dependent and benchmark-design-dependent.
+## Added Novelty: Context Sensitivity Index
+
+An additional novelty is the proposed context-sensitivity diagnostic.
+
+This diagnostic summarizes how sensitive a model's measured occupational gender preference is to changes in template, dialect, and job-title context.
+
+It is thesis-specific and is used as a robustness summary, not as a universal bias metric.
+
+This strengthens the methodological contribution because the thesis does not only observe benchmark-design sensitivity; it also operationalizes it as a measurable diagnostic.

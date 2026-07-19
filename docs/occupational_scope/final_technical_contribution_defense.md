@@ -43,3 +43,18 @@ My technical contribution is a robustness-oriented benchmark suite for Arabic oc
 ## One-Sentence Answer
 
 The technical contribution is a benchmark-design-sensitive evaluation framework for Arabic occupational gender bias in causal language models.
+## Additional Enrichment: Context Sensitivity Index
+
+To further enrich the technical contribution, I added a context-sensitivity diagnostic.
+
+This diagnostic summarizes how much each model's measured gender preference changes across:
+
+- template perturbation,
+- dialect variation,
+- explicit job-title contexts.
+
+The index combines v4 template volatility, v4 dialect shift, and v4-to-v5 job-title context shift.
+
+This converts the qualitative robustness finding into a measurable model-level diagnostic.
+
+It strengthens the thesis because the contribution becomes not only benchmark construction, but also benchmark-sensitivity measurement.
