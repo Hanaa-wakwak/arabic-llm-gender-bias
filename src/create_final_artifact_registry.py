@@ -52,6 +52,14 @@ ARTIFACTS = [
     ("doc", "Final technical contribution table", "docs/occupational_scope/final_technical_contribution_table.md"),
     ("doc", "Doctor explanation script", "docs/occupational_scope/doctor_explanation_script.md"),
     ("doc", "Final viva questions and answers", "docs/occupational_scope/final_viva_questions_and_answers.md"),
+        # v5 job-title benchmark
+    ("data", "v5 job-title benchmark", "data/occupational_benchmark/occupational_bias_v5_job_titles.csv"),
+    ("quality", "v5 job-title quality summary", "results/occupational_benchmark_v5_job_titles_quality/v5_job_titles_quality_summary.csv"),
+    ("result", "v5 AraGPT2-base overall", "results/occupational_benchmark_v5_job_titles_quick_models/analysis_aragpt2_base/summary_overall.csv"),
+    ("result", "v5 BLOOM-560m overall", "results/occupational_benchmark_v5_job_titles_quick_models/analysis_bloom_560m/summary_overall.csv"),
+    ("result", "v4-v5 job-title context comparison", "results/v4_v5_job_title_comparison/v4_v5_quick_model_comparison.csv"),
+    ("doc", "v5 job-title final result summary", "docs/occupational_scope/v5_job_titles_final_result_summary.md"),
+    ("doc", "v4-v5 job-title context comparison", "docs/occupational_scope/v4_v5_job_title_context_comparison.md"),
 ]
 
 

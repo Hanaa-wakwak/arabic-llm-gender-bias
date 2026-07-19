@@ -1,0 +1,5 @@
+﻿benchmark,benchmark_role,model_name,total_items,masculine_preferred_count,feminine_preferred_count,equal_count,masculine_preferred_percent,feminine_preferred_percent,average_score_difference,median_score_difference,direction_by_average,direction_by_count
+v4,template_perturbation_broader_sentence_contexts,aubmindlab/aragpt2-base,720,220,500,0,30.55555555555556,69.44444444444444,-0.34839871790674,-0.275461196899414,feminine,feminine
+v4,template_perturbation_broader_sentence_contexts,bigscience/bloom-560m,720,256,460,4,35.55555555555556,63.888888888888886,-0.1702853732638889,-0.26171875,feminine,feminine
+v5,explicit_job_title_context,aubmindlab/aragpt2-base,540,284,256,0,52.59259259259259,47.40740740740741,-0.0338489797380235,0.0277814865112304,feminine,masculine
+v5,explicit_job_title_context,bigscience/bloom-560m,540,278,261,1,51.48148148148148,48.333333333333336,0.070949074074074,0.017578125,masculine,masculine

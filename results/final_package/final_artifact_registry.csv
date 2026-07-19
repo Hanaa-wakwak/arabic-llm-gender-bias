@@ -30,3 +30,10 @@ doc,Final contribution statement,docs/occupational_scope/final_contribution_stat
 doc,Final technical contribution table,docs/occupational_scope/final_technical_contribution_table.md,True,,
 doc,Doctor explanation script,docs/occupational_scope/doctor_explanation_script.md,True,,
 doc,Final viva questions and answers,docs/occupational_scope/final_viva_questions_and_answers.md,False,,
+data,v5 job-title benchmark,data/occupational_benchmark/occupational_bias_v5_job_titles.csv,True,540.0,16.0
+quality,v5 job-title quality summary,results/occupational_benchmark_v5_job_titles_quality/v5_job_titles_quality_summary.csv,True,6.0,3.0
+result,v5 AraGPT2-base overall,results/occupational_benchmark_v5_job_titles_quick_models/analysis_aragpt2_base/summary_overall.csv,True,1.0,12.0
+result,v5 BLOOM-560m overall,results/occupational_benchmark_v5_job_titles_quick_models/analysis_bloom_560m/summary_overall.csv,True,1.0,12.0
+result,v4-v5 job-title context comparison,results/v4_v5_job_title_comparison/v4_v5_quick_model_comparison.csv,True,4.0,13.0
+doc,v5 job-title final result summary,docs/occupational_scope/v5_job_titles_final_result_summary.md,True,,
+doc,v4-v5 job-title context comparison,docs/occupational_scope/v4_v5_job_title_context_comparison.md,True,,
