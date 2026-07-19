@@ -4,9 +4,9 @@ This matrix summarizes the main technical contributions of the thesis implementa
 
 ## Contribution Summary
 
-- Total technical contributions: 17
-- Contributions with evidence files present: 17
-- Contributions with result files present: 16
+- Total technical contributions: 18
+- Contributions with evidence files present: 18
+- Contributions with result files present: 17
 
 ## Matrix
 
@@ -29,6 +29,7 @@ This matrix summarizes the main technical contributions of the thesis implementa
 | C19 | Threats to validity and mitigation map | A structured validity analysis identifying construct, internal, external, statistical, reliability, and reproducibility threats, with the mitigation layer used for each. | docs/occupational_scope/threats_to_validity_and_mitigation_map.md | docs/occupational_scope/threats_to_validity_and_mitigation_map.md | Strengthens methodological rigor by explicitly linking limitations to mitigation strategies. | True | True |
 | C20 | Extreme bias case analysis | A qualitative interpretability analysis extracting the strongest masculine-preferred, strongest feminine-preferred, and near-neutral sentence pairs from scored benchmark results. | results/final_package/extreme_bias_cases_detailed.csv | docs/occupational_scope/extreme_bias_case_analysis.md | Connects aggregate bias metrics to concrete Arabic sentence-pair examples. | True | True |
 | C21 | Claim-to-evidence traceability matrix | A matrix mapping each major thesis claim to the benchmark file, result file, statistical output, or documentation that supports it. | results/final_package/claim_evidence_traceability_matrix.csv | docs/occupational_scope/claim_evidence_traceability_matrix.md | Improves defense readiness and makes the thesis claims auditable. | True | True |
+| C22 | Bootstrap confidence intervals for bias scores | An uncertainty-aware analysis estimating bootstrap confidence intervals for the average score difference across model and benchmark combinations. | results/final_package/bootstrap_bias_score_confidence_intervals.csv | docs/occupational_scope/bootstrap_confidence_intervals_summary.md | Distinguishes reliable directional effects from weak or near-neutral score differences. | True | True |
 
 ## Final Technical Claim
 

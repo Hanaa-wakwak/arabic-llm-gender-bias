@@ -144,6 +144,14 @@ CONTRIBUTIONS = [
         "result_file": "docs/occupational_scope/claim_evidence_traceability_matrix.md",
         "thesis_value": "Improves defense readiness and makes the thesis claims auditable.",
     },
+        {
+        "id": "C22",
+        "technical_contribution": "Bootstrap confidence intervals for bias scores",
+        "description": "An uncertainty-aware analysis estimating bootstrap confidence intervals for the average score difference across model and benchmark combinations.",
+        "evidence_file": "results/final_package/bootstrap_bias_score_confidence_intervals.csv",
+        "result_file": "docs/occupational_scope/bootstrap_confidence_intervals_summary.md",
+        "thesis_value": "Distinguishes reliable directional effects from weak or near-neutral score differences.",
+    },
 ]
 
 

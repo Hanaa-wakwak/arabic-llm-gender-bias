@@ -124,3 +124,13 @@ An additional contribution is the claim-to-evidence traceability matrix.
 This matrix maps each major thesis claim to the benchmark file, result file, statistical output, or documentation that supports it.
 
 This strengthens the defense package because every important claim becomes auditable and traceable to evidence.
+
+## Additional Contribution: Bootstrap Confidence Intervals
+
+An additional contribution is bootstrap confidence-interval analysis for bias scores.
+
+This analysis estimates uncertainty around the average score difference for each model and benchmark.
+
+It helps distinguish reliable directional effects from weak, mixed, or near-neutral effects.
+
+This strengthens the thesis because the results are not only reported as averages; they are also interpreted with uncertainty.

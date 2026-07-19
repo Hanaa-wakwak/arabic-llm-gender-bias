@@ -111,3 +111,13 @@ I also added a claim-to-evidence traceability matrix.
 This matrix maps each major thesis claim to the exact data file, result file, statistical output, or documentation that supports it.
 
 This improves defense readiness because if an examiner asks where a claim comes from, the evidence is already traceable.
+
+## Additional Statistical Layer: Bootstrap Confidence Intervals
+
+I also added bootstrap confidence intervals for the average score difference.
+
+This estimates uncertainty around the measured bias score.
+
+If the confidence interval is fully above zero, the result is reliably masculine. If it is fully below zero, the result is reliably feminine. If it crosses zero, the result is weak or uncertain.
+
+This is especially useful for near-balanced results such as the v5 job-title benchmark.
