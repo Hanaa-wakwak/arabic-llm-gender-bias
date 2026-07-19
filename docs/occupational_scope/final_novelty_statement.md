@@ -65,3 +65,16 @@ It now includes three additional methodological layers:
 These additions strengthen the thesis because they transform the work from a set of experiments into a structured evaluation framework.
 
 The final contribution is therefore not only an Arabic occupational gender-bias benchmark, but a methodology for testing and reporting benchmark-design sensitivity in Arabic bias evaluation.
+## Widened Contribution
+
+The thesis contribution was widened beyond benchmark construction and model evaluation.
+
+It now includes three additional methodological layers:
+
+1. a cross-benchmark stability map,
+2. a benchmark design taxonomy,
+3. an Arabic occupational bias evaluation reporting checklist.
+
+These additions strengthen the thesis because they transform the work from a set of experiments into a structured evaluation framework.
+
+The final contribution is therefore not only an Arabic occupational gender-bias benchmark, but a methodology for testing and reporting benchmark-design sensitivity in Arabic bias evaluation.
