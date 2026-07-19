@@ -58,3 +58,22 @@ The index combines v4 template volatility, v4 dialect shift, and v4-to-v5 job-ti
 This converts the qualitative robustness finding into a measurable model-level diagnostic.
 
 It strengthens the thesis because the contribution becomes not only benchmark construction, but also benchmark-sensitivity measurement.
+## Additional Validation Layer: Counterfactual Pair Integrity Audit
+
+I also added a counterfactual pair integrity audit.
+
+This audit checks whether masculine and feminine sentence pairs are structurally comparable.
+
+It examines sentence length, word count, identical-pair errors, and whether the intended masculine and feminine occupation forms are present in the correct sentence.
+
+This strengthens the technical contribution because the benchmark is not only constructed manually; it is also validated through an implementation-level quality-control process.
+
+## Additional Validation Layer: Counterfactual Pair Integrity Audit
+
+I also added a counterfactual pair integrity audit.
+
+This audit checks whether masculine and feminine sentence pairs are structurally comparable.
+
+It examines sentence length, word count, identical-pair errors, and whether the intended masculine and feminine occupation forms are present in the correct sentence.
+
+This strengthens the technical contribution because the benchmark is not only constructed manually; it is also validated through an implementation-level quality-control process.

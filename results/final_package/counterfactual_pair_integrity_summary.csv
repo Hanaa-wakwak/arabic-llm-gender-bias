@@ -1,0 +1,7 @@
+﻿benchmark,total_pairs,identical_sentence_pairs,average_abs_char_diff,median_abs_char_diff,max_abs_char_diff,average_abs_word_diff,median_abs_word_diff,max_abs_word_diff,masculine_occupation_missing_count,feminine_occupation_missing_count
+v2,240,0,1.9666666666666666,2.0,5,0.0,0.0,0,240,240
+v3,540,0,2.988888888888889,3.0,6,0.0,0.0,0,0,0
+v3_balanced,360,0,2.9833333333333334,3.0,7,0.0,0.0,0,0,0
+v3_controlled,360,0,2.9055555555555554,3.0,6,0.0,0.0,0,0,0
+v4,720,0,2.4833333333333334,2.0,6,0.0,0.0,0,0,0
+v5,540,0,1.2333333333333334,1.0,3,0.0,0.0,0,0,0

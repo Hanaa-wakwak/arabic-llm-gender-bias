@@ -4,9 +4,9 @@ This matrix summarizes the main technical contributions of the thesis implementa
 
 ## Contribution Summary
 
-- Total technical contributions: 12
-- Contributions with evidence files present: 12
-- Contributions with result files present: 11
+- Total technical contributions: 13
+- Contributions with evidence files present: 13
+- Contributions with result files present: 12
 
 ## Matrix
 
@@ -24,6 +24,7 @@ This matrix summarizes the main technical contributions of the thesis implementa
 | C10 | External dataset pilot integration | APGC and ArGAN pilot experiments for external Arabic gender-bias dataset enrichment. | data/external_datasets | results/external_datasets | Shows extensibility beyond the manually constructed benchmark. | True | True |
 | C11 | v5 job-title-specific benchmark | A job-title-specific benchmark with 90 balanced occupations, 6 templates, 2 dialects, and 540 sentence pairs. | data/occupational_benchmark/occupational_bias_v5_job_titles.csv | results/occupational_benchmark_v5_job_titles_quick_models | Separates explicit job-title preference from broader occupational sentence-context preference. | True | True |
 | C12 | v4-v5 context comparison | Comparison between broader v4 occupational sentence contexts and explicit v5 job-title contexts. | results/v4_v5_job_title_comparison/v4_v5_quick_model_comparison.csv | docs/occupational_scope/v4_v5_job_title_context_comparison.md | Strengthens the claim that measured bias changes with benchmark context. | True | True |
+| C17 | Counterfactual pair integrity audit | A benchmark-wide audit checking whether masculine and feminine sentence pairs are structurally comparable in character length, word count, occupation presence, and identical-pair errors. | results/final_package/counterfactual_pair_integrity_summary.csv | docs/occupational_scope/counterfactual_pair_integrity_audit.md | Adds a quality-control layer validating the counterfactual paired-sentence design. | True | True |
 
 ## Final Technical Claim
 

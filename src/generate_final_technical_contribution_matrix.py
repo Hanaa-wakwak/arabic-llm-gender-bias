@@ -104,6 +104,14 @@ CONTRIBUTIONS = [
         "result_file": "docs/occupational_scope/v4_v5_job_title_context_comparison.md",
         "thesis_value": "Strengthens the claim that measured bias changes with benchmark context.",
     },
+        {
+        "id": "C17",
+        "technical_contribution": "Counterfactual pair integrity audit",
+        "description": "A benchmark-wide audit checking whether masculine and feminine sentence pairs are structurally comparable in character length, word count, occupation presence, and identical-pair errors.",
+        "evidence_file": "results/final_package/counterfactual_pair_integrity_summary.csv",
+        "result_file": "docs/occupational_scope/counterfactual_pair_integrity_audit.md",
+        "thesis_value": "Adds a quality-control layer validating the counterfactual paired-sentence design.",
+    },
 ]
 
 

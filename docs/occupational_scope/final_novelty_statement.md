@@ -78,3 +78,13 @@ It now includes three additional methodological layers:
 These additions strengthen the thesis because they transform the work from a set of experiments into a structured evaluation framework.
 
 The final contribution is therefore not only an Arabic occupational gender-bias benchmark, but a methodology for testing and reporting benchmark-design sensitivity in Arabic bias evaluation.
+
+## Additional Contribution: Counterfactual Pair Integrity Audit
+
+An additional contribution is the counterfactual pair integrity audit.
+
+This audit checks whether masculine and feminine sentence pairs are structurally comparable across the benchmark suite.
+
+It verifies character-length differences, word-count differences, identical-pair errors, and occupation-form presence.
+
+This strengthens the benchmark validity because the evaluation depends on comparing near-counterfactual masculine and feminine sentence variants.
