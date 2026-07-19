@@ -52,3 +52,16 @@ This diagnostic summarizes how sensitive a model's measured occupational gender 
 It is thesis-specific and is used as a robustness summary, not as a universal bias metric.
 
 This strengthens the methodological contribution because the thesis does not only observe benchmark-design sensitivity; it also operationalizes it as a measurable diagnostic.
+## Widened Contribution
+
+The thesis contribution was widened beyond benchmark construction and model evaluation.
+
+It now includes three additional methodological layers:
+
+1. a cross-benchmark stability map,
+2. a benchmark design taxonomy,
+3. an Arabic occupational bias evaluation reporting checklist.
+
+These additions strengthen the thesis because they transform the work from a set of experiments into a structured evaluation framework.
+
+The final contribution is therefore not only an Arabic occupational gender-bias benchmark, but a methodology for testing and reporting benchmark-design sensitivity in Arabic bias evaluation.
