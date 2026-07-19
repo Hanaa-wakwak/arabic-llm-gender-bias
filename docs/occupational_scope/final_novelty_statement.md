@@ -88,3 +88,11 @@ This audit checks whether masculine and feminine sentence pairs are structurally
 It verifies character-length differences, word-count differences, identical-pair errors, and occupation-form presence.
 
 This strengthens the benchmark validity because the evaluation depends on comparing near-counterfactual masculine and feminine sentence variants.
+
+## Additional Contribution: Benchmark Datasheet
+
+An additional contribution is the benchmark datasheet.
+
+The datasheet documents the benchmark purpose, construction process, intended use, limitations, scoring method, quality-control checks, and ethical considerations.
+
+This improves transparency and makes the benchmark suite easier to understand, reproduce, and evaluate.

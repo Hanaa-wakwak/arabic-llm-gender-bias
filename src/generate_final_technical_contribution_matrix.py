@@ -112,6 +112,14 @@ CONTRIBUTIONS = [
         "result_file": "docs/occupational_scope/counterfactual_pair_integrity_audit.md",
         "thesis_value": "Adds a quality-control layer validating the counterfactual paired-sentence design.",
     },
+        {
+        "id": "C18",
+        "technical_contribution": "Benchmark datasheet",
+        "description": "A structured benchmark datasheet documenting the purpose, construction, intended use, limitations, scoring method, quality controls, and ethical considerations of the Arabic occupational gender-bias evaluation suite.",
+        "evidence_file": "docs/occupational_scope/benchmark_datasheet.md",
+        "result_file": "docs/occupational_scope/benchmark_datasheet.md",
+        "thesis_value": "Improves transparency, reproducibility, and responsible benchmark documentation.",
+    },
 ]
 
 

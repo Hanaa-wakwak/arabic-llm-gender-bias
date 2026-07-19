@@ -77,3 +77,11 @@ This audit checks whether masculine and feminine sentence pairs are structurally
 It examines sentence length, word count, identical-pair errors, and whether the intended masculine and feminine occupation forms are present in the correct sentence.
 
 This strengthens the technical contribution because the benchmark is not only constructed manually; it is also validated through an implementation-level quality-control process.
+
+## Additional Documentation Layer: Benchmark Datasheet
+
+I also added a benchmark datasheet.
+
+This datasheet documents the purpose of the benchmark, how it was constructed, how it should be used, what its limitations are, and what ethical considerations should be kept in mind.
+
+This strengthens the technical contribution because the benchmark is not only implemented, but also documented in a transparent and reproducible way.
