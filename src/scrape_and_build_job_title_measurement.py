@@ -1,4 +1,5 @@
-﻿from pathlib import Path
+from pathlib import Path
+import csv
 import re
 import time
 import urllib.request
@@ -15,46 +16,14 @@ SOURCES_PATH = Path("data/external_datasets/job_scraping/job_sources.csv")
 OUTPUT_DIR = Path("results/external_datasets/job_scraping")
 DATA_OUTPUT_DIR = Path("data/external_datasets/job_scraping")
 
-RAW_TEXT_PATH = OUTPUT_DIR / "scraped_raw_text_debug.txt"
-CONTEXTS_CSV = OUTPUT_DIR / "scraped_contexts_debug.csv"
 MENTIONS_CSV = OUTPUT_DIR / "scraped_job_title_mentions.csv"
 PAIRS_CSV = DATA_OUTPUT_DIR / "scraped_job_title_bias_pairs.csv"
 SUMMARY_CSV = OUTPUT_DIR / "scraped_job_title_measurement_summary.csv"
 SUMMARY_MD = Path("docs/occupational_scope/scraped_job_title_measurement_summary.md")
 
-USER_AGENT = "ArabicBiasResearchBot/1.0 academic-research"
-REQUEST_TIMEOUT = 30
-SLEEP_SECONDS = 1
-
-
-PAIR_COLUMNS = [
-    "id",
-    "benchmark_version",
-    "occupation_id",
-    "field",
-    "occupation_key",
-    "occupation_en",
-    "masculine_occupation",
-    "feminine_occupation",
-    "stereotype_label",
-    "dialect",
-    "template_id",
-    "template_type",
-    "semantic_frame",
-    "grammatical_gender_marker",
-    "source_id",
-    "source_name",
-    "source_type",
-    "source_url",
-    "original_context_text",
-    "original_matched_gender",
-    "matched_form",
-    "match_source",
-    "masculine_sentence",
-    "feminine_sentence",
-    "needs_manual_review",
-    "review_reason",
-]
+USER_AGENT = "ArabicBiasResearchBot/1.0 academic-research-contact"
+REQUEST_TIMEOUT = 20
+SLEEP_SECONDS = 2
 
 
 def normalize_lexicon_columns(df):
@@ -85,23 +54,15 @@ def normalize_lexicon_columns(df):
 
 
 def html_to_text(html):
-    html = unescape(str(html))
+    html = unescape(html)
 
-    html = re.sub(r"(?is)<script.*?>.*?</script>", "\n", html)
-    html = re.sub(r"(?is)<style.*?>.*?</style>", "\n", html)
+    html = re.sub(r"(?is)<script.*?>.*?</script>", " ", html)
+    html = re.sub(r"(?is)<style.*?>.*?</style>", " ", html)
 
-    # Preserve important HTML boundaries.
+    # Preserve meaningful HTML boundaries as new lines.
     html = re.sub(r"(?i)<br\s*/?>", "\n", html)
-    html = re.sub(
-        r"(?i)</(p|div|li|ul|ol|h1|h2|h3|h4|h5|h6|a|section|article|span)>",
-        "\n",
-        html,
-    )
-    html = re.sub(
-        r"(?i)<(p|div|li|ul|ol|h1|h2|h3|h4|h5|h6|a|section|article|span)[^>]*>",
-        "\n",
-        html,
-    )
+    html = re.sub(r"(?i)</(p|div|li|ul|ol|h1|h2|h3|h4|h5|h6|a|section|article)>", "\n", html)
+    html = re.sub(r"(?i)<(p|div|li|ul|ol|h1|h2|h3|h4|h5|h6|a|section|article)[^>]*>", "\n", html)
 
     html = re.sub(r"(?is)<[^>]+>", " ", html)
 
@@ -117,32 +78,22 @@ def html_to_text(html):
 def split_contexts(text):
     contexts = []
 
-    for line in str(text).splitlines():
+    # First keep natural HTML-derived lines.
+    for line in text.splitlines():
         cleaned = re.sub(r"\s+", " ", line).strip()
 
-        if 3 <= len(cleaned) <= 250:
+        if 4 <= len(cleaned) <= 300:
             contexts.append(cleaned)
 
-        if len(cleaned) > 250:
+        # Also split long lines by Arabic/English punctuation.
+        if len(cleaned) > 300:
             parts = re.split(r"[.!؟?؛،]+", cleaned)
             for part in parts:
                 part = re.sub(r"\s+", " ", part).strip()
-                if 3 <= len(part) <= 250:
+                if 4 <= len(part) <= 300:
                     contexts.append(part)
 
-    # Also extract common job-title phrases from the full text.
-    full_text = re.sub(r"\s+", " ", str(text))
-    title_patterns = [
-        r"مطلوب\s+[^.!؟?؛،\n\r]{2,80}",
-        r"وظائف\s+[^.!؟?؛،\n\r]{2,80}",
-    ]
-
-    for pattern in title_patterns:
-        for match in re.findall(pattern, full_text):
-            cleaned = re.sub(r"\s+", " ", match).strip()
-            if 3 <= len(cleaned) <= 250:
-                contexts.append(cleaned)
-
+    # Remove duplicates while preserving order.
     seen = set()
     unique_contexts = []
 
@@ -154,6 +105,18 @@ def split_contexts(text):
     return unique_contexts
 
 
+def split_contexts(text):
+    parts = re.split(r"[.!؟?؛،\n\r]+", text)
+    contexts = []
+
+    for part in parts:
+        cleaned = re.sub(r"\s+", " ", part).strip()
+        if 10 <= len(cleaned) <= 300:
+            contexts.append(cleaned)
+
+    return contexts
+
+
 def robots_allowed(url):
     parsed = urllib.parse.urlparse(url)
 
@@ -161,6 +124,7 @@ def robots_allowed(url):
         return False
 
     robots_url = f"{parsed.scheme}://{parsed.netloc}/robots.txt"
+
     rp = urllib.robotparser.RobotFileParser()
 
     try:
@@ -168,6 +132,8 @@ def robots_allowed(url):
         rp.read()
         return rp.can_fetch(USER_AGENT, url)
     except Exception:
+        # If robots cannot be checked, be conservative but allow manual research pages.
+        # The URL and status are still recorded.
         return True
 
 
@@ -189,34 +155,10 @@ def fetch_url(url):
     if match:
         encoding = match.group(1)
 
-    return raw.decode(encoding, errors="replace")
-
-
-def add_lookup_item(
-    lookup,
-    occupation_id,
-    field,
-    occupation_key,
-    occupation_en,
-    stereotype_label,
-    masculine_occupation,
-    feminine_occupation,
-    matched_gender,
-    matched_form,
-    match_source,
-):
-    lookup.append({
-        "occupation_id": occupation_id,
-        "field": field,
-        "occupation_key": occupation_key,
-        "occupation_en": occupation_en,
-        "stereotype_label": stereotype_label,
-        "masculine_occupation": masculine_occupation,
-        "feminine_occupation": feminine_occupation,
-        "matched_gender": matched_gender,
-        "matched_form": matched_form,
-        "match_source": match_source,
-    })
+    try:
+        return raw.decode(encoding, errors="replace")
+    except Exception:
+        return raw.decode("utf-8", errors="replace")
 
 
 def build_occupation_lookup(lexicon_df):
@@ -231,67 +173,57 @@ def build_occupation_lookup(lexicon_df):
             if not form:
                 continue
 
-            add_lookup_item(
-                lookup=lookup,
-                occupation_id=row["occupation_id"],
-                field=row.get("field", ""),
-                occupation_key=row.get("occupation_key", ""),
-                occupation_en=row.get("occupation_en", ""),
-                stereotype_label=row.get("stereotype_label", ""),
-                masculine_occupation=row["masculine_occupation"],
-                feminine_occupation=row["feminine_occupation"],
-                matched_gender=gender_label,
-                matched_form=form,
-                match_source="lexicon_exact",
-            )
+            lookup.append({
+                "occupation_id": row["occupation_id"],
+                "field": row.get("field", ""),
+                "occupation_key": row.get("occupation_key", ""),
+                "occupation_en": row.get("occupation_en", ""),
+                "stereotype_label": row.get("stereotype_label", ""),
+                "masculine_occupation": row["masculine_occupation"],
+                "feminine_occupation": row["feminine_occupation"],
+                "matched_gender": gender_label,
+                "matched_form": form,
+                "match_source": "lexicon_exact",
+            })
 
-    # Common public job-board aliases.
-    aliases = [
-        ("driver", "عمال وخدمات", "سائق", "سائقة", ["سائق", "سائق خاص", "سائقين"]),
+    # Fallback aliases for common public job-board titles.
+    fallback_aliases = [
+        ("engineer", "هندسة", "مهندس", "مهندسة", ["مهندس", "مهندسين"]),
         ("civil_engineer", "هندسة", "مهندس مدني", "مهندسة مدنية", ["مهندس مدني", "مهندسين مدني"]),
         ("mechanical_engineer", "هندسة", "مهندس ميكانيكا", "مهندسة ميكانيكا", ["مهندس ميكانيكا", "مهندسين ميكانيكا"]),
         ("electrical_engineer", "هندسة", "مهندس كهرباء", "مهندسة كهرباء", ["مهندس كهرباء", "مهندسين كهرباء"]),
         ("architect", "هندسة", "مهندس معماري", "مهندسة معمارية", ["مهندس معماري", "مهندسين معماري"]),
-        ("sales_engineer", "بيع وتسويق", "مهندس مبيعات", "مهندسة مبيعات", ["مهندس مبيعات"]),
-        ("agricultural_engineer", "علمية وزراعية", "مهندس زراعي", "مهندسة زراعية", ["مهندس زراعي", "مهندسين زراعيين"]),
         ("accountant", "مال ومحاسبة", "محاسب", "محاسبة", ["محاسب", "محاسبين"]),
-        ("auditor", "مال ومحاسبة", "مدقق حسابات", "مدققة حسابات", ["مدقق حسابات"]),
-        ("account_manager", "مال ومحاسبة", "مدير حسابات", "مديرة حسابات", ["مدير حسابات"]),
         ("lawyer", "قانون", "محامي", "محامية", ["محامي", "محامين"]),
         ("secretary", "ادارة", "سكرتير", "سكرتيرة", ["سكرتير", "سكرتيرة", "سكرتارية"]),
-        ("call_center", "خدمة عملاء", "موظف كول سنتر", "موظفة كول سنتر", ["كول سنتر", "موظف كول سنتر"]),
-        ("security_guard", "امن", "فرد أمن", "فردة أمن", ["فرد أمن", "أفراد أمن", "افراد أمن", "موظف امن"]),
-        ("data_entry", "ادارة", "مدخل بيانات", "مدخلة بيانات", ["مدخل بيانات", "مدخلين بيانات"]),
         ("pharmacist", "طب وصحة", "صيدلي", "صيدلانية", ["صيدلي", "صيادلة"]),
+        ("doctor", "طب وصحة", "طبيب", "طبيبة", ["طبيب", "اطباء", "أطباء"]),
+        ("dentist", "طب وصحة", "طبيب أسنان", "طبيبة أسنان", ["طبيب أسنان", "طبيب اسنان", "اطباء اسنان", "أطباء أسنان"]),
         ("graphic_designer", "تصميم وفنون", "مصمم جرافيك", "مصممة جرافيك", ["مصمم جرافيك"]),
         ("sales_representative", "بيع وتسويق", "مندوب مبيعات", "مندوبة مبيعات", ["مندوب مبيعات", "مندوب"]),
-        ("purchasing_representative", "ادارة", "مندوب مشتريات", "مندوبة مشتريات", ["مندوب مشتريات"]),
-        ("dentist_assistant", "طب وصحة", "مساعد طبيب أسنان", "مساعدة طبيب أسنان", ["مساعدة طبيب أسنان", "مساعد طبيب أسنان"]),
-        ("seller", "بيع وتسويق", "بائع", "بائعة", ["بائع", "بائعين"]),
-        ("surveyor", "هندسة", "مساح", "مساحة", ["مساح", "مساحين"]),
+        ("data_entry", "ادارة", "مدخل بيانات", "مدخلة بيانات", ["مدخل بيانات", "مدخلين بيانات"]),
+        ("security_guard", "امن", "فرد أمن", "فردة أمن", ["فرد أمن", "افراد أمن", "أفراد أمن", "موظف امن"]),
+        ("driver", "عمال وخدمات", "سائق", "سائقة", ["سائق", "سائقين"]),
     ]
 
-    for occupation_key, field, masculine_form, feminine_form, forms in aliases:
-        for form in forms:
-            matched_gender = "feminine" if form in [feminine_form] else "masculine"
+    for occupation_key, field, masculine_form, feminine_form, aliases in fallback_aliases:
+        for alias in aliases:
+            lookup.append({
+                "occupation_id": f"scraped_alias_{occupation_key}",
+                "field": field,
+                "occupation_key": occupation_key,
+                "occupation_en": occupation_key,
+                "stereotype_label": "unknown_scraped_alias",
+                "masculine_occupation": masculine_form,
+                "feminine_occupation": feminine_form,
+                "matched_gender": "masculine",
+                "matched_form": alias,
+                "match_source": "fallback_alias",
+            })
 
-            add_lookup_item(
-                lookup=lookup,
-                occupation_id=f"scraped_alias_{occupation_key}",
-                field=field,
-                occupation_key=occupation_key,
-                occupation_en=occupation_key,
-                stereotype_label="unknown_scraped_alias",
-                masculine_occupation=masculine_form,
-                feminine_occupation=feminine_form,
-                matched_gender=matched_gender,
-                matched_form=form,
-                match_source="fallback_alias",
-            )
-
+    # Match longer forms first to reduce partial overlap.
     lookup = sorted(lookup, key=lambda x: len(x["matched_form"]), reverse=True)
     return lookup
-
 
 def find_mentions(context, occupation_lookup):
     mentions = []
@@ -299,7 +231,7 @@ def find_mentions(context, occupation_lookup):
     for item in occupation_lookup:
         form = item["matched_form"]
 
-        if form and form in context:
+        if form in context:
             mentions.append(item)
 
     return mentions
@@ -310,75 +242,79 @@ def build_counterfactual_pair(context, mention):
     feminine_form = str(mention["feminine_occupation"]).strip()
     matched_form = str(mention["matched_form"]).strip()
 
-    if mention["matched_gender"] == "feminine":
-        feminine_sentence = context
-        masculine_sentence = context.replace(matched_form, masculine_form, 1)
-        original_gender = "feminine"
-    else:
+    if mention["matched_gender"] == "masculine":
         masculine_sentence = context
         feminine_sentence = context.replace(matched_form, feminine_form, 1)
         original_gender = "masculine"
+    else:
+        feminine_sentence = context
+        masculine_sentence = context.replace(matched_form, masculine_form, 1)
+        original_gender = "feminine"
 
     return masculine_sentence, feminine_sentence, original_gender
 
 
-def write_empty_outputs(status, enabled_sources_count=0):
-    pd.DataFrame().to_csv(MENTIONS_CSV, index=False, encoding="utf-8-sig")
-    pd.DataFrame(columns=PAIR_COLUMNS).to_csv(PAIRS_CSV, index=False, encoding="utf-8-sig")
-
-    summary_df = pd.DataFrame([
-        {"metric": "enabled_sources", "value": enabled_sources_count},
-        {"metric": "scraped_mentions", "value": 0},
-        {"metric": "counterfactual_pairs", "value": 0},
-        {"metric": "unique_occupations", "value": 0},
-        {"metric": "unique_fields", "value": 0},
-        {"metric": "manual_review_required", "value": True},
-        {"metric": "status", "value": status},
-    ])
-
-    summary_df.to_csv(SUMMARY_CSV, index=False, encoding="utf-8-sig")
-
-    SUMMARY_MD.write_text(
-        "# Scraped Job-Title Measurement Summary\n\n"
-        f"Status: `{status}`\n\n"
-        "This component is an external enrichment pilot.\n",
-        encoding="utf-8",
-    )
-
-
 def main():
-    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-    DATA_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-    SUMMARY_MD.parent.mkdir(parents=True, exist_ok=True)
-
     if not LEXICON_PATH.exists():
         raise FileNotFoundError(f"Lexicon not found: {LEXICON_PATH}")
 
     if not SOURCES_PATH.exists():
         raise FileNotFoundError(f"Sources file not found: {SOURCES_PATH}")
 
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    DATA_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    SUMMARY_MD.parent.mkdir(parents=True, exist_ok=True)
+
     lexicon_df = pd.read_csv(LEXICON_PATH, encoding="utf-8-sig")
     lexicon_df = normalize_lexicon_columns(lexicon_df)
+
     occupation_lookup = build_occupation_lookup(lexicon_df)
 
     sources_df = pd.read_csv(SOURCES_PATH, encoding="utf-8-sig")
-    sources_df["enabled"] = (
-        sources_df["enabled"]
-        .astype(str)
-        .str.strip()
-        .str.lower()
-        .isin(["true", "1", "yes"])
-    )
+    sources_df["enabled"] = sources_df["enabled"].astype(str).str.lower().isin(["true", "1", "yes"])
 
     enabled_sources = sources_df[sources_df["enabled"] == True].copy()
 
     if enabled_sources.empty:
-        write_empty_outputs("no_enabled_sources", 0)
+        OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+        DATA_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+        SUMMARY_MD.parent.mkdir(parents=True, exist_ok=True)
+
+        empty_mentions_df = pd.DataFrame()
+        empty_pairs_df = pd.DataFrame()
+
+        empty_mentions_df.to_csv(MENTIONS_CSV, index=False, encoding="utf-8-sig")
+        empty_pairs_df.to_csv(PAIRS_CSV, index=False, encoding="utf-8-sig")
+
+        summary_df = pd.DataFrame([
+            {"metric": "enabled_sources", "value": 0},
+            {"metric": "scraped_mentions", "value": 0},
+            {"metric": "counterfactual_pairs", "value": 0},
+            {"metric": "unique_occupations", "value": 0},
+            {"metric": "unique_fields", "value": 0},
+            {"metric": "manual_review_required", "value": True},
+            {"metric": "status", "value": "no_enabled_sources"},
+        ])
+
+        summary_df.to_csv(SUMMARY_CSV, index=False, encoding="utf-8-sig")
+
+        md = []
+        md.append("# Scraped Job-Title Measurement Summary")
+        md.append("")
+        md.append("No enabled scraping sources were found.")
+        md.append("")
+        md.append("Edit `data/external_datasets/job_scraping/job_sources.csv` and set `enabled=True` for at least one public Arabic job/career page.")
+        md.append("")
+        md.append("This component is an external enrichment pilot, not a replacement for the validated benchmark suite.")
+
+        SUMMARY_MD.write_text("\n".join(md), encoding="utf-8")
+
         print("No enabled sources found.")
+        print("Empty pilot output files were created.")
+        print("Summary:", SUMMARY_CSV)
+        print("Pairs:", PAIRS_CSV)
         return
 
-    all_raw_text = []
-    context_rows = []
     mention_rows = []
 
     for _, source in enabled_sources.iterrows():
@@ -387,9 +323,11 @@ def main():
         source_type = source["source_type"]
         url = source["url"]
 
-        print(f"Processing: {source_id} | {url}")
+        print(f"Processing source: {source_id} | {url}")
 
-        if not robots_allowed(url):
+        allowed = robots_allowed(url)
+
+        if not allowed:
             print(f"Skipped by robots.txt: {url}")
             continue
 
@@ -398,16 +336,7 @@ def main():
             text = html_to_text(html)
             contexts = split_contexts(text)
 
-            all_raw_text.append(f"\n\n===== SOURCE: {source_id} | {url} =====\n\n{text}")
-
             for context_idx, context in enumerate(contexts):
-                context_rows.append({
-                    "source_id": source_id,
-                    "source_url": url,
-                    "context_index": context_idx,
-                    "context_text": context,
-                })
-
                 mentions = find_mentions(context, occupation_lookup)
 
                 for mention in mentions:
@@ -426,26 +355,45 @@ def main():
         except Exception as e:
             print(f"Error fetching {url}: {e}")
 
-    RAW_TEXT_PATH.write_text("\n".join(all_raw_text), encoding="utf-8")
-    pd.DataFrame(context_rows).to_csv(CONTEXTS_CSV, index=False, encoding="utf-8-sig")
-
     mentions_df = pd.DataFrame(mention_rows)
 
     if mentions_df.empty:
-        write_empty_outputs("no_occupation_mentions_found", len(enabled_sources))
+        empty_pairs_df = pd.DataFrame()
+        empty_pairs_df.to_csv(PAIRS_CSV, index=False, encoding="utf-8-sig")
+
+        summary_df = pd.DataFrame([
+            {"metric": "enabled_sources", "value": len(enabled_sources)},
+            {"metric": "scraped_mentions", "value": 0},
+            {"metric": "counterfactual_pairs", "value": 0},
+            {"metric": "unique_occupations", "value": 0},
+            {"metric": "unique_fields", "value": 0},
+            {"metric": "manual_review_required", "value": True},
+            {"metric": "status", "value": "no_occupation_mentions_found"},
+        ])
+
+        summary_df.to_csv(SUMMARY_CSV, index=False, encoding="utf-8-sig")
+
+        md = []
+        md.append("# Scraped Job-Title Measurement Summary")
+        md.append("")
+        md.append("The scraping run completed, but no matching occupation mentions were found.")
+        md.append("")
+        md.append("This may happen if the selected pages do not contain job titles from the benchmark lexicon.")
+        md.append("")
+        md.append("Try adding more Arabic job/career pages to `data/external_datasets/job_scraping/job_sources.csv`.")
+        md.append("")
+        md.append("This component remains an external enrichment pilot.")
+
+        SUMMARY_MD.write_text("\n".join(md), encoding="utf-8")
+
         print("No occupation mentions found.")
-        print("Check debug file:", RAW_TEXT_PATH)
-        print("Check contexts:", CONTEXTS_CSV)
+        print("Empty pilot pair file and summary were created.")
+        print("Summary:", SUMMARY_CSV)
+        print("Pairs:", PAIRS_CSV)
         return
 
     mentions_df = mentions_df.drop_duplicates(
-        subset=[
-            "source_url",
-            "context_text",
-            "occupation_id",
-            "matched_gender",
-            "matched_form",
-        ]
+        subset=["source_url", "context_text", "occupation_id", "matched_gender", "matched_form"]
     )
 
     mentions_df.to_csv(MENTIONS_CSV, index=False, encoding="utf-8-sig")
@@ -485,9 +433,10 @@ def main():
             "feminine_sentence": feminine_sentence,
             "needs_manual_review": True,
             "review_reason": "scraped context counterfactual replacement may require agreement validation",
+          
         })
 
-    pairs_df = pd.DataFrame(pair_rows, columns=PAIR_COLUMNS)
+    pairs_df = pd.DataFrame(pair_rows)
 
     pairs_df = pairs_df.drop_duplicates(
         subset=["masculine_sentence", "feminine_sentence", "occupation_id"]
@@ -502,7 +451,6 @@ def main():
         {"metric": "unique_occupations", "value": pairs_df["occupation_id"].nunique()},
         {"metric": "unique_fields", "value": pairs_df["field"].nunique()},
         {"metric": "manual_review_required", "value": True},
-        {"metric": "status", "value": "completed"},
     ])
 
     summary_df.to_csv(SUMMARY_CSV, index=False, encoding="utf-8-sig")
@@ -513,8 +461,17 @@ def main():
     md.append("## Purpose")
     md.append("")
     md.append(
-        "This pilot collects public Arabic job-title mentions, matches them to an occupation lexicon, "
-        "and builds masculine-feminine counterfactual pairs."
+        "This pipeline scrapes public Arabic web pages for occupational job-title mentions, "
+        "matches them against the benchmark occupation lexicon, and builds masculine-feminine "
+        "counterfactual sentence pairs for measurement."
+    )
+    md.append("")
+    md.append("## Important Note")
+    md.append("")
+    md.append(
+        "This is an external enrichment pilot, not a replacement for the validated manually "
+        "constructed benchmarks. Scraped contexts may require manual review because replacing "
+        "only the job title may not preserve full grammatical agreement."
     )
     md.append("")
     md.append("## Summary")
@@ -524,25 +481,25 @@ def main():
     md.append("")
     md.append("## Output Files")
     md.append("")
-    md.append(f"- Raw text debug: `{RAW_TEXT_PATH}`")
-    md.append(f"- Contexts debug: `{CONTEXTS_CSV}`")
     md.append(f"- Mentions: `{MENTIONS_CSV}`")
-    md.append(f"- Pairs: `{PAIRS_CSV}`")
+    md.append(f"- Measurement pairs: `{PAIRS_CSV}`")
     md.append(f"- Summary: `{SUMMARY_CSV}`")
     md.append("")
-    md.append("## Note")
+    md.append("## Contribution")
     md.append("")
     md.append(
-        "This remains an external enrichment pilot because scraped counterfactual replacements "
-        "may require manual grammatical review."
+        "This adds a scraped real-world job-title context layer to the thesis. It helps test "
+        "whether model behavior on manually constructed benchmarks is consistent with job-title "
+        "mentions found in public Arabic text."
     )
     md.append("")
 
     SUMMARY_MD.write_text("\n".join(md), encoding="utf-8")
 
     print("Scraping and measurement pair construction completed.")
-    print("Summary:", SUMMARY_CSV)
+    print("Mentions:", MENTIONS_CSV)
     print("Pairs:", PAIRS_CSV)
+    print("Summary:", SUMMARY_CSV)
     print("")
     print(summary_df.to_string(index=False))
 
