@@ -96,3 +96,13 @@ An additional contribution is the benchmark datasheet.
 The datasheet documents the benchmark purpose, construction process, intended use, limitations, scoring method, quality-control checks, and ethical considerations.
 
 This improves transparency and makes the benchmark suite easier to understand, reproduce, and evaluate.
+
+## Additional Contribution: Threats to Validity and Mitigation Map
+
+An additional contribution is the threats-to-validity and mitigation map.
+
+This document identifies construct, internal, external, statistical, reliability, and reproducibility threats.
+
+It also explains how each threat is addressed or reported in the thesis.
+
+This strengthens the work because the thesis does not only present results; it critically evaluates the reliability and boundaries of those results.

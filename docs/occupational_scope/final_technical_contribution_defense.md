@@ -85,3 +85,13 @@ I also added a benchmark datasheet.
 This datasheet documents the purpose of the benchmark, how it was constructed, how it should be used, what its limitations are, and what ethical considerations should be kept in mind.
 
 This strengthens the technical contribution because the benchmark is not only implemented, but also documented in a transparent and reproducible way.
+
+## Additional Rigor Layer: Threats to Validity and Mitigation Map
+
+I also added a threats-to-validity and mitigation map.
+
+This map identifies the main risks in the evaluation, such as template sensitivity, dialect limitation, tokenization effects, manual benchmark construction, and external validation limits.
+
+For each threat, I documented how the thesis mitigates it or reports it transparently.
+
+This improves the methodological rigor of the contribution.

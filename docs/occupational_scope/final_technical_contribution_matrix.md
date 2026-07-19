@@ -4,9 +4,9 @@ This matrix summarizes the main technical contributions of the thesis implementa
 
 ## Contribution Summary
 
-- Total technical contributions: 14
-- Contributions with evidence files present: 14
-- Contributions with result files present: 13
+- Total technical contributions: 15
+- Contributions with evidence files present: 15
+- Contributions with result files present: 14
 
 ## Matrix
 
@@ -26,6 +26,7 @@ This matrix summarizes the main technical contributions of the thesis implementa
 | C12 | v4-v5 context comparison | Comparison between broader v4 occupational sentence contexts and explicit v5 job-title contexts. | results/v4_v5_job_title_comparison/v4_v5_quick_model_comparison.csv | docs/occupational_scope/v4_v5_job_title_context_comparison.md | Strengthens the claim that measured bias changes with benchmark context. | True | True |
 | C17 | Counterfactual pair integrity audit | A benchmark-wide audit checking whether masculine and feminine sentence pairs are structurally comparable in character length, word count, occupation presence, and identical-pair errors. | results/final_package/counterfactual_pair_integrity_summary.csv | docs/occupational_scope/counterfactual_pair_integrity_audit.md | Adds a quality-control layer validating the counterfactual paired-sentence design. | True | True |
 | C18 | Benchmark datasheet | A structured benchmark datasheet documenting the purpose, construction, intended use, limitations, scoring method, quality controls, and ethical considerations of the Arabic occupational gender-bias evaluation suite. | docs/occupational_scope/benchmark_datasheet.md | docs/occupational_scope/benchmark_datasheet.md | Improves transparency, reproducibility, and responsible benchmark documentation. | True | True |
+| C19 | Threats to validity and mitigation map | A structured validity analysis identifying construct, internal, external, statistical, reliability, and reproducibility threats, with the mitigation layer used for each. | docs/occupational_scope/threats_to_validity_and_mitigation_map.md | docs/occupational_scope/threats_to_validity_and_mitigation_map.md | Strengthens methodological rigor by explicitly linking limitations to mitigation strategies. | True | True |
 
 ## Final Technical Claim
 

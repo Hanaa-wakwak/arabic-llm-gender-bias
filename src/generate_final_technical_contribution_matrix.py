@@ -120,6 +120,14 @@ CONTRIBUTIONS = [
         "result_file": "docs/occupational_scope/benchmark_datasheet.md",
         "thesis_value": "Improves transparency, reproducibility, and responsible benchmark documentation.",
     },
+        {
+        "id": "C19",
+        "technical_contribution": "Threats to validity and mitigation map",
+        "description": "A structured validity analysis identifying construct, internal, external, statistical, reliability, and reproducibility threats, with the mitigation layer used for each.",
+        "evidence_file": "docs/occupational_scope/threats_to_validity_and_mitigation_map.md",
+        "result_file": "docs/occupational_scope/threats_to_validity_and_mitigation_map.md",
+        "thesis_value": "Strengthens methodological rigor by explicitly linking limitations to mitigation strategies.",
+    },
 ]
 
 
