@@ -1,0 +1,7 @@
+﻿issue_type,details,count
+no_issues_found,v5 job-title benchmark passed quality checks,0
+metric,total_rows,540
+metric,unique_occupations,90
+metric,unique_templates,6
+metric,unique_dialects,2
+metric,unique_semantic_frames,4
