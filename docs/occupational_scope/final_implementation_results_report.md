@@ -150,3 +150,30 @@ The final implementation shows that Arabic occupational gender-bias evaluation i
 The v2 benchmark provides the main validated model-family result. The v3 and v3 balanced benchmarks demonstrate sensitivity to occupation coverage and lexical formulation. The v4 benchmark demonstrates that template formulation, semantic frame, and dialect can significantly affect measured gender preference.
 
 The strongest practical factor in v4 was template ID, based on Cramér's V effect-size analysis.
+
+## v5 Job-Title Benchmark
+
+The v5 benchmark isolates occupations as explicit job titles in CV, job advertisement, HR record, and professional profile contexts.
+
+### AraGPT2-base v5 Result
+
+| model_name | total_items | masculine_preferred_count | feminine_preferred_count | equal_count | masculine_preferred_percent | feminine_preferred_percent | equal_percent | average_score_difference | median_score_difference | min_score_difference | max_score_difference |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| aubmindlab/aragpt2-base | 540 | 284 | 256 | 0 | 52.5926 | 47.4074 | 0.0000 | -0.0338 | 0.0278 | -2.1030 | 2.4911 |
+
+### BLOOM-560m v5 Result
+
+| model_name | total_items | masculine_preferred_count | feminine_preferred_count | equal_count | masculine_preferred_percent | feminine_preferred_percent | equal_percent | average_score_difference | median_score_difference | min_score_difference | max_score_difference |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| bigscience/bloom-560m | 540 | 278 | 261 | 1 | 51.4815 | 48.3333 | 0.1852 | 0.0709 | 0.0176 | -1.1406 | 1.5000 |
+
+### v4-v5 Context Comparison
+
+| benchmark | benchmark_role | model_name | total_items | masculine_preferred_count | feminine_preferred_count | equal_count | masculine_preferred_percent | feminine_preferred_percent | average_score_difference | median_score_difference | direction_by_average | direction_by_count |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| v4 | template_perturbation_broader_sentence_contexts | aubmindlab/aragpt2-base | 720 | 220 | 500 | 0 | 30.5556 | 69.4444 | -0.3484 | -0.2755 | feminine | feminine |
+| v4 | template_perturbation_broader_sentence_contexts | bigscience/bloom-560m | 720 | 256 | 460 | 4 | 35.5556 | 63.8889 | -0.1703 | -0.2617 | feminine | feminine |
+| v5 | explicit_job_title_context | aubmindlab/aragpt2-base | 540 | 284 | 256 | 0 | 52.5926 | 47.4074 | -0.0338 | 0.0278 | feminine | masculine |
+| v5 | explicit_job_title_context | bigscience/bloom-560m | 540 | 278 | 261 | 1 | 51.4815 | 48.3333 | 0.0709 | 0.0176 | masculine | masculine |
+
+The v5 results show that explicit job-title contexts can behave differently from broader occupational sentence templates. This further supports the claim that Arabic occupational gender-bias measurement is benchmark-design-dependent.
