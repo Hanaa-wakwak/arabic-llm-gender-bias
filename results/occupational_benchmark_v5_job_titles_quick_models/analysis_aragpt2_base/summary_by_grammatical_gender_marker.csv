@@ -1,0 +1,2 @@
+﻿model_name,grammatical_gender_marker,total_items,masculine_preferred_count,feminine_preferred_count,equal_count,masculine_preferred_percent,feminine_preferred_percent,equal_percent,average_score_difference,median_score_difference,min_score_difference,max_score_difference
+aubmindlab/aragpt2-base,job_title_gendered_occupation,540,284,256,0,52.59259259259259,47.40740740740741,0.0,-0.033848979738023546,0.0277814865112304,-2.102950096130371,2.49107027053833
