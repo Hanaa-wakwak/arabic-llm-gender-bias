@@ -106,3 +106,13 @@ This document identifies construct, internal, external, statistical, reliability
 It also explains how each threat is addressed or reported in the thesis.
 
 This strengthens the work because the thesis does not only present results; it critically evaluates the reliability and boundaries of those results.
+
+## Additional Contribution: Extreme Bias Case Analysis
+
+An additional contribution is the extreme bias case analysis.
+
+This analysis extracts the strongest masculine-preferred, strongest feminine-preferred, and near-neutral examples from the scored benchmark outputs.
+
+It enriches the thesis by connecting aggregate numerical results to concrete Arabic sentence-pair examples.
+
+This makes the analysis more interpretable and easier to defend in discussion.

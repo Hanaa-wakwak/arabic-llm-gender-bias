@@ -128,6 +128,14 @@ CONTRIBUTIONS = [
         "result_file": "docs/occupational_scope/threats_to_validity_and_mitigation_map.md",
         "thesis_value": "Strengthens methodological rigor by explicitly linking limitations to mitigation strategies.",
     },
+        {
+        "id": "C20",
+        "technical_contribution": "Extreme bias case analysis",
+        "description": "A qualitative interpretability analysis extracting the strongest masculine-preferred, strongest feminine-preferred, and near-neutral sentence pairs from scored benchmark results.",
+        "evidence_file": "results/final_package/extreme_bias_cases_detailed.csv",
+        "result_file": "docs/occupational_scope/extreme_bias_case_analysis.md",
+        "thesis_value": "Connects aggregate bias metrics to concrete Arabic sentence-pair examples.",
+    },
 ]
 
 

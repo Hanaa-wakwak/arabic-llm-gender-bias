@@ -95,3 +95,11 @@ This map identifies the main risks in the evaluation, such as template sensitivi
 For each threat, I documented how the thesis mitigates it or reports it transparently.
 
 This improves the methodological rigor of the contribution.
+
+## Additional Interpretability Layer: Extreme Bias Case Analysis
+
+I also added an extreme bias case analysis.
+
+This analysis extracts concrete examples of the strongest masculine preferences, strongest feminine preferences, and near-neutral sentence pairs.
+
+This improves interpretability because the thesis does not only report aggregate numbers; it also shows which sentence pairs produced the strongest model preferences.
