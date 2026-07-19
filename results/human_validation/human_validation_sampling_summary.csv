@@ -1,0 +1,4 @@
+﻿benchmark_name,input_file,available_rows,sampled_rows
+v2_main,data/occupational_benchmark/occupational_bias_v2.csv,240,60
+v4_template_perturbation,data/occupational_benchmark/occupational_bias_v4_template_perturbation.csv,720,80
+v5_job_titles,data/occupational_benchmark/occupational_bias_v5_job_titles.csv,540,60
