@@ -160,6 +160,14 @@ CONTRIBUTIONS = [
         "result_file": "docs/occupational_scope/final_contribution_map.md",
         "thesis_value": "Presents the full thesis contribution as a coherent evaluation framework.",
     },
+        {
+        "id": "C24",
+        "technical_contribution": "Robots-compliant manual scraped-style job-title pilot",
+        "description": "A pilot extension that respects robots.txt, records visible public Arabic job-title contexts manually when automated scraping is disallowed, builds masculine-feminine counterfactual pairs, and measures model preference using the same scoring pipeline.",
+        "evidence_file": "data/external_datasets/job_scraping/manual_scraped_style_job_title_bias_pairs.csv",
+        "result_file": "docs/occupational_scope/manual_scraped_style_job_title_result_summary.md",
+        "thesis_value": "Extends the evaluation framework to real-world visible job-title contexts while respecting web scraping restrictions.",
+    },
 ]
 
 

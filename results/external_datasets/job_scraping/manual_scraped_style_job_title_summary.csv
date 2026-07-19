@@ -1,0 +1,7 @@
+﻿metric,value
+manual_seed_rows,10
+counterfactual_pairs,10
+unique_occupations,10
+unique_fields,7
+manual_review_required,True
+status,completed_manual_seed

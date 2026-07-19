@@ -4,9 +4,9 @@ This matrix summarizes the main technical contributions of the thesis implementa
 
 ## Contribution Summary
 
-- Total technical contributions: 19
-- Contributions with evidence files present: 19
-- Contributions with result files present: 18
+- Total technical contributions: 20
+- Contributions with evidence files present: 20
+- Contributions with result files present: 19
 
 ## Matrix
 
@@ -31,6 +31,7 @@ This matrix summarizes the main technical contributions of the thesis implementa
 | C21 | Claim-to-evidence traceability matrix | A matrix mapping each major thesis claim to the benchmark file, result file, statistical output, or documentation that supports it. | results/final_package/claim_evidence_traceability_matrix.csv | docs/occupational_scope/claim_evidence_traceability_matrix.md | Improves defense readiness and makes the thesis claims auditable. | True | True |
 | C22 | Bootstrap confidence intervals for bias scores | An uncertainty-aware analysis estimating bootstrap confidence intervals for the average score difference across model and benchmark combinations. | results/final_package/bootstrap_bias_score_confidence_intervals.csv | docs/occupational_scope/bootstrap_confidence_intervals_summary.md | Distinguishes reliable directional effects from weak or near-neutral score differences. | True | True |
 | C23 | Final contribution map | A layered contribution map organizing the thesis outputs into benchmark construction, model evaluation, robustness analysis, statistical analysis, and documentation/traceability layers. | docs/occupational_scope/final_contribution_map.md | docs/occupational_scope/final_contribution_map.md | Presents the full thesis contribution as a coherent evaluation framework. | True | True |
+| C24 | Robots-compliant manual scraped-style job-title pilot | A pilot extension that respects robots.txt, records visible public Arabic job-title contexts manually when automated scraping is disallowed, builds masculine-feminine counterfactual pairs, and measures model preference using the same scoring pipeline. | data/external_datasets/job_scraping/manual_scraped_style_job_title_bias_pairs.csv | docs/occupational_scope/manual_scraped_style_job_title_result_summary.md | Extends the evaluation framework to real-world visible job-title contexts while respecting web scraping restrictions. | True | True |
 
 ## Final Technical Claim
 
