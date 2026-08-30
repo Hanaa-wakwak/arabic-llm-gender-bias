@@ -1,0 +1,11 @@
+﻿metric,value
+arabjobs_total_rows,8546
+matched_rows,2422
+unmatched_rows,6124
+counterfactual_pairs,14532
+templates_per_matched_row,6
+unique_countries_matched,4
+unique_job_categories_matched,20
+unique_departments_matched,10
+unique_roles_matched,54
+requires_manual_validation,True
