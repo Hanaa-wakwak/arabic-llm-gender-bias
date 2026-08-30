@@ -1,0 +1,2 @@
+﻿model_name,stereotype_label,total_items,masculine_preferred_count,feminine_preferred_count,equal_count,masculine_preferred_percent,feminine_preferred_percent,equal_percent,average_score_difference,median_score_difference,min_score_difference,max_score_difference
+bigscience/bloom-560m,not_applicable,2880,1500,1375,5,52.083333333333336,47.74305555555556,0.1736111111111111,-0.016335042317708333,0.03125,-1.9296875,1.75

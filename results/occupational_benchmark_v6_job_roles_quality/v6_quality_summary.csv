@@ -1,0 +1,9 @@
+﻿metric,value
+total_rows,2880
+unique_roles,120
+unique_departments,10
+unique_job_families,109
+unique_role_types,37
+unique_templates,24
+unique_dialects,2
+quality_issues_found,0

@@ -1,0 +1,2 @@
+﻿model_name,total_items,masculine_preferred_count,feminine_preferred_count,equal_count,masculine_preferred_percent,feminine_preferred_percent,equal_percent,average_score_difference,median_score_difference,min_score_difference,max_score_difference
+bigscience/bloom-1b1,2880,1328,1547,5,46.111111111111114,53.71527777777778,0.1736111111111111,-0.08082411024305555,-0.0546875,-2.2265625,1.6640625

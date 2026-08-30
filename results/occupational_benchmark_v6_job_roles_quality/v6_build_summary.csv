@@ -1,0 +1,13 @@
+﻿metric,value
+total_pairs,2880
+unique_roles,120
+unique_departments,10
+unique_job_families,109
+unique_role_types,37
+unique_seniority_levels,4
+unique_templates,24
+unique_template_types,14
+unique_semantic_frames,13
+unique_dialects,2
+expected_pairs_if_120_roles,2880
+templates_per_role,24

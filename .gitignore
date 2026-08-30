@@ -20,3 +20,5 @@ Thumbs.db
 .cache/
 models/
 huggingface/
+
+data/external_datasets/arabjobs/ArabJobs.csv

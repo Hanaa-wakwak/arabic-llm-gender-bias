@@ -1,0 +1,2 @@
+﻿model_name,stereotype_label,total_items,masculine_preferred_count,feminine_preferred_count,equal_count,masculine_preferred_percent,feminine_preferred_percent,equal_percent,average_score_difference,median_score_difference,min_score_difference,max_score_difference
+aubmindlab/aragpt2-base,not_applicable,2880,970,1910,0,33.68055555555556,66.31944444444444,0.0,-0.3019826209379567,-0.2294025421142578,-4.061959266662598,2.5547399520874023
