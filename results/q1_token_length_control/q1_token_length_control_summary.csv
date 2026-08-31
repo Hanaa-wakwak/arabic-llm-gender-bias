@@ -1,0 +1,7 @@
+﻿dataset_source,model_name,total_items,mean_masculine_word_count,mean_feminine_word_count,mean_word_count_difference,mean_absolute_word_count_difference,correlation_score_difference_with_word_count_difference,same_word_count_percent
+arabjobs_v7,aubmindlab/aragpt2-base,14532,8.668731076245527,8.668731076245527,0.0,0.0,,100.0
+arabjobs_v7,bigscience/bloom-560m,14532,8.668731076245527,8.668731076245527,0.0,0.0,,100.0
+v6_job_roles,aubmindlab/aragpt2-base,2880,8.625,8.625,0.0,0.0,,100.0
+v6_job_roles,aubmindlab/aragpt2-medium,2880,8.625,8.625,0.0,0.0,,100.0
+v6_job_roles,bigscience/bloom-1b1,2880,8.625,8.625,0.0,0.0,,100.0
+v6_job_roles,bigscience/bloom-560m,2880,8.625,8.625,0.0,0.0,,100.0
