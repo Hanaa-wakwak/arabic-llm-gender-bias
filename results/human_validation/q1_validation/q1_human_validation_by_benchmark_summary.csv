@@ -1,0 +1,6 @@
+﻿validation_source_benchmark,total_items,both_annotators_keep,any_annotator_review,any_annotator_remove,both_keep_percent
+arabjobs_v7_external,60,0,0,0,0.0
+v2_main,50,0,0,0,0.0
+v4_template_perturbation,60,0,0,0,0.0
+v5_job_titles,50,0,0,0,0.0
+v6_job_roles_departments,80,0,0,0,0.0
