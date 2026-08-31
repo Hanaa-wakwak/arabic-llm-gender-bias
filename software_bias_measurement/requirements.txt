@@ -1,0 +1,8 @@
+streamlit
+pandas
+torch
+transformers
+accelerate
+sentencepiece
+protobuf
+plotly

@@ -1,6 +1,6 @@
 ﻿benchmark_name,input_file,available_rows,sampled_rows,status
-v2_main,data\occupational_benchmark\occupational_bias_v2.csv,240,50,sampled
-v4_template_perturbation,data\occupational_benchmark\occupational_bias_v4_template_perturbation.csv,720,60,sampled
-v5_job_titles,data\occupational_benchmark\occupational_bias_v5_job_titles.csv,540,50,sampled
-v6_job_roles_departments,data\occupational_benchmark\occupational_bias_v6_job_roles_departments.csv,2880,80,sampled
-arabjobs_v7_external,data\external_datasets\arabjobs\arabjobs_v7_counterfactual_pairs.csv,14532,60,sampled
+v2_main,data\occupational_benchmark\occupational_bias_v2.csv,240,80,sampled
+v4_template_perturbation,data\occupational_benchmark\occupational_bias_v4_template_perturbation.csv,720,100,sampled
+v5_job_titles,data\occupational_benchmark\occupational_bias_v5_job_titles.csv,540,80,sampled
+v6_job_roles_departments,data\occupational_benchmark\occupational_bias_v6_job_roles_departments.csv,2880,140,sampled
+arabjobs_v7_external,data\external_datasets\arabjobs\arabjobs_v7_counterfactual_pairs.csv,14532,100,sampled

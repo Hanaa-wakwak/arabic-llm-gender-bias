@@ -6,30 +6,29 @@ DATASETS = [
     {
         "benchmark_name": "v2_main",
         "path": "data/occupational_benchmark/occupational_bias_v2.csv",
-        "sample_size": 50,
+        "sample_size": 80,
     },
     {
         "benchmark_name": "v4_template_perturbation",
         "path": "data/occupational_benchmark/occupational_bias_v4_template_perturbation.csv",
-        "sample_size": 60,
+        "sample_size": 100,
     },
     {
         "benchmark_name": "v5_job_titles",
         "path": "data/occupational_benchmark/occupational_bias_v5_job_titles.csv",
-        "sample_size": 50,
+        "sample_size": 80,
     },
     {
         "benchmark_name": "v6_job_roles_departments",
         "path": "data/occupational_benchmark/occupational_bias_v6_job_roles_departments.csv",
-        "sample_size": 80,
+        "sample_size": 140,
     },
     {
         "benchmark_name": "arabjobs_v7_external",
         "path": "data/external_datasets/arabjobs/arabjobs_v7_counterfactual_pairs.csv",
-        "sample_size": 60,
+        "sample_size": 100,
     },
 ]
-
 
 OUTPUT_DIR = Path("data/human_validation/q1_validation")
 RESULTS_DIR = Path("results/human_validation/q1_validation")
