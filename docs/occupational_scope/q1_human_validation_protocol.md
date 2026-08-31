@@ -14,7 +14,7 @@ This protocol validates a stratified sample of Arabic masculine-feminine occupat
 
 ## Target Sample
 
-- Total validation pairs: 300
+- Total validation pairs: 500
 - Annotators: 2
 
 ## Annotation Labels
