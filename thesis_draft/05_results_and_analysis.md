@@ -298,45 +298,65 @@ This is one of the strongest findings of the thesis. It shows that a single mode
 
 ## 5.9 Token-Length Control Results
 
-The token-length control analysis checks whether score differences are likely to be caused by superficial sentence-length differences. This is important because Arabic masculine and feminine variants may differ in surface form, agreement markers, or tokenization.
+The token-length control analysis was used to examine whether the measured score differences could be explained by superficial word-count differences between masculine and feminine sentence variants. This is important because Arabic masculine and feminine forms may sometimes differ in surface form, agreement markers, or tokenization.
 
-The scoring method already uses average token log-probability rather than total sentence probability. This reduces sentence-length effects. The token-length control adds an additional robustness check by comparing word-count differences with score differences.
+The analysis showed that the masculine and feminine sentence variants had identical mean word counts in the evaluated v6 and ArabJobs v7 outputs.
 
-The purpose of this analysis is not to prove that length has no effect at all, but to verify that the main bias patterns are not simply artifacts of masculine and feminine sentence length. The token-length control report is included as part of the Q1 robustness package and is listed among the passing result files in the final audit.
+| Dataset Source | Model                     | Total Items | Mean Masculine Word Count | Mean Feminine Word Count | Mean Word-Count Difference | Same Word Count |
+| -------------- | ------------------------- | ----------: | ------------------------: | -----------------------: | -------------------------: | --------------: |
+| ArabJobs v7    | aubmindlab/aragpt2-base   |      14,532 |                     8.669 |                    8.669 |                      0.000 |          100.0% |
+| ArabJobs v7    | bigscience/bloom-560m     |      14,532 |                     8.669 |                    8.669 |                      0.000 |          100.0% |
+| v6 job roles   | aubmindlab/aragpt2-base   |       2,880 |                     8.625 |                    8.625 |                      0.000 |          100.0% |
+| v6 job roles   | aubmindlab/aragpt2-medium |       2,880 |                     8.625 |                    8.625 |                      0.000 |          100.0% |
+| v6 job roles   | bigscience/bloom-1b1      |       2,880 |                     8.625 |                    8.625 |                      0.000 |          100.0% |
+| v6 job roles   | bigscience/bloom-560m     |       2,880 |                     8.625 |                    8.625 |                      0.000 |          100.0% |
 
-Insert your exact token-length results here from:
+The correlation between score difference and word-count difference was undefined because the word-count difference was zero for all evaluated pairs. This means there was no word-count variation available to correlate with score difference.
 
-`results/q1_token_length_control/q1_token_length_control_summary.csv`
-
-Recommended thesis sentence after inserting values:
-
-`The correlation between word-count difference and score_difference was low across the evaluated outputs, suggesting that the main gender-preference patterns are not primarily explained by superficial word-count differences.`
+These results strengthen the interpretation that the observed gender-preference patterns are not caused by simple word-count imbalance between masculine and feminine sentence variants. Since all evaluated pairs had the same word count across masculine and feminine forms, the measured score differences are more likely to reflect model likelihood preferences under the given linguistic context rather than sentence-length artifacts.
 
 ## 5.10 Factor Sensitivity Analysis
 
-The factor sensitivity analysis evaluates how average score differences vary across factors such as dataset source, model name, field, department, job family, seniority level, job-role type, template type, semantic frame, and dialect.
+The factor sensitivity analysis examined how average score differences varied across dataset factors such as job family, job-role type, template type, semantic frame, field, department, seniority level, model name, and dialect. The purpose of this analysis was to identify which factors produced the largest variation in measured gender preference.
 
-This analysis strengthens the main claim that measured gender preference is context-sensitive. If a factor shows a large range of average score differences across its levels, then the measured bias is sensitive to that factor.
+The largest factor ranges in ArabJobs v7 were:
 
-The final audit confirms that the factor sensitivity output exists:
+| Dataset     | Factor          | Levels | Minimum Group Mean | Maximum Group Mean | Range | Strongest Feminine Level | Strongest Masculine Level |
+| ----------- | --------------- | -----: | -----------------: | -----------------: | ----: | ------------------------ | ------------------------- |
+| ArabJobs v7 | job_family      |     51 |             -0.394 |              0.580 | 0.974 | pharmacy                 | administration            |
+| ArabJobs v7 | job_role_type   |     26 |             -0.333 |              0.580 | 0.913 | clinical_support_role    | administrative_role       |
+| ArabJobs v7 | template_type   |      6 |             -0.165 |              0.391 | 0.556 | application_context      | recruitment_context       |
+| ArabJobs v7 | semantic_frame  |      6 |             -0.165 |              0.391 | 0.556 | candidate_application    | hiring_language           |
+| ArabJobs v7 | field           |     10 |             -0.163 |              0.345 | 0.507 | education                | business_management       |
+| ArabJobs v7 | department      |     10 |             -0.163 |              0.345 | 0.507 | education                | business_management       |
+| ArabJobs v7 | seniority_level |      4 |             -0.051 |              0.279 | 0.329 | senior                   | junior                    |
+| ArabJobs v7 | model_name      |      2 |              0.089 |              0.109 | 0.019 | aubmindlab/aragpt2-base  | bigscience/bloom-560m     |
 
-`results/q1_statistical_modeling/q1_factor_effect_strength_summary.csv`
+The largest factor ranges in v6 were:
 
-Insert the top factor-sensitivity values here from:
+| Dataset      | Factor          | Levels | Minimum Group Mean | Maximum Group Mean | Range | Strongest Feminine Level | Strongest Masculine Level |
+| ------------ | --------------- | -----: | -----------------: | -----------------: | ----: | ------------------------ | ------------------------- |
+| v6 job roles | template_type   |     14 |             -0.898 |              0.350 | 1.248 | daily_work_context       | job_title_record          |
+| v6 job roles | semantic_frame  |     13 |             -0.898 |              0.350 | 1.248 | routine_work             | formal_record             |
+| v6 job roles | job_family      |    109 |             -0.597 |              0.239 | 0.836 | nursing                  | digital_marketing         |
+| v6 job roles | job_role_type   |     37 |             -0.452 |              0.152 | 0.604 | technical_specialist     | technical_role            |
+| v6 job roles | model_name      |      4 |             -0.302 |             -0.016 | 0.286 | aubmindlab/aragpt2-base  | bigscience/bloom-560m     |
+| v6 job roles | field           |     10 |             -0.269 |             -0.106 | 0.163 | education                | sales_marketing           |
+| v6 job roles | department      |     10 |             -0.269 |             -0.106 | 0.163 | education                | sales_marketing           |
+| v6 job roles | dialect         |      2 |             -0.235 |             -0.086 | 0.149 | Egyptian                 | MSA                       |
+| v6 job roles | seniority_level |      4 |             -0.212 |             -0.119 | 0.093 | manager                  | junior                    |
 
-`results/q1_statistical_modeling/q1_factor_effect_strength_summary.csv`
+The factor sensitivity results show that measured gender preference varies substantially across linguistic and occupational factors. In v6, the strongest factors were template type and semantic frame, both with a range of approximately 1.248. This supports the conclusion that template formulation and professional framing strongly influence measured bias.
 
-Recommended thesis interpretation:
+In ArabJobs v7, the strongest factors were job family and job-role type, with ranges of approximately 0.974 and 0.913 respectively. This suggests that real-world recruitment-language bias is especially sensitive to the type of job and professional role being evaluated.
 
-`The factor sensitivity analysis shows that measured gender preference varies across linguistic and occupational metadata. This supports the thesis argument that Arabic occupational bias evaluation should report benchmark design factors rather than only model-level averages.`
+Overall, the factor sensitivity analysis supports the central thesis claim that Arabic occupational gender-bias scores should not be interpreted as single fixed model properties. They are context-sensitive measurement outcomes affected by template, semantic frame, job family, job-role type, field, department, dialect, and dataset source.
 
 ## 5.11 Human Validation Results
 
-The human-validation package includes a stratified sample of 500 counterfactual pairs drawn from the benchmark suite. The validation sample covers the main controlled benchmark, template-perturbation benchmark, job-title benchmark, expanded job-role benchmark, and ArabJobs external benchmark.
+The human-validation package was created to support manual evaluation of Arabic counterfactual pair quality. The validation sample contains benchmark items selected from the main benchmark, template-perturbation benchmark, job-title benchmark, expanded job-role benchmark, and ArabJobs external benchmark.
 
-The final audit confirms that the human-validation sheet contains 500 rows and that the agreement summary includes Cohen’s Kappa.
-
-The validation dimensions are:
+The intended validation dimensions are:
 
 * grammaticality,
 * meaning preservation,
@@ -345,26 +365,22 @@ The validation dimensions are:
 * job-title correctness,
 * keep/review/remove decision.
 
-Insert the exact agreement table here from:
-
-`results/human_validation/q1_validation/q1_human_validation_agreement_summary.csv`
-
-Use this table format:
+However, the current agreement summary shows that the annotator agreement analysis has not yet been completed because the number of annotated items is zero for all validation fields.
 
 | Validation Field    | Annotated Items | Percentage Agreement | Cohen’s Kappa |
 | ------------------- | --------------: | -------------------: | ------------: |
-| grammaticality      |          INSERT |               INSERT |        INSERT |
-| meaning_preserved   |          INSERT |               INSERT |        INSERT |
-| gender_form_correct |          INSERT |               INSERT |        INSERT |
-| dialect_correct     |          INSERT |               INSERT |        INSERT |
-| job_title_correct   |          INSERT |               INSERT |        INSERT |
-| keep_or_remove      |          INSERT |               INSERT |        INSERT |
+| grammaticality      |               0 |        Not available | Not available |
+| meaning_preserved   |               0 |        Not available | Not available |
+| gender_form_correct |               0 |        Not available | Not available |
+| dialect_correct     |               0 |        Not available | Not available |
+| job_title_correct   |               0 |        Not available | Not available |
+| keep_or_remove      |               0 |        Not available | Not available |
 
-### 5.11.1 Interpretation of Human Validation
+This means that the human-validation package exists, but final annotation values must still be completed before the thesis can report percentage agreement or Cohen’s Kappa.
 
-Human validation strengthens the reliability of the benchmark suite. It confirms that the evaluation is not based only on automatically generated sentence pairs, but includes manual review of Arabic grammaticality, semantic preservation, gender-form correctness, dialect appropriateness, and job-title validity.
+For the current thesis draft, the human-validation component should be described as a prepared validation protocol and annotation package. The final agreement results should be inserted after both annotator files are completed and the agreement script is re-run.
 
-If the agreement scores are high, this supports the linguistic reliability of the benchmark. If some agreement scores are moderate, this should be interpreted as evidence that Arabic dialect and gender morphology are challenging annotation tasks. In that case, disputed examples should be reviewed or adjudicated before final publication.
+The human-validation step remains important because it checks whether Arabic counterfactual pairs are grammatical, semantically equivalent, gender-form correct, dialectally appropriate, and suitable for inclusion in the benchmark. For Q1 journal submission, completed human validation and inter-annotator agreement should be treated as a required final step.
 
 ## 5.12 Formula and Implementation Validation Results
 
@@ -372,47 +388,54 @@ Formula validation and score-difference implementation validation were used to c
 
 The formula validation checked that each stored score difference equals:
 
-`masculine_score - feminine_score`
+`score_difference = masculine_score - feminine_score`
 
 It also checked that the preferred-gender label matches the sign of the score difference.
 
-The final audit confirms that both the score-difference validation and Q1 formula validation passed:
+The validation results passed with no failed formula checks. This is important because it confirms that the reported model preferences are not caused by a sign error, formula mismatch, or incorrect preference-label assignment.
 
-* `score_difference_validation`: all checked files passed,
-* `q1_formula_validation`: no failed formula checks.
+This validation strengthens the reliability of the results because the same score-difference convention is used throughout the thesis:
 
-This result is important because it verifies that the main metric is consistently implemented across the project. It reduces the risk that reported bias patterns are caused by implementation errors rather than model behavior.
+* positive score difference indicates masculine preference,
+* negative score difference indicates feminine preference,
+* zero indicates equal preference.
 
 ## 5.13 Bias Mitigation Experiment Results
 
-The mitigation experiment evaluates whether counterfactual data augmentation can reduce measured occupational gender preference. The experiment fine-tunes AraGPT2-base on balanced masculine–feminine Arabic occupational counterfactual sentences, then compares the original and mitigated model on the benchmark suite.
+The mitigation experiment evaluated whether counterfactual data augmentation can reduce measured occupational gender preference. AraGPT2-base was fine-tuned on balanced masculine–feminine Arabic occupational counterfactual data and then re-evaluated on four benchmark contexts.
 
 The main mitigation metric is:
 
 `Mitigation_Gain = |Bias_before| - |Bias_after|`
 
-A positive mitigation gain indicates that the absolute directional bias decreased after fine-tuning.
+A positive value means that absolute bias decreased after mitigation. A negative value means that absolute bias increased after mitigation.
 
-The final audit confirms that the mitigation effect summary exists and that four comparisons were completed.
+The mitigation results were:
 
-Insert the exact mitigation results here from:
+| Benchmark                    | Before Avg Score Difference | After Avg Score Difference | Before Direction   | After Direction    | Before Absolute Bias | After Absolute Bias | Mitigation Gain | Bias Reduced |
+| ---------------------------- | --------------------------: | -------------------------: | ------------------ | ------------------ | -------------------: | ------------------: | --------------: | ------------ |
+| v2 main                      |                       0.126 |                     -0.051 | masculine          | feminine           |                0.126 |               0.051 |           0.075 | Yes          |
+| v5 job titles                |                      -0.034 |                      0.035 | near-neutral/mixed | near-neutral/mixed |                0.034 |               0.035 |          -0.001 | No           |
+| v6 job roles and departments |                      -0.302 |                     -0.053 | feminine           | feminine           |                0.302 |               0.053 |           0.249 | Yes          |
+| ArabJobs v7 external         |                       0.089 |                     -0.192 | masculine          | feminine           |                0.089 |               0.192 |          -0.103 | No           |
 
-`results/q1_bias_mitigation/q1_bias_mitigation_effect_summary.csv`
+The mitigation experiment reduced absolute bias on two benchmarks: v2 main and v6 job roles. The largest reduction occurred on v6, where absolute bias decreased from 0.302 to 0.053, producing a mitigation gain of 0.249. The v2 benchmark also showed improvement, with absolute bias decreasing from 0.126 to 0.051.
 
-Use this table format:
+However, mitigation did not improve all benchmark contexts. In v5, the model was already near-neutral before mitigation, and the absolute bias changed only slightly from 0.034 to 0.035. In ArabJobs v7, the mitigation intervention increased absolute bias from 0.089 to 0.192 and shifted the direction from masculine to feminine.
 
-| Benchmark                | Before Avg Score Difference | After Avg Score Difference | Before Direction | After Direction | Mitigation Gain | Bias Reduced |
-| ------------------------ | --------------------------: | -------------------------: | ---------------- | --------------- | --------------: | ------------ |
-| v2_main                  |                      INSERT |                     INSERT | INSERT           | INSERT          |          INSERT | INSERT       |
-| v5_job_titles            |                      INSERT |                     INSERT | INSERT           | INSERT          |          INSERT | INSERT       |
-| v6_job_roles_departments |                      INSERT |                     INSERT | INSERT           | INSERT          |          INSERT | INSERT       |
-| arabjobs_v7_external     |                      INSERT |                     INSERT | INSERT           | INSERT          |          INSERT | INSERT       |
+The preference-rate changes also show mixed effects:
 
-### 5.13.1 Interpretation of Mitigation Results
+| Benchmark                    | Masculine Preferred Before | Masculine Preferred After | Feminine Preferred Before | Feminine Preferred After |
+| ---------------------------- | -------------------------: | ------------------------: | ------------------------: | -----------------------: |
+| v2 main                      |                     63.33% |                    58.33% |                    36.67% |                   41.67% |
+| v5 job titles                |                     52.59% |                    51.85% |                    47.41% |                   48.15% |
+| v6 job roles and departments |                     33.68% |                    37.64% |                    66.32% |                   62.36% |
+| ArabJobs v7 external         |                     57.83% |                    42.77% |                    42.17% |                   57.23% |
 
-The mitigation experiment extends the project from measurement to bias limitation. It does not claim to remove gender bias completely. Instead, it tests whether exposure to balanced counterfactual Arabic occupational data reduces measured gender preference under the same scoring framework.
+These results show that counterfactual data augmentation can reduce measured bias in some controlled benchmark contexts, but the effect does not generalize uniformly to all contexts. The strongest improvement occurred in the v6 controlled job-role benchmark, while the ArabJobs external benchmark showed a reverse effect.
 
-If mitigation gain is positive on a benchmark, this suggests that counterfactual fine-tuning reduced absolute directional bias for that benchmark. If mitigation gain is negative, this suggests that mitigation did not generalize to that context or may have shifted the bias direction. Both outcomes are scientifically useful because they show whether counterfactual data augmentation is stable across benchmark contexts.
+Therefore, the mitigation experiment should be interpreted as evidence of partial bias reduction, not bias elimination. It demonstrates that counterfactual fine-tuning can reduce absolute directional bias under some conditions, but it can also shift or increase measured bias in real-world recruitment-language contexts. This supports the thesis argument that mitigation must be evaluated across multiple benchmark settings rather than only on one dataset.
+
 
 ## 5.14 Software Measurement Results
 
