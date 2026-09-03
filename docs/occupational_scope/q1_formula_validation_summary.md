@@ -34,8 +34,8 @@ Disparity_abs = (1 / N) * sum |Delta_i|
 
 ## Implementation Validation
 
-- Files checked: 68
-- Files passed: 68
+- Files checked: 72
+- Files passed: 72
 - Files failed or skipped: 0
 - Formula error rows: 0
 - Preference-label error rows: 0
