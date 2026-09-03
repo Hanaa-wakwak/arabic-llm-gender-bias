@@ -1,0 +1,137 @@
+﻿category,item,status,details
+dataset,v2_main_benchmark,PASS,row count = 240
+dataset_columns,v2_main_benchmark,PASS,required columns present
+dataset_sentences,v2_main_benchmark,PASS,no empty sentence cells
+dataset_structure,v2_main_benchmark::dialect,PASS,unique values = 2
+dataset_structure,v2_main_benchmark::template_id,PASS,unique values = 4
+dataset_structure,v2_main_benchmark::field,PASS,unique values = 6
+dataset,v4_template_perturbation,PASS,row count = 720
+dataset_columns,v4_template_perturbation,PASS,required columns present
+dataset_sentences,v4_template_perturbation,PASS,no empty sentence cells
+dataset_structure,v4_template_perturbation::dialect,PASS,unique values = 2
+dataset_structure,v4_template_perturbation::template_id,PASS,unique values = 8
+dataset_structure,v4_template_perturbation::template_type,PASS,unique values = 6
+dataset_structure,v4_template_perturbation::semantic_frame,PASS,unique values = 6
+dataset_structure,v4_template_perturbation::field,PASS,unique values = 6
+dataset,v5_job_titles,PASS,row count = 540
+dataset_columns,v5_job_titles,PASS,required columns present
+dataset_sentences,v5_job_titles,PASS,no empty sentence cells
+dataset_structure,v5_job_titles::dialect,PASS,unique values = 2
+dataset_structure,v5_job_titles::template_id,PASS,unique values = 6
+dataset_structure,v5_job_titles::template_type,PASS,unique values = 1
+dataset_structure,v5_job_titles::semantic_frame,PASS,unique values = 4
+dataset_structure,v5_job_titles::field,PASS,unique values = 6
+dataset,v6_job_roles_departments,PASS,row count = 2880
+dataset_columns,v6_job_roles_departments,PASS,required columns present
+dataset_sentences,v6_job_roles_departments,PASS,no empty sentence cells
+dataset_structure,v6_job_roles_departments::dialect,PASS,unique values = 2
+dataset_structure,v6_job_roles_departments::template_id,PASS,unique values = 24
+dataset_structure,v6_job_roles_departments::template_type,PASS,unique values = 14
+dataset_structure,v6_job_roles_departments::semantic_frame,PASS,unique values = 13
+dataset_structure,v6_job_roles_departments::field,PASS,unique values = 10
+dataset_structure,v6_job_roles_departments::department,PASS,unique values = 10
+dataset,arabjobs_v7_external,PASS,row count = 14532
+dataset_columns,arabjobs_v7_external,PASS,required columns present
+dataset_sentences,arabjobs_v7_external,PASS,no empty sentence cells
+dataset_structure,arabjobs_v7_external::dialect,PASS,unique values = 1
+dataset_structure,arabjobs_v7_external::template_id,PASS,unique values = 6
+dataset_structure,arabjobs_v7_external::template_type,PASS,unique values = 6
+dataset_structure,arabjobs_v7_external::semantic_frame,PASS,unique values = 6
+dataset_structure,arabjobs_v7_external::field,PASS,unique values = 10
+dataset_structure,arabjobs_v7_external::department,PASS,unique values = 10
+dataset,q1_mitigation_training_data,PASS,row count = 6840
+dataset_columns,q1_mitigation_training_data,PASS,required columns present
+dataset_structure,q1_mitigation_training_data::dialect,PASS,unique values = 2
+dataset_structure,q1_mitigation_training_data::template_id,PASS,unique values = 30
+dataset_structure,q1_mitigation_training_data::semantic_frame,PASS,unique values = 16
+dataset_structure,q1_mitigation_training_data::field,PASS,unique values = 16
+dataset_structure,q1_mitigation_training_data::department,PASS,unique values = 10
+dataset,q1_human_validation_sheet,PASS,row count = 500
+dataset_columns,q1_human_validation_sheet,PASS,required columns present
+dataset_sentences,q1_human_validation_sheet,PASS,no empty sentence cells
+dataset_structure,q1_human_validation_sheet::dialect,PASS,unique values = 3
+dataset_structure,q1_human_validation_sheet::template_id,PASS,unique values = 48
+dataset_structure,q1_human_validation_sheet::template_type,PASS,unique values = 26
+dataset_structure,q1_human_validation_sheet::semantic_frame,PASS,unique values = 28
+dataset_structure,q1_human_validation_sheet::field,PASS,unique values = 16
+dataset_structure,q1_human_validation_sheet::department,PASS,unique values = 10
+result_file,results/final_package/score_difference_validation_report.csv,PASS,exists
+result_file,results/q1_formula_validation/q1_formula_validation_report.csv,PASS,exists
+result_file,results/q1_formula_validation/q1_formula_aggregate_validation.csv,PASS,exists
+result_file,results/q1_statistical_modeling/q1_factor_effect_strength_summary.csv,PASS,exists
+result_file,results/q1_cross_benchmark_contrast/q1_cross_benchmark_overall_contrast.csv,PASS,exists
+result_file,results/q1_token_length_control/q1_token_length_control_summary.csv,PASS,exists
+result_file,results/q1_bias_mitigation/q1_bias_mitigation_effect_summary.csv,PASS,exists
+result_file,results/human_validation/q1_validation/q1_human_validation_sampling_summary.csv,PASS,exists
+doc_file,docs/occupational_scope/final_formula_framework_for_q1.md,PASS,exists
+doc_file,docs/occupational_scope/q1_formula_validation_summary.md,PASS,exists
+doc_file,docs/occupational_scope/q1_statistical_modeling_summary.md,PASS,exists
+doc_file,docs/occupational_scope/q1_cross_benchmark_contrast_summary.md,PASS,exists
+doc_file,docs/occupational_scope/q1_token_length_control_summary.md,PASS,exists
+doc_file,docs/occupational_scope/q1_bias_mitigation_training_data_summary.md,PASS,exists
+doc_file,docs/occupational_scope/q1_bias_mitigation_effect_summary.md,PASS,exists
+doc_file,docs/occupational_scope/q1_human_validation_protocol.md,PASS,exists
+doc_file,docs/occupational_scope/v6_job_roles_benchmark_summary.md,PASS,exists
+doc_file,docs/occupational_scope/v6_large_all_models_result_summary.md,PASS,exists
+doc_file,docs/occupational_scope/arabjobs_v7_external_dataset_summary.md,PASS,exists
+doc_file,docs/occupational_scope/arabjobs_v7_model_result_summary.md,PASS,exists
+software_file,software_bias_measurement/app.py,PASS,exists
+software_file,software_bias_measurement/requirements.txt,PASS,exists
+software_file,software_bias_measurement/README.md,PASS,exists
+software_file,software_bias_measurement/run_bias_measurement_app.ps1,PASS,exists
+software_file,software_bias_measurement/run_bias_measurement_app.bat,PASS,exists
+software_file,software_dashboard/app.py,PASS,exists
+software_file,software_dashboard/requirements.txt,PASS,exists
+software_file,software_dashboard/README.md,PASS,exists
+software_file,software_dashboard/run_dashboard_app.ps1,PASS,exists
+software_file,software_dashboard/run_dashboard_app.bat,PASS,exists
+software_file,RUN_SOFTWARE.md,PASS,exists
+script_file,src/score_occupational_single_model_v1.py,PASS,exists
+python_compile,src/score_occupational_single_model_v1.py,PASS,syntax ok
+script_file,src/analyze_occupational_results_v1.py,PASS,exists
+python_compile,src/analyze_occupational_results_v1.py,PASS,syntax ok
+script_file,src/build_job_roles_expanded_lexicon_v6.py,PASS,exists
+python_compile,src/build_job_roles_expanded_lexicon_v6.py,PASS,syntax ok
+script_file,src/build_occupational_benchmark_v6_job_roles_departments.py,PASS,exists
+python_compile,src/build_occupational_benchmark_v6_job_roles_departments.py,PASS,syntax ok
+script_file,src/check_v6_job_roles_quality.py,PASS,exists
+python_compile,src/check_v6_job_roles_quality.py,PASS,syntax ok
+script_file,src/combine_v6_large_model_results.py,PASS,exists
+python_compile,src/combine_v6_large_model_results.py,PASS,syntax ok
+script_file,src/prepare_arabjobs_external_dataset_v7.py,PASS,exists
+python_compile,src/prepare_arabjobs_external_dataset_v7.py,PASS,syntax ok
+script_file,src/combine_arabjobs_v7_results.py,PASS,exists
+python_compile,src/combine_arabjobs_v7_results.py,PASS,syntax ok
+script_file,src/create_q1_human_validation_package.py,PASS,exists
+python_compile,src/create_q1_human_validation_package.py,PASS,syntax ok
+script_file,src/analyze_q1_human_validation_agreement.py,PASS,exists
+python_compile,src/analyze_q1_human_validation_agreement.py,PASS,syntax ok
+script_file,src/validate_score_difference_outputs.py,PASS,exists
+python_compile,src/validate_score_difference_outputs.py,PASS,syntax ok
+script_file,src/validate_formula_framework_q1.py,PASS,exists
+python_compile,src/validate_formula_framework_q1.py,PASS,syntax ok
+script_file,src/run_q1_statistical_modeling.py,PASS,exists
+python_compile,src/run_q1_statistical_modeling.py,PASS,syntax ok
+script_file,src/create_cross_benchmark_q1_contrast.py,PASS,exists
+python_compile,src/create_cross_benchmark_q1_contrast.py,PASS,syntax ok
+script_file,src/analyze_token_length_control.py,PASS,exists
+python_compile,src/analyze_token_length_control.py,PASS,syntax ok
+script_file,src/build_q1_bias_mitigation_training_data.py,PASS,exists
+python_compile,src/build_q1_bias_mitigation_training_data.py,PASS,syntax ok
+script_file,src/finetune_q1_counterfactual_mitigation.py,PASS,exists
+python_compile,src/finetune_q1_counterfactual_mitigation.py,PASS,syntax ok
+script_file,src/analyze_q1_bias_mitigation_effect.py,PASS,exists
+python_compile,src/analyze_q1_bias_mitigation_effect.py,PASS,syntax ok
+python_compile,software_bias_measurement/app.py,PASS,syntax ok
+python_compile,software_dashboard/app.py,PASS,syntax ok
+validation,score_difference_validation,PASS,all checked files passed
+validation,q1_formula_validation,PASS,no failed formula checks
+quality,v6_quality_summary,WARN,review quality summary
+mitigation,q1_bias_mitigation_effect_summary,PASS,comparisons completed=4
+human_validation,annotation_sheet,PASS,rows=500
+human_validation,agreement_summary,PASS,Cohen's Kappa report exists
+gitignore,ArabJobs.csv ignored,PASS,data/external_datasets/arabjobs/ArabJobs.csv
+gitignore,models ignored,PASS,models/
+gitignore,python cache ignored,PASS,__pycache__/
+git,git_status,WARN,?? RUN_SOFTWARE.md | ?? docs/occupational_scope/final_formula_framework_for_q1.md | ?? docs/occupational_scope/full_q1_project_audit_summary.md | ?? results/final_q1_audit/ | ?? src/full_q1_project_audit.py | ?? src/repair_final_q1_audit_files.py
+git,raw_arabjobs_not_tracked,PASS,ArabJobs.csv is not tracked
