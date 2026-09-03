@@ -1,0 +1,9 @@
+# A Robustness-Oriented Framework for Measuring Occupational Gender Bias in Arabic Causal Language Models
+
+## Abstract Draft
+
+Occupational gender bias in language models can affect downstream applications in recruitment, education, and professional decision-support systems. Arabic presents additional challenges for bias evaluation because grammatical gender is deeply embedded in morphology, and model behavior may vary across dialects, templates, and occupational contexts. This paper introduces a robustness-oriented framework for measuring occupational gender bias in Arabic causal language models using masculine-feminine counterfactual sentence pairs.
+
+The framework evaluates open-weight causal language models with paired likelihood scoring, where each sentence is scored using average token log-probability and gender preference is measured as masculine_score minus feminine_score. The benchmark suite covers controlled occupational templates, dialect-aware sentence variants, job-title contexts, expanded job-role and department contexts, and real-world Arabic job-advertisement contexts derived from ArabJobs. The evaluation includes multiple causal language models, formula and implementation validation, human validation with inter-annotator agreement, token-length controls, cross-benchmark direction-change analysis, and a counterfactual data augmentation mitigation experiment.
+
+Results show that Arabic occupational gender-bias scores are sensitive to model family, template formulation, dialect, semantic frame, department, job-role context, and real-world recruitment-language setting. These findings suggest that occupational bias should not be treated as a fixed model property, but as a context-dependent measurement outcome. The paper contributes a reproducible Arabic bias-evaluation framework, benchmark resources, software implementation, validation procedures, and mitigation analysis.
