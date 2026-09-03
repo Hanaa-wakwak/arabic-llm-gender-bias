@@ -1,0 +1,4 @@
+﻿input_file,status,pairs_loaded,training_sentences_created
+data\occupational_benchmark\occupational_bias_v6_job_roles_departments.csv,loaded,2880,5760
+data\occupational_benchmark\occupational_bias_v5_job_titles.csv,loaded,540,1080
+TOTAL_BALANCED,created,,6840

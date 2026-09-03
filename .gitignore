@@ -22,3 +22,6 @@ models/
 huggingface/
 
 data/external_datasets/arabjobs/ArabJobs.csv
+
+# Local fine-tuned model artifacts
+models/

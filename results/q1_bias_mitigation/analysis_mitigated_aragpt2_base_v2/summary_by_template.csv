@@ -1,0 +1,5 @@
+﻿model_name,template_id,total_items,masculine_preferred_count,feminine_preferred_count,equal_count,masculine_preferred_percent,feminine_preferred_percent,equal_percent,average_score_difference,median_score_difference,min_score_difference,max_score_difference
+models/q1_mitigation/aragpt2_base_counterfactual_cda,egy_direct_workplace,60,46,14,0,76.66666666666667,23.333333333333332,0.0,0.4370836317539215,0.5037579536437988,-1.7261085510253906,1.641925811767578
+models/q1_mitigation/aragpt2_base_counterfactual_cda,egy_said_role,60,24,36,0,40.0,60.0,0.0,-0.5107481956481934,-0.08579897880554195,-4.779179573059082,1.3931884765625
+models/q1_mitigation/aragpt2_base_counterfactual_cda,msa_demonstrative_workplace,60,45,15,0,75.0,25.0,0.0,0.2833590070406596,0.4196155071258545,-1.097496509552002,1.2696213722229004
+models/q1_mitigation/aragpt2_base_counterfactual_cda,msa_said_professional,60,25,35,0,41.66666666666667,58.333333333333336,0.0,-0.41302910645802815,-0.2455763816833496,-3.6612143516540527,1.076374053955078

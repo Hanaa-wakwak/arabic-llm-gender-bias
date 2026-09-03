@@ -1,0 +1,2 @@
+﻿model_name,total_items,masculine_preferred_count,feminine_preferred_count,equal_count,masculine_preferred_percent,feminine_preferred_percent,equal_percent,average_score_difference,median_score_difference,min_score_difference,max_score_difference
+models/q1_mitigation/aragpt2_base_counterfactual_cda,540,280,260,0,51.85185185185185,48.148148148148145,0.0,0.0347361726893319,0.0055117607116699,-0.4040437936782837,0.5953219532966614
