@@ -133,5 +133,5 @@ human_validation,agreement_summary,PASS,Cohen's Kappa report exists
 gitignore,ArabJobs.csv ignored,PASS,data/external_datasets/arabjobs/ArabJobs.csv
 gitignore,models ignored,PASS,models/
 gitignore,python cache ignored,PASS,__pycache__/
-git,git_status,PASS,working tree clean
+git,git_status,WARN,?? thesis_draft/
 git,raw_arabjobs_not_tracked,PASS,ArabJobs.csv is not tracked
