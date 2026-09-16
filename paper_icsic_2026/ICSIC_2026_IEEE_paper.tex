@@ -15,10 +15,16 @@
 
 % Use XeLaTeX because the paper contains Arabic examples.
 \usepackage{fontspec}
-\usepackage{polyglossia}
-\setmainlanguage{english}
-\setotherlanguage{arabic}
-\newfontfamily\arabicfont[Script=Arabic]{Amiri}
+
+}}
+
+% Arabic examples are inserted as images to avoid Arabic font/rendering issues in IEEE PDF.
+\newcommand{\arabicmasc}{\raisebox{-0.25em}{\includegraphics[height=1.35em]{arabic_images/arabic_masculine_sentence.png}}}
+\newcommand{\arabicfem}{\raisebox{-0.25em}{\includegraphics[height=1.35em]{arabic_images/arabic_feminine_sentence.png}}}
+\newcommand{\arabicaltabib}{\raisebox{-0.2em}{\includegraphics[height=1.15em]{arabic_images/arabic_altabib.png}}}
+\newcommand{\arabicaltabiba}{\raisebox{-0.2em}{\includegraphics[height=1.15em]{arabic_images/arabic_altabiba.png}}}
+\newcommand{\arabichatha}{\raisebox{-0.2em}{\includegraphics[height=1.15em]{arabic_images/arabic_hatha.png}}}
+\newcommand{\arabichathihi}{\raisebox{-0.2em}{\includegraphics[height=1.15em]{arabic_images/arabic_hathihi.png}}}
 
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
 T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
@@ -53,7 +59,7 @@ Large Language Models (LLMs) are increasingly used in natural language processin
 
 Occupational gender bias is especially important in recruitment-related applications. Language models may be used to generate job advertisements, summarize resumes, produce professional profiles, assist human-resource communication, or support employment-related search and recommendation systems. If these models assign systematically higher likelihood to one gendered occupational form over another, they may reproduce or amplify gendered professional associations in downstream systems.
 
-Arabic introduces specific challenges for gender-bias evaluation. Unlike English, Arabic has grammatical gender that appears not only in nouns, but also in demonstratives, verbs, adjectives, and agreement markers. Therefore, measuring gender bias in Arabic cannot rely only on replacing one occupation word with another. A masculine occupational sentence and its feminine counterpart must remain grammatically valid and semantically equivalent. For example, the masculine sentence \textarabic{هذا الطبيب يعمل في المستشفى} must be paired with the feminine sentence \textarabic{هذه الطبيبة تعمل في المستشفى}, where both the occupational noun and the demonstrative are adjusted. This makes sentence-level counterfactual construction necessary for Arabic bias evaluation.
+Arabic introduces specific challenges for gender-bias evaluation. Unlike English, Arabic has grammatical gender that appears not only in nouns, but also in demonstratives, verbs, adjectives, and agreement markers. Therefore, measuring gender bias in Arabic cannot rely only on replacing one occupation word with another. A masculine occupational sentence and its feminine counterpart must remain grammatically valid and semantically equivalent. For example, the masculine sentence rabicmasc{} must be paired with the feminine sentence rabicfem{}, where both the occupational noun and the demonstrative are adjusted. This makes sentence-level counterfactual construction necessary for Arabic bias evaluation.
 
 Arabic also contains substantial variation between Modern Standard Arabic (MSA) and dialectal Arabic. MSA is common in formal writing, official communication, and news, while dialectal Arabic is widely used in informal communication and digital interaction. Since language models are trained on mixed Arabic data sources, their behavior may differ across Arabic varieties. A model that shows one gender-preference pattern in MSA may show a different pattern in Egyptian Arabic. Therefore, dialect-aware evaluation is important for Arabic LLM fairness research.
 
@@ -96,12 +102,12 @@ This section presents the methodology used to measure occupational gender bias i
 Each benchmark item contains two sentences: a masculine sentence and a feminine sentence. For example:
 
 \begin{quote}
-Masculine: \textarabic{هذا الطبيب يعمل في المستشفى.}
+Masculine: \textit{hatha al-tabib ya'mal fi al-mustashfa} (Arabic masculine form)
 
-Feminine: \textarabic{هذه الطبيبة تعمل في المستشفى.}
+Feminine: \textit{hadhihi al-tabiba ta'mal fi al-mustashfa} (Arabic feminine form)
 \end{quote}
 
-The pair changes the occupational noun from \textarabic{الطبيب} to \textarabic{الطبيبة} and the demonstrative from \textarabic{هذا} to \textarabic{هذه}. This is necessary because Arabic grammatical gender affects agreement. A valid Arabic counterfactual pair must therefore modify all required gendered elements, not only the occupation word.
+The pair changes the occupational noun from rabicaltabib{} to rabicaltabiba{} and the demonstrative from rabichatha{} to rabichathihi{}. This is necessary because Arabic grammatical gender affects agreement. A valid Arabic counterfactual pair must therefore modify all required gendered elements, not only the occupation word.
 
 The study uses multiple benchmark versions to test robustness across linguistic and occupational contexts. The v2 benchmark is the main controlled benchmark and contains 240 pairs generated from 60 occupations and four templates. The v4 benchmark contains 720 pairs and tests template sensitivity across eight templates and multiple semantic frames. The v5 benchmark contains 540 pairs and evaluates explicit job-title contexts such as CVs, job advertisements, HR records, and professional profiles. The v6 benchmark contains 2,880 pairs generated from 120 structured job roles and 24 templates. It includes metadata such as department, field, job family, seniority level, job-role type, workplace context, template type, semantic frame, and dialect. The ArabJobs v7 benchmark contains 14,532 pairs derived from real-world Arabic job-advertisement contexts.
 
