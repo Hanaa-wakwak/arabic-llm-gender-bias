@@ -1,0 +1,402 @@
+\documentclass[conference]{IEEEtran}
+
+\IEEEoverridecommandlockouts
+
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{url}
+
+% Use XeLaTeX because the paper contains Arabic examples.
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\setmainlanguage{english}
+\setotherlanguage{arabic}
+\newfontfamily\arabicfont[Script=Arabic]{Amiri}
+
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+\begin{document}
+
+\title{Measuring Occupational Gender Bias in Arabic Causal Language Models Using a Dialect-Aware Counterfactual Benchmark}
+
+\author{
+\IEEEauthorblockN{Hanaa [Your Full Name]}
+\IEEEauthorblockA{
+\textit{Department of [Your Department]}\\
+\textit{[Your University]}\\
+Giza, Egypt\\
+[Your Email]
+}
+}
+
+\maketitle
+
+\begin{abstract}
+Occupational gender bias in language models can affect applications related to recruitment, professional profiling, job-advertisement generation, and Arabic natural language processing systems. Arabic introduces specific challenges for gender-bias evaluation because grammatical gender appears in nouns, verbs, adjectives, demonstratives, and agreement markers. In addition, model behavior may vary between Modern Standard Arabic and dialectal Arabic. This paper presents a dialect-aware counterfactual benchmark for measuring occupational gender bias in Arabic causal language models. The benchmark uses masculine--feminine Arabic sentence pairs that preserve the same occupational meaning while changing the gendered linguistic form. Each sentence is scored using average token log-probability, and gender preference is measured using \textit{score\_difference}, defined as \textit{masculine\_score} minus \textit{feminine\_score}. Positive values indicate masculine preference, negative values indicate feminine preference, and zero indicates equal preference. The study evaluates Arabic-specific and multilingual causal language models across controlled occupational templates, template perturbations, job-title contexts, expanded job-role contexts, and real-world job-advertisement contexts derived from ArabJobs. The results show that measured occupational gender preference is context-sensitive and changes across model family, template formulation, dialect, semantic frame, job-title context, job-role structure, and real-world recruitment-language setting. The paper contributes a reproducible Arabic occupational gender-bias benchmark, a likelihood-based scoring pipeline for causal language models, robustness analysis across templates and dialects, and software support for Arabic bias measurement.
+\end{abstract}
+
+\begin{IEEEkeywords}
+Arabic NLP, large language models, gender bias, occupational bias, causal language models, counterfactual evaluation, Arabic dialects, likelihood-based scoring, fairness in NLP, recruitment language
+\end{IEEEkeywords}
+
+\section{Introduction}
+
+Large Language Models (LLMs) are increasingly used in natural language processing applications that generate, classify, summarize, and evaluate text. These systems are now being applied in sensitive domains such as education, recruitment, professional profiling, and decision-support workflows. As a result, fairness and bias evaluation have become important requirements for responsible language-model development. One major concern is occupational gender bias, where a model may associate specific professions, skills, responsibilities, or workplace roles more strongly with masculine or feminine language.
+
+Occupational gender bias is especially important in recruitment-related applications. Language models may be used to generate job advertisements, summarize resumes, produce professional profiles, assist human-resource communication, or support employment-related search and recommendation systems. If these models assign systematically higher likelihood to one gendered occupational form over another, they may reproduce or amplify gendered professional associations in downstream systems.
+
+Arabic introduces specific challenges for gender-bias evaluation. Unlike English, Arabic has grammatical gender that appears not only in nouns, but also in demonstratives, verbs, adjectives, and agreement markers. Therefore, measuring gender bias in Arabic cannot rely only on replacing one occupation word with another. A masculine occupational sentence and its feminine counterpart must remain grammatically valid and semantically equivalent. For example, the masculine sentence \textarabic{هذا الطبيب يعمل في المستشفى} must be paired with the feminine sentence \textarabic{هذه الطبيبة تعمل في المستشفى}, where both the occupational noun and the demonstrative are adjusted. This makes sentence-level counterfactual construction necessary for Arabic bias evaluation.
+
+Arabic also contains substantial variation between Modern Standard Arabic (MSA) and dialectal Arabic. MSA is common in formal writing, official communication, and news, while dialectal Arabic is widely used in informal communication and digital interaction. Since language models are trained on mixed Arabic data sources, their behavior may differ across Arabic varieties. A model that shows one gender-preference pattern in MSA may show a different pattern in Egyptian Arabic. Therefore, dialect-aware evaluation is important for Arabic LLM fairness research.
+
+This paper presents a dialect-aware counterfactual benchmark for measuring occupational gender bias in Arabic causal language models. The benchmark consists of masculine--feminine Arabic sentence pairs that preserve the same occupational meaning while changing the gendered linguistic form. The evaluation uses open-weight causal language models and computes the average token log-probability of each sentence. For each pair, the directional gender-preference score is calculated as:
+\begin{equation}
+\textit{score\_difference} = \textit{masculine\_score} - \textit{feminine\_score}
+\end{equation}
+
+A positive score difference indicates that the model assigns higher likelihood to the masculine sentence. A negative value indicates higher likelihood for the feminine sentence. A zero value indicates equal preference.
+
+The main contributions of this paper are as follows:
+\begin{itemize}
+    \item A dialect-aware Arabic occupational gender-bias benchmark based on masculine--feminine counterfactual sentence pairs.
+    \item A likelihood-based scoring method for Arabic causal language models using average token log-probability and a directional \textit{score\_difference} metric.
+    \item A multi-model evaluation across Arabic-specific and multilingual causal language models.
+    \item A robustness analysis across controlled templates, dialects, job-title contexts, expanded job-role contexts, and real-world recruitment-language data.
+    \item A reproducible software-supported pipeline for scoring, analyzing, and inspecting Arabic occupational gender-bias results.
+\end{itemize}
+
+The rest of the paper is organized as follows. Section II reviews related work. Section III presents the methodology. Section IV reports the experiments and results. Section V discusses the findings and limitations. Section VI concludes the paper.
+
+\section{Related Work}
+
+Bias evaluation has become an important research area in natural language processing because language models can encode social associations learned from training data. These associations may appear in generated text, sentence likelihoods, word representations, or downstream system behavior. Gender bias is one of the most widely studied forms of bias, especially in occupational contexts where models may associate certain professions or professional attributes more strongly with men or women.
+
+Early studies focused on static word embeddings and showed that vector representations can encode gender stereotypes. Bolukbasi et al. demonstrated that word embeddings contain occupational gender associations and proposed methods for quantifying and reducing gender stereotypes in embedding spaces \cite{bolukbasi2016}. Although embedding-based methods are useful for identifying lexical associations, they are limited for sentence-level evaluation because modern language models are contextual and generative.
+
+Paired-sentence benchmarks provide an important foundation for bias evaluation. CrowS-Pairs measures social biases in language models using sentence pairs that differ in stereotypical association \cite{nangia2020}. StereoSet evaluates stereotypical bias in pretrained language models by comparing stereotypical, anti-stereotypical, and unrelated alternatives \cite{nadeem2021}. The present work follows the paired-comparison logic of these benchmarks but adapts it to Arabic occupational gender bias using masculine--feminine counterfactual sentence pairs.
+
+Likelihood-based scoring is also relevant to this work. Kurita et al. studied bias in contextualized word representations using probability-based measures \cite{kurita2019}. Kaneko and Bollegala argued that masked-token bias metrics can be problematic and proposed All Unmasked Likelihood as an alternative for evaluating social biases in masked language models \cite{kaneko2022}. Salazar et al. introduced masked language model scoring for sentence-level likelihood estimation \cite{salazar2020}. This paper applies likelihood-based scoring to Arabic causal language models by comparing average token log-probability across masculine and feminine sentence variants.
+
+Arabic presents specific challenges for NLP because of its morphology, grammatical gender, and dialectal diversity. Gender is not limited to pronouns or isolated nouns; it can appear in occupational nouns, demonstratives, verbs, adjectives, and agreement markers. Recent Arabic bias work has started to address Arabic-specific evaluation. ArGAN, for example, provides an Arabic dataset for evaluating gender, ability, and nationality biases in large language models \cite{aly2025}. ArabJobs provides a real-world Arabic job-advertisement corpus relevant to recruitment-language analysis \cite{elhaj2025}. The present work differs by focusing on Arabic causal language models, full-sentence likelihood scoring, dialect-aware occupational templates, job-role contexts, and external job-advertisement evaluation.
+
+Bias mitigation is another related area. Counterfactual Data Augmentation has been used to reduce gender stereotypes in morphologically rich languages \cite{zmigrod2019}, while self-debiasing methods have been proposed to reduce corpus-based bias in NLP systems \cite{schick2021}. Although mitigation is not the main focus of this conference paper, the wider project includes a counterfactual mitigation experiment using balanced masculine--feminine Arabic occupational data.
+
+\section{Methodology}
+
+This section presents the methodology used to measure occupational gender bias in Arabic causal language models. The method is based on masculine--feminine counterfactual sentence pairs. Each pair preserves the same occupational meaning while changing the gendered linguistic form and required Arabic grammatical agreement.
+
+Each benchmark item contains two sentences: a masculine sentence and a feminine sentence. For example:
+
+\begin{quote}
+Masculine: \textarabic{هذا الطبيب يعمل في المستشفى.}
+
+Feminine: \textarabic{هذه الطبيبة تعمل في المستشفى.}
+\end{quote}
+
+The pair changes the occupational noun from \textarabic{الطبيب} to \textarabic{الطبيبة} and the demonstrative from \textarabic{هذا} to \textarabic{هذه}. This is necessary because Arabic grammatical gender affects agreement. A valid Arabic counterfactual pair must therefore modify all required gendered elements, not only the occupation word.
+
+The study uses multiple benchmark versions to test robustness across linguistic and occupational contexts. The v2 benchmark is the main controlled benchmark and contains 240 pairs generated from 60 occupations and four templates. The v4 benchmark contains 720 pairs and tests template sensitivity across eight templates and multiple semantic frames. The v5 benchmark contains 540 pairs and evaluates explicit job-title contexts such as CVs, job advertisements, HR records, and professional profiles. The v6 benchmark contains 2,880 pairs generated from 120 structured job roles and 24 templates. It includes metadata such as department, field, job family, seniority level, job-role type, workplace context, template type, semantic frame, and dialect. The ArabJobs v7 benchmark contains 14,532 pairs derived from real-world Arabic job-advertisement contexts.
+
+The benchmark includes both MSA and Egyptian Arabic templates. This dialect-aware design is necessary because Arabic language models may behave differently across Arabic varieties. A model trained on mixed Arabic data may assign different likelihoods to MSA and dialectal sentence forms.
+
+The evaluation uses open-weight causal language models. A causal language model estimates the probability of each token given the preceding tokens. For a sentence:
+\begin{equation}
+x = (w_1, w_2, ..., w_n)
+\end{equation}
+
+the sentence score is defined as average token log-probability:
+\begin{equation}
+S(x) = \frac{1}{n} \sum_{t=1}^{n} \log P(w_t | w_{<t})
+\end{equation}
+
+where \(n\) is the number of tokens in the sentence and \(P(w_t | w_{<t})\) is the probability assigned to token \(w_t\) given the previous tokens. Average token log-probability is used instead of total sentence probability to reduce sentence-length effects.
+
+For each masculine--feminine pair, the score difference is computed as:
+\begin{equation}
+\Delta_i = S(x_i^m) - S(x_i^f)
+\end{equation}
+
+where \(x_i^m\) is the masculine sentence and \(x_i^f\) is the feminine sentence. Positive values indicate masculine preference, negative values indicate feminine preference, and zero indicates equal preference.
+
+For each model and benchmark, the analysis reports total items, masculine-preferred count, feminine-preferred count, equal count, masculine-preferred percentage, feminine-preferred percentage, average score difference, median score difference, and score-difference range.
+
+The project also includes validation and quality-control checks. Benchmark quality checks verify required columns, row counts, sentence completeness, dialect labels, template distributions, and metadata fields. Score-difference validation checks that the stored score difference is correctly computed as masculine score minus feminine score. Preference-label validation checks that the preferred-gender label matches the sign of the score difference. Token-length control checks whether masculine and feminine sentence variants have balanced word counts.
+
+\section{Experiments and Results}
+
+\subsection{Experimental Setup}
+
+The experiments evaluate Arabic-specific and multilingual causal language models. The evaluated models include AraGPT2-base, AraGPT2-medium, BLOOM-560m, BLOOM-1b1, XGLM-564M, and Qwen2.5-0.5B.
+
+\begin{table}[htbp]
+\caption{Evaluated Benchmark Settings}
+\begin{center}
+\begin{tabular}{p{0.16\linewidth}p{0.58\linewidth}r}
+\toprule
+Benchmark & Description & Pairs \\
+\midrule
+v2 & Main controlled occupational benchmark & 240 \\
+v4 & Template perturbation benchmark & 720 \\
+v5 & Job-title benchmark & 540 \\
+v6 & Expanded job-role and department benchmark & 2,880 \\
+ArabJobs v7 & External real-world job-advertisement benchmark & 14,532 \\
+\bottomrule
+\end{tabular}
+\label{tab:benchmarks}
+\end{center}
+\end{table}
+
+\subsection{v2 Main Controlled Benchmark}
+
+\begin{table*}[htbp]
+\caption{Overall Results on the v2 Benchmark}
+\begin{center}
+\begin{tabular}{lrrrrr}
+\toprule
+Model & M Pref. & F Pref. & Equal & Avg. Diff. & Direction \\
+\midrule
+Qwen/Qwen2.5-0.5B & 80 & 158 & 2 & -0.343 & F \\
+AraGPT2-base & 152 & 88 & 0 & 0.126 & M \\
+AraGPT2-medium & 168 & 72 & 0 & 0.223 & M \\
+BLOOM-1b1 & 91 & 147 & 2 & -0.166 & F \\
+BLOOM-560m & 83 & 157 & 0 & -0.217 & F \\
+XGLM-564M & 92 & 148 & 0 & -0.214 & F \\
+\bottomrule
+\end{tabular}
+\label{tab:v2}
+\end{center}
+\end{table*}
+
+The v2 benchmark shows a clear difference between Arabic-specific and multilingual models. AraGPT2-base and AraGPT2-medium show masculine preference, while the multilingual models show feminine preference. At the model-family level, Arabic-specific models produce 320 masculine preferences and 160 feminine preferences, with an average score difference of 0.174. Non-Arabic-specific multilingual models produce 346 masculine preferences, 610 feminine preferences, and 4 equal preferences, with an average score difference of -0.235. A chi-square test shows a significant association between model family and preferred gender: \(\chi^2 = 118.109, p = 1.641 \times 10^{-27}\).
+
+\subsection{v4 Template Perturbation Benchmark}
+
+\begin{table*}[htbp]
+\caption{Overall Results on the v4 Benchmark}
+\begin{center}
+\begin{tabular}{lrrrrr}
+\toprule
+Model & M Pref. & F Pref. & Equal & Avg. Diff. & Direction \\
+\midrule
+Qwen/Qwen2.5-0.5B & 312 & 390 & 18 & -0.089 & F \\
+AraGPT2-base & 220 & 500 & 0 & -0.348 & F \\
+AraGPT2-medium & 290 & 430 & 0 & -0.303 & F \\
+BLOOM-1b1 & 248 & 467 & 5 & -0.170 & F \\
+BLOOM-560m & 256 & 460 & 4 & -0.170 & F \\
+XGLM-564M & 104 & 614 & 2 & -0.441 & F \\
+\bottomrule
+\end{tabular}
+\label{tab:v4}
+\end{center}
+\end{table*}
+
+Unlike v2, all six models show overall feminine preference on v4. This is important because the AraGPT2 models shift from masculine preference in v2 to feminine preference in v4, showing that benchmark formulation can change the measured direction of gender preference.
+
+\subsection{Template and Dialect Sensitivity}
+
+\begin{table}[htbp]
+\caption{Template Direction Changes in v4}
+\begin{center}
+\begin{tabular}{lrrr}
+\toprule
+Model & M Temp. & F Temp. & Range \\
+\midrule
+Qwen2.5 & 4 & 4 & 1.105 \\
+AraGPT2-base & 2 & 6 & 1.320 \\
+AraGPT2-medium & 2 & 6 & 1.223 \\
+BLOOM-1b1 & 1 & 7 & 1.363 \\
+BLOOM-560m & 2 & 6 & 1.412 \\
+XGLM-564M & 1 & 7 & 0.729 \\
+\bottomrule
+\end{tabular}
+\label{tab:template}
+\end{center}
+\end{table}
+
+The largest template range is observed for BLOOM-560m, with a range of 1.412. This confirms that template wording strongly affects measured occupational gender preference.
+
+\begin{table}[htbp]
+\caption{Dialect-Level Average Score Differences in v4}
+\begin{center}
+\begin{tabular}{lrrr}
+\toprule
+Model & MSA & Egyptian & Shift \\
+\midrule
+Qwen2.5 & -0.336 & 0.158 & 0.493 \\
+AraGPT2-base & -0.290 & -0.407 & -0.117 \\
+AraGPT2-medium & -0.191 & -0.416 & -0.225 \\
+BLOOM-1b1 & -0.273 & -0.067 & 0.207 \\
+BLOOM-560m & -0.394 & 0.053 & 0.447 \\
+XGLM-564M & -0.398 & -0.485 & -0.087 \\
+\bottomrule
+\end{tabular}
+\label{tab:dialect}
+\end{center}
+\end{table}
+
+Qwen2.5-0.5B and BLOOM-560m shift from feminine preference in MSA to masculine preference in Egyptian Arabic. This result supports the need for dialect-aware Arabic bias evaluation.
+
+\subsection{Job-Title and Job-Role Benchmarks}
+
+\begin{table}[htbp]
+\caption{Results on the v5 Job-Title Benchmark}
+\begin{center}
+\begin{tabular}{lrrrrr}
+\toprule
+Model & M & F & Eq. & Avg. & Dir. \\
+\midrule
+AraGPT2-base & 284 & 256 & 0 & -0.034 & Mixed \\
+BLOOM-560m & 278 & 261 & 1 & 0.071 & Weak M \\
+\bottomrule
+\end{tabular}
+\label{tab:v5}
+\end{center}
+\end{table}
+
+The v5 results differ from v4. AraGPT2-base becomes near-neutral, while BLOOM-560m shows weak masculine preference. This suggests that explicit job-title contexts behave differently from general occupational sentence templates.
+
+\begin{table}[htbp]
+\caption{Results on the v6 Expanded Job-Role Benchmark}
+\begin{center}
+\begin{tabular}{lrrrrr}
+\toprule
+Model & M & F & Eq. & Avg. & Dir. \\
+\midrule
+AraGPT2-base & 970 & 1910 & 0 & -0.302 & F \\
+AraGPT2-medium & 1136 & 1744 & 0 & -0.244 & F \\
+BLOOM-1b1 & 1328 & 1547 & 5 & -0.081 & F \\
+BLOOM-560m & 1500 & 1375 & 5 & -0.016 & Mixed \\
+\bottomrule
+\end{tabular}
+\label{tab:v6}
+\end{center}
+\end{table}
+
+The v6 benchmark shows mostly feminine or near-neutral patterns. AraGPT2-base and AraGPT2-medium both show feminine preference, contrasting with their masculine preference in v2. This shows that expanded occupational context changes the measured direction and magnitude of gender preference.
+
+\subsection{ArabJobs v7 External Benchmark}
+
+\begin{table}[htbp]
+\caption{AraGPT2-base Result on ArabJobs v7}
+\begin{center}
+\begin{tabular}{lrrrr}
+\toprule
+Model & Items & M Pref. & F Pref. & Avg. \\
+\midrule
+AraGPT2-base & 14,532 & 8,404 & 6,128 & 0.089 \\
+\bottomrule
+\end{tabular}
+\label{tab:arabjobs}
+\end{center}
+\end{table}
+
+AraGPT2-base shows masculine preference on ArabJobs v7, with 57.83\% masculine-preferred pairs and 42.17\% feminine-preferred pairs. This contrasts with v6, where the same model shows feminine preference with an average score difference of -0.302. The contrast suggests that real-world recruitment-language contexts can produce different gender-preference patterns from controlled benchmark contexts.
+
+\subsection{Token-Length Control and Factor Sensitivity}
+
+Token-length control shows that masculine and feminine variants have identical mean word counts in v6 and ArabJobs v7 outputs. The same-word-count percentage is 100\% for all evaluated v6 and ArabJobs v7 model outputs. Therefore, the observed score differences cannot be explained by simple word-count imbalance.
+
+Factor sensitivity analysis shows that template type and semantic frame are the strongest factors in v6, each with a range of 1.248 across group means. In ArabJobs v7, job family and job-role type are the strongest factors, with ranges of 0.974 and 0.913 respectively. These results reinforce the conclusion that Arabic occupational gender-bias measurement depends on linguistic and occupational framing.
+
+\subsection{Mitigation Experiment}
+
+The wider project includes a counterfactual data augmentation mitigation experiment. AraGPT2-base was fine-tuned on balanced masculine--feminine Arabic occupational sentences and evaluated before and after mitigation.
+
+\begin{table}[htbp]
+\caption{Counterfactual Mitigation Results}
+\begin{center}
+\begin{tabular}{lrrrr}
+\toprule
+Benchmark & Before & After & Gain & Reduced \\
+\midrule
+v2 & 0.126 & -0.051 & 0.075 & Yes \\
+v5 & -0.034 & 0.035 & -0.001 & No \\
+v6 & -0.302 & -0.053 & 0.249 & Yes \\
+ArabJobs & 0.089 & -0.192 & -0.103 & No \\
+\bottomrule
+\end{tabular}
+\label{tab:mitigation}
+\end{center}
+\end{table}
+
+The mitigation experiment reduces absolute bias in v2 and v6, but not in v5 or ArabJobs v7. This suggests that counterfactual data augmentation can reduce measured bias in some controlled settings, but mitigation does not generalize uniformly across all contexts.
+
+\section{Discussion}
+
+The results show that Arabic occupational gender-bias measurement is highly sensitive to linguistic and occupational context. The same model can produce different gender-preference directions depending on benchmark version, template wording, dialect, semantic frame, job-title context, job-role structure, and real-world recruitment-language setting.
+
+The v2 benchmark shows that model family can affect measured preference. Arabic-specific AraGPT2 models lean masculine, while multilingual models lean feminine. However, this pattern does not remain stable across all benchmarks. In v4 and v6, AraGPT2 models shift toward feminine preference. This means that model family is important but does not fully determine bias direction.
+
+Template wording is one of the strongest factors affecting the score. In v4, every evaluated model shows template-induced direction changes. Therefore, bias evaluation using only one or two templates may produce results that are strongly dependent on the selected wording. Arabic occupational gender-bias benchmarks should include multiple templates and report template-level results.
+
+Dialect also matters. Some models shift between MSA and Egyptian Arabic. This confirms that Arabic should not be treated as a single homogeneous variety in fairness evaluation. Since LLMs are trained on mixed Arabic sources, dialect-aware evaluation is necessary.
+
+The v5 and v6 benchmarks show that occupational context matters. Job-title contexts behave differently from general occupational sentences, and structured job-role contexts produce different patterns from simple occupation templates. This is important for recruitment-related applications because job titles, departments, and professional responsibilities are common in employment language.
+
+The ArabJobs v7 result shows the value of real-world evaluation. Controlled benchmarks provide internal validity, but real-world job advertisements contain natural recruitment phrasing, country-specific wording, and labor-market language. External job-advertisement evaluation should therefore complement controlled benchmarks.
+
+The study has limitations. It focuses on open-weight causal language models because likelihood scoring requires access to model loss or token probabilities. It focuses on binary masculine--feminine grammatical forms because of Arabic morphology. Egyptian Arabic is the only dialectal variety included beyond MSA. The ArabJobs-derived benchmark improves ecological validity but may include real-world noise. Finally, the human-validation package is prepared, but final annotation agreement should be completed before an extended journal version.
+
+\section{Conclusion}
+
+This paper presented a dialect-aware counterfactual benchmark for measuring occupational gender bias in Arabic causal language models. The benchmark uses masculine--feminine Arabic sentence pairs that preserve the same occupational meaning while changing the gendered linguistic form and required grammatical agreement. Each sentence is scored using average token log-probability, and gender preference is measured using \textit{score\_difference}.
+
+The results show that Arabic occupational gender preference is context-sensitive. Arabic-specific and multilingual models differ in the main controlled benchmark, but these patterns change across template perturbations, dialects, job-title contexts, expanded job-role contexts, and real-world job-advertisement settings. These findings suggest that Arabic occupational gender-bias scores should not be interpreted as fixed model properties. Instead, they should be understood as measurement outcomes affected by model family, template wording, dialect, semantic frame, job-title context, job-role structure, and recruitment-language setting.
+
+Future work should extend the benchmark to additional Arabic dialects, include larger and newer Arabic and multilingual LLMs, evaluate black-box API models using generation-based metrics, complete larger-scale human validation, expand real-world recruitment-language evaluation, and test additional bias-mitigation methods.
+
+\begin{thebibliography}{00}
+
+\bibitem{bolukbasi2016}
+T. Bolukbasi, K.-W. Chang, J. Zou, V. Saligrama, and A. Kalai, ``Man is to computer programmer as woman is to homemaker? Debiasing word embeddings,'' in \textit{Advances in Neural Information Processing Systems 29}, 2016, pp. 4349--4357.
+
+\bibitem{nangia2020}
+N. Nangia, C. Vania, R. Bhalerao, and S. R. Bowman, ``CrowS-Pairs: A challenge dataset for measuring social biases in masked language models,'' in \textit{Proc. 2020 Conf. Empirical Methods in Natural Language Processing}, 2020, pp. 1953--1967.
+
+\bibitem{nadeem2021}
+M. Nadeem, A. Bethke, and S. Reddy, ``StereoSet: Measuring stereotypical bias in pretrained language models,'' in \textit{Proc. 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing}, 2021, pp. 5356--5371.
+
+\bibitem{kurita2019}
+K. Kurita, N. Vyas, A. Pareek, A. W. Black, and Y. Tsvetkov, ``Measuring bias in contextualized word representations,'' in \textit{Proc. First Workshop on Gender Bias in Natural Language Processing}, 2019, pp. 166--172.
+
+\bibitem{kaneko2022}
+M. Kaneko and D. Bollegala, ``Unmasking the mask: Evaluating social biases in masked language models,'' in \textit{Proc. AAAI Conf. Artificial Intelligence}, vol. 36, no. 11, 2022, pp. 11954--11962.
+
+\bibitem{salazar2020}
+J. Salazar, D. Liang, T. Q. Nguyen, and K. Kirchhoff, ``Masked language model scoring,'' in \textit{Proc. 58th Annual Meeting of the Association for Computational Linguistics}, 2020, pp. 2699--2712.
+
+\bibitem{zmigrod2019}
+R. Zmigrod, S. J. Mielke, H. Wallach, and R. Cotterell, ``Counterfactual data augmentation for mitigating gender stereotypes in languages with rich morphology,'' in \textit{Proc. 57th Annual Meeting of the Association for Computational Linguistics}, 2019, pp. 1651--1661.
+
+\bibitem{schick2021}
+T. Schick, S. Udupa, and H. Schütze, ``Self-diagnosis and self-debiasing: A proposal for reducing corpus-based bias in NLP,'' \textit{Transactions of the Association for Computational Linguistics}, vol. 9, pp. 1408--1424, 2021.
+
+\bibitem{antoun2021}
+W. Antoun, F. Baly, and H. Hajj, ``AraGPT2: Pre-trained transformer for Arabic language generation,'' in \textit{Proc. Sixth Arabic Natural Language Processing Workshop}, 2021, pp. 196--207.
+
+\bibitem{bigscience2024}
+BigScience Workshop, ``BLOOM: A 176B-parameter open-access multilingual language model,'' \textit{Journal of Machine Learning Research}, vol. 25, no. 189, pp. 1--117, 2024.
+
+\bibitem{lin2022}
+X. V. Lin \textit{et al.}, ``Few-shot learning with multilingual generative language models,'' in \textit{Proc. 2022 Conf. Empirical Methods in Natural Language Processing}, 2022.
+
+\bibitem{yang2024}
+A. Yang \textit{et al.}, ``Qwen2.5 technical report,'' \textit{arXiv preprint arXiv:2412.15115}, 2024.
+
+\bibitem{aly2025}
+R. Aly, Y. Allam, R. Gaber, and C. Basta, ``ArGAN: Arabic gender, ability, and nationality dataset for evaluating biases in large language models,'' in \textit{Proc. 6th Workshop on Gender Bias in Natural Language Processing}, 2025, pp. 256--267.
+
+\bibitem{elhaj2025}
+M. El-Haj, ``ArabJobs: A multinational corpus of Arabic job ads,'' in \textit{Proc. Third Arabic Natural Language Processing Conference}, 2025, pp. 16--25.
+
+\end{thebibliography}
+
+\end{document}
